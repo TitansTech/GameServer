@@ -1,0 +1,5 @@
+CREATE TABLE [dbo].[TitanLotteryWinners](
+	[ID] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY CLUSTERED,
+	[AccountID] [varchar](10) NOT NULL,
+	[Name] [varchar](50) NOT NULL,
+	[Date] [datetime] NOT NULL)

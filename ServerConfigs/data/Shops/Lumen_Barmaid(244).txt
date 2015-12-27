@@ -1,0 +1,30 @@
+//==============================================================================
+//www.titanstech.com
+//------------------------------------------------------------------------------
+//Revised 11 Aug, 2005			
+//==============================================================================
+//shop6 - Daivas Bar
+//
+
+14 10 0 0 0 0 0 0 //Teleport
+14 9 0 0 0 0 0 0 //Alcohol
+
+//Orbs
+12 11 1 0 0 0 0 0 //Summon Golem
+12 11 2 0 0 0 0 0 //Summon Assassin
+12 11 3 0 0 0 0 0 //Summon Yeti
+
+//MG & DK Orbs
+12 7 0 0 0 0 0 0 //Orb of twisting slash
+12 13 0 0 0 0 0 0 //Unicorn Attack (Blade Knight/Dark Knight/MG)
+12 14 0 0 0 0 0 0 //Mass Healing (Blade Knight)
+
+//Misc
+13 9 0 0 0 0 0 0 //Poison Ring
+13 8 0 0 0 0 0 0 //Ice Ring
+
+13 13 0 0 0 0 0 0 //Fire Necklace
+13 12 0 0 0 0 0 0 //Lightning Necklace
+
+13 29 0 0 0 0 0 0 //Armor of Guardman
+end

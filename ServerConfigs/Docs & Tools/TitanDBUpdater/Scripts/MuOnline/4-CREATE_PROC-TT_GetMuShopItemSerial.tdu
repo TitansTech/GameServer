@@ -1,0 +1,18 @@
+CREATE Procedure [dbo].[TT_GetMuShopItemSerial]  
+AS 
+BEGIN 
+    DECLARE @ItemSerial	int 
+	SET NOCOUNT ON 
+	begin transaction 
+		update GameServerInfo set @ItemSerial = MuShopItemCount = MuShopItemCount+1 
+		if ( @@error  <> 0 ) 
+		begin 
+			rollback transaction 
+			select -1 
+		end 
+		else 
+		begin 
+			commit transaction 
+		select @ItemSerial 
+	end 
+END

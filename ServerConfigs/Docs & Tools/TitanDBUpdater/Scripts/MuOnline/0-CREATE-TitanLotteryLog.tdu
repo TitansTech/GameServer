@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[TitanLotteryLog](
+	[ID] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY CLUSTERED,
+	[Num1] [smallint] NOT NULL,
+	[Num2] [smallint] NOT NULL,
+	[Num3] [smallint] NOT NULL,
+	[Num4] [smallint] NOT NULL,
+	[Date] [datetime] NOT NULL,
+	[Reward] [int] NOT NULL,
+	[Winners] [int] NOT NULL)

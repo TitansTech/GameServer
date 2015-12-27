@@ -1,0 +1,199 @@
+0
+
+//SKILL	REQ1	REQ2	Cat	Ran	sType	LReq	LMax	Value	DW	DK	ELF	MG	DL	SUM	RF	Name
+
+//Universal
+300	0	0	1	1	0	1	20	12.04	1	1	1	1	1	1	0	//Durability Reduction (1)
+301	0	0	1	1	0	1	20	614.18	4	4	4	4	4	4	0	//PvP Defence Rate Increase
+302	0	0	1	2	0	1	20	511.73	6	6	6	6	6	6	0	//Maximum SD increase
+303	0	0	1	2	0	1	20	1.81	7	7	7	7	7	7	0	//Automatic Mana Recovery Increase
+304	0	0	1	2	0	1	20	1.20	8	8	8	8	8	8	0	//Poison Resistance Increase
+305	300	0	1	3	0	1	20	12.04	9	9	9	9	9	9	0	//Durability Reduction (2)
+306	302	0	1	3	0	1	20	1.20	10	10	10	10	10	10	0	//SD Recovery Speed Increase
+307	303	0	1	3	0	1	20	1.20	11	11	11	11	11	11	0	//Automatic HP Recovery Increase
+308	304	0	1	3	0	1	20	1.20	12	12	12	12	12	12	0	//Lightning Resistance Increase
+309	0	0	1	4	0	1	20	60	14	14	14	14	14	14	0	//Defense Increase
+310	307	0	1	4	0	1	20	1.20	15	15	15	15	15	15	0	//Automatic AG Recovery Increase
+311	308	0	1	4	0	1	20	1.20	16	16	16	16	16	16	0	//Ice Resistance Increase
+312	305	0	1	5	0	1	20	12.04	17	17	17	17	17	17	0	//Durability Reduction (3)
+313	309	0	1	5	0	1	20	1.20	18	18	18	18	18	18	0	//Defense Success Rate Increase
+
+//--DK
+325	0	0	2	1	0	1	20	511.73	37	37	37	37	37	37	37	//Attack Success Rate Increase
+326	22	0	2	2	22	1	20	5.02	0	41	0	0	0	0	0	//Cyclone Strengthener
+327	23	0	2	2	23	1	20	6.32	0	42	0	0	0	0	0	//Slash Strengthener
+328	19	0	2	2	19	1	20	6.32	0	43	0	0	0	0	0	//Falling Slash Strengthener
+329	20	0	2	2	20	1	20	6.32	0	44	0	0	0	0	0	//Lunge Strengthener
+330	41	0	2	3	41	1	20	6.32	0	45	0	0	0	0	0	//Twisting Slash Strengthener		AG: 10
+331	42	0	2	3	42	1	20	5.02	0	46	0	0	0	0	0	//Rageful Blow Strengthener		AG: 22
+332	330	0	2	4	41	1	20	1.20	0	49	0	0	0	0	0	//Twisting Slash Mastery		AG: 20
+333	331	0	2	4	42	1	20	1.20	0	50	0	0	0	0	0	//Rageful Blow Mastery			AG: 30
+334	0	0	2	4	0	1	20	102.35	51	51	52	52	52	52	0	//Maximum Life Increase
+335	0	0	2	4	0	1	20	5.02	0	52	0	0	0	0	0	//Weapon Mastery
+336	43	0	2	5	43	1	20	5.02	0	53	0	0	0	0	0	//Slash Strengthener			AG: 13
+337	232	0	2	5	232	1	20	5.02	0	54	0	0	0	0	0	//Strike of Destruction Strengthen	AG: 24
+338	334	0	2	5	0	1	20	102.35	55	55	56	56	56	56	0	//Maximum Mana Increase
+
+347	0	0	3	1	0	1	20	818.77	73	73	73	73	73	73	0	//Attack Rate
+348	0	0	3	2	0	1	20	8.83	0	77	0	77	0	0	0	//Two-handed Sword Strengthener
+349	0	0	3	2	0	1	20	5.02	0	78	0	78	0	0	0	//One-handed Sword Strengthener
+350	0	0	3	2	0	1	20	6.32	0	79	0	0	0	0	0	//Mace Strengthener
+351	0	0	3	2	0	1	20	6.32	0	80	0	0	0	0	0	//Spear Strengthener
+352	348	0	3	3	0	1	20	11.54	0	81	0	81	0	0	0	//Two-handed Sword Mastery
+353	349	0	3	3	0	1	10	1	0	82	0	82	0	0	0	//One-handed Sword Mastery
+354	350	0	3	3	0	1	20	1.20	0	83	0	0	0	0	0	//Mace Mastery
+355	351	0	3	3	0	1	20	1.20	0	84	0	0	0	0	0	//Spear Mastery
+356	48	0	3	4	48	1	20	1.81	0	85	0	0	0	0	0	//Swell Life Strengthener		AG: 22
+357	0	0	3	4	0	1	20	7.22	86	86	86	86	86	86	0	//Mana Reduction
+358	0	0	3	4	0	1	20	9.14	87	87	87	87	87	87	0	//Monster Attack SD Increment
+359	0	0	3	4	0	1	20	43.19	88	88	88	88	88	88	0	//Monster Attack Life Increment
+360	356	0	3	5	48	1	20	1.81	0	89	0	0	0	0	0	//Swell Life Proficiency
+361	0	0	3	5	0	1	20	5.02	0	90	0	90	91	0	0	//Minimum Attack Power Increase
+362	359	0	3	5	0	1	20	43.19	92	92	92	92	92	92	0	//Monster Attack Mana Increment
+
+//--DW
+378	5	0	2	2	5	1	20	6.32	41	0	0	0	0	0	0	//Flame Strengthener
+379	3	0	2	2	3	1	20	6.32	42	0	0	0	0	0	0	//Lightning Strengthener
+380	233	0	2	2	233	1	20	1.20	43	0	0	0	0	0	0	//Expansion of Wizardry Strengthen	AG: 55
+381	14	378	2	3	14	1	20	5.02	45	0	0	0	0	0	0	//Inferno Strengthener
+382	13	379	2	3	13	1	20	5.02	46	0	0	0	0	0	0	//Blast Strengthener
+383	380	0	2	3	233	1	20	1.20	47	0	0	0	0	0	0	//Expansion of Wizardry Mastery		AG: 55
+384	1	0	2	3	1	1	20	6.32	48	0	0	0	0	0	0	//Poison Strengthener
+385	9	0	2	4	9	1	20	5.02	49	0	0	0	0	0	0	//Evil Spirit Strengthener
+386	385	0	2	4	0	1	20	5.02	50	0	0	0	0	0	0	//Magic Mastery
+387	38	384	2	4	38	1	20	5.02	52	0	0	0	0	0	0	//Decay Strengthener			AG: 10
+388	10	0	2	5	10	1	20	6.32	54	0	0	0	0	0	0	//Hellfire Strengthener
+389	7	0	2	5	7	1	20	6.32	56	0	0	0	0	0	0	//Ice Strengthener
+
+397	0	0	3	2	0	1	20	5.02	77	0	0	79	0	0	0	//One-handed Staff Strengthener
+398	0	0	3	2	0	1	20	8.83	78	0	0	80	0	0	0	//Two-handed Staff Strengthener
+399	0	0	3	2	0	1	20	8.03	79	0	0	0	0	0	0	//Shield Strengthener
+400	397	0	3	3	0	1	10	1	81	0	0	83	0	0	0	//One-handed Staff Mastery
+401	398	0	3	3	0	1	20	11.54	82	0	0	84	0	0	0	//Two-handed Staff Mastery
+402	399	0	3	3	0	1	20	12.04	83	0	0	0	0	0	0	//Shield Mastery
+403	16	0	3	4	16	1	20	1.81	85	0	0	0	0	0	0	//Soul Barrier Strengthener		AG: 27
+404	403	0	3	5	16	1	20	8.03	89	0	0	0	0	0	0	//Soul Barrier Proficiency		AG: 26
+405	0	0	3	5	0	1	20	5.02	90	0	0	89	0	0	0	//Minimum Wizardry Increase
+
+//--ELF
+413	26	0	2	2	26	1	20	5.02	0	0	41	0	0	0	0	//Heal Strengthener
+414	24	0	2	2	24	1	20	5.02	0	0	43	0	0	0	0	//Triple Shot Strengthener
+415	30	0	2	2	30	1	20	60.20	0	0	44	0	0	0	0	//Summoned Monster Strengthener (1)
+416	52	0	2	3	52	1	20	5.02	0	0	45	0	0	0	0	//Penetration Strengthener		AG: 11
+417	27	0	2	3	27	1	20	5.02	0	0	46	0	0	0	0	//Defense Increase Strengthener
+418	414	0	2	3	24	10	10	1	0	0	47	0	0	0	0	//Triple Shot Mastery 			MAX 10 LVL REQ 10 LVLS DE UNA (TIRA UNA FLECHA MAS)
+419	415	0	2	3	30	1	20	60.20	0	0	48	0	0	0	0	//Summoned Monster Strengthener (2)
+420	28	0	2	4	28	1	20	5.02	0	0	49	0	0	0	0	//Attack Increase Strengthener
+421	0	0	2	4	0	1	20	5.02	0	0	51	0	0	0	0	//Weapon Mastery
+422	420	0	2	5	28	1	20	5.02	0	0	53	0	0	0	0	//Attack Increase Mastery
+423	417	0	2	5	27	1	20	5.02	0	0	54	0	0	0	0	//Defense Increase Mastery
+424	51	0	2	5	51	1	20	5.02	0	0	55	0	0	0	0	//Ice Arrow Strengthener		AG: 18
+
+435	0	0	3	2	0	1	20	5.02	0	0	77	0	0	0	0	//Bow Strengthener
+436	0	0	3	2	0	1	20	6.32	0	0	78	0	0	0	0	//Crossbow Strengthener
+437	0	0	3	2	0	1	20	8.03	0	0	79	0	0	0	0	//Shield Strengthener
+438	435	0	3	3	0	1	10	1	0	0	81	0	0	0	0	//Bow Mastery				MAX 10 LVL
+439	436	0	3	3	0	1	20	11.54	0	0	82	0	0	0	0	//Crossbow Mastery
+440	437	0	3	3	0	1	20	18.06	0	0	83	0	0	0	0	//Shield Mastery
+441	77	0	3	5	77	1	20	1.20	0	0	89	0	0	0	0	//Infinity Arrow Strengthener		AG: 11
+442	0	0	3	5	0	1	20	5.02	0	0	90	0	0	0	0	//Minimum Attack Power Increase
+
+//--SUM
+448	0	0	2	2	0	1	20	6.32	0	0	0	0	0	41	0	//Fire Tome Strengthener
+449	0	0	2	2	0	1	20	6.32	0	0	0	0	0	42	0	//Wind Tome Strengthener
+450	0	0	2	2	0	1	20	6.32	0	0	0	0	0	43	0	//Lightning Tome Strengthener
+451	448	0	2	3	0	1	20	1.81	0	0	0	0	0	45	0	//Fire Tome Mastery
+452	449	0	2	3	0	1	20	1.20	0	0	0	0	0	46	0	//Wind Tome Mastery
+453	450	0	2	3	0	1	20	1.81	0	0	0	0	0	47	0	//Lightning Tome Mastery
+454	219	0	2	3	219	1	20	1.20	0	0	0	0	0	48	0	//Sleep Strengthener			AG: 7
+455	215	0	2	4	215	1	20	5.02	0	0	0	0	0	49	0	//Chain Lightning Strengthener
+456	230	0	2	4	230	1	20	5.02	0	0	0	0	0	50	0	//Lightning Shock Strengthener		AG: 10
+457	0	0	2	5	0	1	20	5.02	0	0	0	0	0	53	0	//Magic Mastery
+458	214	0	2	5	214	1	20	5.02	0	0	0	0	0	55	0	//Drain Life Strengthener
+
+465	0	0	3	2	0	1	20	5.02	0	0	0	0	0	77	0	//Stick Strengthener
+466	0	0	3	2	0	1	20	6.32	0	0	0	0	0	78	0	//Other World Tome Strengthener
+467	465	0	3	3	0	1	20	11.54	0	0	0	0	0	81	0	//Stick Mastery
+468	466	0	3	3	0	1	10	1	0	0	0	0	0	82	0	//Other World Tome Mastery
+469	218	0	3	4	218	1	20	1.81	0	0	0	0	0	85	0	//Berserker Strengthener		AG: 75
+470	469	0	3	5	0	1	20	1.81	0	0	0	0	0	89	0	//Berserker Proficiency			AG: 82
+471	0	0	3	5	0	1	20	5.02	0	0	0	0	0	90	0	//Minimum Wizardry/Curse Increase
+
+//--MG
+479	22	0	2	2	22	1	20	5.02	0	0	0	41	0	0	0	//Cyclone Strengthener
+480	3	0	2	2	3	1	20	6.32	0	0	0	42	0	0	0	//Lightning Strengthener
+481	41	0	2	2	41	1	20	6.32	0	0	0	43	0	0	0	//Twisting Slash Strengthener		AG: 10
+482	56	0	2	2	56	1	20	6.32	0	0	0	44	0	0	0	//Power Slash Strengthener
+483	5	0	2	3	5	1	20	6.32	0	0	0	45	0	0	0	//Flame Strengthener
+484	13	480	2	3	13	1	20	5.02	0	0	0	46	0	0	0	//Blast Strengthener
+485	481	482	2	3	0	1	20	5.02	0	0	0	48	0	0	0	//Weapon Mastery
+486	14	483	2	4	14	1	20	5.02	0	0	0	49	0	0	0	//Inferno Strengthener
+487	9	0	2	4	9	1	20	5.02	0	0	0	50	0	0	0	//Evil Spirit Strengthener
+488	447	0	2	4	0	1	20	5.02	0	0	0	51	0	0	0	//Magic Mastery
+489	7	0	2	5	7	1	20	6.32	0	0	0	53	0	0	0	//Ice Strengthener
+490	55	0	2	5	55	1	20	5.02	0	0	0	54	0	0	0	//Blood Attack Strengthener		AG: 22
+
+//--DL
+508	61	0	2	2	61	1	20	5.02	0	0	0	0	41	0	0	//Fire Burst Strengthener
+509	60	0	2	2	60	1	20	6.32	0	0	0	0	42	0	0	//Force Wave Strengthener
+510	0	0	2	2	0	1	20	12.04	0	0	0	0	43	0	0	//Dark Horse Strengthener (1)
+511	64	0	2	3	64	1	20	6.32	0	0	0	0	46	0	0	//Critical Damage Increase Strengt	AG: 75
+512	62	510	2	3	62	1	20	5.02	0	0	0	0	47	0	0	//Earthshake Strengthener		AG: 75
+513	0	0	2	3	0	1	20	5.02	0	0	0	0	48	0	0	//Weapon Mastery
+514	508	0	2	4	61	1	20	1.20	0	0	0	0	49	0	0	//Fire Burst Mastery
+515	511	0	2	4	64	1	20	8.03	0	0	0	0	50	0	0	//Critical Damage Increase Strengt
+516	512	0	2	4	62	1	20	1.20	0	0	0	0	51	0	0	//Earthshake Mastery			AG: 75
+517	515	0	2	5	64	1	20	1.81	0	0	0	0	54	0	0	//Critical Damage Increase Strengt
+518	78	0	2	5	78	1	20	5.02	0	0	0	0	55	0	0	//Fire Scream Strengthener		AG: 11
+
+526	0	0	3	2	0	1	20	6.32	0	0	0	0	77	0	0	//Dark Spirit Strengthener
+527	0	0	3	2	0	1	20	5.02	0	0	0	0	78	0	0	//Scepter Strengthener
+528	0	0	3	2	0	1	20	8.03	0	0	0	0	79	0	0	//Shield Strengthener
+529	0	0	3	2	0	1	20	6.32	0	0	0	0	80	0	0	//Scepter Strengthener: Pet Streng
+530	526	0	3	3	0	1	20	1.81	0	0	0	0	81	0	0	//Dark Spirit Strengthener (2)
+531	527	0	3	3	0	1	20	11.54	0	0	0	0	82	0	0	//Scepter Mastery
+532	528	0	3	3	0	1	20	12.04	0	0	0	0	83	0	0	//Shield Mastery
+533	529	0	3	3	0	1	20	38.22	0	0	0	0	84	0	0	//Command Attack Increase
+534	530	0	3	5	0	1	20	1.20	0	0	0	0	89	0	0	//Dark Spirit Strengthener (3)
+535	0	0	3	5	0	1	20	12.04	0	0	0	0	90	0	0	//Pet Durability Strengthener
+
+//--RF
+578	0	0	1	1	0	1	20	12.04	0	0	0	0	0	0	1	//
+579	0	0	1	1	0	1	20	255.87	0	0	0	0	0	0	4	//
+580	0	0	1	2	0	1	20	307.04	0	0	0	0	0	0	6	//
+581	0	0	1	2	0	1	20	1.81	0	0	0	0	0	0	7	//
+582	0	0	1	2	0	1	20	1.20	0	0	0	0	0	0	8	//
+583	578	0	1	3	0	1	20	12.04	0	0	0	0	0	0	9	//
+584	580	0	1	3	0	1	20	1.20	0	0	0	0	0	0	10	//
+585	581	0	1	3	0	1	20	1.20	0	0	0	0	0	0	11	//
+586	582	0	1	3	0	1	20	1.20	0	0	0	0	0	0	12	//
+587	0	0	1	4	0	1	20	33.71	0	0	0	0	0	0	14	//
+588	585	0	1	4	0	1	20	1.20	0	0	0	0	0	0	15	//
+589	586	0	1	4	0	1	20	1.20	0	0	0	0	0	0	16	//
+590	583	0	1	5	0	1	20	12.04	0	0	0	0	0	0	17	//
+591	587	0	1	5	0	1	20	1.20	0	0	0	0	0	0	18	//
+
+599	0	0	2	1	0	1	20	204.69	0	0	0	0	0	0	37	//
+551	0	0	2	2	260	1	20	5.02	0	0	0	0	0	0	41	//
+552	0	0	2	2	261	1	20	5.02	0	0	0	0	0	0	42	//
+554	551	0	2	3	260	1	20	1.20	0	0	0	0	0	0	45	//
+555	552	0	2	3	261	1	20	1.20	0	0	0	0	0	0	46	//
+600	0	0	2	4	0	1	20	54.18	0	0	0	0	0	0	51	//
+557	0	0	2	4	0	1	20	5.02	0	0	0	0	0	0	52	//
+558	262	0	2	5	262	1	20	5.02	0	0	0	0	0	0	53	//
+559	263	0	2	5	263	1	20	5.02	0	0	0	0	0	0	54	//
+601	600	0	2	5	0	1	20	54.18	0	0	0	0	0	0	55	//
+560	264	0	2	5	264	1	20	5.02	0	0	0	0	0	0	56	//
+
+603	0	0	3	1	0	1	20	327.51	0	0	0	0	0	0	73	//
+568	0	0	3	2	0	1	20	5.02	0	0	0	0	0	0	77	//
+569	268	0	3	2	268	1	20	5.02	0	0	0	0	0	0	78	//
+571	568	0	3	3	0	1	20	1.20	0	0	0	0	0	0	81	//
+572	569	0	3	3	268	1	20	5.02	0	0	0	0	0	0	82	//
+573	267	0	3	4	267	1	20	11.54	0	0	0	0	0	0	85	//
+604	0	0	3	4	0	1	20	7.22	0	0	0	0	0	0	86	//
+605	0	0	3	4	0	1	20	9.14	0	0	0	0	0	0	87	//
+606	0	0	3	4	0	1	20	43.19	0	0	0	0	0	0	88	//
+607	0	0	3	5	0	1	20	5.02	0	0	0	0	0	0	90	//
+608	606	0	3	5	0	1	20	43.19	0	0	0	0	0	0	92	//
+end

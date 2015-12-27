@@ -1,0 +1,69 @@
+//#############################################################################################################
+//Drop Settings: Maya Hand Drops
+//www.titanstech.com
+//#############################################################################################################
+
+//=============================================================================================================
+//ItemDropRate	 	- Drop rate of item VS Zen [x/100]
+//ExRate		- Drop rate of excellent item [x/1000]
+//=============================================================================================================
+//	EventName		DropZen		NA	NA 	NA 	  NA 		ItemDropRate	ExRate
+//=============================================================================================================
+1	
+	"MayaHandDrop"		30000000	0	0	 0	  0		80		850
+end
+
+//=============================================================================================================
+//Type			- Item.TXT index (section) of the Box
+//Index 		- Item.TXT id of the Item
+//minLvl		- Minimal Level of the Item (+1, +2 etc...)
+//maxLvl		- Maximum Level of the Item (+1, +2 etc...)
+//Skill			- Drop Item with Skill (0 - off,1 - on)
+//Luck			- Drop Item with Luck (0 - off,1 - on)
+//maxZ28		- Maximum Z28 option (1 = +4, 2 = +8, 3 = +12, etc...)
+//maxExOpt		- Maximum number of Exc option in item
+//=============================================================================================================
+//	Type	Index	minLvl	maxLvl	Skill	Luck	maxZ28	maxExOpt		
+//=============================================================================================================
+
+2																		
+	0	26	3	7	1	1	2	2	//Flamberge		LVL:137
+	0	27	3	7	1	1	2	2	//Sword Bracker		LVL:133
+	2	17	3	7	1	1	2	2	//Absolute Scepter	LVL:135
+	4	23	3	7	1	1	2	2	//Stinger Bow		LVL:134
+	5	19	3	7	1	1	2	2	//Aura Staff		LVL:110
+	5	30	3	7	1	1	2	2	//Deadly Staff		LVL:138
+	5	31	3	7	1	1	2	2	//Imperial Staff	LVL:137
+	5	32	3	7	1	1	2	2	//Merlin Staff		LVL:130
+	6	17	3	7	1	1	2	2	//Crimson Glory		LVL:104
+	6	18	3	7	1	1	2	2	//Salamander Shield	LVL:102
+
+	7	43	3	7	1	1	2	2	//Aura Helm		LVL:110
+	7	45	3	7	1	1	2	2	//Titan Helm		LVL:111
+	7	46	3	7	1	1	2	2	//Brave Helm		LVL:107
+	7	49	3	7	1	1	2	2	//Seraphim Helm		LVL:111
+
+	8	43	3	7	1	1	2	2	//Aura Armor		LVL:122
+	8	45	3	7	1	1	2	2	//Titan Armor		LVL:132
+	8	46	3	7	1	1	2	2	//Brave Armor		LVL:128
+	8	47	3	7	1	1	2	2	//Destory Armor		LVL:131
+	8	49	3	7	1	1	2	2	//Seraphim Armor	LVL:129
+
+	9	43	3	7	1	1	2	2	//Aura Pants		LVL:122
+	9	45	3	7	1	1	2	2	//Titan Pants		LVL:132
+	9	46	3	7	1	1	2	2	//Brave Pants		LVL:128
+	9	47	3	7	1	1	2	2	//Destory Pants		LVL:131
+	9	49	3	7	1	1	2	2	//Seraphim Pants	LVL:129
+
+	10	43	3	7	1	1	2	2	//Aura Gloves		LVL:122
+	10	45	3	7	1	1	2	2	//Titan Gloves		LVL:132
+	10	46	3	7	1	1	2	2	//Brave Gloves		LVL:128
+	10	47	3	7	1	1	2	2	//Destory Gloves	LVL:131
+	10	49	3	7	1	1	2	2	//Seraphim Gloves	LVL:129
+
+	11	43	3	7	1	1	2	2	//Aura Boots		LVL:122
+	11	45	3	7	1	1	2	2	//Titan Boots		LVL:132
+	11	46	3	7	1	1	2	2	//Brave Boots		LVL:128
+	11	47	3	7	1	1	2	2	//Destory Boots		LVL:131
+	11	49	3	7	1	1	2	2	//Seraphim Boots	LVL:129
+end									

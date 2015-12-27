@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.OptionData ALTER COLUMN SkillKey binary(20)

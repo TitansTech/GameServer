@@ -1,0 +1,53 @@
+//==============================================================================
+//www.titanstech.com
+//------------------------------------------------------------------------------
+//Revised 11 Aug, 2005			
+//==============================================================================
+//shop1 - Map 1	Lorencia Bar
+//
+
+//Potions
+14 3  0  20 0 0 0 0 //
+14 6  0  20 0 0 0 0 //
+14 3  0  50 0 0 0 0 //
+14 6  0  50 0 0 0 0 //
+14 8  0  20 0 0 0 0 //
+
+
+//Misc
+14 9  0   0 0 0 0 0 //Alcohol
+14 10 0   0 0 0 0 0 //Teleport
+
+//Arrows + Bolts
+4  7  12 255 0 0 1 0 //Arrows +12
+4  15 12 255 0 0 1 0 //Bolts +12
+
+//Armor + Weapons
+7  13 0   0 0 1 0 0 //Spirit helm
+7  3  0   0 0 1 0 0 //Legendary helm
+7  1  0   0 0 1 0 0 //Dragon Helm
+6  13 0   0 0 0 0 0 //Chaosshield
+
+8  13 0   0 0 1 0 0 //Spirit Armor
+8  3  0   0 0 1 0 0 //Legendary Armor
+8  1  0   0 0 1 0 0 //Dragon Armor
+6  8  0   0 1 1 0 0 //Towershield
+
+9  13 0   0 0 1 0 0 //Spirit Pants
+9  3  0   0 0 1 0 0 //Legendary Pants
+6  3  0   0 0 1 2 0 //Fairyshield
+9  1  0   0 0 1 0 0 //Dragon Pants
+
+10 13 0   0 0 1 0 0 //Spirit Gloves
+10 3  0   0 0 1 0 0 //Legendary Gloves
+2  4  0   0 1 0 0 0 //Serpenthammer
+10 1  0   0 0 1 0 0 //Dragon Gloves
+
+11 13 0   0 0 1 0 0 //Spirit Boots
+11 3  0   0 0 1 0 0 //Legendary Boots
+11 1  0   0 0 1 0 0 //Dragon Boots
+5  5  0   0 0 0 0 0 //Legendary Staff
+5  6  0   0 0 0 0 0 //Resurrectstaff
+4  12 0   0 1 1 0 0 //Serpent Crossbow
+0  12 0   0 1 0 0 0 //Solarsword
+end

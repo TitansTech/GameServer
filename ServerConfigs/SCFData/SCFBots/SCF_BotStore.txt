@@ -1,0 +1,73 @@
+//======================================================================================
+//Data
+//======================================================================================
+//OnlyVip  = This bot is only for VIP users
+//Buy Type = 0		ZEN
+//	   = 1		PCPoints
+//	   = 2		VIPMONEY
+//Class    = 0,1,2	DW,SM,GM
+//	   = 16,17,18	DK,BK,BM
+//	   = 32,33,34	Elf,ME,HE
+//	   = 48,49,50	MG,DM
+//	   = 64,65,66	DL,LE
+//	   = 80,81,82	SU,BS,DS
+//======================================================================================
+//BotIndex	Class	OnlyVip	BuyType		Name		StoreName	Map	X	Y	Dir
+1
+0		80	0	0		"BlackShop"	"OnlyZen"	2	193	41	2
+1		2	0	0		"UnderShop"	"All4Zen"	2	204	10	2
+2		1	0	0		"BlackMart"	"Cheap"		2	230	35	2
+end
+//BotPet Items
+//Slot:
+//0 = Weapon
+//1 = Shield
+//2 = Helm
+//3 = Armor
+//4 = Pants
+//5 = Gloves
+//6 = Boots
+//7 = Wings
+//8 = Pet
+//BotIndex	Slot	Type	Index	Level	Opt
+2
+0		0	5	3	7	1
+0		1	6	4	7	1
+//0		2	7	4	7	1
+0		3	8	4	7	1
+0		4	9	4	7	1
+0		5	10	4	7	1
+0		6	11	4	7	1
+0		7	12	1	0	0
+0		8	13	0	0	0
+
+
+1		0	5	3	8	1
+1		3	8	30	8	1
+1		4	9	30	8	1
+1		5	10	30	8	1
+1		6	11	30	8	1
+1		8	13	0	0	0
+
+
+2		0	5	3	8	1
+2		3	8	30	8	1
+2		4	9	30	8	1
+2		5	10	30	8	1
+2		6	11	30	8	1
+2		8	13	0	0	0
+end
+
+//BotPet Items
+3
+//BotIndex	Value	ItemType	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	Sock1	Sock2	Sock3	Sock4	Sock5
+0		18	14		13		0	0	0	0	0	0	0	0	0	0	0	0
+0		180	12		15		0	0	0	0	0	0	0	0	0	0	0	0
+0		280	5		7		0	0	0	0	0	2	0	0	0	0	0	0
+0		2801	0		26		0	0	0	0	0	2	0	1	1	2	0	0
+0		1	14		53		0	0	0	0	0	0	0	0	0	0	0	0
+0		10	13		46		0	0	0	0	10	0	0	0	0	0	0	0
+0		10	13		47		0	0	0	0	10	0	0	0	0	0	0	0
+1		280	5		9		0	0	0	0	0	2	0	0	0	0	0	0
+2		27	5		4		0	0	0	0	0	2	0	0	0	0	0	0
+end

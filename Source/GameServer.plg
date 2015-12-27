@@ -1,0 +1,558 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GameServer - Win32 DebugRelease--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x280a /fo"GameServer___Win32_DebugRelease/GameServer.res" /d "_DEBUG" /d "_AFXDLL" "D:\Development\Sources\1.00.18 GS\Source\GameServer.rc"" 
+Creating temporary file "C:\DOCUME~1\Kudo\LOCALS~1\Temp\RSPDF.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FAcs /Fa"GameServer___Win32_DebugRelease/" /FR"GameServer___Win32_DebugRelease/" /Fp"GameServer___Win32_DebugRelease/GameServer.pch" /Yu"stdafx.h" /Fo"GameServer___Win32_DebugRelease/" /Fd"GameServer___Win32_DebugRelease/" /FD /c 
+"D:\Development\Sources\1.00.18 GS\Source\AcceptIp.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\AttackEvent.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\BattleGround.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\BattleSoccer.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\BattleSoccerManager.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\BloodCastle.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CallStackTrace.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CannonTower.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CashItemPeriodSystem.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CashLotterySystem.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CashShop.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CastleCrown.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CastleCrownSwitch.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CastleDeepEvent.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CastleSiege.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CastleSiegeSync.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CCastleEventItemList.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ChaosBox.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ChaosCastle.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ChaosCastleSetItemDrop.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ChinaHackUserKick.cpp"
+"D:\Development\Sources\1.00.18 GS\common\classdef.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CLoginCount.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ClosePlayer.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ComboAttack.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ConMember.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\Crywolf.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CrywolfAltar.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CrywolfDarkElf.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CrywolfMonster.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CrywolfStateTimeInfo.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CrywolfStatue.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CrywolfSync.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CrywolfTanker.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CrywolfUtil.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\CWhatsUpDummyServer.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\DarkSpirit.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\DbSave.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\DBSockMng.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\DevilSquare.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\DevilSquareGround.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\DirPath.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\DragonEvent.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\DSProtocol.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\EDSProtocol.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\EledoradoEvent.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\Event.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\EventManagement.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\GameEvent.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\GameMain.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\GameServer.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\GameServerAuth.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\Gate.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\giocp.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\GMMng.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\gObjMonster.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\Guardian.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\GuardianStatue.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\GuildClass.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\IpCache.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ItemAddOption.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ItemBag.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ItemBagEx.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ItemSystemFor380.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\JewelMixSystem.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\JewelOfHarmonySystem.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KalimaGate.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\Kanturu.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KanturuBattleOfMaya.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KanturuBattleOfNightmare.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KanturuBattleStanby.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KanturuBattleUserMng.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KanturuEntranceNPC.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KanturuMaya.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KanturuMonsterMng.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KanturuNightmare.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KanturuStateInfo.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KanturuTowerOfRefinement.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\KanturuUtil.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\LargeRand.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\LifeStone.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\LogProc.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\LogToFile.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MagicDamage.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MagicInf.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MapClass.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MapItem.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MapServerManager.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\Mercenary.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MonsterAttr.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MonsterHerd.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MonsterItemMng.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MonsterSetBase.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MoveCheck.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MoveCommand.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MultiAttackHackCheck.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\MultiCheckSum.cpp"
+"D:\Development\Sources\1.00.18 GS\common\MyWinsockBase.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\NpcTalk.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\NSerialCheck.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ObjAttack.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ObjBaseAttack.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ObjCalCharacter.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ObjUseSkill.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\PacketCheckSum.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\PartyClass.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\protocol.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\QuestInfo.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\RingAttackEvent.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\SendHackLog.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\SetItemMacro.cpp"
+"D:\Development\Sources\1.00.18 GS\common\SetItemOption.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\Shop.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\SkillAdditionInfo.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\SkillDelay.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\SkillHitBox.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\SProtocol.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\StatMng.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TDurMagicKeyChecker.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterAI.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterAIAgro.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterAIAutomata.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterAIElement.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterAIGroup.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterAIGroupMember.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterAIMovePath.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterAIRule.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterAIRuleInfo.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterAIUnit.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterAIUtil.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterSkillElement.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterSkillElementInfo.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterSkillManager.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TMonsterSkillUnit.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TNotice.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TRandomPoolMgr.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TServerAlertManager.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TServerInfoDisplayer.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TStatistics.cpp"
+"D:\Development\Sources\1.00.18 GS\common\TSync.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TUnion.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\TUnionInfo.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\user.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\ViewportGuild.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\Weapon.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\WhisperCash.cpp"
+"D:\Development\Sources\1.00.18 GS\common\winutil.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\wsGameServer.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\wsJoinServerCli.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\wsShopServerCli.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\WTEventItemList.cpp"
+"D:\Development\Sources\1.00.18 GS\common\WzMemScript.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\WzMultiCastSock.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\WzQueue.cpp"
+"D:\Development\Sources\1.00.18 GS\common\WZScriptEncode.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\WzUdp.cpp"
+"D:\Development\Sources\1.00.18 GS\common\zzzitem.cpp"
+"D:\Development\Sources\1.00.18 GS\Source\zzzmathlib.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Kudo\LOCALS~1\Temp\RSPDF.tmp" 
+Creating temporary file "C:\DOCUME~1\Kudo\LOCALS~1\Temp\RSPE0.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FAcs /Fa"GameServer___Win32_DebugRelease/" /FR"GameServer___Win32_DebugRelease/" /Fp"GameServer___Win32_DebugRelease/GameServer.pch" /Yc"stdafx.h" /Fo"GameServer___Win32_DebugRelease/" /Fd"GameServer___Win32_DebugRelease/" /FD /c 
+"D:\Development\Sources\1.00.18 GS\Source\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Kudo\LOCALS~1\Temp\RSPE0.tmp" 
+Creating temporary file "C:\DOCUME~1\Kudo\LOCALS~1\Temp\RSPE1.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"GameServer___Win32_DebugRelease/GameServer.pdb" /map:"GameServer___Win32_DebugRelease/GameServer.map" /debug /machine:I386 /out:"D:\MuServer\GameServer99.60\GameServer.exe" /pdbtype:sept 
+".\GameServer___Win32_DebugRelease\AcceptIp.obj"
+".\GameServer___Win32_DebugRelease\AttackEvent.obj"
+".\GameServer___Win32_DebugRelease\BattleGround.obj"
+".\GameServer___Win32_DebugRelease\BattleSoccer.obj"
+".\GameServer___Win32_DebugRelease\BattleSoccerManager.obj"
+".\GameServer___Win32_DebugRelease\BloodCastle.obj"
+".\GameServer___Win32_DebugRelease\CallStackTrace.obj"
+".\GameServer___Win32_DebugRelease\CannonTower.obj"
+".\GameServer___Win32_DebugRelease\CashItemPeriodSystem.obj"
+".\GameServer___Win32_DebugRelease\CashLotterySystem.obj"
+".\GameServer___Win32_DebugRelease\CashShop.obj"
+".\GameServer___Win32_DebugRelease\CastleCrown.obj"
+".\GameServer___Win32_DebugRelease\CastleCrownSwitch.obj"
+".\GameServer___Win32_DebugRelease\CastleDeepEvent.obj"
+".\GameServer___Win32_DebugRelease\CastleSiege.obj"
+".\GameServer___Win32_DebugRelease\CastleSiegeSync.obj"
+".\GameServer___Win32_DebugRelease\CCastleEventItemList.obj"
+".\GameServer___Win32_DebugRelease\ChaosBox.obj"
+".\GameServer___Win32_DebugRelease\ChaosCastle.obj"
+".\GameServer___Win32_DebugRelease\ChaosCastleSetItemDrop.obj"
+".\GameServer___Win32_DebugRelease\ChinaHackUserKick.obj"
+".\GameServer___Win32_DebugRelease\classdef.obj"
+".\GameServer___Win32_DebugRelease\CLoginCount.obj"
+".\GameServer___Win32_DebugRelease\ClosePlayer.obj"
+".\GameServer___Win32_DebugRelease\ComboAttack.obj"
+".\GameServer___Win32_DebugRelease\ConMember.obj"
+".\GameServer___Win32_DebugRelease\Crywolf.obj"
+".\GameServer___Win32_DebugRelease\CrywolfAltar.obj"
+".\GameServer___Win32_DebugRelease\CrywolfDarkElf.obj"
+".\GameServer___Win32_DebugRelease\CrywolfMonster.obj"
+".\GameServer___Win32_DebugRelease\CrywolfStateTimeInfo.obj"
+".\GameServer___Win32_DebugRelease\CrywolfStatue.obj"
+".\GameServer___Win32_DebugRelease\CrywolfSync.obj"
+".\GameServer___Win32_DebugRelease\CrywolfTanker.obj"
+".\GameServer___Win32_DebugRelease\CrywolfUtil.obj"
+".\GameServer___Win32_DebugRelease\CWhatsUpDummyServer.obj"
+".\GameServer___Win32_DebugRelease\DarkSpirit.obj"
+".\GameServer___Win32_DebugRelease\DbSave.obj"
+".\GameServer___Win32_DebugRelease\DBSockMng.obj"
+".\GameServer___Win32_DebugRelease\DevilSquare.obj"
+".\GameServer___Win32_DebugRelease\DevilSquareGround.obj"
+".\GameServer___Win32_DebugRelease\DirPath.obj"
+".\GameServer___Win32_DebugRelease\DragonEvent.obj"
+".\GameServer___Win32_DebugRelease\DSProtocol.obj"
+".\GameServer___Win32_DebugRelease\EDSProtocol.obj"
+".\GameServer___Win32_DebugRelease\EledoradoEvent.obj"
+".\GameServer___Win32_DebugRelease\Event.obj"
+".\GameServer___Win32_DebugRelease\EventManagement.obj"
+".\GameServer___Win32_DebugRelease\GameEvent.obj"
+".\GameServer___Win32_DebugRelease\GameMain.obj"
+".\GameServer___Win32_DebugRelease\GameServer.obj"
+".\GameServer___Win32_DebugRelease\GameServerAuth.obj"
+".\GameServer___Win32_DebugRelease\Gate.obj"
+".\GameServer___Win32_DebugRelease\giocp.obj"
+".\GameServer___Win32_DebugRelease\GMMng.obj"
+".\GameServer___Win32_DebugRelease\gObjMonster.obj"
+".\GameServer___Win32_DebugRelease\Guardian.obj"
+".\GameServer___Win32_DebugRelease\GuardianStatue.obj"
+".\GameServer___Win32_DebugRelease\GuildClass.obj"
+".\GameServer___Win32_DebugRelease\IpCache.obj"
+".\GameServer___Win32_DebugRelease\ItemAddOption.obj"
+".\GameServer___Win32_DebugRelease\ItemBag.obj"
+".\GameServer___Win32_DebugRelease\ItemBagEx.obj"
+".\GameServer___Win32_DebugRelease\ItemSystemFor380.obj"
+".\GameServer___Win32_DebugRelease\JewelMixSystem.obj"
+".\GameServer___Win32_DebugRelease\JewelOfHarmonySystem.obj"
+".\GameServer___Win32_DebugRelease\KalimaGate.obj"
+".\GameServer___Win32_DebugRelease\Kanturu.obj"
+".\GameServer___Win32_DebugRelease\KanturuBattleOfMaya.obj"
+".\GameServer___Win32_DebugRelease\KanturuBattleOfNightmare.obj"
+".\GameServer___Win32_DebugRelease\KanturuBattleStanby.obj"
+".\GameServer___Win32_DebugRelease\KanturuBattleUserMng.obj"
+".\GameServer___Win32_DebugRelease\KanturuEntranceNPC.obj"
+".\GameServer___Win32_DebugRelease\KanturuMaya.obj"
+".\GameServer___Win32_DebugRelease\KanturuMonsterMng.obj"
+".\GameServer___Win32_DebugRelease\KanturuNightmare.obj"
+".\GameServer___Win32_DebugRelease\KanturuStateInfo.obj"
+".\GameServer___Win32_DebugRelease\KanturuTowerOfRefinement.obj"
+".\GameServer___Win32_DebugRelease\KanturuUtil.obj"
+".\GameServer___Win32_DebugRelease\LargeRand.obj"
+".\GameServer___Win32_DebugRelease\LifeStone.obj"
+".\GameServer___Win32_DebugRelease\LogProc.obj"
+".\GameServer___Win32_DebugRelease\LogToFile.obj"
+".\GameServer___Win32_DebugRelease\MagicDamage.obj"
+".\GameServer___Win32_DebugRelease\MagicInf.obj"
+".\GameServer___Win32_DebugRelease\MapClass.obj"
+".\GameServer___Win32_DebugRelease\MapItem.obj"
+".\GameServer___Win32_DebugRelease\MapServerManager.obj"
+".\GameServer___Win32_DebugRelease\Mercenary.obj"
+".\GameServer___Win32_DebugRelease\MonsterAttr.obj"
+".\GameServer___Win32_DebugRelease\MonsterHerd.obj"
+".\GameServer___Win32_DebugRelease\MonsterItemMng.obj"
+".\GameServer___Win32_DebugRelease\MonsterSetBase.obj"
+".\GameServer___Win32_DebugRelease\MoveCheck.obj"
+".\GameServer___Win32_DebugRelease\MoveCommand.obj"
+".\GameServer___Win32_DebugRelease\MultiAttackHackCheck.obj"
+".\GameServer___Win32_DebugRelease\MultiCheckSum.obj"
+".\GameServer___Win32_DebugRelease\MyWinsockBase.obj"
+".\GameServer___Win32_DebugRelease\NpcTalk.obj"
+".\GameServer___Win32_DebugRelease\NSerialCheck.obj"
+".\GameServer___Win32_DebugRelease\ObjAttack.obj"
+".\GameServer___Win32_DebugRelease\ObjBaseAttack.obj"
+".\GameServer___Win32_DebugRelease\ObjCalCharacter.obj"
+".\GameServer___Win32_DebugRelease\ObjUseSkill.obj"
+".\GameServer___Win32_DebugRelease\PacketCheckSum.obj"
+".\GameServer___Win32_DebugRelease\PartyClass.obj"
+".\GameServer___Win32_DebugRelease\protocol.obj"
+".\GameServer___Win32_DebugRelease\QuestInfo.obj"
+".\GameServer___Win32_DebugRelease\RingAttackEvent.obj"
+".\GameServer___Win32_DebugRelease\SendHackLog.obj"
+".\GameServer___Win32_DebugRelease\SetItemMacro.obj"
+".\GameServer___Win32_DebugRelease\SetItemOption.obj"
+".\GameServer___Win32_DebugRelease\Shop.obj"
+".\GameServer___Win32_DebugRelease\SkillAdditionInfo.obj"
+".\GameServer___Win32_DebugRelease\SkillDelay.obj"
+".\GameServer___Win32_DebugRelease\SkillHitBox.obj"
+".\GameServer___Win32_DebugRelease\SProtocol.obj"
+".\GameServer___Win32_DebugRelease\StatMng.obj"
+".\GameServer___Win32_DebugRelease\StdAfx.obj"
+".\GameServer___Win32_DebugRelease\TDurMagicKeyChecker.obj"
+".\GameServer___Win32_DebugRelease\TMonsterAI.obj"
+".\GameServer___Win32_DebugRelease\TMonsterAIAgro.obj"
+".\GameServer___Win32_DebugRelease\TMonsterAIAutomata.obj"
+".\GameServer___Win32_DebugRelease\TMonsterAIElement.obj"
+".\GameServer___Win32_DebugRelease\TMonsterAIGroup.obj"
+".\GameServer___Win32_DebugRelease\TMonsterAIGroupMember.obj"
+".\GameServer___Win32_DebugRelease\TMonsterAIMovePath.obj"
+".\GameServer___Win32_DebugRelease\TMonsterAIRule.obj"
+".\GameServer___Win32_DebugRelease\TMonsterAIRuleInfo.obj"
+".\GameServer___Win32_DebugRelease\TMonsterAIUnit.obj"
+".\GameServer___Win32_DebugRelease\TMonsterAIUtil.obj"
+".\GameServer___Win32_DebugRelease\TMonsterSkillElement.obj"
+".\GameServer___Win32_DebugRelease\TMonsterSkillElementInfo.obj"
+".\GameServer___Win32_DebugRelease\TMonsterSkillManager.obj"
+".\GameServer___Win32_DebugRelease\TMonsterSkillUnit.obj"
+".\GameServer___Win32_DebugRelease\TNotice.obj"
+".\GameServer___Win32_DebugRelease\TRandomPoolMgr.obj"
+".\GameServer___Win32_DebugRelease\TServerAlertManager.obj"
+".\GameServer___Win32_DebugRelease\TServerInfoDisplayer.obj"
+".\GameServer___Win32_DebugRelease\TStatistics.obj"
+".\GameServer___Win32_DebugRelease\TSync.obj"
+".\GameServer___Win32_DebugRelease\TUnion.obj"
+".\GameServer___Win32_DebugRelease\TUnionInfo.obj"
+".\GameServer___Win32_DebugRelease\user.obj"
+".\GameServer___Win32_DebugRelease\ViewportGuild.obj"
+".\GameServer___Win32_DebugRelease\Weapon.obj"
+".\GameServer___Win32_DebugRelease\WhisperCash.obj"
+".\GameServer___Win32_DebugRelease\winutil.obj"
+".\GameServer___Win32_DebugRelease\wsGameServer.obj"
+".\GameServer___Win32_DebugRelease\wsJoinServerCli.obj"
+".\GameServer___Win32_DebugRelease\wsShopServerCli.obj"
+".\GameServer___Win32_DebugRelease\WTEventItemList.obj"
+".\GameServer___Win32_DebugRelease\WzMemScript.obj"
+".\GameServer___Win32_DebugRelease\WzMultiCastSock.obj"
+".\GameServer___Win32_DebugRelease\WzQueue.obj"
+".\GameServer___Win32_DebugRelease\WZScriptEncode.obj"
+".\GameServer___Win32_DebugRelease\WzUdp.obj"
+".\GameServer___Win32_DebugRelease\zzzitem.obj"
+".\GameServer___Win32_DebugRelease\zzzmathlib.obj"
+".\GameServer___Win32_DebugRelease\GameServer.res"
+".\MuMsg\Release\MuMsg.lib"
+"..\SimpleModulus\Release\SimpleModulus.lib"
+"..\GGSvr\Release\GGSvr.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\Kudo\LOCALS~1\Temp\RSPE1.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AcceptIp.cpp
+AttackEvent.cpp
+BattleGround.cpp
+BattleSoccer.cpp
+BattleSoccerManager.cpp
+BloodCastle.cpp
+CallStackTrace.cpp
+CannonTower.cpp
+CashItemPeriodSystem.cpp
+CashLotterySystem.cpp
+CashShop.cpp
+CastleCrown.cpp
+CastleCrownSwitch.cpp
+CastleDeepEvent.cpp
+CastleSiege.cpp
+CastleSiegeSync.cpp
+CCastleEventItemList.cpp
+ChaosBox.cpp
+ChaosCastle.cpp
+ChaosCastleSetItemDrop.cpp
+Generating Code...
+Compiling...
+ChinaHackUserKick.cpp
+classdef.cpp
+D:\Development\Sources\1.00.18 GS\common\classdef.cpp(123) : warning C4805: '==' : unsafe mix of type 'int' and type 'const bool' in operation
+CLoginCount.cpp
+ClosePlayer.cpp
+ComboAttack.cpp
+ConMember.cpp
+Crywolf.cpp
+CrywolfAltar.cpp
+CrywolfDarkElf.cpp
+CrywolfMonster.cpp
+CrywolfStateTimeInfo.cpp
+CrywolfStatue.cpp
+CrywolfSync.cpp
+CrywolfTanker.cpp
+CrywolfUtil.cpp
+CWhatsUpDummyServer.cpp
+DarkSpirit.cpp
+DbSave.cpp
+DBSockMng.cpp
+DevilSquare.cpp
+Generating Code...
+Compiling...
+DevilSquareGround.cpp
+DirPath.cpp
+DragonEvent.cpp
+DSProtocol.cpp
+EDSProtocol.cpp
+EledoradoEvent.cpp
+Event.cpp
+EventManagement.cpp
+GameEvent.cpp
+GameMain.cpp
+GameServer.cpp
+GameServerAuth.cpp
+Gate.cpp
+giocp.cpp
+GMMng.cpp
+gObjMonster.cpp
+Guardian.cpp
+Delete this unuseful Code with ADDON gObjMonsterAttack
+Apply this to create SkyLandShielkds -> gObjSkylandBossSheildAttack 
+gObjMonsterDieRewardItems Can be activate with the gObjMonsterItemDropLoadScript
+GuardianStatue.cpp
+GuildClass.cpp
+IpCache.cpp
+Generating Code...
+Compiling...
+ItemAddOption.cpp
+ItemBag.cpp
+ItemBagEx.cpp
+ItemSystemFor380.cpp
+JewelMixSystem.cpp
+Recode all Load380ItemOptionInfo
+Put fclose CItemSystemFor380::Load380ItemOptionInfo
+JewelOfHarmonySystem.cpp
+KalimaGate.cpp
+Put fclose here CJewelOfHarmony::LoadScript
+Here must be somthing to put the Name [CJewelOfHarmonySystem::LoadScriptOfSmelt]
+Put fclose here CJewelOfHarmony::LoadScriptSmelt
+Add Here code to make an Artificial JOH Item
+Add the LAcking Effects CJewelOfHarmonySystem::_CalcItemEffectValue
+Kanturu.cpp
+KanturuBattleOfMaya.cpp
+KanturuBattleOfNightmare.cpp
+KanturuBattleStanby.cpp
+KanturuBattleUserMng.cpp
+KanturuEntranceNPC.cpp
+KanturuMaya.cpp
+KanturuMonsterMng.cpp
+KanturuNightmare.cpp
+KanturuStateInfo.cpp
+KanturuTowerOfRefinement.cpp
+KanturuUtil.cpp
+LargeRand.cpp
+Generating Code...
+Compiling...
+LifeStone.cpp
+LogProc.cpp
+LogToFile.cpp
+MagicDamage.cpp
+MagicInf.cpp
+MapClass.cpp
+MapItem.cpp
+MapServerManager.cpp
+Mercenary.cpp
+MonsterAttr.cpp
+MonsterHerd.cpp
+MonsterItemMng.cpp
+MonsterSetBase.cpp
+MoveCheck.cpp
+MoveCommand.cpp
+MultiAttackHackCheck.cpp
+MultiCheckSum.cpp
+MyWinsockBase.cpp
+NpcTalk.cpp
+NSerialCheck.cpp
+Generating Code...
+Compiling...
+ObjAttack.cpp
+ObjBaseAttack.cpp
+ObjCalCharacter.cpp
+ObjUseSkill.cpp
+PacketCheckSum.cpp
+PartyClass.cpp
+protocol.cpp
+QuestInfo.cpp
+RingAttackEvent.cpp
+SendHackLog.cpp
+SetItemMacro.cpp
+SetItemOption.cpp
+Shop.cpp
+SkillAdditionInfo.cpp
+SkillDelay.cpp
+SkillHitBox.cpp
+SProtocol.cpp
+StatMng.cpp
+TDurMagicKeyChecker.cpp
+TMonsterAI.cpp
+Generating Code...
+Compiling...
+TMonsterAIAgro.cpp
+TMonsterAIAutomata.cpp
+TMonsterAIElement.cpp
+TMonsterAIGroup.cpp
+TMonsterAIGroupMember.cpp
+TMonsterAIMovePath.cpp
+TMonsterAIRule.cpp
+TMonsterAIRuleInfo.cpp
+TMonsterAIUnit.cpp
+TMonsterAIUtil.cpp
+TMonsterSkillElement.cpp
+TMonsterSkillElementInfo.cpp
+TMonsterSkillManager.cpp
+TMonsterSkillUnit.cpp
+TNotice.cpp
+TRandomPoolMgr.cpp
+TServerAlertManager.cpp
+TServerInfoDisplayer.cpp
+TStatistics.cpp
+TSync.cpp
+Generating Code...
+Compiling...
+TUnion.cpp
+TUnionInfo.cpp
+user.cpp
+D:\Development\Sources\1.00.18 GS\Source\user.cpp(11956) : warning C4305: 'argument' : truncation from 'enum PROTO_CLASS_CODES' to 'char'
+D:\Development\Sources\1.00.18 GS\Source\user.cpp(11956) : warning C4309: 'argument' : truncation of constant value
+D:\Development\Sources\1.00.18 GS\Source\user.cpp(11960) : warning C4305: 'argument' : truncation from 'enum PROTO_CLASS_CODES' to 'char'
+D:\Development\Sources\1.00.18 GS\Source\user.cpp(11960) : warning C4309: 'argument' : truncation of constant value
+D:\Development\Sources\1.00.18 GS\Source\user.cpp(11964) : warning C4305: 'argument' : truncation from 'enum PROTO_CLASS_CODES' to 'char'
+D:\Development\Sources\1.00.18 GS\Source\user.cpp(11964) : warning C4309: 'argument' : truncation of constant value
+D:\Development\Sources\1.00.18 GS\Source\user.cpp(11968) : warning C4305: 'argument' : truncation from 'enum PROTO_CLASS_CODES' to 'char'
+D:\Development\Sources\1.00.18 GS\Source\user.cpp(11968) : warning C4309: 'argument' : truncation of constant value
+D:\Development\Sources\1.00.18 GS\Source\user.cpp(11971) : warning C4305: 'argument' : truncation from 'enum PROTO_CLASS_CODES' to 'char'
+D:\Development\Sources\1.00.18 GS\Source\user.cpp(11971) : warning C4309: 'argument' : truncation of constant value
+ViewportGuild.cpp
+Weapon.cpp
+WhisperCash.cpp
+winutil.cpp
+wsGameServer.cpp
+wsJoinServerCli.cpp
+wsShopServerCli.cpp
+WTEventItemList.cpp
+WzMemScript.cpp
+WzMultiCastSock.cpp
+WzQueue.cpp
+WZScriptEncode.cpp
+WzUdp.cpp
+zzzitem.cpp
+D:\Development\Sources\1.00.18 GS\common\zzzitem.cpp(320) : warning C4805: '==' : unsafe mix of type 'int' and type 'const bool' in operation
+D:\Development\Sources\1.00.18 GS\common\zzzitem.cpp(1632) : warning C4805: '==' : unsafe mix of type 'int' and type 'const bool' in operation
+zzzmathlib.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4098: defaultlib "LIBCMT" conflicts with use of other libs; use /NODEFAULTLIB:library
+D:\MuServer\GameServer99.60\GameServer.exe : warning LNK4084: total image size 341934080 exceeds max (268435456); image may not run
+
+
+
+<h3>Results</h3>
+GameServer.exe - 0 error(s), 15 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,1 @@
+CREATE TABLE [dbo].[OfficialHelper]([Name] [varchar](10) NOT NULL PRIMARY KEY NONCLUSTERED,[Data] [varbinary](257) NULL)

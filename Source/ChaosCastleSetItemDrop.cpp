@@ -1,0 +1,21 @@
+// ChaosCastleSetItemDrop.cpp: implementation of the CChaosCastleSetItemDrop class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "ChaosCastleSetItemDrop.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+/*CChaosCastleSetItemDrop::CChaosCastleSetItemDrop()
+{
+
+}
+
+CChaosCastleSetItemDrop::~CChaosCastleSetItemDrop()
+{
+
+}
+*/

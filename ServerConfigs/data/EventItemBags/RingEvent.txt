@@ -1,0 +1,72 @@
+//============================================================================
+//Drop Settings: Warrior Rings Drops
+//www.titanstech.com
+//============================================================================
+//	type,	index,	level,	skill,	exc,	option	name
+//============================================================================
+
+	0	3	9	1	1	1	//Excellent Katache
+	0	5	9	1	1	1	//Excellent Blade
+	0	9	9	1	1	1	//Excellent Salamander
+	0	10	9	1	1	1	//Excellent Light Saber
+	0	13	9	1	1	1	//Excellent Double Blade
+	3	8	9	1	1	1	//Excellent Great Scythe
+	4	4	9	1	1	1	//Excellent Tiger Bow
+	4	9	9	1	1	1	//Excellent Gold Crossbow
+	4	11	9	1	1	1	//Excellent Light Crossbow
+	4	5	9	1	1	1	//Excellent Light Bow
+	4	12	9	1	1	1	//Excellent Serpent Crossbow
+	5	0	9	1	1	1	//Excellent Skull Staff
+	5	2	9	1	1	1	//Excellent Serpent Staff
+	5	3	9	1	1	1	//Excellent Lightning Staff
+	5	4	9	1	1	1	//Excellent Gorgon Staff
+	7	0	9	1	1	1	//Excellent Bronze Helm
+	7	2	9	1	1	1	//Excellent Pad Helm
+	7	4	9	1	1	1	//Excellent Bone Helm
+	7	5	9	1	1	1	//Excellent Leather Helm
+	7	6	9	1	1	1	//Excellent Scale Helm
+	7	7	9	1	1	1	//Excellent Sphinx Helm
+	7	8	9	1	1	1	//Excellent Brass Helm
+	7	10	9	1	1	1	//Excellent Vine Helm
+	7	11	9	1	1	1	//Excellent Silk Helm
+	7	12	9	1	1	1	//Excellent Wind Helm
+	8	0	9	1	1	1	//Excellent Bronze Armor
+	8	2	9	1	1	1	//Excellent Pad Armor
+	8	4	9	1	1	1	//Excellent Bone Armor
+	8	5	9	1	1	1	//Excellent Leather Armor
+	8	6	9	1	1	1	//Excellent Scale Armor
+	8	7	9	1	1	1	//Excellent Sphinx Armor
+	8	8	9	1	1	1	//Excellent Brass Armor
+	8	10	9	1	1	1	//Excellent Vine Armor
+	8	11	9	1	1	1	//Excellent Silk Armor
+	8	12	9	1	1	1	//Excellent Wind Armor
+	9	0	9	1	1	1	//Excellent Bronze Pants
+	9	2	9	1	1	1	//Excellent Pad Pants
+	9	4	9	1	1	1	//Excellent Bone Pants
+	9	5	9	1	1	1	//Excellent Leather Pants
+	9	6	9	1	1	1	//Excellent Scale Pants
+	9	7	9	1	1	1	//Excellent Sphinx Pants
+	9	8	9	1	1	1	//Excellent Brass Pants
+	9	10	9	1	1	1	//Excellent Vine Pants
+	9	11	9	1	1	1	//Excellent Silk Pants
+	9	12	9	1	1	1	//Excellent Wind Pants
+	10	0	9	1	1	1	//Excellent Bronze Gloves
+	10	2	9	1	1	1	//Excellent Pad Gloves
+	10	4	9	1	1	1	//Excellent Bone Gloves
+	10	5	9	1	1	1	//Excellent Leather Gloves
+	10	6	9	1	1	1	//Excellent Scale Gloves
+	10	7	9	1	1	1	//Excellent Sphinx Gloves
+	10	8	9	1	1	1	//Excellent Brass Gloves
+	10	10	9	1	1	1	//Excellent Vine Gloves
+	10	11	9	1	1	1	//Excellent Silk Gloves
+	10	12	9	1	1	1	//Excellent Wind Gloves
+	11	0	9	1	1	1	//Excellent Bronze Boots
+	11	2	9	1	1	1	//Excellent Pad Boots
+	11	4	9	1	1	1	//Excellent Bone Boots
+	11	5	9	1	1	1	//Excellent Leather Boots
+	11	6	9	1	1	1	//Excellent Scale Boots
+	11	7	9	1	1	1	//Excellent Sphinx Boots
+	11	8	9	1	1	1	//Excellent Brass Boots
+	11	10	9	1	1	1	//Excellent Vine Boots
+	11	11	9	1	1	1	//Excellent Silk Boots
+	11	12	9	1	1	1	//Excellent Wind Boots

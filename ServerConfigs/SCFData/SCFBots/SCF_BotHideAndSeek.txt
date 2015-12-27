@@ -1,0 +1,38 @@
+//Bot Data
+//	Class	Name
+1
+	50	"BotHider"
+end
+
+//BotPet Items
+//Slot:
+//0 = Weapon
+//1 = Shield
+//2 = Helm
+//3 = Armor
+//4 = Pants
+//5 = Gloves
+//6 = Boots
+//7 = Wings
+//8 = Pet
+
+//	Slot	Type	Index	Level	Opt
+2
+	3	8	7	9	1
+	4	9	7	9	1
+	5	10	7	9	1
+	6	11	7	9	1
+	7	12	134	0	0
+end
+
+//Bot Position Info
+//	Map	X1	Y1	X2	Y2	Message
+3
+	2	50	50	200	200	"Im in Devias!"
+end
+
+//Bot Rewards
+4
+//	ItemType	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc
+	14		13		0	0	0	0	0	0	0
+end

@@ -1,0 +1,1 @@
+CREATE TABLE [dbo].[SCFS5Quest]([AccountID] [varchar](10) NOT NULL,[Name] [nvarchar](10) NOT NULL PRIMARY KEY NONCLUSTERED,[SCFS5Quest] [varbinary] (5600) NOT NULL DEFAULT (0),[Type] [smallint] NOT NULL DEFAULT (0))

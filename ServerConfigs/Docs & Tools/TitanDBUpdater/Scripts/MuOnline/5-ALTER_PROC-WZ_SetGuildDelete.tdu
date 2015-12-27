@@ -1,0 +1,29 @@
+ALTER PROCEDURE  [dbo].[WZ_SetGuildDelete]  
+	@GuildName		varchar(10) 
+AS 
+BEGIN 
+ SET NOCOUNT ON 
+ Declare		@Result		int 
+ Set @Result	= 1  
+ Begin Transaction 
+	 DELETE GuildMember WHERE G_Name = @GuildName 
+ 	 If @@Error <> 0  
+ 	 begin 
+	 	Set @Result	= 0 
+		goto PROBLEM 
+	 end 
+	 DELETE GuildWarehouse WHERE G_Name = @GuildName 
+	 DELETE Guild WHERE G_Name = @GuildName 
+ 	 If @@Error <> 0  
+ 		begin 
+ 			Set @Result	= 0 
+ 			goto PROBLEM 
+ 		end 
+ 	 else goto SUCESS 
+ PROBLEM: 
+ 	 rollback transaction 
+ SUCESS: 
+ 	 commit transaction 
+ SELECT @Result  As Result 
+ SET NOCOUNT OFF 
+End 

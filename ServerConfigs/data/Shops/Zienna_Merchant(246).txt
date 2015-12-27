@@ -1,0 +1,44 @@
+//==============================================================================
+//www.titanstech.com
+//------------------------------------------------------------------------------
+//Revised 11 Aug, 2005			
+//==============================================================================
+//shop8 - Davias Weapon Shop
+//
+
+//Iron Plated(DK)
+7 9 0 0 0 1 0 0  //Iron helm
+7 12 0 0 0 1 0 0 //Wind helm
+6 5 0 0 1 0 2 0  //Dragonshield
+6 7 0 0 0 1 1 0  //Spikeshield
+
+
+8 9 0 0 0 1 0 0  //Iron armor
+8 12 0 0 0 1 0 0 //Wind armor
+6 3 0 0 0 1 0 0  //Fairyshield
+6 11 0 0 0 1 0 0 //Serpentshield
+
+
+9 9 0 0 0 1 0 0  //Iron pants
+9 12 0 0 0 1 0 0 //Wind pants
+3 7 0 0 1 1 1 0  //Bardiche
+3 0 0 0 1 0 0 0  //Lightspear
+
+10 9 0 0 0 1 0 0 //Iron gloves
+10 12 0 0 0 1 0 0 //Wind gloves
+
+11 9 0 0 0 1 0 0 //Iron boots
+11 12 0 0 0 1 0 0 //Wind boots
+
+//Weapon
+0 11 0 0 1 0 0 0 //Legendary Sword
+0 13 0 0 1 0 0 0 //Doubleblade
+0 14 0 0 0 0 1 0 //Lightningsword
+3  4 0 0 0 0 0 0 //Serpentspear
+
+4  4 0 0 1 0 0 0 //Tigerbow
+4  5 0 0 0 1 1 0 //Lightbow
+4 11 0 0 1 0 0 0 //Light Crossbow
+
+end
+

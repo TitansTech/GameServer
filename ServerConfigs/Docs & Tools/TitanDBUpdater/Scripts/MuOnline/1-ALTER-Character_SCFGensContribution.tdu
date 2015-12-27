@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.Character add SCFGensContribution int default(0) NOT NULL

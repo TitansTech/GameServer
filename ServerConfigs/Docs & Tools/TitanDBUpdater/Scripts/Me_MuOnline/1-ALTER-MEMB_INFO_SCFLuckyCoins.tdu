@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.MEMB_INFO add SCFLuckyCoins Int default(0) NOT NULL

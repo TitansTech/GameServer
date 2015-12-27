@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GGSvr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Kudo\LOCALS~1\Temp\RSPD2.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /D "GGSVR_EXPORTS" /Fp"Release/GGSvr.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Development\Sources\1.00.18 GS\GGSvr\CSAuth2.cpp"
+"D:\Development\Sources\1.00.18 GS\GGSvr\GGSvr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Kudo\LOCALS~1\Temp\RSPD2.tmp" 
+Creating temporary file "C:\DOCUME~1\Kudo\LOCALS~1\Temp\RSPD3.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /D "GGSVR_EXPORTS" /Fp"Release/GGSvr.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Development\Sources\1.00.18 GS\GGSvr\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Kudo\LOCALS~1\Temp\RSPD3.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\GGSvr.lib"  ".\Release\CSAuth2.obj" ".\Release\GGSvr.obj" ".\Release\StdAfx.obj" "
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+CSAuth2.cpp
+GGSvr.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+GGSvr.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

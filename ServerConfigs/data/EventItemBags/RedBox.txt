@@ -1,0 +1,60 @@
+//#############################################################################################################
+//Drop Settings: Blue Event Monster Drops
+//www.titanstech.com
+//#############################################################################################################
+
+//=============================================================================================================
+//ItemDropRate	 	- Drop rate of item VS Zen [x/100]
+//ExRate		- Drop rate of excellent item [x/1000]
+//=============================================================================================================
+//	EventName		DropZen		NA	NA 	NA 	  NA 		ItemDropRate	ExRate
+//=============================================================================================================
+1	
+	"RedBox"		10000000	0	0	 0	  0		80		800
+end
+
+//=============================================================================================================
+//Type			- Item.TXT index (section) of the Box
+//Index 		- Item.TXT id of the Item
+//minLvl		- Minimal Level of the Item (+1, +2 etc...)
+//maxLvl		- Maximum Level of the Item (+1, +2 etc...)
+//Skill			- Drop Item with Skill (0 - off,1 - on)
+//Luck			- Drop Item with Luck (0 - off,1 - on)
+//maxZ28		- Maximum Z28 option (1 = +4, 2 = +8, 3 = +12, etc...)
+//maxExOpt		- Maximum number of Exc option in item
+//=============================================================================================================
+//	Type	Index	minLvl	maxLvl	Skill	Luck	maxZ28	maxExOpt		
+//=============================================================================================================
+2
+	0	17	3	5	1	1	1	0	//Dark Breaker + 3/5 + Skill + Luck + 4
+	0	18	3	5	1	1	1	0	//Thunder Blade + 3/5 + Skill + Luck + 4
+	2	12	3	5	1	1	1	0	//Great Lord Scepter + 3/5 + Skill + Luck + 4
+	4	19	3	5	1	1	1	0	//Great Reign Crossbow + 3/5 + Skill + Luck + 4
+	5	9	3	5	1	1	1	0	//Dragon Soul Staff + 3/5 + Skill + Luck + 4
+	6	13	3	5	1	1	1	0	//Dragon Shield + 3/5 + Skill + Luck + 4
+	6	16	3	5	1	1	1	0	//Elemental Shield + 3/5 + Skill + Luck + 4
+	5	6	0	0	1	1	1	1	//Staff of Resurrection + 0/0 + Skill + Luck + 4 + Excellent
+	2	4	0	0	1	1	1	1	//Crystal Morning Star + 0/0 + Skill + Luck + 4 + Excellent
+	2	9	0	0	1	1	1	1	//Master Scepter + 0/0 + Skill + Luck + 4 + Excellent
+	4	14	0	0	1	1	1	1	//Aquagold Crossbow + 0/0 + Skill + Luck + 4 + Excellent
+	2	5	0	0	1	1	1	1	//Crystal Sword + 0/0 + Skill + Luck + 4 + Excellent
+	7	1	0	0	0	1	1	1	//Dragon Helm + 0/0 + Luck + 4 + Excellent
+	7	3	0	0	0	1	1	1	//Legendary Helm + 0/0 + Luck + 4 + Excellent
+	7	14	0	0	0	1	1	1	//Guardian Helm + 0/0 + Luck + 4 + Excellent
+	8	1	0	0	0	1	1	1	//Dragon Armor + 0/0 + Luck + 4 + Excellent
+	8	3	0	0	0	1	1	1	//Legendary Armor + 0/0 + Luck + 4 + Excellent
+	8	14	0	0	0	1	1	1	//Guardian Armor + 0/0 + Luck + 4 + Excellent
+	9	1	0	0	0	1	1	1	//Dragon Pants + 0/0 + Luck + 4 + Excellent
+	9	3	0	0	0	1	1	1	//Legendary Pants + 0/0 + Luck + 4 + Excellent
+	9	14	0	0	0	1	1	1	//Guardian Pants + 0/0 + Luck + 4 + Excellent
+	10	1	0	0	0	1	1	1	//Dragon Gloves + 0/0 + Luck + 4 + Excellent
+	10	3	0	0	0	1	1	1	//Legendary Gloves + 0/0 + Luck + 4 + Excellent
+	10	14	0	0	0	1	1	1	//Guardian Gloves + 0/0 + Luck + 4 + Excellent
+	11	1	0	0	0	1	1	1	//Dragon Boots + 0/0 + Luck + 4 + Excellent
+	11	3	0	0	0	1	1	1	//Legendary Boots + 0/0 + Luck + 4 + Excellent
+	11	14	0	0	0	1	1	1	//Guardian Boots + 0/0 + Luck + 4 + Excellent
+	13	36	0	0	0	0	0	0	//Broken Horn + 0/0 + 0
+	13	18	4	6	0	0	0	0	//Cloak of Invisibility + 4/6 + 0
+	14	19	4	5	0	0	0	0	//Invito Devil Square + 4/5 + 0
+	14	28	4	6	0	0	0	0	//Gate per Kalima + 4/6 + 0
+end

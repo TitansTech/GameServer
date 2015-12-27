@@ -1,0 +1,1 @@
+CREATE TABLE [dbo].[Titan_Rank]([ID] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY CLUSTERED,[AccountID] [varchar](10) NOT NULL,[Name] [varchar](10) NOT NULL,[RankDate] [datetime] NOT NULL,[RankType] [tinyint] NOT NULL,[RankSubType] [tinyint] NOT NULL,[RankTop] [tinyint] NOT NULL)

@@ -1,0 +1,76 @@
+//==============================================================================
+//Slot Items Settings File [KOR]
+//#www.titanstech.com
+//[SCFMT TEAM]
+//------------------------------------------------------------------------------
+//Revision 14 July, 2010		
+//==============================================================================
+//	Index 	ItemID  ItemName
+
+0
+	0	26	//Flameberge
+	0	27	//Sword Bracker
+	0	28	//Imperial Sword
+
+	2	16	//Frost Mace
+	2	17	//Absolute Scepter
+
+	4	23	//Stinger Bow
+
+	5	30	//Deadly Staff
+	5	31	//Imperial Staff
+
+	6	17	//Crimson Glory
+	6	18	//Salamander Shield
+	6	19	//Frost Barrier
+	6	20	//Guardian Shield
+
+	7	45	//Titan Helm
+	7	46	//Brave Helm
+	7	49	//Seraphim Helm
+	7	50	//Faith Helm
+	7	51	//Phaewang Helm
+	7	52	//Hades Helm
+	7	53	//Queen Helm
+
+	8	45	//Titan Armor
+	8	46	//Brave Armor
+	8	47	//Destory Armor
+	8	48	//Phantom Armor
+	8	49	//Seraphim Armor
+	8	50	//Faith Armor
+	8	51	//Phaewang Armor
+	8	52	//Hades Armor
+	8	53	//Queen Armor
+
+	9	45	//Titan Pants
+	9	46	//Brave Pants
+	9	47	//Destory Pants
+	9	48	//Phantom Pants
+	9	49	//Seraphim Pants
+	9	50	//Faith Pants
+	9	51	//Phaewang Pants
+	9	52	//Hades Pants
+	9	53	//Queen Pants
+
+	10	45	//Titan Gloves
+	10	46	//Brave Gloves
+	10	47	//Destory Gloves
+	10	48	//Phantom Gloves
+	10	49	//Seraphim Gloves
+	10	50	//Faith Gloves
+	10	51	//Phaewang Gloves
+	10	52	//Hades Gloves
+	10	53	//Queen Gloves
+
+	11	45	//Titan Boots
+	11	46	//Brave Boots
+	11	47	//Destory Boots
+	11	48	//Phantom Boots
+	11	49	//Seraphim Boots
+	11	50	//Faith Boots
+	11	51	//Phaewang Boots
+	11	52	//Hades Boots
+	11	53	//Queen Boots
+end
+

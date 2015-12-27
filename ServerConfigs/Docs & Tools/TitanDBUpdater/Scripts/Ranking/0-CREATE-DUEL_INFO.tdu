@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[DUEL_INFO]
+(
+	[ID] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[ServerCode] [int] NOT NULL DEFAULT ((0)),
+	[Account] [varchar](10) NOT NULL,
+	[Name] [varchar](10) NOT NULL,
+	[Win] [int] NOT NULL DEFAULT ((0)),
+	[Lost] [int] NOT NULL DEFAULT ((0)),
+	[Average] [int] NOT NULL DEFAULT ((0))
+)

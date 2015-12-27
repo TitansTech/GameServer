@@ -1,0 +1,56 @@
+//======================================================================================
+//BotRacer Must be in Safe Zone
+//======================================================================================
+//Class    = 0,1,2	DW,SM,GM
+//	   = 16,17,18	DK,BK,BM
+//	   = 32,33,34	Elf,ME,HE
+//	   = 48,49,50	MG,DM
+//	   = 64,65,66	DL,LE
+//	   = 80,81,82	SU,BS,DS
+//======================================================================================
+//BotIndex	Class	Name
+1
+0		17	"[Run]Start"
+1		81	"[Run]End"
+end
+
+//BotPet Items
+//Slot:
+//0 = Weapon
+//1 = Shield
+//2 = Helm
+//3 = Armor
+//4 = Pants
+//5 = Gloves
+//6 = Boots
+//7 = Wings
+//8 = Pet
+//BotIndex	Slot	Type	Index	Level	Opt
+2
+0		2	7	46	15	1
+0		3	8	46	15	1
+0		4	9	46	15	1
+0		5	10	46	15	1
+0		6	11	46	15	1
+0		7	12	36	15	0
+
+1		2	7	53	15	1
+1		3	8	53	15	1
+1		4	9	53	15	1
+1		5	10	53	15	1
+1		6	11	53	15	1
+1		7	12	43	0	0
+end
+
+//Map		X	Y	Text1				Text2					Map	X	Y
+3
+2		220	80	"Findme in Davias 220 80"	"CheckPoint is in Devias 218 88"	2	218	88
+2		226	86	"Findme in Davias 226 86"	"CheckPoint is in Devias 236 84"	2	236	84
+end
+
+//Bot Rewards (Top 10 or less)
+//iDays = 0 Means forever
+4
+//	Zen	VipMoney	ItemType	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	iSock1	iSock2	iSock3	iSock4	iSock5	iJOH	iDays	ForeverFFFESerial
+	200000	0		7		1		0	0	0	0	0	0	0	0	0	0	0	0	0	3	0
+end

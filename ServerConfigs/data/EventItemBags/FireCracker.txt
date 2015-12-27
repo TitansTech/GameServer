@@ -1,0 +1,69 @@
+//============================================================================
+//Drop Settings: Heart Of Loves , Sack of Magic, FireCracker Drops
+//www.titanstech.com
+//============================================================================
+//	type,	index,	level,	skill,	exc,	option	name
+//============================================================================
+	0	2	8	1	0	2	//Rapier
+	0	4	8	1	0	2	//Sword of Assassin
+	0	3	8	1	0	2	//Katana
+	1	1	8	1	0	2	//Hand Axe
+	1	2	8	1	0	2	//Double Axe
+	2	0	8	1	0	2	//Mace
+	2	1	8	1	0	2	//Morning Star
+	4	8	8	1	0	2	//Crossbow
+	4	9	8	1	0	2	//Golden Crossbow
+	5	0	8	1	0	2	//Skull Staff
+	6	4	8	1	0	2	//Buckler
+	6	1	8	1	0	2	//Horn Shield
+	6	2	8	1	0	2	//Kite Shield
+	0	10	8	1	0	2	//Light Saber
+	0	11	8	1	0	2	//Legendary Sword
+	0	13	8	1	0	2	//Double Blade
+	1	5	8	1	0	2	//Battle Axe
+	1	6	8	1	0	2	//Nikkea Axe
+	1	7	8	1	0	2	//Larkan Axe
+	2	3	8	1	0	2	//Great Hammer
+	3	7	8	1	0	2	//Berdysh
+	3	4	8	1	0	2	//Serpent Spear
+	4	11	8	1	0	2	//Light Crossbow
+	4	4	8	1	0	2	//Tiger Bow
+	4	12	8	1	0	2	//Serpent Crossbow
+	5	3	8	1	0	2	//Thunder Staff
+	6	5	8	1	0	2	//Dragon Slayer Shield
+	6	8	8	1	0	2	//Tower Shield
+	7	5	8	0	0	2	//Leather Helm
+	8	5	8	0	0	2	//Leather Armor
+	9	5	8	0	0	2	//Leather Pants
+	10	5	8	0	0	2	//Leather Gloves
+	11	5	8	0	0	2	//Leather Boots
+	7	2	8	0	0	2	//Pad Helm
+	8	2	8	0	0	2	//Pad Armor
+	9	2	8	0	0	2	//Pad Pants
+	10	2	8	0	0	2	//Pad Gloves
+	11	2	8	0	0	2	//Pad Boots
+	7	0	8	0	0	2	//Bronze Helm
+	8	0	8	0	0	2	//Bronze Armor
+	9	0	8	0	0	2	//Bronze Pants
+	10	0	8	0	0	2	//Bronze Gloves
+	11	0	8	0	0	2	//Bronze Boots
+	7	12	8	0	0	2	//Wind Helm
+	8	12	8	0	0	2	//Wind Armor
+	9	12	8	0	0	2	//Wind Pants
+	10	12	8	0	0	2	//Wind Gloves
+	11	12	8	0	0	2	//Wind Boots
+	7	13	8	0	0	2	//Spirit Helm
+	8	13	8	0	0	2	//Spirit Armor
+	9	13	8	0	0	2	//Spirit Pants
+	10	13	8	0	0	2	//Spirit Gloves
+	11	13	8	0	0	2	//Spirit Boots
+	7	7	8	0	0	2	//Sphinx Helm
+	8	7	8	0	0	2	//Sphinx Armor
+	9	7	8	0	0	2	//Sphinx Pants
+	10	7	8	0	0	2	//Sphinx Gloves
+	11	7	8	0	0	2	//Sphinx Boots
+
+//Jewels
+	12	15	0	0	0	0	//Jewel of Chaos
+	14	13	0	0	0	0	//Jewel of Bless
+	14	14	0	0	0	0	//Jewel of Soul

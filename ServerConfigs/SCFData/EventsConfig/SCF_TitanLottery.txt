@@ -1,0 +1,19 @@
+// Type: 0 = Zen ; 1 = VIPMoney      --> What character will win
+// TypeCost: 0 = Zen ; 1 = VIPMoney  --> What character will pay
+// Taxes = (Percent of ticket will be used for next accumulated ammount)
+// MinReward: If reward is less than MinReward then give MinReward
+// MaxReward: if reward is higher than MaxReward then give MaxReward
+// MaxTicketBuy: How much tickets can buy one account (0 = infinite)
+// AdditionalReward: If are X or less winners give them an extra Reward (BotReward) (0 dissabled)
+// All Rewards and Additional Rewards will give to players with BotReward
+
+1
+//Enabled	Type	TypeCost	Cost	Taxes	MaxNumber	MinReward	MaxReward	MaxTicketBuy	AdditionalReward
+	1	0	0		200000	25	100		250000		1000000		3		3
+end
+
+//Additional Reward for Winners (only if are X winners) JUST ONE LINE
+2
+//	Zen	VipMoney	ItemType	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	iSock1	iSock2	iSock3	iSock4	iSock5	iJOH	iDays	ForeverFFFESerial
+	200000	0		7		1		0	0	0	0	0	0	0	0	0	0	0	0	0	3	0
+end

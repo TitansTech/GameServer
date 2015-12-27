@@ -1,0 +1,51 @@
+//============================================================================
+//Drop Settings: Skeleton King Drops
+//www.titanstech.com
+//============================================================================
+//	type,	index,	level,	skill,	exc,	option	name
+//============================================================================
+	0	0	8	1	0	2	//Kris
+	0	2	8	1	0	2	//Rapier
+	0	4	8	1	0	2	//Sword of Assassin
+	0	3	8	1	0	2	//Katache
+	1	1	8	1	0	2	//Hand Axe
+	1	2	8	1	0	2	//Double Axe
+	2	0	8	1	0	2	//Mace
+	2	1	8	1	0	2	//Morning Star
+	3	2	8	1	0	2	//Flail
+	4	8	8	1	0	2	//Crossbow
+	4	1	8	1	0	2	//Bow
+	4	9	8	1	0	2	//Golden Crossbow
+	5	0	8	1	0	2	//Skull Staff
+	6	4	8	1	0	2	//Buckler
+	6	1	8	1	0	2	//Small Shield
+	6	2	8	1	0	2	//Horn Shield
+	7	5	8	1	0	2	//Leather Helm
+	7	2	8	1	0	2	//Pad Helm
+	7	10	8	1	0	2	//Vine Helm
+	8	5	8	1	0	2	//Leather Armor
+	8	2	8	1	0	2	//Pad Armor
+	8	10	8	1	0	2	//Vine Armor
+	9	5	8	1	0	2	//Leather Pants
+	9	2	8	1	0	2	//Pad Pants
+	9	10	8	1	0	2	//Vine Pants
+	10	5	8	1	0	2	//Leather Gloves
+	10	2	8	1	0	2	//Pad Gloves
+	10	10	8	1	0	2	//Vine Gloves
+	11	5	8	1	0	2	//Leather Boots
+	11	2	8	1	0	2	//Pad Boots
+	11	10	8	1	0	2	//Vine Boots
+
+//Misc
+	13	0	0	0	0	0	//Guardian Angel
+	13	1	0	0	0	0	//Satan
+	13	2	0	0	0	0	//Horn of Uniria
+	13	8	0	0	0	2	//Ring of Ice
+	13	9	0	0	0	2	//Ring of Poison
+	13	12	0	0	0	2	//Pendant of Lighting
+	13	13	0	0	0	2	//Pendant of Fire
+
+//Jewels
+	12	15	0	0	0	0	//Jewel of Chaos
+	14	13	0	0	0	0	//Jewel of Bless
+	14	14	0	0	0	0	//Jewel of Soul

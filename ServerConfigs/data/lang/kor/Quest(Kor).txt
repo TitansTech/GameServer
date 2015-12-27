@@ -1,0 +1,187 @@
+//==============================================================================
+//Quest File [KOR]
+//#www.titanstech.com
+//------------------------------------------------------------------------------
+//Revision 8 September, 2009
+//==============================================================================
+//#define QUEST_COMPENSATION_CHANGEUP 	201
+//#define QUEST_COMPENSATION_STATUP 	200
+//#define QUEST_COMPENSATION_PLUSSSTAT 	202
+//#define QUEST_COMPENSATION_COMBOSKILL 203
+//#define QUEST_COMPENSATION_MASTER 	204
+//
+//Quest	Quest	Quest 
+//Type	Index	SubType	NPC	Quest Name
+0	0	2	235	"Find the 'Scroll of Emperor'!"
+//
+//Quest Item 	Item 	Item	Item 	Monster	Monster	Drop	Quest	Quest	Add
+//Type	Type	SubType	Level	Number	MinLvl 	MaxLvl	Rate	Type	SubType	Point		Msg1	Msg2	Msg3	Msg4	DW	DK	Elf	MG	DL	SU
+1	14	23	0	1	45	60	10	200	0	10	0	52	54	55	56	1	1	1	0	0	1
+1	14	23	0	1	45	60	10	200	0	10	1	52	54	55	56	0	0	0	1	1	0
+end
+//
+//Quest	Quest 
+//Type	Index
+1	0
+//
+//	Level	Level	need	need	need
+//	Min	Max	str	agi	zen	Msg
+1	0	10000	10000	0	0	73
+-1	-1	0	0	0	1000000	51
+-1	-1	150	0	0	0	50
+end
+////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+//
+//Quest	Quest	Quest 
+//Type	Index	SubType	NPC	Quest Name
+0	1	2	235	 "Three Treasures of Mu"
+//
+//Quest Item 	Item 	Item	Item 	Monster	Monster	Drop	Quest	Quest	Add
+//Type	Type	SubType	Level	Number	MinLvl 	MaxLvl	Rate	Type	SubType	Point		Msg1	Msg2	Msg3	Msg4	DW	DK	Elf	MG	DL	SU
+1	14	24	0	1	62	76	10	201	0	10	0	60	61	62	72	0	1	0	0	0	0
+1	14	25	0	1	62	76	10	201	0	10	0	64	65	66	72	0	0	1	0	0	0
+1	14	26	0	1	62	76	10	201	0	10	0	67	68	69	72	1	0	0	0	0	0
+1	14	68	0	1	62	76	10	201	0	10	0	67	68	69	72	0	0	0	0	0	1
+
+end
+//
+//Quest	Quest 
+//Type	Index
+1	1
+//
+//	Level	Level	need	need	need
+//	Min	Max	str	agi	zen	Msg
+-1	0	0	0	0	2000000	71
+end
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+//
+//Quest	Quest	Quest 
+//Type	Index	SubType	NPC	Quest Name
+0	2	2	229	"Gain'Hero status"
+//
+//Quest Item 	Item 	Item	Item 	Monster	Monster	Drop	Quest	Quest	Add
+//Type	Type	SubType	Level	Number	MinLvl 	MaxLvl	Rate	Type	SubType	Point		Msg1	Msg2	Msg3	Msg4	DW	DK	Elf	MG	DL	SU
+1	14	23	1	1	72	108	10	202	0	0	0	102	105	108	113	2	0	2	0	0	2
+1	14	23	1	1	72	108	10	202	0	0	0	102	105	130	142	0	2	0	0	0	0
+end
+//
+//Quest	Quest 
+//Type	Index
+1	2
+//
+//	Level	Level	need	need	need
+//	Min	Max	str	agi	zen	Msg
+-1	-1	220	0	0	0	100
+-1	1	0	0	0	0	116
+-1	-1	0	0	0	3000000	118
+end
+//////////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//
+//Quest	Quest	Quest 
+//Type	Index	SubType	NPC	Quest Name
+0	3	2	229	"Secret of'Dark Stone'"
+//
+//Quest Item 	Item 	Item	Item 	Monster	Monster	Drop	Quest	Quest	Add
+//Type	Type	SubType	Level	Number	MinLvl 	MaxLvl	Rate	Type	SubType	Point		Msg1	Msg2	Msg3	Msg4	DW	DK	Elf	MG	DL	SU
+1	14	24	1	1	72	108	10	203	0	0	0	135	138	139	113	0	2	0	0	0	0
+end
+//
+//Quest	Quest 
+//Type	Index
+1	3
+//	Level	Level	need	need	need
+//	Min	Max	str	agi	zen	Msg
+-1	-1	220	0	0	0	115
+-1	2	0	0	0	0	117
+-1	-1	0	0	0	2000000	119
+end
+//////////////////////////////////////////////////////////////////////////////
+//
+// New Quest
+//////////////////////////////////////////////////////////////////////////////
+//
+//Quest	Quest	Quest 
+//Type	Index	SubType	NPC	Quest Name
+0	4	2	406	"Certificate of Strength!"
+//
+//Quest Item 	Item 	Item	Item 	Monster	Not	Drop	Quest	Quest	Add
+//Type	Type	SubType	Level	Number	ID 	Used	Rate	Type	SubType	Point		Msg1	Msg2	Msg3	Msg4	DW	DK	Elf	MG	DL	SU
+1	14	65	0	1	63	150	300	200	0	0	3	147	152	154	155	2	0	2	0	0	2
+1	14	66	0	1	309	150	400	200	0	0	1	147	152	154	155	2	0	2	0	0	2
+1	14	67	0	1	77	150	500	200	0	10	1	147	152	154	155	2	0	2	0	0	2
+1	14	65	0	1	63	150	300	200	0	0	3	147	152	154	155	0	2	0	0	0	0
+1	14	66	0	1	309	150	400	200	0	0	2	147	152	154	155	0	2	0	0	0	0
+1	14	67	0	1	77	150	500	200	0	10	2	147	152	154	155	0	2	0	0	0	0
+1	14	65	0	1	63	150	300	200	0	0	3	147	152	154	155	0	0	0	1	1	0
+1	14	66	0	1	309	150	400	200	0	0	0	147	152	154	155	0	0	0	1	1	0
+1	14	67	0	1	77	150	500	200	0	10	0	147	152	154	155	0	0	0	1	1	0
+end
+//
+//Quest	Quest 
+//Type	Index
+1	4
+//
+//	Level	Level	need	need	need
+//	Min	Max	str	agi	zen	Msg
+1  	2   	0   	0 	0 	0       166 
+2    	3   	0     	0 	0 	0       166 
+3    	-1   	0     	0 	0 	5000000 146 
+-1   	-1   	380	0	0	0	144 
+end
+///////////////////////////////////////////////////////////////////////////////////
+//
+//Quest	Quest	Quest 
+//Type	Index	SubType	NPC	Quest Name
+0	5	2	406	"Infiltration of Barracks of Ballgass!"
+//
+//Quest 			Monster				Quest		Add
+//Type	Monster			Number				Type	SubType	Point		Msg1	Msg2	Msg3	Msg4	DW	DK	Elf	MG	DL	SU
+2	409	0	0	10	0	0	0	200	0	0	1	158	162	164	165	2	2	2	1	1	2
+2	410	0	0	10	0	0	0	200	0	0	0	158	162	164	165	2	2	2	1	1	2
+2	411	0	0	10	0	0	0	200	0	10	0	158	162	164	165	2	2	2	1	1	2
+end
+//
+//
+//Quest	Quest 
+//Type	Index
+1	5
+//
+//	Level	Level	need	need	need
+//	Min	Max	str	agi	zen	Msg
+1	-1	0	0	0	7000000	157
+-1	-1	400	0	0	0	144
+-1	4	0	0	0	0	145
+end
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//Quest	Quest	Quest 
+//Type	Index	SubType	NPC	Quest Name
+0	6	2	406	"Infiltration of Refuge!"
+//
+//Quest 			Monster				Quest		Add
+//Type	Monster			Number				Type	SubType	Point		Msg1	Msg2	Msg3	Msg4	DW	DK	Elf	MG	DL	SU
+2	412	0	0	1	0	0	20	204	0	20	0	168	172	173	174	2	2	2	1	1	2
+end
+//
+//Quest	Quest 
+//Type	Index
+1	6
+//
+//	Level	Level	need	need	need
+//	Min	Max	str	agi	zen		Msg
+-1	-1	400	0	0	0		144
+-1	5	0	0	0	0		145
+-1	-1	0	0	0	10000000	167
+end

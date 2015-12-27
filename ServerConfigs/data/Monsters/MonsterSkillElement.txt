@@ -1,0 +1,69 @@
+//==============================================================================
+//Monster Skill Elements File [KOR]
+//#www.titanstech.com
+//------------------------------------------------------------------------------
+//Revision 10 Mar, 2011
+//==============================================================================
+//----------------------------------------------------------------------------------------------------------------------//
+// 	Index	Name					Type	Rate	Sec   IDType  IDValue	Magic   Class	Level	//
+//----------------------------------------------------------------------------------------------------------------------//
+
+0							
+	1	"Stern"					0	10	3	-1	-1	-1	0	0
+	3	"MP Reduction"				3	50	10	2	50	-1	0	0
+	4	"AG Reduce"				4	50	10	2	50	-1	0	0
+	5	"Defense"				5	90	10	12	50	-1	0	0
+	6	"Damage"				6	90	10	12	50	-1	0	0
+	7	"Push"					9	50	10	-1	-1	-1	0	0
+	8	"Dock"					2	30	10	112	10	-1	0	0
+	9	"Ice"					1	90	10	12	50	-1	0	0
+	11	"Duration"				7	90	10	12	7	-1	0	0
+	12	"???"					2	90	10	101	5	-1	0	0
+	13	"Treatment"				2	90	10	11	50	-1	0	0
+	14	"HP Reduction"				2	90	10	12	100	-1	0	0
+	16	"Summon"				8	90	10	0	-1	-1	0	0
+	17	"Direction"				14	50	10	0	-1	27	0	0
+	22	"???"					16	90	10	0	-1	28	0	0
+	23	"Direct Land Hit"			16	90	10	0	-1	28	0	0
+	24	"Kentauros - Multi Shot"		20	100	10	-1	-1	-1	0	0
+	25	"Persona - Demon"			20	100	10	-1	-1	-1	0	0
+	26	"Twin Tail - General"			20	100	10	-1	-1	-1	0	0
+	27	"Twin Tail - Dock"			19	100	10	-1	10	800	0	0
+	28	"Dreadfear - ???"			18	100	10	-1	-1	-1	0	0
+	29	"Night Mare - Dock"			19	50	10	-1	5	-1	0	0
+	30	"Night Mare - ??? - Shift"		20	100	10	-1	-1	-1	0	0
+	31	"Night Mare - ??? - General"		20	100	10	-1	-1	-1	0	0
+	32	"Night Mare - ??? - General"		20	100	10	13	38	-1	0	0
+	33	"Night Mare - ??? - Shift"		9	100	10	-1	3	-1	0	0
+	34	"Night Mare - Warp"			17	100	3	-1	-1	-1	0	0
+	35	"Maya - Pressure - General"		20	100	10	-1	-1	-1	0	0
+	36	"Maya - Pressure - Pushing"		9	50	10	-1	3	100	0	0
+	37	"Maya - Pressure - Duration"		7	20	10	2	10	-1	0	0
+	38	"Maya - Power - General"		20	100	10	-1	-1	-1	0	0
+	39	"Maya - Ice Storm - Shift"		9	100	10	-1	-1	-1	0	0
+	40	"Maya - Ice Storm - General"		20	100	10	-1	-1	-1	0	0
+	41	"Maya - Broken shower - General"	20	100	10	-1	-1	-1	0	0
+	42	"Maya - Broken shower - Stern"		0	10	3	-1	-1	-1	0	0
+	43	"Stern 2"				0	15	3	-1	-1	-1	0	0
+	44	"Shift 2"				9	30	10	-1	-1	-1	0	0
+	45	"General Attack"			20	100	10	-1	-1	-1	0	0
+	46	"Kulreotin - dokguseul"			19	100	0	-1	10	-1	0	0
+	47	"Blow"					18	100	0	0	-1	-1	0	0
+	48	"Serupan - dokguseul"			19	100	0	-1	10	-1	0	0
+	49	"Serupan - Frost Storm"			20	100	10	-1	-1	-1	0	0
+	50	"Serupan - Frost Shock"			9	100	0	-1	10	-1	0	0
+	51	"Serupan - fall"			9	100	0	-1	4	-1	0	0
+	52	"Serupan - summons"			8	100	0	-1	-1	-1	0	0
+	53	"Serupan - Treatment"			2	100	0	1	5	-1	0	0
+	54	"Serupan - icing"			0	100	5	-1	-1	-1	0	0
+	55	"Serupan - teleportation"		17	100	0	-1	-1	-1	0	0
+	56	"Serupan - Invincible"			21	100	10	11	10000	-1	0	0
+	57	"Serupan - gwangpokhwa"			6	100	-1	11	300	-1	0	0
+	//Imperial
+	58	"Medic HP"				2	100	0	1	5	-1	0	0
+	59	"Shield Defense" 			5	90	2	12	50	-1	0	0
+	60	"Attack General" 			20	100	10	-1	-1	-1	0	0
+	61	"Attack Poison" 			19	100	10	-1	-1	-1	0	0
+	62	"Stern"					0	10	5	-1	-1	-1	0	0
+	63	"Push Attack"				9	100	0	-1	5	-1	0	0
+end

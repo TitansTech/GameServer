@@ -1,0 +1,146 @@
+//#############################################################################################################
+//Drop Settings: CastleDeep Monster Drops
+//www.titanstech.com
+//#############################################################################################################
+
+//=============================================================================================================
+//ItemDropRate	 	- Drop rate of item VS Zen [x/100]
+//ExRate		- Drop rate of excellent item [x/1000]
+//=============================================================================================================
+//	EventName		DropZen		NA	NA 	NA 	  NA 		ItemDropRate	ExRate
+//=============================================================================================================
+1	
+	"CastleDeepDrop"	100000		0	0	 0	  0		10		200
+end
+
+//=============================================================================================================
+//Type			- Item.TXT index (section) of the Box
+//Index 		- Item.TXT id of the Item
+//minLvl		- Minimal Level of the Item (+1, +2 etc...)
+//maxLvl		- Maximum Level of the Item (+1, +2 etc...)
+//Skill			- Drop Item with Skill (0 - off,1 - on)
+//Luck			- Drop Item with Luck (0 - off,1 - on)
+//maxZ28		- Maximum Z28 option (1 = +4, 2 = +8, 3 = +12, etc...)
+//maxExOpt		- Maximum number of Exc option in item
+//=============================================================================================================
+//	Type	Index	minLvl	maxLvl	Skill	Luck	maxZ28	maxExOpt		
+//=============================================================================================================
+2
+	7	4	0	4	1	1	2	2	//Bone Helm
+	8	4	0	4	1	1	2	2	//Bone Armor
+	9	4	0	4	1	1	2	2	//Bone Pants
+	10	4	0	4	1	1	2	2	//Bone Gloves
+	11	4	0	4	1	1	2	2	//Bone Boots
+	7	6	0	4	1	1	2	2	//Scale Helm
+	8	6	0	4	1	1	2	2	//Scale Armor
+	9	6	0	4	1	1	2	2	//Scale Pants
+	10	6	0	4	1	1	2	2	//Scale Gloves
+	11	6	0	4	1	1	2	2	//Scale Boots
+	7	7	0	4	1	1	2	2	//Sphinx Helm
+	8	7	0	4	1	1	2	2	//Sphinx Armor
+	9	7	0	4	1	1	2	2	//Sphinx Pants
+	10	7	0	4	1	1	2	2	//Sphinx Gloves
+	11	7	0	4	1	1	2	2	//Sphinx Boots
+	7	39	0	4	1	1	2	2	//Mistery Helm
+	8	39	0	4	1	1	2	2	//Mistery Armor
+	9	39	0	4	1	1	2	2	//Mistery Pants
+	10	39	0	4	1	1	2	2	//Mistery Gloves
+	11	39	0	4	1	1	2	2	//Mistery Boots
+	7	13	0	4	1	1	2	2	//Spirit Helm
+	8	13	0	4	1	1	2	2	//Spirit Armor
+	9	13	0	4	1	1	2	2	//Spirit Pants
+	10	13	0	4	1	1	2	2	//Spirit Gloves
+	11	13	0	4	1	1	2	2	//Spirit Boots
+	7	1	0	4	1	1	2	2	//Dragon Helm
+	8	1	0	4	1	1	2	2	//Dragon Armor
+	9	1	0	4	1	1	2	2	//Dragon Pants
+	10	1	0	4	1	1	2	2	//Dragon Gloves
+	11	1	0	4	1	1	2	2	//Dragon Boots
+	7	3	0	4	1	1	2	2	//Legendary Helm
+	8	3	0	4	1	1	2	2	//Legendary Armor
+	9	3	0	4	1	1	2	2	//Legendary Pants
+	10	3	0	4	1	1	2	2	//Legendary Gloves
+	11	3	0	4	1	1	2	2	//Legendary Boots
+	7	8	0	4	1	1	2	2	//Brass Helm
+	8	8	0	4	1	1	2	2	//Brass Armor
+	9	8	0	4	1	1	2	2	//Brass Pants
+	10	8	0	4	1	1	2	2	//Brass Gloves
+	11	8	0	4	1	1	2	2	//Brass Boots
+	7	9	0	4	1	1	2	2	//Plate Helm
+	8	9	0	4	1	1	2	2	//Plate Armor
+	9	9	0	4	1	1	2	2	//Plate Pants
+	10	9	0	4	1	1	2	2	//Plate Gloves
+	11	9	0	4	1	1	2	2	//Plate Boots
+	7	12	0	4	1	1	2	2	//Wind Helm
+	8	12	0	4	1	1	2	2	//Wind Armor
+	9	12	0	4	1	1	2	2	//Wind Pants
+	10	12	0	4	1	1	2	2	//Wind Gloves
+	11	12	0	4	1	1	2	2	//Wind Boots
+	7	40	0	4	1	1	2	2	//Red Wing Helm
+	8	40	0	4	1	1	2	2	//Red Wing Armor
+	9	40	0	4	1	1	2	2	//Red Wing Pants
+	10	40	0	4	1	1	2	2	//Red Wing Gloves
+	11	40	0	4	1	1	2	2	//Red Wing Boots
+	8	15	0	4	1	1	2	2	//Storm Crow Armor
+	9	15	0	4	1	1	2	2	//Storm Crow Pants
+	10	15	0	4	1	1	2	2	//Storm Crow Gloves
+	11	15	0	4	1	1	2	2	//Storm Crow Boots
+	7	25	0	4	1	1	2	2	//Light Helm
+	8	25	0	4	1	1	2	2	//Light Armor
+	9	25	0	4	1	1	2	2	//Light Pants
+	10	25	0	4	1	1	2	2	//Light Gloves
+	11	25	0	4	1	1	2	2	//Light Boots
+	7	14	0	4	1	1	2	2	//Gaurdian Helm
+	8	14	0	4	1	1	2	2	//Gaurdian Armor
+	9	14	0	4	1	1	2	2	//Gaurdian Pants
+	10	14	0	4	1	1	2	2	//Gaurdian Gloves
+	11	14	0	4	1	1	2	2	//Gaurdian Boots
+	7	16	0	4	1	1	2	2	//Black Dragon Helm
+	8	16	0	4	1	1	2	2	//Black Dragon Armor
+	9	16	0	4	1	1	2	2	//Black Dragon Pants
+	10	16	0	4	1	1	2	2	//Black Dragon Gloves
+	11	16	0	4	1	1	2	2	//Black Dragon Boots
+
+	0	5	0	4	1	1	2	2	//Blade
+	0	9	0	4	1	1	2	2	//Sword of Salamander
+	0	10	0	4	1	1	2	2	//Light Saber
+	0	11	0	4	1	1	2	2	//Legendary Sword
+	0	12	0	4	1	1	2	2	//Heliacal Sword
+	0	13	0	4	1	1	2	2	//Double Blade
+	0	14	0	4	1	1	2	2	//Lightning Sword
+	0	15	0	4	1	1	2	2	//Giant Sword
+	0	16	0	4	1	1	2	2	//Sword of Destruction
+	1	4	0	4	1	1	2	2	//Elven Axe
+	1	5	0	4	1	1	2	2	//Battle Axe
+	1	6	0	4	1	1	2	2	//Nikea Axe
+	1	7	0	4	1	1	2	2	//Larkan Axe
+	1	8	0	4	1	1	2	2	//Crescent Axe
+	2	3	0	4	1	1	2	2	//Great Hammer
+	2	4	0	4	1	1	2	2	//Crystal Morning Star
+	2	5	0	4	1	1	2	2	//Crystal Sword
+	2	7	0	4	1	1	2	2	//Elemental Mace
+	2	8	0	4	1	1	2	2	//Battle Scepter
+	3	0	0	4	1	1	2	2	//Light Spear
+	3	2	0	4	1	1	2	2	//Dragon Lance
+	4	4	0	4	1	1	2	2	//Tiger Bow
+	4	5	0	4	1	1	2	2	//Silver Bow
+	4	14	0	4	1	1	2	2	//Aquagold Crossbow
+	4	16	0	4	1	1	2	2	//Saint Crossbow
+	5	3	0	4	1	1	2	2	//Thunder Staff
+	5	4	0	4	1	1	2	2	//Gorgon Staff
+	5	5	0	4	1	1	2	2	//Legendary Staff
+	6	8	0	4	1	1	2	2	//Tower Shield
+	6	9	0	4	1	1	2	2	//Plate Shield
+	6	11	0	4	1	1	2	2	//Serpent Shield
+	6	12	0	4	1	1	2	2	//Bronze Shield
+
+//Rings+Pendant
+	13	26	0	4	0	0	2	2	//Pendant of Wind
+	13	27	0	4	0	0	2	2	//Pendant of Water
+	13	28	0	4	0	0	2	2	//Pendant of Ability
+	13	21	0	4	0	0	2	2	//Ring of Fire
+	13	22	0	4	0	0	2	2	//Ring of Earth
+	13	23	0	4	0	0	2	2	//Ring of Wind
+	13	24	0	4	0	0	2	2	//Ring of Magic
+	13	25	0	4	0	0	2	2	//Ring of Ice
+end

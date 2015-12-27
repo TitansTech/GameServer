@@ -1,0 +1,171 @@
+//============================================================================
+//Drop Settings: Box of KUNDUN + 5 Drops
+//www.titanstech.com
+//============================================================================
+//	type,	index,	level,	skill,	exc,	option	name
+//============================================================================
+
+
+//Great Dragon set	
+	7	21	7	0	0	4	//Helm
+	8	21	7	0	0	4	//Armor
+	9	21	7	0	0	4	//Pants
+	10	21	7	0	0	4	//Gloves
+	11	21	7	0	0	4	//Boots
+
+//Dark Soul  Set
+	7	22	7	0	0	4	//Helm
+	8	22	7	0	0	4	//Armor
+	9	22	7	0	0	4	//Pants
+	10	22	7	0	0	4	//Gloves
+	11	22	7	0	0	4	//Boots
+
+//Hurricane set	
+	8	23	7	0	0	4	//Armor
+	9	23	7	0	0	4	//Pants
+	10	23	7	0	0	4	//Gloves
+	11	23	7	0	0	4	//Boots
+
+//Red Spirit set	
+	7	24	7	0	0	4	//Helm
+	8	24	7	0	0	4	//Armor
+	9	24	7	0	0	4	//Pants
+	10	24	7	0	0	4	//Gloves
+	11	24	7	0	0	4	//Boots
+
+//Dark Steel set
+	7	27	7	0	0	4	//Helm
+	8	27	7	0	0	4	//Armor
+	9	27	7	0	0	4	//Pants
+	10	27	7	0	0	4	//Gloves
+	11	27	7	0	0	4	//Boots
+
+//Dark Master set
+	7	28	7	0	0	4	//Helm
+	8	28	7	0	0	4	//Armor
+	9	28	7	0	0	4	//Pants
+	10	28	7	0	0	4	//Gloves
+	11	28	7	0	0	4	//Boots
+
+//Black Rose set
+	7	42	7	0	0	4	//Helm
+	8	42	7	0	0	4	//Armor
+	9	42	7	0	0	4	//Pants
+	10	42	7	0	0	4	//Gloves
+	11	42	7	0	0	4	//Boots
+
+//Sword
+	0	17	7	1	0	4	//Dark Breaker
+	0	18	7	1	0	4	//Thunder Blade
+	0	19	7	1	0	4	//Divine Sword of Archangel
+	0	20	7	1	0	4	//Knight Blade
+	0	21	7	1	0	4	//Dark Reign Blade
+	0	31	7	1	0	4	//Rune Blade
+
+//Blunt weapons
+	2	12	7	1	0	4	//Great Lord Scepter
+	2	13	7	1	0	4	//Elven Mace
+
+//Spears
+	3	8	7	1	0	4	//Great Scythe
+	3	9	7	1	0	4	//Bill of Balrog
+	3	10	7	1	0	4	//Dragon Spear
+
+//Bows & Crossbows
+	4	17	7	1	0	4	//Celestial Bow
+	4	18	7	1	0	4	//Divine CrossbowOfArchangel
+	4	19	7	1	0	4	//Great Reign Crossbow
+	4	20	7	1	0	4	//Arrow Viper Bow
+
+//Staffs
+	5	9	7	1	0	4	//Dragon Soul Staff
+	5	10	7	1	0	4	//Divine Staff of Archangel
+	5	11	7	1	0	4	//Staff of Kundun
+
+//Shields
+	6	14	7	1	0	4	//Legendary Shield
+	6	15	7	1	0	4	//Grand Soul Shield
+	6	16	7	1	0	4	//Elemental Shield
+
+//=========================================================================================
+//Great Dragon set	
+	7	21	7	0	1	4	//Helm
+	8	21	7	0	1	4	//Armor
+	9	21	7	0	1	4	//Pants
+	10	21	7	0	1	4	//Gloves
+	11	21	7	0	1	4	//Boots
+
+//Dark Soul  Set
+	7	22	7	0	1	4	//Helm
+	8	22	7	0	1	4	//Armor
+	9	22	7	0	1	4	//Pants
+	10	22	7	0	1	4	//Gloves
+	11	22	7	0	1	4	//Boots
+
+//Hurricane set	
+	8	23	7	0	1	4	//Armor
+	9	23	7	0	1	4	//Pants
+	10	23	7	0	1	4	//Gloves
+	11	23	7	0	1	4	//Boots
+
+//Red Spirit set	
+	7	24	7	0	1	4	//Helm
+	8	24	7	0	1	4	//Armor
+	9	24	7	0	1	4	//Pants
+	10	24	7	0	1	4	//Gloves
+	11	24	7	0	1	4	//Boots
+
+//Dark Steel set
+	7	27	7	0	1	4	//Helm
+	8	27	7	0	1	4	//Armor
+	9	27	7	0	1	4	//Pants
+	10	27	7	0	1	4	//Gloves
+	11	27	7	0	1	4	//Boots
+
+//Dark Master set
+	7	28	7	0	1	4	//Helm
+	8	28	7	0	1	4	//Armor
+	9	28	7	0	1	4	//Pants
+	10	28	7	0	1	4	//Gloves
+	11	28	7	0	1	4	//Boots
+
+//Black Rose set
+	7	42	7	0	1	4	//Helm
+	8	42	7	0	1	4	//Armor
+	9	42	7	0	1	4	//Pants
+	10	42	7	0	1	4	//Gloves
+	11	42	7	0	1	4	//Boots
+
+//Sword
+	0	17	7	1	1	4	//Dark Breaker
+	0	18	7	1	1	4	//Thunder Blade
+	0	19	7	1	1	4	//Divine Sword of Archangel
+	0	20	7	1	1	4	//Knight Blade
+	0	21	7	1	1	4	//Dark Reign Blade
+	0	31	7	1	1	4	//Rune Blade
+
+//Blunt weapons
+	2	12	7	1	1	4	//Great Lord Scepter
+	2	13	7	1	1	4	//Elven Mace
+
+//Spears
+	3	8	7	1	1	4	//Great Scythe
+	3	9	7	1	1	4	//Bill of Balrog
+	3	10	7	1	1	4	//Dragon Spear
+
+//Bows & Crossbows
+	4	17	7	1	1	4	//Celestial Bow
+	4	18	7	1	1	4	//Divine CrossbowOfArchangel
+	4	19	7	1	1	4	//Great Reign Crossbow
+	4	20	7	1	1	4	//Arrow Viper Bow
+
+//Staffs
+	5	9	7	1	1	4	//Dragon Soul Staff
+	5	10	7	1	1	4	//Divine Staff of Archangel
+	5	11	7	1	1	4	//Staff of Kundun
+
+//Shields
+	6	14	7	1	1	4	//Legendary Shield
+	6	15	7	1	1	4	//Grand Soul Shield
+	6	16	7	1	1	4	//Elemental Shield
+	

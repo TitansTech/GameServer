@@ -1,0 +1,61 @@
+BEGIN_QUEST
+
+	CMD_ACCEPT	"/cq1start"
+	CMD_DONE	"/cq1ok"
+
+	BEGIN_STATE
+
+		TITLE	"Quest 1 Stage 1"
+		TEXT	"Need:|2000000 Zen|Level 50|Start Command: /cq1start|Done Command: /sq1ok"
+
+		//BEGIN Requeriments
+
+		LEVEL	50
+		ZEN	 2000000
+
+		//END Requeriments
+
+		IF_FINISH
+			TITLE		"Quest 1 Stage 1"
+			TEXT		"QUEST STATE 1: \n STATUS FINISHED"
+			LEVELUPPOINT	200
+			MASTERPOINT	  5
+		ELSE_FINISH
+			TITLE		"Quest 1 Stage 1"
+			TEXT		"You need 1 Chaos and 2000000 zen for continue"
+		END_FINISH
+
+	END_STATE
+
+	BEGIN_STATE
+
+		TITLE	"Quest 1 Stage 2"
+		TEXT	"Zen: 2000000|Done Command: /sq1ok"
+
+		//BEGIN Requeriments
+		ZEN	 2000000
+
+		//END Requeriments
+	
+		IF_FINISH
+			TITLE		"Quest 1 Stage 2"
+			TEXT		"QUEST: \n STATUS: COMPLETED"
+			LEVELUP		1
+			I_COUNT	 1
+			I_TYPE	12
+			I_INDEX	14
+			I_LEVEL	 0
+			I_OPT	 0
+			I_LUCK	 0
+			I_SKILL	 0
+			I_DUR	 0
+			I_EXC	 0
+			CLASS	32
+		ELSE_FINISH
+			TITLE		"Quest 1 Stage 2"
+			TEXT		"You need 2000000 zen for continue"
+		END_FINISH
+
+	END_STATE
+
+END_QUEST

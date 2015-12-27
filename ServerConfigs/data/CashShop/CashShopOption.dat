@@ -1,0 +1,8 @@
+[CashShopOption]
+UseCashShop		= 0			// ﾄｳｽｬｼ･ﾀｻ ﾀﾌｿ・ﾏｴﾂ ｰ｡ (0:ﾀﾌｿ・ﾈﾇﾔ, 1:ﾀﾌｿ・ﾔ)
+ConnectShopServer	= 0			// ｼ･ ｼｭｹﾎ ｿｬｰ・ｻ鄙・(0:ｻ鄙・ﾈﾇﾔ, 1:ｻ鄙・
+ShopServerIP		= 127.0.0.1	   	// ｼ･ ｼｭｹ・ｾﾆﾀﾌﾇﾇ 10.101.203.201
+ShopServerPort		= 55821			// ｼ･ ｼｭｹ・ﾆｮ
+
+UseLotteryEvent		= 1			// ｺｹｱﾇ ﾀﾌｺ･ﾆｮｸｦ ｽﾇﾇ・ﾇﾏｴﾂｰ｡
+MapMoveBoundCheck	= 0			// エンブレムアイテムの購入時、マップ移動制限

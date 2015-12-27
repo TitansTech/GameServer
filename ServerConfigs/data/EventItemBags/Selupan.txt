@@ -1,0 +1,61 @@
+//#############################################################################################################
+//Drop Settings: Salupan Boss Drops
+//www.titanstech.com
+//#############################################################################################################
+
+//=============================================================================================================
+//ItemDropRate	 	- Drop rate of item VS Zen [x/100]
+//ExRate		- Drop rate of excellent item [x/1000]
+//=============================================================================================================
+//	EventName		DropZen		NA	NA 	NA 	  NA 		ItemDropRate	ExRate
+//=============================================================================================================
+1	
+	"SalupanBossDrop"	20000000	0	0	 0	  0		90		700
+end
+
+//=============================================================================================================
+//Type			- Item.TXT index (section) of the Box
+//Index 		- Item.TXT id of the Item
+//minLvl		- Minimal Level of the Item (+1, +2 etc...)
+//maxLvl		- Maximum Level of the Item (+1, +2 etc...)
+//Skill			- Drop Item with Skill (0 - off,1 - on)
+//Luck			- Drop Item with Luck (0 - off,1 - on)
+//maxZ28		- Maximum Z28 option (1 = +4, 2 = +8, 3 = +12, etc...)
+//maxExOpt		- Maximum number of Exc option in item
+//=============================================================================================================
+//	Type	Index	minLvl	maxLvl	Skill	Luck	maxZ28	maxExOpt		
+//=============================================================================================================
+2
+	0	28	3	9	1	1	4	3	//Imperial Sword	LVL:139
+	2	16	3	9	1	1	4	3	//Frost mace		LVL:121
+	6	19	3	9	1	1	4	3	//Frost Barrier		LVL:99
+	6	20	3	9	1	1	4	3	//Guardian Shiled	LVL:106
+	7	50	3	9	1	1	4	3	//Faith Helm		LVL:104
+	7	51	3	9	1	1	4	3	//Paewang Mask		LVL:111
+	7	52	3	9	1	1	4	3	//Hades Helm		LVL:109
+	7	53	3	9	1	1	4	3	//Merlin Helm		LVL:112
+
+	8	48	3	9	1	1	4	3	//Phantom Armor		LVL:125
+	8	50	3	9	1	1	4	3	//Faith Armor		LVL:122
+	8	51	3	9	1	1	4	3	//Paewang Armor		LVL:132
+	8	52	3	9	1	1	4	3	//Hades Armor		LVL:129
+	8	53	3	9	1	1	4	3	//Merlin Armor		LVL:131
+
+	9	48	3	9	1	1	4	3	//Phantom Pants		LVL:125
+	9	50	3	9	1	1	4	3	//Faith Pants		LVL:122
+	9	51	3	9	1	1	4	3	//Paewang Pants		LVL:132
+	9	52	3	9	1	1	4	3	//Hades Pants		LVL:129
+	9	53	3	9	1	1	4	3	//Merlin Pants		LVL:131
+
+	10	48	3	9	1	1	4	3	//Phantom Gloves	LVL:125
+	10	50	3	9	1	1	4	3	//Faith Gloves		LVL:122
+	10	51	3	9	1	1	4	3	//Paewang Gloves	LVL:132
+	10	52	3	9	1	1	4	3	//Hades Gloves		LVL:129
+	10	53	3	9	1	1	4	3	//Merlin Gloves		LVL:131
+
+	11	48	3	9	1	1	4	3	//Phantom Boots		LVL:125
+	11	50	3	9	1	1	4	3	//Faith Boots		LVL:122
+	11	51	3	9	1	1	4	3	//Paewang Boots		LVL:132
+	11	52	3	9	1	1	4	3	//Hades Boots		LVL:129
+	11	53	3	9	1	1	4	3	//Merlin Boots		LVL:131
+end

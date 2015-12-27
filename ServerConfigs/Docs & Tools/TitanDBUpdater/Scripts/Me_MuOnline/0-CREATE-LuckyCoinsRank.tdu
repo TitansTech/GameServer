@@ -1,0 +1,1 @@
+CREATE TABLE [dbo].[LuckyCoinsRank] (id int IDENTITY (1, 1),Account nvarchar(10),LuckyCoins int,Date smalldatetime)

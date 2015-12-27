@@ -1,0 +1,98 @@
+1
+//Skill	Level	Reset	DW	DK	Elf	MG	DL	SU	RF	//Skill Name
+1	30	0	1	0	0	0	0	0	0	//Poison
+1	30	0	0	0	0	1	0	0	0	//Poison
+2	21	0	1	0	0	0	0	0	0	//Meteorite
+2	21	0	0	0	0	1	0	0	0	//Meteorite
+2	21	0	0	0	0	0	0	1	0	//Meteorite
+3	13	0	1	0	0	0	0	0	0	//Lighting
+3	13	0	0	0	0	1	0	0	0	//Lighting
+4	5	0	1	0	0	0	0	0	0	//Fire Ball
+4	5	0	0	0	0	1	0	0	0	//Fire Ball
+4	5	0	0	0	0	0	0	1	0	//Fire Ball
+5	35	0	1	0	0	0	0	0	0	//Flame
+5	35	0	0	0	0	1	0	0	0	//Flame
+6	17	0	1	0	0	0	0	0	0	//Teleport
+7	25	0	1	0	0	0	0	0	0	//Ice
+7	25	0	0	0	0	1	0	0	0	//Ice
+7	25	0	0	0	0	0	0	1	0	//Ice
+8	40	0	1	0	0	0	0	0	0	//Twister
+8	40	0	0	0	0	1	0	0	0	//Twister
+9	50	0	1	0	0	0	0	0	0	//Evil Spirit
+9	50	0	0	0	0	1	0	0	0	//Evil Spirit
+10	60	0	1	0	0	0	0	0	0	//Hellfire
+10	60	0	0	0	0	1	0	0	0	//Hellfire
+11	9	0	1	0	0	0	0	0	0	//Power Wave
+11	9	0	0	0	0	1	0	0	0	//Power Wave
+11	9	0	0	0	0	0	0	1	0	//Power Wave
+12	74	0	1	0	0	0	0	0	0	//Aqua Beam
+12	74	0	0	0	0	1	0	0	0	//Aqua Beam
+13	80	0	1	0	0	0	0	0	0	//Cometfall
+13	80	0	0	0	0	1	0	0	0	//Cometfall
+14	88	0	1	0	0	0	0	0	0	//Inferno
+14	88	0	0	0	0	1	0	0	0	//Inferno
+15	83	0	2	0	0	0	0	0	0	//Teleport Ally
+16	77	0	1	0	0	0	0	0	0	//Soul Barrier
+17	2	0	1	0	0	0	0	0	0	//Energy Ball
+17	2	0	0	0	0	1	0	0	0	//Energy Ball
+26	8	0	0	0	1	0	0	0	0	//Heal
+27	13	0	0	0	1	0	0	0	0	//Greater Defense
+28	18	0	0	0	1	0	0	0	0	//Greater Damage
+30	22	0	0	0	1	0	0	0	0	//Summon Goblin
+31	25	0	0	0	1	0	0	0	0	//Summon Stone Golem
+32	33	0	0	0	1	0	0	0	0	//Summon Assassin
+33	35	0	0	0	1	0	0	0	0	//Summon Elite Yeti
+34	37	0	0	0	1	0	0	0	0	//Summon Dark Knight
+35	40	0	0	0	1	0	0	0	0	//Summon Bali
+36	44	0	0	0	1	0	0	0	0	//Summon Soldier
+38	96	0	2	0	0	0	0	0	0	//Decay
+39	93	0	2	0	0	0	0	0	0	//Ice Storm
+40	100	0	2	0	0	0	0	0	0	//Nova
+41	0	0	0	1	0	0	0	0	0	//Twisting Slash
+41	0	0	0	0	0	1	0	0	0	//Twisting Slash
+42	170	0	0	2	0	0	0	0	0	//Rageful Blow
+43	160	0	0	2	0	0	0	0	0	//Death Stab
+46	0	0	0	0	1	0	0	0	0	//Starfall
+47	28	0	0	1	0	0	0	0	0	//Impale
+47	28	0	0	0	0	1	0	0	0	//Impale
+48	120	0	0	1	0	0	0	0	0	//Greater Fortitude
+51	155	0	0	0	2	0	0	0	0	//Ice Arrow
+52	130	0	0	0	1	0	0	0	0	//Penetration
+53	84	0	0	0	2	0	0	0	0	//Add Elf Skill
+55	111	0	0	0	0	1	0	0	0	//Fire Slash
+60	9	0	0	0	0	0	1	0	0	//Force
+61	74	0	0	0	0	0	1	0	0	//FireBurst
+63	98	0	0	0	0	0	1	0	0	//Summon
+64	82	0	0	0	0	0	1	0	0	//Increase Critical Dmg
+65	92	0	0	0	0	0	1	0	0	//Electric Spike
+77	220	0	0	0	1	0	0	0	0	//Shadow Arrow
+78	102	0	0	0	0	0	1	0	0	//Fire Scream
+79	220	0	0	0	0	0	1	0	0	//Explosion
+214	35	0	0	0	0	0	0	1	0	//Drain Life
+215	75	0	0	0	0	0	0	1	0	//Chain Lighting
+216	80	0	0	0	0	0	0	1	0	//Electric Surge
+217	80	0	0	0	0	0	0	1	0	//Reflex
+218	83	0	0	0	0	0	0	1	0	//Sword Power
+219	40	0	0	0	0	0	0	1	0	//Sleep
+220	50	0	0	0	0	0	0	1	0	//Night
+221	93	0	0	0	0	0	0	1	0	//MagicSpeed Up
+222	111	0	0	0	0	0	0	1	0	//MagicDefense Up
+230	93	0	0	0	0	0	0	1	0	//Lightning Shock
+232	220	0	0	2	0	0	0	0	0	//Explotion
+233	121	0	2	0	0	0	0	0	0	//Magic Circle
+234	220	0	0	0	2	0	0	0	0	//Reduce Dmg Shield
+235	220	0	0	0	2	0	0	0	0	//Five Shot
+236	220	0	0	0	0	1	0	0	0	//Sword Slash
+237	220	0	2	0	0	0	0	0	0	//Lighting Storm
+237	220	0	0	0	0	1	0	0	0	//Lighting Storm
+238	220	0	0	0	0	0	1	0	0	//Birds
+239	100	0	0	0	0	1	0	0	0	//Dopper Self Explosion Skill
+262	150	0	0	0	0	0	0	0	1	//Chain Drive
+263	180	0	0	0	0	0	0	0	1	//Dark Side
+264	150	0	0	0	0	0	0	0	1	//Dragon Lore
+265	200	0	0	0	0	0	0	0	1	//Dragon Slayer
+266	120	0	0	0	0	0	0	0	1	//Red Armor Ignore
+267	80	0	0	0	0	0	0	0	1	//Fitness
+268	50	0	0	0	0	0	0	0	1	//Defense success rate increase
+269	60	0	0	0	0	0	0	0	1	//Charge
+end

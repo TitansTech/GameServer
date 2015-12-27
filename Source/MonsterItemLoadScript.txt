@@ -1,0 +1,115 @@
+By Deathway
+
+Here i show an unused function made by Webzen
+this insert items in the inventory of a monster
+
+thie script file is like this
+
+// type, index, level, op1, op2, op3
+
+1	2	1	0	0	0
+
+gObjMonst>/> \55          PUSH EBP
+004BD4C1  |.  8BEC        MOV EBP,ESP
+004BD4C3  |.  83EC 60     SUB ESP,60
+004BD4C6  |.  53          PUSH EBX
+004BD4C7  |.  56          PUSH ESI
+004BD4C8  |.  57          PUSH EDI                                 ;  ntdll.7C910738
+004BD4C9  |.  68 A4BA6000 PUSH OFFSET GameServ.??_C@_01LHO@r?$AA@  ; /mode = "r"
+004BD4CE  |.  8B45 0C     MOV EAX,[ARG.script_file]                ; |
+004BD4D1  |.  50          PUSH EAX                                 ; |path = 000000FE ???
+004BD4D2  |.  E8 DAD50600 CALL GameServ._fopen                     ; \_fopen
+004BD4D7  |.  83C4 08     ADD ESP,8
+004BD4DA  |.  A3 808ABF08 MOV DWORD PTR DS:[SMDFile],EAX
+004BD4DF  |.  833D 808ABF>CMP DWORD PTR DS:[SMDFile],0
+004BD4E6  |.  75 16       JNZ SHORT GameServ.004BD4FE
+004BD4E8  |.  8B4D 0C     MOV ECX,[ARG.script_file]
+004BD4EB  |.  51          PUSH ECX
+004BD4EC  |.  68 D0BB6000 PUSH OFFSET GameServ.??_C@_0BD@JJCL@file>;  ASCII "file open error %s"
+004BD4F1  |.  E8 C26EF4FF CALL GameServ.004043B8
+004BD4F6  |.  83C4 08     ADD ESP,8
+004BD4F9  |.  E9 02010000 JMP GameServ.004BD600
+004BD4FE  |>  C745 E0 000>MOV [LOCAL.incount],0
+004BD505  |>  BA 01000000 /MOV EDX,1
+004BD50A  |.  85D2        |TEST EDX,EDX
+004BD50C  |.  0F84 DF0000>|JE GameServ.004BD5F1
+004BD512  |.  E8 49010000 |CALL GameServ.GetToken
+004BD517  |.  8945 FC     |MOV [LOCAL.Token],EAX
+004BD51A  |.  837D FC 02  |CMP [LOCAL.Token],2
+004BD51E  |.  75 05       |JNZ SHORT GameServ.004BD525
+004BD520  |.  E9 CC000000 |JMP GameServ.004BD5F1
+004BD525  |>  837D FC 01  |CMP [LOCAL.Token],1
+004BD529  |.  0F85 BD0000>|JNZ GameServ.004BD5EC
+004BD52F  |.  D905 7C8ABF>|FLD DWORD PTR DS:[TokenNumber]
+004BD535  |.  E8 4ECF0600 |CALL GameServ.__ftol
+004BD53A  |.  8945 F8     |MOV [LOCAL.type],EAX
+004BD53D  |.  E8 1E010000 |CALL GameServ.GetToken
+004BD542  |.  8945 FC     |MOV [LOCAL.Token],EAX
+004BD545  |.  D905 7C8ABF>|FLD DWORD PTR DS:[TokenNumber]
+004BD54B  |.  E8 38CF0600 |CALL GameServ.__ftol
+004BD550  |.  8945 F4     |MOV [LOCAL.index],EAX
+004BD553  |.  E8 08010000 |CALL GameServ.GetToken
+004BD558  |.  8945 FC     |MOV [LOCAL.Token],EAX
+004BD55B  |.  D905 7C8ABF>|FLD DWORD PTR DS:[TokenNumber]
+004BD561  |.  E8 22CF0600 |CALL GameServ.__ftol
+004BD566  |.  8945 F0     |MOV [LOCAL.level],EAX
+004BD569  |.  E8 F2000000 |CALL GameServ.GetToken
+004BD56E  |.  8945 FC     |MOV [LOCAL.Token],EAX
+004BD571  |.  D905 7C8ABF>|FLD DWORD PTR DS:[TokenNumber]
+004BD577  |.  E8 0CCF0600 |CALL GameServ.__ftol
+004BD57C  |.  8945 EC     |MOV [LOCAL.op1],EAX
+004BD57F  |.  E8 DC000000 |CALL GameServ.GetToken
+004BD584  |.  8945 FC     |MOV [LOCAL.Token],EAX
+004BD587  |.  D905 7C8ABF>|FLD DWORD PTR DS:[TokenNumber]
+004BD58D  |.  E8 F6CE0600 |CALL GameServ.__ftol
+004BD592  |.  8945 E8     |MOV [LOCAL.op2],EAX
+004BD595  |.  E8 C6000000 |CALL GameServ.GetToken
+004BD59A  |.  8945 FC     |MOV [LOCAL.Token],EAX
+004BD59D  |.  D905 7C8ABF>|FLD DWORD PTR DS:[TokenNumber]
+004BD5A3  |.  E8 E0CE0600 |CALL GameServ.__ftol
+004BD5A8  |.  8945 E4     |MOV [LOCAL.op3],EAX
+004BD5AB  |.  8B45 E4     |MOV EAX,[LOCAL.op3]
+004BD5AE  |.  50          |PUSH EAX
+004BD5AF  |.  8B4D E8     |MOV ECX,[LOCAL.op2]
+004BD5B2  |.  51          |PUSH ECX
+004BD5B3  |.  8B55 EC     |MOV EDX,[LOCAL.op1]
+004BD5B6  |.  52          |PUSH EDX
+004BD5B7  |.  8B45 F0     |MOV EAX,[LOCAL.level]
+004BD5BA  |.  50          |PUSH EAX
+004BD5BB  |.  8B4D F4     |MOV ECX,[LOCAL.index]
+004BD5BE  |.  51          |PUSH ECX
+004BD5BF  |.  8B55 F8     |MOV EDX,[LOCAL.type]                    ;  kernel32.7C816FE0
+004BD5C2  |.  52          |PUSH EDX
+004BD5C3  |.  8B45 08     |MOV EAX,[ARG.lpObj]                     ;  GameServ.<ModuleEntryPoint>
+004BD5C6  |.  50          |PUSH EAX
+004BD5C7  |.  E8 FA73F4FF |CALL GameServ.004049C6
+004BD5CC  |.  83C4 1C     |ADD ESP,1C
+004BD5CF  |.  25 FF000000 |AND EAX,0FF
+004BD5D4  |.  3D FF000000 |CMP EAX,0FF
+004BD5D9  |.  74 11       |JE SHORT GameServ.004BD5EC
+004BD5DB  |.  8B4D E0     |MOV ECX,[LOCAL.incount]
+004BD5DE  |.  83C1 01     |ADD ECX,1
+004BD5E1  |.  894D E0     |MOV [LOCAL.incount],ECX
+004BD5E4  |.  837D E0 4B  |CMP [LOCAL.incount],4B	// 76 Max MAin inventory size
+004BD5E8  |.  7E 02       |JLE SHORT GameServ.004BD5EC
+004BD5EA  |.  EB 05       |JMP SHORT GameServ.004BD5F1
+004BD5EC  |>^ E9 14FFFFFF \JMP GameServ.004BD505
+004BD5F1  |>  8B15 808ABF>MOV EDX,DWORD PTR DS:[SMDFile]
+004BD5F7  |.  52          PUSH EDX                                 ; /stream = 00000001
+004BD5F8  |.  E8 0BD30600 CALL GameServ._fclose                    ; \_fclose
+004BD5FD  |.  83C4 04     ADD ESP,4
+004BD600  |>  5F          POP EDI                                  ;  kernel32.7C816FD7
+004BD601  |.  5E          POP ESI                                  ;  kernel32.7C816FD7
+004BD602  |.  5B          POP EBX                                  ;  kernel32.7C816FD7
+004BD603  |.  8BE5        MOV ESP,EBP
+004BD605  |.  5D          POP EBP                                  ;  kernel32.7C816FD7
+004BD606  \.  C3          RETN
+
+
+How to call it?
+
+void gObjMonsterItemLoadScript(LPOBJ lpObj, char * script_file);
+
+gObjMonsterItemLoadScript( &gObj[index], "MonsterItem.txt");
+
+Atte : Deathway

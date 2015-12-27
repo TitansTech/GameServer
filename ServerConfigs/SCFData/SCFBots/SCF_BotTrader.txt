@@ -1,0 +1,64 @@
+//Bot Data
+//BotIndex	Class	Name		Map	X	Y	Dir	OnlyVip
+1
+0		50	"BotTrader"	0	130	127	3	0
+end
+
+//BotPet Items
+//Slot:
+//0 = Weapon
+//1 = Shield
+//2 = Helm
+//3 = Armor
+//4 = Pants
+//5 = Gloves
+//6 = Boots
+//7 = Wings
+//8 = Pet
+//BotIndex	Slot	Type	Index	Level	Opt
+2
+0		3	8	7	9	1
+0		4	9	7	9	1
+0		5	10	7	9	1
+0		6	11	7	9	1
+0		7	12	134	0	0
+end
+
+//Mix Data
+//MixIndex TradeMixName SuccessRate	Zen	VipMoney
+3
+2 	"Trade Helm" 	100 		0	0
+3 	"Trade Armor" 	100 		0	0
+4 	"Trade Pants" 	100 		0	0
+end
+
+//Req Items
+//MixIndex 	Type Index MinLevel MinOpt NeedLuck NeedSkill NeedExc NeededDurability
+4
+2 		7 	0 	0 	0 	0 	0 	0 	0
+3 		8 	0 	0 	0 	0 	0 	0 	0
+4 		9 	0 	0 	0 	0 	0 	0 	0
+end
+
+//////////////////////////////////////////////////////////////////////
+//Success							    //
+//////////////////////////////////////////////////////////////////////
+// Luck and Skills is Percent 0 to 100				    //
+// 								    //
+//								    //
+//////////////////////////////////////////////////////////////////////
+//MixIndex 	Type	Index 	LevelMin	LevelMax	OptMin	OptMax 	Luck	Skill	Exc	Durability
+5
+2		8	3	1		15		1	7	60	0	0	255	//Legendary Armor
+3 		12 	30	0 		0		0	0	0	0 	0	0	//Jewel of Soul+1
+4 		12 	0	0 		0		0	0	0	0 	0	0	//Wings
+4 		12 	1	0 		0		0	0	0	0 	0	0	//Wings
+end
+
+//Bot Mix Asociation
+//BotIndex	MixIndex
+6
+0		2
+0		3
+0		4
+end

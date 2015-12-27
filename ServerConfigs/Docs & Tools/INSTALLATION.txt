@@ -1,0 +1,29 @@
+==========================================
+= TITANSTECH - http://www.titanstech.com =
+= SIMPLE INSTALL DOCUMENT 		 =
+==========================================
+
+1.- REQS:
+
+---------
+SOFTWARE:
+ Microsoft SQL Server 2008.
+ Microsoft Windows 2008.
+
+---------
+HARDWARE:
+ CORE2DUO 2 GHZ or more.
+ 4 GB of RAM.
+ 20 GB OF HD SPACE.
+
+2.- INSTALLATION.
+
+a) Install SQL with mix mode and TCP enable.
+b) Update Microsoft Windows and SQL Server.
+c) Open TitanMUInstaller folder, edit Config.ini.
+d) Run TitanMUInstaller.exe and do this steps: 1 Normal Install, Then Upgrade step by step on every button.
+e) Same as before but on folder TitanDBUpdater. Configure the ini file then run the exe.
+f) Enjoy.
+
+Questions to bet0x@titanstech.com (EMAIL or MSN).
+ 

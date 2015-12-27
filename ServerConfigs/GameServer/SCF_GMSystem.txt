@@ -1,0 +1,6 @@
+//Name			GMLevel	ExpDay	ExpMonth	ExpYear		/pkclear	/pkset	/item	/skin	/gg	/gmoveall	/whois	/addbuff	/clearinv	/firecracker	/addskill	/spawn	/status	ALLBANCOMMANDS	/vipstatus	/setzen		/online		/playerinfo	/setvip		CastleSiegeCMDS
+1
+"DaRKav"		32	31	12		2010		1		1	1	1	1	1		1	1		1		1		1		1	1	1		1		1		1		1		1		1
+"IcaruS"		32	31	12		2010		1		1	1	1	1	1		1	1		1		1		1		1	1	1		1		1		1		1		1		1
+"bet0x"			32	31	12		2010		1		1	1	1	1	1		1	1		1		1		1		1	1	1		1		1		1		1		1		1
+end

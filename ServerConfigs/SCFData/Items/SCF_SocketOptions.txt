@@ -1,0 +1,64 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Team    : SCF Team                                              		//
+// Date    : 2010 / 07 / 21                                              	//
+// 		                                                		//
+// Data:									//
+//										//
+//Lvl 1	Lvl 2	Lvl 3	Lvl 4	Lvl 5						//
+//////////////////////////////////////////////////////////////////////////////////
+
+//Fire
+1
+20	22	23	24	25	// IncreaseSkillAttackPower
+7	8	9	10	11	// IncreaseAttackSpeed
+30	32	35	40	50	// IncreaseMaximumDamage_SkillPower
+20	22	25	30	35	// IncreaseMinimumDamage_SkillPower
+20	22	25	30	35	// IncreaseDamage_SkillPower
+40	41	42	43	44	// DecreaseAGuse
+end
+
+//Water
+2
+10	11	12	13	14	// IncreaseDefenseSuccessRate_Percent
+30	33	36	39	42	// IncreaseDefense
+7	10	15	20	30	// IncreaseDefenseShield_Percent
+4	5	6	7	8	// DamageReduction
+5	6	7	8	9	// DamageReflections
+end
+
+//Ice
+3
+8	9	10	11	12	// MonsterDieGetLife
+8	9	10	11	12	// MonsterDieGetMana
+37	40	45	50	60	// IncreaseSkillAttackPower
+25	27	30	35	40	// IncreaseAttackSuccessRate
+30	32	34	36	38	// IncreaseDurabilty_Percent
+end
+
+//Wind
+4
+8	10	13	16	20	// IncreaseLifeAutoRecovery
+4	5	6	7	8	// IncreaseMaximumLife_Percent
+4	5	6	7	8	// IncreaseMaximumMana_Percent
+7	14	21	28	35	// IncreaseManaAutoRecovery
+25	30	35	40	50	// IncreaseMaximumAG
+3	5	7	10	15	// IncreaseAGAmount
+end
+
+//Lightning
+5
+15	20	25	30	40	// IncreaseExcellentDamage
+10	11	12	13	14	// IncreaseExcellentDamageSuccessRate
+30	32	35	40	50	// IncreaseCriticalDamage
+8	9	10	11	12	// IncreaseCriticalDamageSuccessRate
+end
+
+//Earth
+6
+30	32	34	36	38	// IncreaseStamina
+end
+
+//Bonus
+7
+11					// IncreaseDamage
+end

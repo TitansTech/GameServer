@@ -1,0 +1,12 @@
+//BYTE	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE	
+//btItemCodeType	btItemCodeIndex	btItemCodeLevel	btSkillOption	btAddOption	btLuckOption	btExOption	X	Y	Scale	
+1										
+14	53	0	0	0	0	0	0	0	50	//행운의부적
+14	54	0	0	0	0	0	0	0	50	//카오스카드
+13	43	0	0	0	0	0	0	0	50	//상승의인장
+13	44	0	0	0	0	0	0	0	50	//풍요의인장
+13	45	0	0	0	0	0	0	0	50	//유지의인장
+13	46	0	0	0	0	0	0	0	50	//데빌스퀘어자유입장권
+13	47	0	0	0	0	0	0	0	50	//블러드캐슬자유입장권
+13	48	0	0	0	0	0	0	0	50	//칼리마자유입장권
+end										

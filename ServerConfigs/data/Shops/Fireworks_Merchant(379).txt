@@ -1,0 +1,25 @@
+14 3 0 100 0 0 0 0	//Healing Big Potion	[1]	[1x1]	[1]
+14 6 0 100 0 0 0 0	//Mana Big Potion	[2]	[1x1]	[1]
+14 8 0 100 0 0 0 0	//Anti-Poison Potion	[3]	[1x1]	[1]
+
+14 9 1 0 0 0 0 0 	//Olive of Love		[4]	[1x2]	[1,2]
+14 10 0 0 0 0 0 0 	//Teleport		[5]	[1x2]	[1,2]
+14 9 0 0 0 0 0 0 	//Alcohol		[6]	[1x2]	[1,2]
+
+13 29 0 0 0 0 0 0 	//Armor of Guardman	[7,8]	[2x2]	[1,2]
+
+14 20 0 0 0 0 0 0 	//Sentimental Charm	[1]	[1x1]	[2]
+4 7  7 255 1 1 2 0 	//Arrows +5		[2]	[1x1]	[2]
+4 15 7 255 1 1 2 0 	//Bolts +5		[3]	[1x1]	[2]
+
+//Misc
+13 9 0 0 0 0 1 0 //Poison Ring
+13 8 0 0 0 0 1 0 //Ice Ring
+13 21 0 0 0 0 1 0 //Ring of Fire
+13 22 0 0 0 0 1 0 //Ring of Earth
+
+13 13 0 0 0 0 1 0 //Fire Necklace
+13 12 0 0 0 0 1 0 //Lightning Necklace
+13 25 0 0 0 0 1 0 //Ice Necklace
+13 26 0 0 0 0 1 0 //Wind Necklace
+end

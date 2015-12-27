@@ -1,0 +1,41 @@
+//======================================================================================
+//
+//======================================================================================
+//OnlyVip  = This bot is only for VIP users
+//Class    = 0,1,2	DW,SM,GM
+//	   = 16,17,18	DK,BK,BM
+//	   = 32,33,34	Elf,ME,HE
+//	   = 48,49,50	MG,DM
+//	   = 64,65,66	DL,LE
+//	   = 80,81,82	SU,BS,DS
+//======================================================================================
+//BotIndex	Class	OnlyVip	VipMoney	Zen	MinLevel	MinReset	Name		Map	X	Y	Dir
+1
+0		17	0	0		0	1		0		"[Bot]Warp"	2	220	83	3
+end
+//BotPet Items
+//Slot:
+//0 = Weapon
+//1 = Shield
+//2 = Helm
+//3 = Armor
+//4 = Pants
+//5 = Gloves
+//6 = Boots
+//7 = Wings
+//8 = Pet
+//BotIndex	Slot	Type	Index	Level	Opt
+2
+0		2	7	46	15	1
+0		3	8	46	15	1
+0		4	9	46	15	1
+0		5	10	46	15	1
+0		6	11	46	15	1
+0		7	12	36	15	0
+end
+
+//Warp To:
+//BotIndex	Map	X	Y
+3
+0		0	125	125
+end

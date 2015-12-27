@@ -1,0 +1,4867 @@
+	TITLE	C:\Deathway\C++\GameServer\SOURCE\MonsterSetBase.cpp
+	.386P
+include listing.inc
+if @Version gt 510
+.model FLAT
+else
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+_BSS	SEGMENT DWORD USE32 PUBLIC 'BSS'
+_BSS	ENDS
+$$SYMBOLS	SEGMENT BYTE USE32 'DEBSYM'
+$$SYMBOLS	ENDS
+$$TYPES	SEGMENT BYTE USE32 'DEBTYP'
+$$TYPES	ENDS
+_TLS	SEGMENT DWORD USE32 PUBLIC 'TLS'
+_TLS	ENDS
+;	COMDAT ??_C@_00A@?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0BP@KLJH@invalid?5vector?$DMbool?$DO?5subscript?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0FG@ILEN@?3Sun?3Sunday?3Mon?3Monday?3Tue?3Tuesd@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0IH@JLLA@?3Jan?3January?3Feb?3February?3Mar?3Ma@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_05NAGO@false?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_04NCCD@true?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_02ELCB@no?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_03LGKI@yes?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_01FKHJ@C?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0DF@OCHB@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0O@DIPE@ERROR?5?3?5?$CFs?5?$CFd?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?__LINE__Var@?1??GetPosition@CMonsterSetBase@@QAEHHFPAF0@Z@4FA
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_C@_01LHO@r?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0BD@JJCL@file?5open?5error?5?$CFs?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_03DNBD@end?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0CB@IBLK@Monster?5attribute?5max?5over?5?$CFs?5?$CFd@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0CG@OGEN@Monster?5attribute?5max?5over?5?$CFd?5?$CI?$CF@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPAD@Z@4FA
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPADH@Z@4FA
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_C@_0BF@MMAA@missing?5locale?5facet?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+CRT$XCA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+CRT$XCA	ENDS
+CRT$XCU	SEGMENT DWORD USE32 PUBLIC 'DATA'
+CRT$XCU	ENDS
+CRT$XCL	SEGMENT DWORD USE32 PUBLIC 'DATA'
+CRT$XCL	ENDS
+CRT$XCC	SEGMENT DWORD USE32 PUBLIC 'DATA'
+CRT$XCC	ENDS
+CRT$XCZ	SEGMENT DWORD USE32 PUBLIC 'DATA'
+CRT$XCZ	ENDS
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ?SetTimeStamp@_GUILD_INFO_STRUCT@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?Init@BILL_CLASS@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?GetDist@PATH@@QAEHHHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?VerifyThatOnPath@PATH@@QAEHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?CanWeMoveForward@PATH@@QAEHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?CanWeMoveForward2@PATH@@QAEHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?IsThisSpotOK@PATH@@QAEHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?FindNextDir@PATH@@QAEHHHHHHEH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?FindNextDir2@PATH@@QAEHHHHHHEH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0PATH@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1PATH@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_GPATH@@QAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?GetToken@@YAHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0CMonsterSetBase@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_GCMonsterSetBase@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1CMonsterSetBase@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?SetBoxPosition@CMonsterSetBase@@QAEXHHHHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?GetBoxPosition@CMonsterSetBase@@QAEHHHHHHPAF0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?GetPosition@CMonsterSetBase@@QAEHHFPAF0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?LoadSetBase@CMonsterSetBase@@QAEXPAD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PBDABV?$allocator@D@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@PBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$vector@IV?$allocator@I@std@@@std@@QAE@ABV?$allocator@I@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$vector@IV?$allocator@I@std@@@std@@QAE@IABIABV?$allocator@I@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$vector@IV?$allocator@I@std@@@std@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?reserve@?$vector@IV?$allocator@I@std@@@std@@QAEXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?capacity@?$vector@IV?$allocator@I@std@@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?begin@?$vector@IV?$allocator@I@std@@@std@@QAEPAIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?begin@?$vector@IV?$allocator@I@std@@@std@@QBEPBIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?end@?$vector@IV?$allocator@I@std@@@std@@QAEPAIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?resize@?$vector@IV?$allocator@I@std@@@std@@QAEXIABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?size@?$vector@IV?$allocator@I@std@@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?max_size@?$vector@IV?$allocator@I@std@@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?get_allocator@?$vector@IV?$allocator@I@std@@@std@@QBE?AV?$allocator@I@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??A?$vector@IV?$allocator@I@std@@@std@@QAEAAII@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?erase@?$vector@IV?$allocator@I@std@@@std@@QAEPAIPAI0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Eq@?$vector@IV?$allocator@I@std@@@std@@QBE_NABV12@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Lt@?$vector@IV?$allocator@I@std@@@std@@QBE_NABV12@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?swap@?$vector@IV?$allocator@I@std@@@std@@QAEXAAV12@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$reverse_iterator@Viterator@?$vector@_NV?$allocator@I@std@@@std@@_NVreference@23@PAV423@H@std@@QAE@Viterator@?$vector@_NV?$allocator@I@std@@@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$reverse_iterator@Vconst_iterator@?$vector@_NV?$allocator@I@std@@@std@@_N$$CBVreference@23@PBV423@H@std@@QAE@Vconst_iterator@?$vector@_NV?$allocator@I@std@@@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@D@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_ostream@GU?$char_traits@G@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?put@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAEAAV12@G@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?flush@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAEAAV12@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_ios@GU?$char_traits@G@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?setstate@?$basic_ios@GU?$char_traits@G@std@@@std@@QAEXH_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?rdbuf@?$basic_ios@GU?$char_traits@G@std@@@std@@QBEPAV?$basic_streambuf@GU?$char_traits@G@std@@@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_istream@DU?$char_traits@D@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0sentry@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE@AAV12@_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Bsentry@?$basic_istream@DU?$char_traits@D@std@@@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sgetc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?snextc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?overflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pbackfail@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?underflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHPADH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHPBDH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?seekoff@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE?AV?$fpos@H@2@JW4seekdir@ios_base@2@H@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?seekpos@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE?AV?$fpos@H@2@V32@H@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEPAV12@PADH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEXABVlocale@2@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_istream@GU?$char_traits@G@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0sentry@?$basic_istream@GU?$char_traits@G@std@@@std@@QAE@AAV12@_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Bsentry@?$basic_istream@GU?$char_traits@G@std@@@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_streambuf@GU?$char_traits@G@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sgetc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?snextc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?overflow@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEGG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pbackfail@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEGG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?showmanyc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?underflow@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?uflow@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?xsgetn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHPAGH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?xsputn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHPBGH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?seekoff@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAE?AV?$fpos@H@2@JW4seekdir@ios_base@2@H@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?seekpos@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAE?AV?$fpos@H@2@V32@H@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?setbuf@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEPAV12@PAGH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sync@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?imbue@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEXABVlocale@2@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?is@?$ctype@G@std@@QBE_NFG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$ctype@G@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_is@?$ctype@G@std@@MBE_NFG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_is@?$ctype@G@std@@MBEPBGPBG0PAF@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_scan_is@?$ctype@G@std@@MBEPBGFPBG0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_scan_not@?$ctype@G@std@@MBEPBGFPBG0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_tolower@?$ctype@G@std@@MBEGG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_tolower@?$ctype@G@std@@MBEPBGPAGPBG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_toupper@?$ctype@G@std@@MBEGG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_toupper@?$ctype@G@std@@MBEPBGPAGPBG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_widen@?$ctype@G@std@@MBEGD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_widen@?$ctype@G@std@@MBEPBDPBD0PAG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_narrow@?$ctype@G@std@@MBEDGD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_narrow@?$ctype@G@std@@MBEPBGPBG0DPAD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_ostream@DU?$char_traits@D@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_ios@DU?$char_traits@D@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_ostream@GU?$char_traits@G@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_ios@GU?$char_traits@G@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_istream@DU?$char_traits@D@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_istream@GU?$char_traits@G@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_streambuf@GU?$char_traits@G@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$ctype@G@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_D?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_D?$basic_ostream@GU?$char_traits@G@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_D?$basic_istream@DU?$char_traits@D@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_D?$basic_istream@GU?$char_traits@G@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?allocate@?$allocator@I@std@@QAEPAIIPBX@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?deallocate@?$allocator@I@std@@QAEXPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?max_size@?$allocator@I@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$vector@IV?$allocator@I@std@@@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??4?$vector@IV?$allocator@I@std@@@std@@QAEAAV01@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?end@?$vector@IV?$allocator@I@std@@@std@@QBEPBIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?insert@?$vector@IV?$allocator@I@std@@@std@@QAEXPAIIABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Destroy@?$vector@IV?$allocator@I@std@@@std@@IAEXPAI0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Ucopy@?$vector@IV?$allocator@I@std@@@std@@IAEPAIPBI0PAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Ufill@?$vector@IV?$allocator@I@std@@@std@@IAEXPAIIABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$fpos@H@std@@QAE@J@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?clear@?$basic_ios@GU?$char_traits@G@std@@@std@@QAEXH_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0sentry@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAE@AAV12@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1sentry@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Bsentry@?$basic_ostream@GU?$char_traits@G@std@@@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pubsync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sbumpc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?egptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?gbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?epptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Gninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?ipfx@?$basic_istream@GU?$char_traits@G@std@@@std@@QAE_N_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pubsync@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sbumpc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sputc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEGG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?gptr@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IBEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pptr@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IBEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?egptr@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IBEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?gbump@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEXH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?epptr@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IBEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Gninc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pbump@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEXH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?widen@?$ctype@G@std@@QBEGD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?narrow@?$ctype@G@std@@QBEDGD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?capacity@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Refcnt@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAEPBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?deallocate@?$allocator@D@std@@QAEXPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?construct@?$allocator@I@std@@QAEXPAIABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?destroy@?$allocator@I@std@@QAEXPAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?opfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?opfx@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?osfx@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?tie@?$basic_ios@GU?$char_traits@G@std@@@std@@QBEPAV?$basic_ostream@GU?$char_traits@G@std@@@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Pninc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Split@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?allocate@?$allocator@D@std@@QAEPADIPBX@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?max_size@?$allocator@D@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy_backward@std@@YA?AViterator@?$vector@_NV?$allocator@I@std@@@1@V231@00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?fill@std@@YAXViterator@?$vector@_NV?$allocator@I@std@@@1@0AB_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Distance@std@@YAXVconst_iterator@?$vector@_NV?$allocator@I@std@@@1@0AAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@std@@YA?AViterator@?$vector@_NV?$allocator@I@std@@@1@Vconst_iterator@31@0V231@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@std@@YA?AViterator@?$vector@_NV?$allocator@I@std@@@1@V231@00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?swap@std@@YAXAAI0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?use_facet@std@@YAABV?$ctype@D@1@ABVlocale@1@PBV21@_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?use_facet@std@@YAABV?$ctype@G@1@ABVlocale@1@PBV21@_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@std@@YAPAIPAI00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?equal@std@@YA_NPBI00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?lexicographical_compare@std@@YA_NPBI000@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??8std@@YA_NABV?$allocator@I@0@0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?swap@std@@YAXAAPAI0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??8std@@YA_NABV?$allocator@D@0@0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Allocate@std@@YAPAIHPAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@std@@YAPAIPBI0PAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?fill@std@@YAXPAI0ABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy_backward@std@@YAPAIPAI00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Construct@std@@YAXPAIABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Destroy@std@@YAXPAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Allocate@std@@YAPADHPAD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$ctype@G@std@@QAE@I@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Save@?$_Tidyfac@V?$ctype@D@std@@@std@@SAPAV?$ctype@D@2@PAV32@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Save@?$_Tidyfac@V?$ctype@G@std@@@std@@SAPAV?$ctype@G@2@PAV32@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Init@?$ctype@G@std@@IAEXABV_Locinfo@2@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Tidy@?$_Tidyfac@V?$ctype@D@std@@@std@@SAXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Tidy@?$_Tidyfac@V?$ctype@G@std@@@std@@SAXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Iter_cat@std@@YA?AUrandom_access_iterator_tag@1@ABU?$iterator@Urandom_access_iterator_tag@std@@_NH@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Distance@std@@YAXVconst_iterator@?$vector@_NV?$allocator@I@std@@@1@0AAIUrandom_access_iterator_tag@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?id@?$ctype@G@std@@$D
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT _$E26
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?mismatch@std@@YA?AU?$pair@PBIPBI@1@PBI00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?id@?$ctype@G@std@@$E
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT _$E27
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$pair@PBIPBI@std@@QAE@ABQBI0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@domain_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0domain_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0logic_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7logic_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??1logic_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7domain_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVdomain_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1domain_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVdomain_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVdomain_error@std@@@8??0domain_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVdomain_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT __CT??_R0?AVlogic_error@std@@@8??0logic_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVlogic_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT __CT??_R0?AVexception@@@8??0exception@@QAE@ABV0@@Z12
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVexception@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gdomain_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@range_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0range_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0runtime_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7runtime_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??1runtime_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7range_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVrange_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1range_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVrange_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVrange_error@std@@@8??0range_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVrange_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT __CT??_R0?AVruntime_error@std@@@8??0runtime_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVruntime_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Grange_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@underflow_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0underflow_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7underflow_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVunderflow_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1underflow_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVunderflow_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVunderflow_error@std@@@8??0underflow_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVunderflow_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gunderflow_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@bad_exception@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0bad_exception@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7bad_exception@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI2?AVbad_exception@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1bad_exception@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA2?AVbad_exception@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVbad_exception@std@@@8??0bad_exception@std@@QAE@ABV01@@Z12
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVbad_exception@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gbad_exception@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_length@?$codecvt@GDH@std@@MBEHAAHPBG1I@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_out@?$codecvt@GDH@std@@MBEHAAHPBG1AAPBGPAD3AAPAD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_in@?$codecvt@GDH@std@@MBEHAAHPBD1AAPBDPAG3AAPAG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_encoding@?$codecvt@GDH@std@@MBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_max_length@?$codecvt@GDH@std@@MBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_always_noconv@?$codecvt@GDH@std@@MBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$codecvt@GDH@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$codecvt@GDH@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$codecvt@GDH@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??1codecvt_base@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1facet@locale@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7facet@locale@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_Gfacet@locale@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_Gctype_base@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@bad_alloc@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0bad_alloc@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7bad_alloc@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI2?AVbad_alloc@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1bad_alloc@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA2?AVbad_alloc@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QAE@ABV01@@Z12
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVbad_alloc@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gbad_alloc@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_toupper@?$ctype@D@std@@MBEDD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_toupper@?$ctype@D@std@@MBEPBDPADPBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_tolower@?$ctype@D@std@@MBEDD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_tolower@?$ctype@D@std@@MBEPBDPADPBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$ctype@D@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$ctype@D@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$ctype@D@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_G__non_rtti_object@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1__non_rtti_object@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1bad_typeid@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7bad_typeid@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?_Doraise@overflow_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0overflow_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7overflow_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVoverflow_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1overflow_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVoverflow_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVoverflow_error@std@@@8??0overflow_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVoverflow_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Goverflow_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@failure@ios_base@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0failure@ios_base@std@@QAE@ABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7failure@ios_base@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVfailure@ios_base@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1failure@ios_base@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVfailure@ios_base@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVfailure@ios_base@std@@@8??0failure@ios_base@std@@QAE@ABV012@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVfailure@ios_base@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gfailure@ios_base@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@bad_typeid@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0bad_typeid@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __TI2?AVbad_typeid@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CTA2?AVbad_typeid@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVbad_typeid@std@@@8??0bad_typeid@std@@QAE@ABV01@@Z12
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVbad_typeid@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gbad_typeid@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@runtime_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __TI2?AVruntime_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CTA2?AVruntime_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ?what@runtime_error@std@@UBEPBDXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_Gruntime_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@out_of_range@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0out_of_range@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7out_of_range@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVout_of_range@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1out_of_range@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVout_of_range@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVout_of_range@std@@@8??0out_of_range@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVout_of_range@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gout_of_range@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@bad_cast@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0bad_cast@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7bad_cast@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_Gbad_cast@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1bad_cast@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@length_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0length_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7length_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVlength_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1length_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVlength_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVlength_error@std@@@8??0length_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVlength_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Glength_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@invalid_argument@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0invalid_argument@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7invalid_argument@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVinvalid_argument@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1invalid_argument@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVinvalid_argument@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVinvalid_argument@std@@@8??0invalid_argument@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVinvalid_argument@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Ginvalid_argument@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_encoding@codecvt_base@std@@MBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_max_length@codecvt_base@std@@MBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_always_noconv@codecvt_base@std@@MBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_Gcodecvt_base@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@logic_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __TI2?AVlogic_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CTA2?AVlogic_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ?what@logic_error@std@@UBEPBDXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_Glogic_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_Gios_base@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Gconst_iterator@?$vector@_NV?$allocator@I@std@@@std@@QBEHV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Decref@facet@locale@std@@QAEPAV123@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Getctype@_Locinfo@std@@QBE?AU_Ctypevec@@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Facsav@?$_Tidyfac@V?$ctype@G@std@@@std@@0PAV?$ctype@G@2@A
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ?_Incref@facet@locale@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Facsav@?$_Tidyfac@V?$ctype@D@std@@@std@@0PAV?$ctype@D@2@A
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??0ctype_base@std@@QAE@I@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0facet@locale@std@@IAE@I@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7ctype_base@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??2@YAPAXIPAX@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Psave@?1??use_facet@std@@YAABV?$ctype@G@2@ABVlocale@2@PBV32@_N@Z@4PBVfacet@42@B
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??0?$ctype@D@std@@QAE@PBF_NI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Init@?$ctype@D@std@@IAEXABV_Locinfo@2@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Term@?$ctype@D@std@@KAXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Psave@?1??use_facet@std@@YAABV?$ctype@D@2@ABVlocale@2@PBV32@_N@Z@4PBVfacet@42@B
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT __TI2?AVbad_cast@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CTA2?AVbad_cast@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVbad_cast@std@@@8??0bad_cast@std@@QAE@ABV01@@Z12
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVbad_cast@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??0bad_cast@std@@QAE@PBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Bid@locale@std@@QAEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Dconst_iterator@?$vector@_NV?$allocator@I@std@@@std@@QBE?BVreference@12@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0reference@?$vector@_NV?$allocator@I@std@@@std@@QAE@IPAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??9const_iterator@?$vector@_NV?$allocator@I@std@@@std@@QBE_NABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??8const_iterator@?$vector@_NV?$allocator@I@std@@@std@@QBE_NABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Econst_iterator@?$vector@_NV?$allocator@I@std@@@std@@QAEAAV012@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Inc@const_iterator@?$vector@_NV?$allocator@I@std@@@std@@IAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??4reference@?$vector@_NV?$allocator@I@std@@@std@@QAEAAV012@_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Eiterator@?$vector@_NV?$allocator@I@std@@@std@@QAEAAV012@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Fiterator@?$vector@_NV?$allocator@I@std@@@std@@QAEAAV012@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Dec@const_iterator@?$vector@_NV?$allocator@I@std@@@std@@IAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Diterator@?$vector@_NV?$allocator@I@std@@@std@@QBE?AVreference@12@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??4reference@?$vector@_NV?$allocator@I@std@@@std@@QAEAAV012@ABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Breference@?$vector@_NV?$allocator@I@std@@@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??9iterator@?$vector@_NV?$allocator@I@std@@@std@@QBE_NABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??8iterator@?$vector@_NV?$allocator@I@std@@@std@@QBE_NABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?assign@?$char_traits@D@std@@SAXAADABD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?move@?$char_traits@D@std@@SAPADPADPBDI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?is@?$ctype@D@std@@QBE_NFD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?getloc@ios_base@std@@QBE?AVlocale@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0locale@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?flags@ios_base@std@@QBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?good@ios_base@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?length@?$char_traits@D@std@@SAIPBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Narrow@std@@YAHG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Widen@std@@YAGDPAG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1ctype_base@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$ctype@G@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?to_char_type@?$char_traits@G@std@@SAGABG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@?$char_traits@G@std@@SAPAGPAGPBGI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT _wmemcpy
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?to_int_type@?$char_traits@G@std@@SAGABG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$basic_streambuf@GU?$char_traits@G@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_7?$basic_istream@GU?$char_traits@G@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?to_char_type@?$char_traits@D@std@@SADABH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@?$char_traits@D@std@@SAPADPADPBDI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?to_int_type@?$char_traits@D@std@@SAHABD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1locale@std@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$basic_streambuf@DU?$char_traits@D@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_7?$basic_istream@DU?$char_traits@D@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_7?$basic_ios@GU?$char_traits@G@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?eof@?$char_traits@G@std@@SAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?eq_int_type@?$char_traits@G@std@@SA_NABG0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$basic_ostream@GU?$char_traits@G@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?rdstate@ios_base@std@@QBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$basic_ios@DU?$char_traits@D@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?fail@ios_base@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?eof@?$char_traits@D@std@@SAHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?eq_int_type@?$char_traits@D@std@@SA_NABH0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$basic_ostream@DU?$char_traits@D@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_7CMonsterSetBase@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+FLAT	GROUP _DATA, CONST, _BSS, CRT$XCA, CRT$XCU, CRT$XCL, CRT$XCC, CRT$XCZ, xdata$x
+	ASSUME	CS: FLAT, DS: FLAT, SS: FLAT
+endif
+CRT$XCU	SEGMENT
+_$S28	DD	FLAT:_$E27
+CRT$XCU	ENDS
+PUBLIC	??0CMonsterSetBase@@QAE@XZ			; CMonsterSetBase::CMonsterSetBase
+PUBLIC	??_7CMonsterSetBase@@6B@			; CMonsterSetBase::`vftable'
+PUBLIC	??_GCMonsterSetBase@@UAEPAXI@Z			; CMonsterSetBase::`scalar deleting destructor'
+PUBLIC	??_ECMonsterSetBase@@UAEPAXI@Z			; CMonsterSetBase::`vector deleting destructor'
+;	COMDAT ??_7CMonsterSetBase@@6B@
+; File C:\Deathway\C++\GameServer\SOURCE\MonsterSetBase.cpp
+CONST	SEGMENT
+??_7CMonsterSetBase@@6B@ DD FLAT:??_ECMonsterSetBase@@UAEPAXI@Z ; CMonsterSetBase::`vftable'
+CONST	ENDS
+;	COMDAT ??0CMonsterSetBase@@QAE@XZ
+_TEXT	SEGMENT
+_this$ = -4
+??0CMonsterSetBase@@QAE@XZ PROC NEAR			; CMonsterSetBase::CMonsterSetBase, COMDAT
+
+; 12   : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 44	 sub	 esp, 68			; 00000044H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+  0000c	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  0000f	c7 00 00 00 00
+	00		 mov	 DWORD PTR [eax], OFFSET FLAT:??_7CMonsterSetBase@@6B@ ; CMonsterSetBase::`vftable'
+
+; 13   : 	return;
+; 14   : }
+
+  00015	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00018	5f		 pop	 edi
+  00019	5e		 pop	 esi
+  0001a	5b		 pop	 ebx
+  0001b	8b e5		 mov	 esp, ebp
+  0001d	5d		 pop	 ebp
+  0001e	c3		 ret	 0
+??0CMonsterSetBase@@QAE@XZ ENDP				; CMonsterSetBase::CMonsterSetBase
+_TEXT	ENDS
+PUBLIC	??1CMonsterSetBase@@UAE@XZ			; CMonsterSetBase::~CMonsterSetBase
+EXTRN	??3@YAXPAX@Z:NEAR				; operator delete
+;	COMDAT ??_GCMonsterSetBase@@UAEPAXI@Z
+_TEXT	SEGMENT
+___flags$ = 8
+_this$ = -4
+??_GCMonsterSetBase@@UAEPAXI@Z PROC NEAR		; CMonsterSetBase::`scalar deleting destructor', COMDAT
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 44	 sub	 esp, 68			; 00000044H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+  0000c	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  0000f	e8 00 00 00 00	 call	 ??1CMonsterSetBase@@UAE@XZ ; CMonsterSetBase::~CMonsterSetBase
+  00014	8b 45 08	 mov	 eax, DWORD PTR ___flags$[ebp]
+  00017	83 e0 01	 and	 eax, 1
+  0001a	85 c0		 test	 eax, eax
+  0001c	74 0c		 je	 SHORT $L46541
+  0001e	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00021	51		 push	 ecx
+  00022	e8 00 00 00 00	 call	 ??3@YAXPAX@Z		; operator delete
+  00027	83 c4 04	 add	 esp, 4
+$L46541:
+  0002a	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  0002d	5f		 pop	 edi
+  0002e	5e		 pop	 esi
+  0002f	5b		 pop	 ebx
+  00030	8b e5		 mov	 esp, ebp
+  00032	5d		 pop	 ebp
+  00033	c2 04 00	 ret	 4
+??_GCMonsterSetBase@@UAEPAXI@Z ENDP			; CMonsterSetBase::`scalar deleting destructor'
+_TEXT	ENDS
+;	COMDAT ??1CMonsterSetBase@@UAE@XZ
+_TEXT	SEGMENT
+_this$ = -4
+??1CMonsterSetBase@@UAE@XZ PROC NEAR			; CMonsterSetBase::~CMonsterSetBase, COMDAT
+
+; 17   : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 44	 sub	 esp, 68			; 00000044H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+  0000c	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  0000f	c7 00 00 00 00
+	00		 mov	 DWORD PTR [eax], OFFSET FLAT:??_7CMonsterSetBase@@6B@ ; CMonsterSetBase::`vftable'
+
+; 18   : 	return;
+; 19   : }
+
+  00015	5f		 pop	 edi
+  00016	5e		 pop	 esi
+  00017	5b		 pop	 ebx
+  00018	8b e5		 mov	 esp, ebp
+  0001a	5d		 pop	 ebp
+  0001b	c3		 ret	 0
+??1CMonsterSetBase@@UAE@XZ ENDP				; CMonsterSetBase::~CMonsterSetBase
+_TEXT	ENDS
+PUBLIC	?SetBoxPosition@CMonsterSetBase@@QAEXHHHHHH@Z	; CMonsterSetBase::SetBoxPosition
+;	COMDAT ?SetBoxPosition@CMonsterSetBase@@QAEXHHHHHH@Z
+_TEXT	SEGMENT
+_TableNum$ = 8
+_mapnumber$ = 12
+_ax$ = 16
+_ay$ = 20
+_aw$ = 24
+_ah$ = 28
+_this$ = -4
+?SetBoxPosition@CMonsterSetBase@@QAEXHHHHHH@Z PROC NEAR	; CMonsterSetBase::SetBoxPosition, COMDAT
+
+; 23   : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 44	 sub	 esp, 68			; 00000044H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+
+; 24   : 	this->m_sttMonsterSetBase[TableNum].btMapNumber = mapnumber;
+
+  0000c	8b 45 08	 mov	 eax, DWORD PTR _TableNum$[ebp]
+  0000f	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00012	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00015	8a 55 0c	 mov	 dl, BYTE PTR _mapnumber$[ebp]
+  00018	88 54 01 08	 mov	 BYTE PTR [ecx+eax+8], dl
+
+; 25   : 	this->m_sttMonsterSetBase[TableNum].btEndX  = aw;
+
+  0001c	8b 45 08	 mov	 eax, DWORD PTR _TableNum$[ebp]
+  0001f	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00022	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00025	8a 55 18	 mov	 dl, BYTE PTR _aw$[ebp]
+  00028	88 54 01 0d	 mov	 BYTE PTR [ecx+eax+13], dl
+
+; 26   : 	this->m_sttMonsterSetBase[TableNum].btEndY  = ah;
+
+  0002c	8b 45 08	 mov	 eax, DWORD PTR _TableNum$[ebp]
+  0002f	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00032	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00035	8a 55 1c	 mov	 dl, BYTE PTR _ah$[ebp]
+  00038	88 54 01 0e	 mov	 BYTE PTR [ecx+eax+14], dl
+
+; 27   : 	this->m_sttMonsterSetBase[TableNum].btStartX  = ax;
+
+  0003c	8b 45 08	 mov	 eax, DWORD PTR _TableNum$[ebp]
+  0003f	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00042	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00045	8a 55 10	 mov	 dl, BYTE PTR _ax$[ebp]
+  00048	88 54 01 0a	 mov	 BYTE PTR [ecx+eax+10], dl
+
+; 28   : 	this->m_sttMonsterSetBase[TableNum].btStartY  = ay;
+
+  0004c	8b 45 08	 mov	 eax, DWORD PTR _TableNum$[ebp]
+  0004f	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00052	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00055	8a 55 14	 mov	 dl, BYTE PTR _ay$[ebp]
+  00058	88 54 01 0b	 mov	 BYTE PTR [ecx+eax+11], dl
+
+; 29   : }
+
+  0005c	5f		 pop	 edi
+  0005d	5e		 pop	 esi
+  0005e	5b		 pop	 ebx
+  0005f	8b e5		 mov	 esp, ebp
+  00061	5d		 pop	 ebp
+  00062	c2 18 00	 ret	 24			; 00000018H
+?SetBoxPosition@CMonsterSetBase@@QAEXHHHHHH@Z ENDP	; CMonsterSetBase::SetBoxPosition
+_TEXT	ENDS
+PUBLIC	?GetBoxPosition@CMonsterSetBase@@QAEHHHHHHPAF0@Z ; CMonsterSetBase::GetBoxPosition
+EXTRN	__except_handler3:NEAR
+EXTRN	__except_list:DWORD
+EXTRN	?MapC@@3PAVMapClass@@A:BYTE			; MapC
+EXTRN	?GetAttr@MapClass@@QAEEHH@Z:NEAR		; MapClass::GetAttr
+EXTRN	_rand:NEAR
+;	COMDAT CONST
+; File C:\Deathway\C++\GameServer\SOURCE\MonsterSetBase.cpp
+CONST	SEGMENT
+__sehtable$?GetBoxPosition@CMonsterSetBase@@QAEHHHHHHPAF0@Z DD 0ffffffffH
+	DD	FLAT:$L48218
+	DD	FLAT:$L48219
+CONST	ENDS
+;	COMDAT ?GetBoxPosition@CMonsterSetBase@@QAEHHHHHHPAF0@Z
+_TEXT	SEGMENT
+__$SEHRec$ = -24
+_mapnumber$ = 8
+_ax$ = 12
+_ay$ = 16
+_aw$ = 20
+_ah$ = 24
+_mx$ = 28
+_my$ = 32
+_this$ = -28
+_count$ = -32
+_w$ = -36
+_h$ = -40
+_tx$ = -44
+_ty$ = -48
+_attr$ = -52
+?GetBoxPosition@CMonsterSetBase@@QAEHHHHHHPAF0@Z PROC NEAR ; CMonsterSetBase::GetBoxPosition, COMDAT
+
+; 32   : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	6a ff		 push	 -1
+  00005	68 00 00 00 00	 push	 OFFSET FLAT:__sehtable$?GetBoxPosition@CMonsterSetBase@@QAEHHHHHHPAF0@Z
+  0000a	68 00 00 00 00	 push	 OFFSET FLAT:__except_handler3
+  0000f	64 a1 00 00 00
+	00		 mov	 eax, DWORD PTR fs:__except_list
+  00015	50		 push	 eax
+  00016	64 89 25 00 00
+	00 00		 mov	 DWORD PTR fs:__except_list, esp
+  0001d	83 c4 9c	 add	 esp, -100		; ffffff9cH
+  00020	53		 push	 ebx
+  00021	56		 push	 esi
+  00022	57		 push	 edi
+  00023	89 65 e8	 mov	 DWORD PTR __$SEHRec$[ebp], esp
+  00026	89 4d e4	 mov	 DWORD PTR _this$[ebp], ecx
+
+; 33   : 	int count = 100 ; 
+
+  00029	c7 45 e0 64 00
+	00 00		 mov	 DWORD PTR _count$[ebp], 100 ; 00000064H
+$L46571:
+
+; 34   : 	int w;
+; 35   : 	int h;
+; 36   : 	int tx; 
+; 37   : 	int ty;
+; 38   : 	BYTE attr;
+; 39   : 
+; 40   : 	while ( count-- != 0)
+
+  00030	8b 45 e0	 mov	 eax, DWORD PTR _count$[ebp]
+  00033	8b 4d e0	 mov	 ecx, DWORD PTR _count$[ebp]
+  00036	83 e9 01	 sub	 ecx, 1
+  00039	89 4d e0	 mov	 DWORD PTR _count$[ebp], ecx
+  0003c	85 c0		 test	 eax, eax
+  0003e	0f 84 d3 00 00
+	00		 je	 $L46572
+
+; 42   : 		w = aw - ax;
+
+  00044	8b 55 14	 mov	 edx, DWORD PTR _aw$[ebp]
+  00047	2b 55 0c	 sub	 edx, DWORD PTR _ax$[ebp]
+  0004a	89 55 dc	 mov	 DWORD PTR _w$[ebp], edx
+
+; 43   : 		h = ah - ay;
+
+  0004d	8b 45 18	 mov	 eax, DWORD PTR _ah$[ebp]
+  00050	2b 45 10	 sub	 eax, DWORD PTR _ay$[ebp]
+  00053	89 45 d8	 mov	 DWORD PTR _h$[ebp], eax
+
+; 44   : 
+; 45   : 		__try
+
+  00056	c7 45 fc 00 00
+	00 00		 mov	 DWORD PTR __$SEHRec$[ebp+20], 0
+
+; 47   : 			tx = ax + (rand()%w);
+
+  0005d	e8 00 00 00 00	 call	 _rand
+  00062	99		 cdq
+  00063	f7 7d dc	 idiv	 DWORD PTR _w$[ebp]
+  00066	8b 4d 0c	 mov	 ecx, DWORD PTR _ax$[ebp]
+  00069	03 ca		 add	 ecx, edx
+  0006b	89 4d d4	 mov	 DWORD PTR _tx$[ebp], ecx
+
+; 48   : 			ty = ay + (rand()%h);
+
+  0006e	e8 00 00 00 00	 call	 _rand
+  00073	99		 cdq
+  00074	f7 7d d8	 idiv	 DWORD PTR _h$[ebp]
+  00077	8b 45 10	 mov	 eax, DWORD PTR _ay$[ebp]
+  0007a	03 c2		 add	 eax, edx
+  0007c	89 45 d0	 mov	 DWORD PTR _ty$[ebp], eax
+
+; 49   : 		}
+
+  0007f	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$SEHRec$[ebp+20], -1
+  00086	eb 1e		 jmp	 SHORT $L48221
+$L48218:
+
+; 50   : 		__except (1)
+
+  00088	b8 01 00 00 00	 mov	 eax, 1
+$L48220:
+  0008d	c3		 ret	 0
+$L48219:
+  0008e	8b 65 e8	 mov	 esp, DWORD PTR __$SEHRec$[ebp]
+
+; 52   : 			w = 1;
+
+  00091	c7 45 dc 01 00
+	00 00		 mov	 DWORD PTR _w$[ebp], 1
+
+; 53   : 			h = 1;
+
+  00098	c7 45 d8 01 00
+	00 00		 mov	 DWORD PTR _h$[ebp], 1
+
+; 54   : 			//return 1;
+; 55   : 		}
+
+  0009f	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$SEHRec$[ebp+20], -1
+$L48221:
+
+; 56   : 
+; 57   : 		attr = MapC[mapnumber].GetAttr(tx, ty);
+
+  000a6	8b 4d d0	 mov	 ecx, DWORD PTR _ty$[ebp]
+  000a9	51		 push	 ecx
+  000aa	8b 55 d4	 mov	 edx, DWORD PTR _tx$[ebp]
+  000ad	52		 push	 edx
+  000ae	8b 4d 08	 mov	 ecx, DWORD PTR _mapnumber$[ebp]
+  000b1	69 c9 ec c0 00
+	00		 imul	 ecx, 49388		; 0000c0ecH
+  000b7	81 c1 00 00 00
+	00		 add	 ecx, OFFSET FLAT:?MapC@@3PAVMapClass@@A ; MapC
+  000bd	e8 00 00 00 00	 call	 ?GetAttr@MapClass@@QAEEHH@Z ; MapClass::GetAttr
+  000c2	88 45 cc	 mov	 BYTE PTR _attr$[ebp], al
+
+; 58   : 
+; 59   : 		if ( ((attr&1) != 1) && ((attr &4) != 4) && ((attr&8) != 8) )
+
+  000c5	8b 45 cc	 mov	 eax, DWORD PTR _attr$[ebp]
+  000c8	25 ff 00 00 00	 and	 eax, 255		; 000000ffH
+  000cd	83 e0 01	 and	 eax, 1
+  000d0	83 f8 01	 cmp	 eax, 1
+  000d3	74 3d		 je	 SHORT $L46574
+  000d5	8b 4d cc	 mov	 ecx, DWORD PTR _attr$[ebp]
+  000d8	81 e1 ff 00 00
+	00		 and	 ecx, 255		; 000000ffH
+  000de	83 e1 04	 and	 ecx, 4
+  000e1	83 f9 04	 cmp	 ecx, 4
+  000e4	74 2c		 je	 SHORT $L46574
+  000e6	8b 55 cc	 mov	 edx, DWORD PTR _attr$[ebp]
+  000e9	81 e2 ff 00 00
+	00		 and	 edx, 255		; 000000ffH
+  000ef	83 e2 08	 and	 edx, 8
+  000f2	83 fa 08	 cmp	 edx, 8
+  000f5	74 1b		 je	 SHORT $L46574
+
+; 61   : 			*mx = tx;
+
+  000f7	8b 45 1c	 mov	 eax, DWORD PTR _mx$[ebp]
+  000fa	66 8b 4d d4	 mov	 cx, WORD PTR _tx$[ebp]
+  000fe	66 89 08	 mov	 WORD PTR [eax], cx
+
+; 62   : 			*my = ty;
+
+  00101	8b 55 20	 mov	 edx, DWORD PTR _my$[ebp]
+  00104	66 8b 45 d0	 mov	 ax, WORD PTR _ty$[ebp]
+  00108	66 89 02	 mov	 WORD PTR [edx], ax
+
+; 63   : 			return TRUE;
+
+  0010b	b8 01 00 00 00	 mov	 eax, 1
+  00110	eb 07		 jmp	 SHORT $L46563
+$L46574:
+
+; 65   : 	}
+
+  00112	e9 19 ff ff ff	 jmp	 $L46571
+$L46572:
+
+; 66   : 
+; 67   : 	return false;
+
+  00117	33 c0		 xor	 eax, eax
+$L46563:
+
+; 68   : }
+
+  00119	8b 4d f0	 mov	 ecx, DWORD PTR __$SEHRec$[ebp+8]
+  0011c	64 89 0d 00 00
+	00 00		 mov	 DWORD PTR fs:__except_list, ecx
+  00123	5f		 pop	 edi
+  00124	5e		 pop	 esi
+  00125	5b		 pop	 ebx
+  00126	8b e5		 mov	 esp, ebp
+  00128	5d		 pop	 ebp
+  00129	c2 1c 00	 ret	 28			; 0000001cH
+?GetBoxPosition@CMonsterSetBase@@QAEHHHHHHPAF0@Z ENDP	; CMonsterSetBase::GetBoxPosition
+_TEXT	ENDS
+PUBLIC	?GetPosition@CMonsterSetBase@@QAEHHFPAF0@Z	; CMonsterSetBase::GetPosition
+PUBLIC	?__LINE__Var@?1??GetPosition@CMonsterSetBase@@QAEHHFPAF0@Z@4FA ; `CMonsterSetBase::GetPosition'::`2'::__LINE__Var
+PUBLIC	??_C@_0DF@OCHB@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@ ; `string'
+PUBLIC	??_C@_0O@DIPE@ERROR?5?3?5?$CFs?5?$CFd?$AA@	; `string'
+EXTRN	?LogAdd@@3P6AXPADZZA:DWORD			; LogAdd
+;	COMDAT ?__LINE__Var@?1??GetPosition@CMonsterSetBase@@QAEHHFPAF0@Z@4FA
+; File C:\Deathway\C++\GameServer\SOURCE\MonsterSetBase.cpp
+_DATA	SEGMENT
+?__LINE__Var@?1??GetPosition@CMonsterSetBase@@QAEHHFPAF0@Z@4FA DW 047H ; `CMonsterSetBase::GetPosition'::`2'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ??_C@_0DF@OCHB@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@
+CONST	SEGMENT
+??_C@_0DF@OCHB@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@ DB 'C:\Deathw'
+	DB	'ay\C++\GameServer\SOURCE\MonsterSetBase.cpp', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0O@DIPE@ERROR?5?3?5?$CFs?5?$CFd?$AA@
+CONST	SEGMENT
+??_C@_0O@DIPE@ERROR?5?3?5?$CFs?5?$CFd?$AA@ DB 'ERROR : %s %d', 00H ; `string'
+CONST	ENDS
+;	COMDAT ?GetPosition@CMonsterSetBase@@QAEHHFPAF0@Z
+_TEXT	SEGMENT
+_TableNum$ = 8
+_MapNumber$ = 12
+_x$ = 16
+_y$ = 20
+_this$ = -4
+_count$ = -8
+_attr$ = -12
+_tx$ = -16
+_ty$ = -20
+_w$ = -24
+_h$ = -28
+_w2$46608 = -32
+_h2$46609 = -36
+?GetPosition@CMonsterSetBase@@QAEHHFPAF0@Z PROC NEAR	; CMonsterSetBase::GetPosition, COMDAT
+
+; 71   : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 64	 sub	 esp, 100		; 00000064H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+
+; 72   : 	int count = 100;
+
+  0000c	c7 45 f8 64 00
+	00 00		 mov	 DWORD PTR _count$[ebp], 100 ; 00000064H
+
+; 73   : 	BYTE attr;
+; 74   : 	int tx;
+; 75   : 	int ty;
+; 76   : 	int w;
+; 77   : 	int h;
+; 78   : 
+; 79   : 	if ( TableNum < 0 || TableNum > OBJ_MAXMONSTER-1 )
+
+  00013	83 7d 08 00	 cmp	 DWORD PTR _TableNum$[ebp], 0
+  00017	7c 09		 jl	 SHORT $L46589
+  00019	81 7d 08 a7 16
+	00 00		 cmp	 DWORD PTR _TableNum$[ebp], 5799 ; 000016a7H
+  00020	7e 25		 jle	 SHORT $L46588
+$L46589:
+
+; 81   : 		LogAdd("ERROR : %s %d", __FILE__, __LINE__ );
+
+  00022	0f bf 05 00 00
+	00 00		 movsx	 eax, WORD PTR ?__LINE__Var@?1??GetPosition@CMonsterSetBase@@QAEHHFPAF0@Z@4FA ; `CMonsterSetBase::GetPosition'::`2'::__LINE__Var
+  00029	83 c0 0a	 add	 eax, 10			; 0000000aH
+  0002c	50		 push	 eax
+  0002d	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0DF@OCHB@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@ ; `string'
+  00032	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0O@DIPE@ERROR?5?3?5?$CFs?5?$CFd?$AA@ ; `string'
+  00037	ff 15 00 00 00
+	00		 call	 DWORD PTR ?LogAdd@@3P6AXPADZZA ; LogAdd
+  0003d	83 c4 0c	 add	 esp, 12			; 0000000cH
+
+; 82   : 		return false;
+
+  00040	33 c0		 xor	 eax, eax
+  00042	e9 f5 02 00 00	 jmp	 $L46581
+$L46588:
+
+; 84   : 
+; 85   : 	if ( this->m_sttMonsterSetBase[TableNum].btType == 1 || this->m_sttMonsterSetBase[TableNum].btType == 3 )
+
+  00047	8b 4d 08	 mov	 ecx, DWORD PTR _TableNum$[ebp]
+  0004a	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0004d	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00050	33 c0		 xor	 eax, eax
+  00052	8a 44 0a 04	 mov	 al, BYTE PTR [edx+ecx+4]
+  00056	83 f8 01	 cmp	 eax, 1
+  00059	74 18		 je	 SHORT $L46594
+  0005b	8b 4d 08	 mov	 ecx, DWORD PTR _TableNum$[ebp]
+  0005e	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00061	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00064	33 c0		 xor	 eax, eax
+  00066	8a 44 0a 04	 mov	 al, BYTE PTR [edx+ecx+4]
+  0006a	83 f8 03	 cmp	 eax, 3
+  0006d	0f 85 2c 01 00
+	00		 jne	 $L46593
+$L46594:
+
+; 87   : 		while ( count-- != 0 )
+
+  00073	8b 4d f8	 mov	 ecx, DWORD PTR _count$[ebp]
+  00076	8b 55 f8	 mov	 edx, DWORD PTR _count$[ebp]
+  00079	83 ea 01	 sub	 edx, 1
+  0007c	89 55 f8	 mov	 DWORD PTR _count$[ebp], edx
+  0007f	85 c9		 test	 ecx, ecx
+  00081	0f 84 13 01 00
+	00		 je	 $L46597
+
+; 89   : 			w = this->m_sttMonsterSetBase[TableNum].btEndX - this->m_sttMonsterSetBase[TableNum].btStartX;
+
+  00087	8b 45 08	 mov	 eax, DWORD PTR _TableNum$[ebp]
+  0008a	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  0008d	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00090	33 d2		 xor	 edx, edx
+  00092	8a 54 01 0d	 mov	 dl, BYTE PTR [ecx+eax+13]
+  00096	8b 45 08	 mov	 eax, DWORD PTR _TableNum$[ebp]
+  00099	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  0009c	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  0009f	33 db		 xor	 ebx, ebx
+  000a1	8a 5c 01 0a	 mov	 bl, BYTE PTR [ecx+eax+10]
+  000a5	2b d3		 sub	 edx, ebx
+  000a7	89 55 e8	 mov	 DWORD PTR _w$[ebp], edx
+
+; 90   : 			h = this->m_sttMonsterSetBase[TableNum].btEndY - this->m_sttMonsterSetBase[TableNum].btStartY;
+
+  000aa	8b 55 08	 mov	 edx, DWORD PTR _TableNum$[ebp]
+  000ad	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  000b0	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  000b3	33 c9		 xor	 ecx, ecx
+  000b5	8a 4c 10 0e	 mov	 cl, BYTE PTR [eax+edx+14]
+  000b9	8b 55 08	 mov	 edx, DWORD PTR _TableNum$[ebp]
+  000bc	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  000bf	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  000c2	33 db		 xor	 ebx, ebx
+  000c4	8a 5c 10 0b	 mov	 bl, BYTE PTR [eax+edx+11]
+  000c8	2b cb		 sub	 ecx, ebx
+  000ca	89 4d e4	 mov	 DWORD PTR _h$[ebp], ecx
+
+; 91   : 
+; 92   : 			if ( w < 1 )
+
+  000cd	83 7d e8 01	 cmp	 DWORD PTR _w$[ebp], 1
+  000d1	7d 07		 jge	 SHORT $L46598
+
+; 94   : 				w = 1;
+
+  000d3	c7 45 e8 01 00
+	00 00		 mov	 DWORD PTR _w$[ebp], 1
+$L46598:
+
+; 96   : 
+; 97   : 			if ( h < 1 )
+
+  000da	83 7d e4 01	 cmp	 DWORD PTR _h$[ebp], 1
+  000de	7d 07		 jge	 SHORT $L46599
+
+; 99   : 				h = 1;
+
+  000e0	c7 45 e4 01 00
+	00 00		 mov	 DWORD PTR _h$[ebp], 1
+$L46599:
+
+; 101  : 
+; 102  : 			tx = this->m_sttMonsterSetBase[TableNum].btStartX +  (rand()%w);
+
+  000e7	8b 4d 08	 mov	 ecx, DWORD PTR _TableNum$[ebp]
+  000ea	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  000ed	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  000f0	33 c0		 xor	 eax, eax
+  000f2	8a 44 0a 0a	 mov	 al, BYTE PTR [edx+ecx+10]
+  000f6	8b f0		 mov	 esi, eax
+  000f8	e8 00 00 00 00	 call	 _rand
+  000fd	99		 cdq
+  000fe	f7 7d e8	 idiv	 DWORD PTR _w$[ebp]
+  00101	03 f2		 add	 esi, edx
+  00103	89 75 f0	 mov	 DWORD PTR _tx$[ebp], esi
+
+; 103  : 			ty = this->m_sttMonsterSetBase[TableNum].btStartY +  (rand()%h);
+
+  00106	8b 4d 08	 mov	 ecx, DWORD PTR _TableNum$[ebp]
+  00109	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0010c	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  0010f	33 c0		 xor	 eax, eax
+  00111	8a 44 0a 0b	 mov	 al, BYTE PTR [edx+ecx+11]
+  00115	8b f0		 mov	 esi, eax
+  00117	e8 00 00 00 00	 call	 _rand
+  0011c	99		 cdq
+  0011d	f7 7d e4	 idiv	 DWORD PTR _h$[ebp]
+  00120	03 f2		 add	 esi, edx
+  00122	89 75 ec	 mov	 DWORD PTR _ty$[ebp], esi
+
+; 104  : 			attr = MapC[MapNumber].GetAttr(tx, ty);
+
+  00125	8b 4d ec	 mov	 ecx, DWORD PTR _ty$[ebp]
+  00128	51		 push	 ecx
+  00129	8b 55 f0	 mov	 edx, DWORD PTR _tx$[ebp]
+  0012c	52		 push	 edx
+  0012d	0f bf 4d 0c	 movsx	 ecx, WORD PTR _MapNumber$[ebp]
+  00131	69 c9 ec c0 00
+	00		 imul	 ecx, 49388		; 0000c0ecH
+  00137	81 c1 00 00 00
+	00		 add	 ecx, OFFSET FLAT:?MapC@@3PAVMapClass@@A ; MapC
+  0013d	e8 00 00 00 00	 call	 ?GetAttr@MapClass@@QAEEHH@Z ; MapClass::GetAttr
+  00142	88 45 f4	 mov	 BYTE PTR _attr$[ebp], al
+
+; 105  : 
+; 106  : 			if ( ((attr&1) != 1) && ((attr &4) != 4) && ((attr&8) != 8) )
+
+  00145	8b 45 f4	 mov	 eax, DWORD PTR _attr$[ebp]
+  00148	25 ff 00 00 00	 and	 eax, 255		; 000000ffH
+  0014d	83 e0 01	 and	 eax, 1
+  00150	83 f8 01	 cmp	 eax, 1
+  00153	74 40		 je	 SHORT $L46600
+  00155	8b 4d f4	 mov	 ecx, DWORD PTR _attr$[ebp]
+  00158	81 e1 ff 00 00
+	00		 and	 ecx, 255		; 000000ffH
+  0015e	83 e1 04	 and	 ecx, 4
+  00161	83 f9 04	 cmp	 ecx, 4
+  00164	74 2f		 je	 SHORT $L46600
+  00166	8b 55 f4	 mov	 edx, DWORD PTR _attr$[ebp]
+  00169	81 e2 ff 00 00
+	00		 and	 edx, 255		; 000000ffH
+  0016f	83 e2 08	 and	 edx, 8
+  00172	83 fa 08	 cmp	 edx, 8
+  00175	74 1e		 je	 SHORT $L46600
+
+; 108  : 				*x = tx;
+
+  00177	8b 45 10	 mov	 eax, DWORD PTR _x$[ebp]
+  0017a	66 8b 4d f0	 mov	 cx, WORD PTR _tx$[ebp]
+  0017e	66 89 08	 mov	 WORD PTR [eax], cx
+
+; 109  : 				*y = ty;
+
+  00181	8b 55 14	 mov	 edx, DWORD PTR _y$[ebp]
+  00184	66 8b 45 ec	 mov	 ax, WORD PTR _ty$[ebp]
+  00188	66 89 02	 mov	 WORD PTR [edx], ax
+
+; 110  : 				return TRUE;
+
+  0018b	b8 01 00 00 00	 mov	 eax, 1
+  00190	e9 a7 01 00 00	 jmp	 $L46581
+$L46600:
+
+; 112  : 		}
+
+  00195	e9 d9 fe ff ff	 jmp	 $L46594
+$L46597:
+
+; 114  : 	else if ( this->m_sttMonsterSetBase[TableNum].btType == 0 )
+
+  0019a	e9 9b 01 00 00	 jmp	 $L46614
+$L46593:
+  0019f	8b 4d 08	 mov	 ecx, DWORD PTR _TableNum$[ebp]
+  001a2	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  001a5	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  001a8	33 c0		 xor	 eax, eax
+  001aa	8a 44 0a 04	 mov	 al, BYTE PTR [edx+ecx+4]
+  001ae	85 c0		 test	 eax, eax
+  001b0	75 34		 jne	 SHORT $L46602
+
+; 116  : 		*x = this->m_sttMonsterSetBase[TableNum].btStartX;
+
+  001b2	8b 4d 08	 mov	 ecx, DWORD PTR _TableNum$[ebp]
+  001b5	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  001b8	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  001bb	66 0f b6 44 0a
+	0a		 movzx	 ax, BYTE PTR [edx+ecx+10]
+  001c1	8b 4d 10	 mov	 ecx, DWORD PTR _x$[ebp]
+  001c4	66 89 01	 mov	 WORD PTR [ecx], ax
+
+; 117  : 		*y = this->m_sttMonsterSetBase[TableNum].btStartY;
+
+  001c7	8b 55 08	 mov	 edx, DWORD PTR _TableNum$[ebp]
+  001ca	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  001cd	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  001d0	66 0f b6 4c 10
+	0b		 movzx	 cx, BYTE PTR [eax+edx+11]
+  001d6	8b 55 14	 mov	 edx, DWORD PTR _y$[ebp]
+  001d9	66 89 0a	 mov	 WORD PTR [edx], cx
+
+; 118  : 		return true;
+
+  001dc	b8 01 00 00 00	 mov	 eax, 1
+  001e1	e9 56 01 00 00	 jmp	 $L46581
+$L46602:
+
+; 120  : 	else if ( this->m_sttMonsterSetBase[TableNum].btType == 2 )
+
+  001e6	8b 45 08	 mov	 eax, DWORD PTR _TableNum$[ebp]
+  001e9	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  001ec	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  001ef	33 d2		 xor	 edx, edx
+  001f1	8a 54 01 04	 mov	 dl, BYTE PTR [ecx+eax+4]
+  001f5	83 fa 02	 cmp	 edx, 2
+  001f8	0f 85 dc 00 00
+	00		 jne	 $L46604
+$L46606:
+
+; 122  : 		while ( count-- != 0 )
+
+  001fe	8b 45 f8	 mov	 eax, DWORD PTR _count$[ebp]
+  00201	8b 4d f8	 mov	 ecx, DWORD PTR _count$[ebp]
+  00204	83 e9 01	 sub	 ecx, 1
+  00207	89 4d f8	 mov	 DWORD PTR _count$[ebp], ecx
+  0020a	85 c0		 test	 eax, eax
+  0020c	0f 84 c6 00 00
+	00		 je	 $L46607
+
+; 124  : 			int w2 = this->m_sttMonsterSetBase[TableNum].btStartX -3;
+
+  00212	8b 55 08	 mov	 edx, DWORD PTR _TableNum$[ebp]
+  00215	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00218	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  0021b	33 c9		 xor	 ecx, ecx
+  0021d	8a 4c 10 0a	 mov	 cl, BYTE PTR [eax+edx+10]
+  00221	83 e9 03	 sub	 ecx, 3
+  00224	89 4d e0	 mov	 DWORD PTR _w2$46608[ebp], ecx
+
+; 125  : 			int h2 = this->m_sttMonsterSetBase[TableNum].btStartY -3;
+
+  00227	8b 55 08	 mov	 edx, DWORD PTR _TableNum$[ebp]
+  0022a	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  0022d	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00230	33 c9		 xor	 ecx, ecx
+  00232	8a 4c 10 0b	 mov	 cl, BYTE PTR [eax+edx+11]
+  00236	83 e9 03	 sub	 ecx, 3
+  00239	89 4d dc	 mov	 DWORD PTR _h2$46609[ebp], ecx
+
+; 126  : 
+; 127  : 			w2 += rand() % 7;
+
+  0023c	e8 00 00 00 00	 call	 _rand
+  00241	99		 cdq
+  00242	b9 07 00 00 00	 mov	 ecx, 7
+  00247	f7 f9		 idiv	 ecx
+  00249	8b 45 e0	 mov	 eax, DWORD PTR _w2$46608[ebp]
+  0024c	03 c2		 add	 eax, edx
+  0024e	89 45 e0	 mov	 DWORD PTR _w2$46608[ebp], eax
+
+; 128  : 			h2 += rand() % 7;
+
+  00251	e8 00 00 00 00	 call	 _rand
+  00256	99		 cdq
+  00257	b9 07 00 00 00	 mov	 ecx, 7
+  0025c	f7 f9		 idiv	 ecx
+  0025e	8b 45 dc	 mov	 eax, DWORD PTR _h2$46609[ebp]
+  00261	03 c2		 add	 eax, edx
+  00263	89 45 dc	 mov	 DWORD PTR _h2$46609[ebp], eax
+
+; 129  : 
+; 130  : 			attr = MapC[MapNumber].GetAttr(w2, h2);
+
+  00266	8b 4d dc	 mov	 ecx, DWORD PTR _h2$46609[ebp]
+  00269	51		 push	 ecx
+  0026a	8b 55 e0	 mov	 edx, DWORD PTR _w2$46608[ebp]
+  0026d	52		 push	 edx
+  0026e	0f bf 4d 0c	 movsx	 ecx, WORD PTR _MapNumber$[ebp]
+  00272	69 c9 ec c0 00
+	00		 imul	 ecx, 49388		; 0000c0ecH
+  00278	81 c1 00 00 00
+	00		 add	 ecx, OFFSET FLAT:?MapC@@3PAVMapClass@@A ; MapC
+  0027e	e8 00 00 00 00	 call	 ?GetAttr@MapClass@@QAEEHH@Z ; MapClass::GetAttr
+  00283	88 45 f4	 mov	 BYTE PTR _attr$[ebp], al
+
+; 131  : 
+; 132  : 			if ( ((attr&1) != 1) && ((attr &4) != 4) && ((attr&8) != 8) )
+
+  00286	8b 45 f4	 mov	 eax, DWORD PTR _attr$[ebp]
+  00289	25 ff 00 00 00	 and	 eax, 255		; 000000ffH
+  0028e	83 e0 01	 and	 eax, 1
+  00291	83 f8 01	 cmp	 eax, 1
+  00294	74 3d		 je	 SHORT $L46610
+  00296	8b 4d f4	 mov	 ecx, DWORD PTR _attr$[ebp]
+  00299	81 e1 ff 00 00
+	00		 and	 ecx, 255		; 000000ffH
+  0029f	83 e1 04	 and	 ecx, 4
+  002a2	83 f9 04	 cmp	 ecx, 4
+  002a5	74 2c		 je	 SHORT $L46610
+  002a7	8b 55 f4	 mov	 edx, DWORD PTR _attr$[ebp]
+  002aa	81 e2 ff 00 00
+	00		 and	 edx, 255		; 000000ffH
+  002b0	83 e2 08	 and	 edx, 8
+  002b3	83 fa 08	 cmp	 edx, 8
+  002b6	74 1b		 je	 SHORT $L46610
+
+; 134  : 				*x = w2;
+
+  002b8	8b 45 10	 mov	 eax, DWORD PTR _x$[ebp]
+  002bb	66 8b 4d e0	 mov	 cx, WORD PTR _w2$46608[ebp]
+  002bf	66 89 08	 mov	 WORD PTR [eax], cx
+
+; 135  : 				*y = h2;
+
+  002c2	8b 55 14	 mov	 edx, DWORD PTR _y$[ebp]
+  002c5	66 8b 45 dc	 mov	 ax, WORD PTR _h2$46609[ebp]
+  002c9	66 89 02	 mov	 WORD PTR [edx], ax
+
+; 136  : 				return TRUE;
+
+  002cc	b8 01 00 00 00	 mov	 eax, 1
+  002d1	eb 69		 jmp	 SHORT $L46581
+$L46610:
+
+; 138  : 		}
+
+  002d3	e9 26 ff ff ff	 jmp	 $L46606
+$L46607:
+
+; 140  : 	else if ( this->m_sttMonsterSetBase[TableNum].btType == 3 )
+
+  002d8	eb 60		 jmp	 SHORT $L46614
+$L46604:
+  002da	8b 4d 08	 mov	 ecx, DWORD PTR _TableNum$[ebp]
+  002dd	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  002e0	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  002e3	33 c0		 xor	 eax, eax
+  002e5	8a 44 0a 04	 mov	 al, BYTE PTR [edx+ecx+4]
+  002e9	83 f8 03	 cmp	 eax, 3
+  002ec	75 07		 jne	 SHORT $L46612
+
+; 142  : 		return TRUE;
+
+  002ee	b8 01 00 00 00	 mov	 eax, 1
+  002f3	eb 47		 jmp	 SHORT $L46581
+$L46612:
+
+; 144  : 
+; 145  : 	else if ( this->m_sttMonsterSetBase[TableNum].btType == 4 )
+
+  002f5	8b 4d 08	 mov	 ecx, DWORD PTR _TableNum$[ebp]
+  002f8	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  002fb	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  002fe	33 c0		 xor	 eax, eax
+  00300	8a 44 0a 04	 mov	 al, BYTE PTR [edx+ecx+4]
+  00304	83 f8 04	 cmp	 eax, 4
+  00307	75 31		 jne	 SHORT $L46614
+
+; 147  : 		*x = this->m_sttMonsterSetBase[TableNum].btStartX;
+
+  00309	8b 4d 08	 mov	 ecx, DWORD PTR _TableNum$[ebp]
+  0030c	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0030f	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00312	66 0f b6 44 0a
+	0a		 movzx	 ax, BYTE PTR [edx+ecx+10]
+  00318	8b 4d 10	 mov	 ecx, DWORD PTR _x$[ebp]
+  0031b	66 89 01	 mov	 WORD PTR [ecx], ax
+
+; 148  : 		*y = this->m_sttMonsterSetBase[TableNum].btStartY;
+
+  0031e	8b 55 08	 mov	 edx, DWORD PTR _TableNum$[ebp]
+  00321	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00324	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00327	66 0f b6 4c 10
+	0b		 movzx	 cx, BYTE PTR [eax+edx+11]
+  0032d	8b 55 14	 mov	 edx, DWORD PTR _y$[ebp]
+  00330	66 89 0a	 mov	 WORD PTR [edx], cx
+
+; 149  : 		return TRUE;
+
+  00333	b8 01 00 00 00	 mov	 eax, 1
+  00338	eb 02		 jmp	 SHORT $L46581
+$L46614:
+
+; 151  : 
+; 152  : 	return false;
+
+  0033a	33 c0		 xor	 eax, eax
+$L46581:
+
+; 153  : }
+
+  0033c	5f		 pop	 edi
+  0033d	5e		 pop	 esi
+  0033e	5b		 pop	 ebx
+  0033f	8b e5		 mov	 esp, ebp
+  00341	5d		 pop	 ebp
+  00342	c2 10 00	 ret	 16			; 00000010H
+?GetPosition@CMonsterSetBase@@QAEHHFPAF0@Z ENDP		; CMonsterSetBase::GetPosition
+_TEXT	ENDS
+PUBLIC	?LoadSetBase@CMonsterSetBase@@QAEXPAD@Z		; CMonsterSetBase::LoadSetBase
+PUBLIC	??_C@_01LHO@r?$AA@				; `string'
+PUBLIC	??_C@_0BD@JJCL@file?5open?5error?5?$CFs?$AA@	; `string'
+PUBLIC	??_C@_03DNBD@end?$AA@				; `string'
+PUBLIC	?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPAD@Z@4FA ; `CMonsterSetBase::LoadSetBase'::`2'::__LINE__Var
+PUBLIC	??_C@_0CB@IBLK@Monster?5attribute?5max?5over?5?$CFs?5?$CFd@ ; `string'
+PUBLIC	??_C@_0CG@OGEN@Monster?5attribute?5max?5over?5?$CFd?5?$CI?$CF@ ; `string'
+EXTRN	_fclose:NEAR
+EXTRN	_fopen:NEAR
+EXTRN	__ftol:NEAR
+EXTRN	?g_MapServerManager@@3VCMapServerManager@@A:BYTE ; g_MapServerManager
+EXTRN	?MsgBox@@YAXPBDZZ:NEAR				; MsgBox
+EXTRN	?CheckMapCanMove@CMapServerManager@@QAEHH@Z:NEAR ; CMapServerManager::CheckMapCanMove
+EXTRN	_strcmp:NEAR
+_BSS	SEGMENT
+_TokenString DB	064H DUP (?)
+_TokenNumber DD	01H DUP (?)
+_SMDFile DD	01H DUP (?)
+_BSS	ENDS
+;	COMDAT ?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPAD@Z@4FA
+; File C:\Deathway\C++\GameServer\SOURCE\MonsterSetBase.cpp
+_DATA	SEGMENT
+?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPAD@Z@4FA DW 09cH ; `CMonsterSetBase::LoadSetBase'::`2'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ??_C@_01LHO@r?$AA@
+CONST	SEGMENT
+??_C@_01LHO@r?$AA@ DB 'r', 00H				; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BD@JJCL@file?5open?5error?5?$CFs?$AA@
+CONST	SEGMENT
+??_C@_0BD@JJCL@file?5open?5error?5?$CFs?$AA@ DB 'file open error %s', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_03DNBD@end?$AA@
+CONST	SEGMENT
+??_C@_03DNBD@end?$AA@ DB 'end', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0CB@IBLK@Monster?5attribute?5max?5over?5?$CFs?5?$CFd@
+CONST	SEGMENT
+??_C@_0CB@IBLK@Monster?5attribute?5max?5over?5?$CFs?5?$CFd@ DB 'Monster a'
+	DB	'ttribute max over %s %d', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0CG@OGEN@Monster?5attribute?5max?5over?5?$CFd?5?$CI?$CF@
+CONST	SEGMENT
+??_C@_0CG@OGEN@Monster?5attribute?5max?5over?5?$CFd?5?$CI?$CF@ DB 'Monste'
+	DB	'r attribute max over %d (%s,%d)', 00H	; `string'
+CONST	ENDS
+;	COMDAT ?LoadSetBase@CMonsterSetBase@@QAEXPAD@Z
+_TEXT	SEGMENT
+_filename$ = 8
+_this$ = -4
+_Token$ = -8
+_rcount$ = -12
+_copycount$ = -16
+_Sdir$ = -20
+_Type$46631 = -24
+_w$46641 = -28
+_h$46642 = -32
+_w$46649 = -36
+_h$46650 = -40
+_k$46652 = -44
+?LoadSetBase@CMonsterSetBase@@QAEXPAD@Z PROC NEAR	; CMonsterSetBase::LoadSetBase, COMDAT
+
+; 156  : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 6c	 sub	 esp, 108		; 0000006cH
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+
+; 157  : 	int Token;
+; 158  : 	int rcount;
+; 159  : 	int copycount;
+; 160  : 	BYTE Sdir;
+; 161  : 
+; 162  : 	SMDFile = fopen(filename, "r");
+
+  0000c	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_01LHO@r?$AA@ ; `string'
+  00011	8b 45 08	 mov	 eax, DWORD PTR _filename$[ebp]
+  00014	50		 push	 eax
+  00015	e8 00 00 00 00	 call	 _fopen
+  0001a	83 c4 08	 add	 esp, 8
+  0001d	a3 00 00 00 00	 mov	 DWORD PTR _SMDFile, eax
+
+; 163  : 
+; 164  : 	if ( SMDFile == NULL )
+
+  00022	83 3d 00 00 00
+	00 00		 cmp	 DWORD PTR _SMDFile, 0
+  00029	75 16		 jne	 SHORT $L46624
+
+; 166  : 		MsgBox("file open error %s", filename);
+
+  0002b	8b 4d 08	 mov	 ecx, DWORD PTR _filename$[ebp]
+  0002e	51		 push	 ecx
+  0002f	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0BD@JJCL@file?5open?5error?5?$CFs?$AA@ ; `string'
+  00034	e8 00 00 00 00	 call	 ?MsgBox@@YAXPBDZZ	; MsgBox
+  00039	83 c4 08	 add	 esp, 8
+
+; 167  : 		return;
+
+  0003c	e9 1a 06 00 00	 jmp	 $L46618
+$L46624:
+
+; 169  : 
+; 170  : 	this->m_iMonsterCount = 0;
+
+  00041	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00044	c7 82 e4 0f 01
+	00 00 00 00 00	 mov	 DWORD PTR [edx+69604], 0
+$L46627:
+
+; 171  : 
+; 172  : 	while ( true )
+
+  0004e	b8 01 00 00 00	 mov	 eax, 1
+  00053	85 c0		 test	 eax, eax
+  00055	0f 84 f1 05 00
+	00		 je	 $L46628
+
+; 174  : 		Token = GetToken();
+
+  0005b	e8 00 00 00 00	 call	 ?GetToken@@YAHXZ	; GetToken
+  00060	89 45 f8	 mov	 DWORD PTR _Token$[ebp], eax
+
+; 175  : 
+; 176  : 		if ( Token == 2 )
+
+  00063	83 7d f8 02	 cmp	 DWORD PTR _Token$[ebp], 2
+  00067	75 05		 jne	 SHORT $L46629
+
+; 178  : 			break;
+
+  00069	e9 de 05 00 00	 jmp	 $L46628
+$L46629:
+
+; 180  : 
+; 181  : 		if ( Token == 1 )
+
+  0006e	83 7d f8 01	 cmp	 DWORD PTR _Token$[ebp], 1
+  00072	0f 85 cf 05 00
+	00		 jne	 $L46634
+
+; 183  : 			int Type = TokenNumber;
+
+  00078	d9 05 00 00 00
+	00		 fld	 DWORD PTR _TokenNumber
+  0007e	e8 00 00 00 00	 call	 __ftol
+  00083	89 45 e8	 mov	 DWORD PTR _Type$46631[ebp], eax
+$L46633:
+
+; 184  : 
+; 185  : 			while ( true )
+
+  00086	b9 01 00 00 00	 mov	 ecx, 1
+  0008b	85 c9		 test	 ecx, ecx
+  0008d	0f 84 b4 05 00
+	00		 je	 $L46634
+
+; 187  : 				Token = GetToken();
+
+  00093	e8 00 00 00 00	 call	 ?GetToken@@YAHXZ	; GetToken
+  00098	89 45 f8	 mov	 DWORD PTR _Token$[ebp], eax
+
+; 188  : 
+; 189  : 				if ( strcmp("end", TokenString) == 0 )
+
+  0009b	68 00 00 00 00	 push	 OFFSET FLAT:_TokenString
+  000a0	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_03DNBD@end?$AA@ ; `string'
+  000a5	e8 00 00 00 00	 call	 _strcmp
+  000aa	83 c4 08	 add	 esp, 8
+  000ad	85 c0		 test	 eax, eax
+  000af	75 05		 jne	 SHORT $L46635
+
+; 191  : 					break;
+
+  000b1	e9 91 05 00 00	 jmp	 $L46634
+$L46635:
+
+; 193  : 				
+; 194  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].sMonsterIndex = TokenNumber;
+
+  000b6	d9 05 00 00 00
+	00		 fld	 DWORD PTR _TokenNumber
+  000bc	e8 00 00 00 00	 call	 __ftol
+  000c1	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  000c4	8b 8a e4 0f 01
+	00		 mov	 ecx, DWORD PTR [edx+69604]
+  000ca	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  000cd	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  000d0	66 89 44 0a 06	 mov	 WORD PTR [edx+ecx+6], ax
+
+; 195  : 
+; 196  : 				Token = GetToken();
+
+  000d5	e8 00 00 00 00	 call	 ?GetToken@@YAHXZ	; GetToken
+  000da	89 45 f8	 mov	 DWORD PTR _Token$[ebp], eax
+
+; 197  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btMapNumber = TokenNumber;
+
+  000dd	d9 05 00 00 00
+	00		 fld	 DWORD PTR _TokenNumber
+  000e3	e8 00 00 00 00	 call	 __ftol
+  000e8	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  000eb	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  000f1	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  000f4	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  000f7	88 44 11 08	 mov	 BYTE PTR [ecx+edx+8], al
+
+; 198  : 
+; 199  : 				Token = GetToken();
+
+  000fb	e8 00 00 00 00	 call	 ?GetToken@@YAHXZ	; GetToken
+  00100	89 45 f8	 mov	 DWORD PTR _Token$[ebp], eax
+
+; 200  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btDistance = TokenNumber;
+
+  00103	d9 05 00 00 00
+	00		 fld	 DWORD PTR _TokenNumber
+  00109	e8 00 00 00 00	 call	 __ftol
+  0010e	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00111	8b 8a e4 0f 01
+	00		 mov	 ecx, DWORD PTR [edx+69604]
+  00117	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0011a	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  0011d	88 44 0a 09	 mov	 BYTE PTR [edx+ecx+9], al
+
+; 201  : 
+; 202  : 				Token = GetToken();
+
+  00121	e8 00 00 00 00	 call	 ?GetToken@@YAHXZ	; GetToken
+  00126	89 45 f8	 mov	 DWORD PTR _Token$[ebp], eax
+
+; 203  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartX = TokenNumber;
+
+  00129	d9 05 00 00 00
+	00		 fld	 DWORD PTR _TokenNumber
+  0012f	e8 00 00 00 00	 call	 __ftol
+  00134	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00137	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  0013d	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00140	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00143	88 44 11 0a	 mov	 BYTE PTR [ecx+edx+10], al
+
+; 204  : 
+; 205  : 				Token = GetToken();
+
+  00147	e8 00 00 00 00	 call	 ?GetToken@@YAHXZ	; GetToken
+  0014c	89 45 f8	 mov	 DWORD PTR _Token$[ebp], eax
+
+; 206  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartY = TokenNumber;
+
+  0014f	d9 05 00 00 00
+	00		 fld	 DWORD PTR _TokenNumber
+  00155	e8 00 00 00 00	 call	 __ftol
+  0015a	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  0015d	8b 8a e4 0f 01
+	00		 mov	 ecx, DWORD PTR [edx+69604]
+  00163	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00166	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00169	88 44 0a 0b	 mov	 BYTE PTR [edx+ecx+11], al
+
+; 207  : 
+; 208  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btType = Type;
+
+  0016d	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00170	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00176	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00179	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  0017c	8a 45 e8	 mov	 al, BYTE PTR _Type$46631[ebp]
+  0017f	88 44 0a 04	 mov	 BYTE PTR [edx+ecx+4], al
+
+; 209  : 
+; 210  : 				if ( Type == 1 || Type == 3 )
+
+  00183	83 7d e8 01	 cmp	 DWORD PTR _Type$46631[ebp], 1
+  00187	74 06		 je	 SHORT $L46638
+  00189	83 7d e8 03	 cmp	 DWORD PTR _Type$46631[ebp], 3
+  0018d	75 51		 jne	 SHORT $L46637
+$L46638:
+
+; 212  : 					Token = GetToken();
+
+  0018f	e8 00 00 00 00	 call	 ?GetToken@@YAHXZ	; GetToken
+  00194	89 45 f8	 mov	 DWORD PTR _Token$[ebp], eax
+
+; 213  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndX = TokenNumber;
+
+  00197	d9 05 00 00 00
+	00		 fld	 DWORD PTR _TokenNumber
+  0019d	e8 00 00 00 00	 call	 __ftol
+  001a2	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  001a5	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  001ab	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  001ae	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  001b1	88 44 11 0d	 mov	 BYTE PTR [ecx+edx+13], al
+
+; 214  : 
+; 215  : 					Token = GetToken();
+
+  001b5	e8 00 00 00 00	 call	 ?GetToken@@YAHXZ	; GetToken
+  001ba	89 45 f8	 mov	 DWORD PTR _Token$[ebp], eax
+
+; 216  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndY = TokenNumber;
+
+  001bd	d9 05 00 00 00
+	00		 fld	 DWORD PTR _TokenNumber
+  001c3	e8 00 00 00 00	 call	 __ftol
+  001c8	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  001cb	8b 8a e4 0f 01
+	00		 mov	 ecx, DWORD PTR [edx+69604]
+  001d1	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  001d4	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  001d7	88 44 0a 0e	 mov	 BYTE PTR [edx+ecx+14], al
+
+; 218  : 				else if ( Type == 2 )
+
+  001db	e9 18 01 00 00	 jmp	 $L46645
+$L46637:
+  001e0	83 7d e8 02	 cmp	 DWORD PTR _Type$46631[ebp], 2
+  001e4	0f 85 b6 00 00
+	00		 jne	 $L46640
+
+; 220  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndX = 0;
+
+  001ea	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  001ed	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  001f3	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  001f6	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  001f9	c6 44 0a 0d 00	 mov	 BYTE PTR [edx+ecx+13], 0
+
+; 221  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndY = 0;
+
+  001fe	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00201	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00207	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0020a	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  0020d	c6 44 0a 0e 00	 mov	 BYTE PTR [edx+ecx+14], 0
+
+; 222  : 
+; 223  : 					auto int w = this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartX - 3;
+
+  00212	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00215	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  0021b	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0021e	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00221	33 c0		 xor	 eax, eax
+  00223	8a 44 0a 0a	 mov	 al, BYTE PTR [edx+ecx+10]
+  00227	83 e8 03	 sub	 eax, 3
+  0022a	89 45 e4	 mov	 DWORD PTR _w$46641[ebp], eax
+
+; 224  : 					auto int h = this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartY - 3;
+
+  0022d	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00230	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  00236	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00239	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  0023c	33 c9		 xor	 ecx, ecx
+  0023e	8a 4c 10 0b	 mov	 cl, BYTE PTR [eax+edx+11]
+  00242	83 e9 03	 sub	 ecx, 3
+  00245	89 4d e0	 mov	 DWORD PTR _h$46642[ebp], ecx
+
+; 225  : 
+; 226  : 					w += rand() % 7;
+
+  00248	e8 00 00 00 00	 call	 _rand
+  0024d	99		 cdq
+  0024e	b9 07 00 00 00	 mov	 ecx, 7
+  00253	f7 f9		 idiv	 ecx
+  00255	8b 45 e4	 mov	 eax, DWORD PTR _w$46641[ebp]
+  00258	03 c2		 add	 eax, edx
+  0025a	89 45 e4	 mov	 DWORD PTR _w$46641[ebp], eax
+
+; 227  : 					h += rand() % 7;
+
+  0025d	e8 00 00 00 00	 call	 _rand
+  00262	99		 cdq
+  00263	b9 07 00 00 00	 mov	 ecx, 7
+  00268	f7 f9		 idiv	 ecx
+  0026a	8b 45 e0	 mov	 eax, DWORD PTR _h$46642[ebp]
+  0026d	03 c2		 add	 eax, edx
+  0026f	89 45 e0	 mov	 DWORD PTR _h$46642[ebp], eax
+
+; 228  : 
+; 229  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartX = w;
+
+  00272	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00275	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  0027b	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  0027e	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00281	8a 4d e4	 mov	 cl, BYTE PTR _w$46641[ebp]
+  00284	88 4c 10 0a	 mov	 BYTE PTR [eax+edx+10], cl
+
+; 230  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartY = h;
+
+  00288	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  0028b	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  00291	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00294	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00297	8a 55 e0	 mov	 dl, BYTE PTR _h$46642[ebp]
+  0029a	88 54 01 0b	 mov	 BYTE PTR [ecx+eax+11], dl
+
+; 232  : 				else if ( Type == 4 )
+
+  0029e	eb 58		 jmp	 SHORT $L46645
+$L46640:
+  002a0	83 7d e8 04	 cmp	 DWORD PTR _Type$46631[ebp], 4
+  002a4	75 2a		 jne	 SHORT $L46644
+
+; 234  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndX = 0;
+
+  002a6	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  002a9	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  002af	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  002b2	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  002b5	c6 44 0a 0d 00	 mov	 BYTE PTR [edx+ecx+13], 0
+
+; 235  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndY = 0;
+
+  002ba	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  002bd	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  002c3	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  002c6	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  002c9	c6 44 0a 0e 00	 mov	 BYTE PTR [edx+ecx+14], 0
+
+; 237  : 				else
+
+  002ce	eb 28		 jmp	 SHORT $L46645
+$L46644:
+
+; 239  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndX = 0;
+
+  002d0	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  002d3	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  002d9	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  002dc	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  002df	c6 44 0a 0d 00	 mov	 BYTE PTR [edx+ecx+13], 0
+
+; 240  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndY = 0;
+
+  002e4	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  002e7	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  002ed	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  002f0	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  002f3	c6 44 0a 0e 00	 mov	 BYTE PTR [edx+ecx+14], 0
+$L46645:
+
+; 242  : 
+; 243  : 				Token = GetToken();
+
+  002f8	e8 00 00 00 00	 call	 ?GetToken@@YAHXZ	; GetToken
+  002fd	89 45 f8	 mov	 DWORD PTR _Token$[ebp], eax
+
+; 244  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection = TokenNumber;
+
+  00300	d9 05 00 00 00
+	00		 fld	 DWORD PTR _TokenNumber
+  00306	e8 00 00 00 00	 call	 __ftol
+  0030b	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  0030e	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  00314	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00317	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  0031a	88 44 11 0c	 mov	 BYTE PTR [ecx+edx+12], al
+
+; 245  : 
+; 246  : 				Sdir = this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection;
+
+  0031e	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00321	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  00327	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  0032a	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  0032d	8a 54 01 0c	 mov	 dl, BYTE PTR [ecx+eax+12]
+  00331	88 55 ec	 mov	 BYTE PTR _Sdir$[ebp], dl
+
+; 247  : 
+; 248  : 				if ( this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection == -1 )
+
+  00334	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00337	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  0033d	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00340	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00343	33 c0		 xor	 eax, eax
+  00345	8a 44 0a 0c	 mov	 al, BYTE PTR [edx+ecx+12]
+  00349	83 f8 ff	 cmp	 eax, -1
+  0034c	75 1b		 jne	 SHORT $L46646
+
+; 250  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection = rand() & 7;
+
+  0034e	e8 00 00 00 00	 call	 _rand
+  00353	83 e0 07	 and	 eax, 7
+  00356	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00359	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  0035f	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00362	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00365	88 44 11 0c	 mov	 BYTE PTR [ecx+edx+12], al
+$L46646:
+
+; 252  : 
+; 253  : 				if ( Type == 1 || Type == 3 )
+
+  00369	83 7d e8 01	 cmp	 DWORD PTR _Type$46631[ebp], 1
+  0036d	74 0a		 je	 SHORT $L46648
+  0036f	83 7d e8 03	 cmp	 DWORD PTR _Type$46631[ebp], 3
+  00373	0f 85 43 02 00
+	00		 jne	 $L46655
+$L46648:
+
+; 255  : 					BYTE w = this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartX;
+
+  00379	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  0037c	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  00382	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00385	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00388	8a 54 01 0a	 mov	 dl, BYTE PTR [ecx+eax+10]
+  0038c	88 55 dc	 mov	 BYTE PTR _w$46649[ebp], dl
+
+; 256  : 					BYTE h = this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartY;
+
+  0038f	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00392	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00398	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0039b	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  0039e	8a 44 0a 0b	 mov	 al, BYTE PTR [edx+ecx+11]
+  003a2	88 45 d8	 mov	 BYTE PTR _h$46650[ebp], al
+
+; 257  : 
+; 258  : 					Token = GetToken();
+
+  003a5	e8 00 00 00 00	 call	 ?GetToken@@YAHXZ	; GetToken
+  003aa	89 45 f8	 mov	 DWORD PTR _Token$[ebp], eax
+
+; 259  : 					rcount = TokenNumber;
+
+  003ad	d9 05 00 00 00
+	00		 fld	 DWORD PTR _TokenNumber
+  003b3	e8 00 00 00 00	 call	 __ftol
+  003b8	89 45 f4	 mov	 DWORD PTR _rcount$[ebp], eax
+
+; 260  : 					copycount = this->m_iMonsterCount;
+
+  003bb	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  003be	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  003c4	89 55 f0	 mov	 DWORD PTR _copycount$[ebp], edx
+
+; 261  : 
+; 262  : 					if ( rcount > 1 )
+
+  003c7	83 7d f4 01	 cmp	 DWORD PTR _rcount$[ebp], 1
+  003cb	0f 8e eb 01 00
+	00		 jle	 $L46655
+
+; 264  : 						for ( int k = 0; k<rcount-1 ; k++ )
+
+  003d1	c7 45 d4 00 00
+	00 00		 mov	 DWORD PTR _k$46652[ebp], 0
+  003d8	eb 09		 jmp	 SHORT $L46653
+$L46654:
+  003da	8b 45 d4	 mov	 eax, DWORD PTR _k$46652[ebp]
+  003dd	83 c0 01	 add	 eax, 1
+  003e0	89 45 d4	 mov	 DWORD PTR _k$46652[ebp], eax
+$L46653:
+  003e3	8b 4d f4	 mov	 ecx, DWORD PTR _rcount$[ebp]
+  003e6	83 e9 01	 sub	 ecx, 1
+  003e9	39 4d d4	 cmp	 DWORD PTR _k$46652[ebp], ecx
+  003ec	0f 8d ca 01 00
+	00		 jge	 $L46655
+
+; 266  : 							if ( g_MapServerManager.CheckMapCanMove(this->m_sttMonsterSetBase[copycount].btMapNumber) == FALSE )
+
+  003f2	8b 55 f0	 mov	 edx, DWORD PTR _copycount$[ebp]
+  003f5	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  003f8	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  003fb	33 c9		 xor	 ecx, ecx
+  003fd	8a 4c 10 08	 mov	 cl, BYTE PTR [eax+edx+8]
+  00401	51		 push	 ecx
+  00402	b9 00 00 00 00	 mov	 ecx, OFFSET FLAT:?g_MapServerManager@@3VCMapServerManager@@A
+  00407	e8 00 00 00 00	 call	 ?CheckMapCanMove@CMapServerManager@@QAEHH@Z ; CMapServerManager::CheckMapCanMove
+  0040c	85 c0		 test	 eax, eax
+  0040e	75 05		 jne	 SHORT $L46656
+
+; 268  : 								break;
+
+  00410	e9 a7 01 00 00	 jmp	 $L46655
+$L46656:
+
+; 270  : 						
+; 271  : 							this->m_iMonsterCount++;
+
+  00415	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00418	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  0041e	83 c0 01	 add	 eax, 1
+  00421	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00424	89 81 e4 0f 01
+	00		 mov	 DWORD PTR [ecx+69604], eax
+
+; 272  : 
+; 273  : 							if ( this->m_iMonsterCount > OBJ_MAXMONSTER-1 )
+
+  0042a	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  0042d	81 ba e4 0f 01
+	00 a7 16 00 00	 cmp	 DWORD PTR [edx+69604], 5799 ; 000016a7H
+  00437	7e 31		 jle	 SHORT $L46657
+
+; 275  : 								MsgBox("Monster attribute max over %s %d", __FILE__, __LINE__);
+
+  00439	0f bf 05 00 00
+	00 00		 movsx	 eax, WORD PTR ?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPAD@Z@4FA ; `CMonsterSetBase::LoadSetBase'::`2'::__LINE__Var
+  00440	83 c0 77	 add	 eax, 119		; 00000077H
+  00443	50		 push	 eax
+  00444	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0DF@OCHB@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@ ; `string'
+  00449	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0CB@IBLK@Monster?5attribute?5max?5over?5?$CFs?5?$CFd@ ; `string'
+  0044e	e8 00 00 00 00	 call	 ?MsgBox@@YAXPBDZZ	; MsgBox
+  00453	83 c4 0c	 add	 esp, 12			; 0000000cH
+
+; 276  : 								fclose(SMDFile);
+
+  00456	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR _SMDFile
+  0045c	51		 push	 ecx
+  0045d	e8 00 00 00 00	 call	 _fclose
+  00462	83 c4 04	 add	 esp, 4
+
+; 277  : 								return;
+
+  00465	e9 f1 01 00 00	 jmp	 $L46618
+$L46657:
+
+; 279  : 
+; 280  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btDistance = this->m_sttMonsterSetBase[copycount].btDistance;
+
+  0046a	8b 55 f0	 mov	 edx, DWORD PTR _copycount$[ebp]
+  0046d	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00470	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00473	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00479	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0047c	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  0047f	8b 75 fc	 mov	 esi, DWORD PTR _this$[ebp]
+  00482	8a 54 16 09	 mov	 dl, BYTE PTR [esi+edx+9]
+  00486	88 54 08 09	 mov	 BYTE PTR [eax+ecx+9], dl
+
+; 281  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].sMonsterIndex = this->m_sttMonsterSetBase[copycount].sMonsterIndex;
+
+  0048a	8b 45 f0	 mov	 eax, DWORD PTR _copycount$[ebp]
+  0048d	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00490	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00493	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  00499	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  0049c	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  0049f	8b 75 fc	 mov	 esi, DWORD PTR _this$[ebp]
+  004a2	66 8b 44 06 06	 mov	 ax, WORD PTR [esi+eax+6]
+  004a7	66 89 44 11 06	 mov	 WORD PTR [ecx+edx+6], ax
+
+; 282  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btMapNumber = this->m_sttMonsterSetBase[copycount].btMapNumber;
+
+  004ac	8b 4d f0	 mov	 ecx, DWORD PTR _copycount$[ebp]
+  004af	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  004b2	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  004b5	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  004bb	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  004be	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  004c1	8b 75 fc	 mov	 esi, DWORD PTR _this$[ebp]
+  004c4	8a 4c 0e 08	 mov	 cl, BYTE PTR [esi+ecx+8]
+  004c8	88 4c 02 08	 mov	 BYTE PTR [edx+eax+8], cl
+
+; 283  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndX = this->m_sttMonsterSetBase[copycount].btEndX;
+
+  004cc	8b 55 f0	 mov	 edx, DWORD PTR _copycount$[ebp]
+  004cf	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  004d2	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  004d5	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  004db	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  004de	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  004e1	8b 75 fc	 mov	 esi, DWORD PTR _this$[ebp]
+  004e4	8a 54 16 0d	 mov	 dl, BYTE PTR [esi+edx+13]
+  004e8	88 54 08 0d	 mov	 BYTE PTR [eax+ecx+13], dl
+
+; 284  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndY = this->m_sttMonsterSetBase[copycount].btEndY;
+
+  004ec	8b 45 f0	 mov	 eax, DWORD PTR _copycount$[ebp]
+  004ef	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  004f2	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  004f5	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  004fb	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  004fe	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00501	8b 75 fc	 mov	 esi, DWORD PTR _this$[ebp]
+  00504	8a 44 06 0e	 mov	 al, BYTE PTR [esi+eax+14]
+  00508	88 44 11 0e	 mov	 BYTE PTR [ecx+edx+14], al
+
+; 285  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartX = this->m_sttMonsterSetBase[copycount].btStartX;
+
+  0050c	8b 4d f0	 mov	 ecx, DWORD PTR _copycount$[ebp]
+  0050f	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00512	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00515	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  0051b	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  0051e	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00521	8b 75 fc	 mov	 esi, DWORD PTR _this$[ebp]
+  00524	8a 4c 0e 0a	 mov	 cl, BYTE PTR [esi+ecx+10]
+  00528	88 4c 02 0a	 mov	 BYTE PTR [edx+eax+10], cl
+
+; 286  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartY = this->m_sttMonsterSetBase[copycount].btStartY;
+
+  0052c	8b 55 f0	 mov	 edx, DWORD PTR _copycount$[ebp]
+  0052f	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00532	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00535	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  0053b	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0053e	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00541	8b 75 fc	 mov	 esi, DWORD PTR _this$[ebp]
+  00544	8a 54 16 0b	 mov	 dl, BYTE PTR [esi+edx+11]
+  00548	88 54 08 0b	 mov	 BYTE PTR [eax+ecx+11], dl
+
+; 287  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btType = this->m_sttMonsterSetBase[copycount].btType;
+
+  0054c	8b 45 f0	 mov	 eax, DWORD PTR _copycount$[ebp]
+  0054f	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00552	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00555	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  0055b	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  0055e	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00561	8b 75 fc	 mov	 esi, DWORD PTR _this$[ebp]
+  00564	8a 44 06 04	 mov	 al, BYTE PTR [esi+eax+4]
+  00568	88 44 11 04	 mov	 BYTE PTR [ecx+edx+4], al
+
+; 288  : 
+; 289  : 							if ( Sdir == -1 )
+
+  0056c	8b 4d ec	 mov	 ecx, DWORD PTR _Sdir$[ebp]
+  0056f	81 e1 ff 00 00
+	00		 and	 ecx, 255		; 000000ffH
+  00575	83 f9 ff	 cmp	 ecx, -1
+  00578	75 1d		 jne	 SHORT $L46660
+
+; 291  : 								this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection = rand() & 7;
+
+  0057a	e8 00 00 00 00	 call	 _rand
+  0057f	83 e0 07	 and	 eax, 7
+  00582	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00585	8b 8a e4 0f 01
+	00		 mov	 ecx, DWORD PTR [edx+69604]
+  0058b	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0058e	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00591	88 44 0a 0c	 mov	 BYTE PTR [edx+ecx+12], al
+
+; 293  : 							else
+
+  00595	eb 20		 jmp	 SHORT $L46661
+$L46660:
+
+; 295  : 								this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection = this->m_sttMonsterSetBase[copycount].btDirection;
+
+  00597	8b 45 f0	 mov	 eax, DWORD PTR _copycount$[ebp]
+  0059a	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  0059d	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  005a0	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  005a6	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  005a9	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  005ac	8b 75 fc	 mov	 esi, DWORD PTR _this$[ebp]
+  005af	8a 44 06 0c	 mov	 al, BYTE PTR [esi+eax+12]
+  005b3	88 44 11 0c	 mov	 BYTE PTR [ecx+edx+12], al
+$L46661:
+
+; 297  : 						}
+
+  005b7	e9 1e fe ff ff	 jmp	 $L46654
+$L46655:
+
+; 300  : 
+; 301  : 				if ( g_MapServerManager.CheckMapCanMove(this->m_sttMonsterSetBase[this->m_iMonsterCount].btMapNumber) == FALSE )
+
+  005bc	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  005bf	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  005c5	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  005c8	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  005cb	33 c9		 xor	 ecx, ecx
+  005cd	8a 4c 10 08	 mov	 cl, BYTE PTR [eax+edx+8]
+  005d1	51		 push	 ecx
+  005d2	b9 00 00 00 00	 mov	 ecx, OFFSET FLAT:?g_MapServerManager@@3VCMapServerManager@@A
+  005d7	e8 00 00 00 00	 call	 ?CheckMapCanMove@CMapServerManager@@QAEHH@Z ; CMapServerManager::CheckMapCanMove
+  005dc	85 c0		 test	 eax, eax
+  005de	75 05		 jne	 SHORT $L46662
+
+; 303  : 					continue;
+
+  005e0	e9 a1 fa ff ff	 jmp	 $L46633
+$L46662:
+
+; 305  : 
+; 306  : 				this->m_iMonsterCount++;
+
+  005e5	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  005e8	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  005ee	83 c0 01	 add	 eax, 1
+  005f1	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  005f4	89 81 e4 0f 01
+	00		 mov	 DWORD PTR [ecx+69604], eax
+
+; 307  : 
+; 308  : 				if ( this->m_iMonsterCount > OBJ_MAXMONSTER-1 )
+
+  005fa	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  005fd	81 ba e4 0f 01
+	00 a7 16 00 00	 cmp	 DWORD PTR [edx+69604], 5799 ; 000016a7H
+  00607	7e 39		 jle	 SHORT $L46663
+
+; 310  : 					MsgBox("Monster attribute max over %d (%s,%d)", this->m_iMonsterCount, __FILE__, __LINE__);
+
+  00609	0f bf 05 00 00
+	00 00		 movsx	 eax, WORD PTR ?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPAD@Z@4FA ; `CMonsterSetBase::LoadSetBase'::`2'::__LINE__Var
+  00610	05 9a 00 00 00	 add	 eax, 154		; 0000009aH
+  00615	50		 push	 eax
+  00616	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0DF@OCHB@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@ ; `string'
+  0061b	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  0061e	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  00624	52		 push	 edx
+  00625	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0CG@OGEN@Monster?5attribute?5max?5over?5?$CFd?5?$CI?$CF@ ; `string'
+  0062a	e8 00 00 00 00	 call	 ?MsgBox@@YAXPBDZZ	; MsgBox
+  0062f	83 c4 10	 add	 esp, 16			; 00000010H
+
+; 311  : 					fclose(SMDFile);
+
+  00632	a1 00 00 00 00	 mov	 eax, DWORD PTR _SMDFile
+  00637	50		 push	 eax
+  00638	e8 00 00 00 00	 call	 _fclose
+  0063d	83 c4 04	 add	 esp, 4
+
+; 312  : 					return;
+
+  00640	eb 19		 jmp	 SHORT $L46618
+$L46663:
+
+; 314  : 			}
+
+  00642	e9 3f fa ff ff	 jmp	 $L46633
+$L46634:
+
+; 316  : 	}
+
+  00647	e9 02 fa ff ff	 jmp	 $L46627
+$L46628:
+
+; 317  : 
+; 318  : 	fclose(SMDFile);
+
+  0064c	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR _SMDFile
+  00652	51		 push	 ecx
+  00653	e8 00 00 00 00	 call	 _fclose
+  00658	83 c4 04	 add	 esp, 4
+$L46618:
+
+; 319  : }
+
+  0065b	5f		 pop	 edi
+  0065c	5e		 pop	 esi
+  0065d	5b		 pop	 ebx
+  0065e	8b e5		 mov	 esp, ebp
+  00660	5d		 pop	 ebp
+  00661	c2 04 00	 ret	 4
+?LoadSetBase@CMonsterSetBase@@QAEXPAD@Z ENDP		; CMonsterSetBase::LoadSetBase
+_TEXT	ENDS
+EXTRN	_fgetc:NEAR
+EXTRN	__fltused:NEAR
+EXTRN	_getc:NEAR
+EXTRN	_ungetc:NEAR
+EXTRN	_isalpha:NEAR
+EXTRN	_isdigit:NEAR
+EXTRN	_isspace:NEAR
+EXTRN	_isalnum:NEAR
+EXTRN	_atof:NEAR
+_BSS	SEGMENT
+_CurrentToken DD 01H DUP (?)
+_BSS	ENDS
+;	COMDAT ?GetToken@@YAHXZ
+_TEXT	SEGMENT
+_ch$ = -4
+_p$ = -8
+_TempString$ = -108
+?GetToken@@YAHXZ PROC NEAR				; GetToken, COMDAT
+
+; 20   : { 
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	81 ec b0 00 00
+	00		 sub	 esp, 176		; 000000b0H
+  00009	53		 push	 ebx
+  0000a	56		 push	 esi
+  0000b	57		 push	 edi
+
+; 21   : 	char ch;
+; 22   : 	char* p;
+; 23   : 	char TempString[100];
+; 24   : 
+; 25   : 	TokenString[0]=0;
+
+  0000c	c6 05 00 00 00
+	00 00		 mov	 BYTE PTR _TokenString, 0
+$L46460:
+
+; 29   : 		if ((ch=fgetc(SMDFile)) == -1)
+
+  00013	a1 00 00 00 00	 mov	 eax, DWORD PTR _SMDFile
+  00018	50		 push	 eax
+  00019	e8 00 00 00 00	 call	 _fgetc
+  0001e	83 c4 04	 add	 esp, 4
+  00021	88 45 fc	 mov	 BYTE PTR _ch$[ebp], al
+  00024	0f be 4d fc	 movsx	 ecx, BYTE PTR _ch$[ebp]
+  00028	83 f9 ff	 cmp	 ecx, -1
+  0002b	75 0a		 jne	 SHORT $L46463
+
+; 31   : 			return 2;	// End of FILE (EOF)
+
+  0002d	b8 02 00 00 00	 mov	 eax, 2
+  00032	e9 c4 02 00 00	 jmp	 $L46456
+$L46463:
+
+; 35   : 			if (ch=='/')		// this is /
+
+  00037	0f be 55 fc	 movsx	 edx, BYTE PTR _ch$[ebp]
+  0003b	83 fa 2f	 cmp	 edx, 47			; 0000002fH
+  0003e	75 53		 jne	 SHORT $L46470
+
+; 37   : 				if((ch=fgetc(SMDFile)) == '/')
+
+  00040	a1 00 00 00 00	 mov	 eax, DWORD PTR _SMDFile
+  00045	50		 push	 eax
+  00046	e8 00 00 00 00	 call	 _fgetc
+  0004b	83 c4 04	 add	 esp, 4
+  0004e	88 45 fc	 mov	 BYTE PTR _ch$[ebp], al
+  00051	0f be 4d fc	 movsx	 ecx, BYTE PTR _ch$[ebp]
+  00055	83 f9 2f	 cmp	 ecx, 47			; 0000002fH
+  00058	75 39		 jne	 SHORT $L46470
+$L46468:
+
+; 39   : 					while ((ch != '\n') && (ch != -1))	// End of Line (EOL)
+
+  0005a	0f be 55 fc	 movsx	 edx, BYTE PTR _ch$[ebp]
+  0005e	83 fa 0a	 cmp	 edx, 10			; 0000000aH
+  00061	74 1d		 je	 SHORT $L46469
+  00063	0f be 45 fc	 movsx	 eax, BYTE PTR _ch$[ebp]
+  00067	83 f8 ff	 cmp	 eax, -1
+  0006a	74 14		 je	 SHORT $L46469
+
+; 41   : 						ch=fgetc(SMDFile);
+
+  0006c	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR _SMDFile
+  00072	51		 push	 ecx
+  00073	e8 00 00 00 00	 call	 _fgetc
+  00078	83 c4 04	 add	 esp, 4
+  0007b	88 45 fc	 mov	 BYTE PTR _ch$[ebp], al
+
+; 42   : 					}
+
+  0007e	eb da		 jmp	 SHORT $L46468
+$L46469:
+
+; 43   : 	
+; 44   : 					if (ch == -1)
+
+  00080	0f be 55 fc	 movsx	 edx, BYTE PTR _ch$[ebp]
+  00084	83 fa ff	 cmp	 edx, -1
+  00087	75 0a		 jne	 SHORT $L46470
+
+; 46   : 						return 2;	// End of FILE
+
+  00089	b8 02 00 00 00	 mov	 eax, 2
+  0008e	e9 68 02 00 00	 jmp	 $L46456
+$L46470:
+
+; 52   : 	while (isspace(ch) != 0);
+
+  00093	0f be 45 fc	 movsx	 eax, BYTE PTR _ch$[ebp]
+  00097	50		 push	 eax
+  00098	e8 00 00 00 00	 call	 _isspace
+  0009d	83 c4 04	 add	 esp, 4
+  000a0	85 c0		 test	 eax, eax
+  000a2	0f 85 6b ff ff
+	ff		 jne	 $L46460
+
+; 56   : 	{
+
+  000a8	0f be 4d fc	 movsx	 ecx, BYTE PTR _ch$[ebp]
+  000ac	89 4d 90	 mov	 DWORD PTR -112+[ebp], ecx
+  000af	8b 55 90	 mov	 edx, DWORD PTR -112+[ebp]
+  000b2	83 ea 22	 sub	 edx, 34			; 00000022H
+  000b5	89 55 90	 mov	 DWORD PTR -112+[ebp], edx
+  000b8	83 7d 90 5b	 cmp	 DWORD PTR -112+[ebp], 91 ; 0000005bH
+  000bc	0f 87 81 01 00
+	00		 ja	 $L46490
+  000c2	8b 4d 90	 mov	 ecx, DWORD PTR -112+[ebp]
+  000c5	33 c0		 xor	 eax, eax
+  000c7	8a 81 00 00 00
+	00		 mov	 al, BYTE PTR $L48235[ecx]
+  000cd	ff 24 85 00 00
+	00 00		 jmp	 DWORD PTR $L48236[eax*4]
+$L46475:
+
+; 57   : 
+; 58   : 	case 0x23:	// #
+; 59   : 		return CurrentToken=0x23;
+
+  000d4	c7 05 00 00 00
+	00 23 00 00 00	 mov	 DWORD PTR _CurrentToken, 35 ; 00000023H
+  000de	a1 00 00 00 00	 mov	 eax, DWORD PTR _CurrentToken
+  000e3	e9 13 02 00 00	 jmp	 $L46456
+$L46476:
+
+; 60   : 		break;
+; 61   : 	
+; 62   : 	case 0x3B:	// ;
+; 63   : 		return CurrentToken=0x3B;
+
+  000e8	c7 05 00 00 00
+	00 3b 00 00 00	 mov	 DWORD PTR _CurrentToken, 59 ; 0000003bH
+  000f2	a1 00 00 00 00	 mov	 eax, DWORD PTR _CurrentToken
+  000f7	e9 ff 01 00 00	 jmp	 $L46456
+$L46477:
+
+; 64   : 		break;
+; 65   : 	
+; 66   : 	case 0x2C:	// ,
+; 67   : 
+; 68   : 		return CurrentToken=0x2C;
+
+  000fc	c7 05 00 00 00
+	00 2c 00 00 00	 mov	 DWORD PTR _CurrentToken, 44 ; 0000002cH
+  00106	a1 00 00 00 00	 mov	 eax, DWORD PTR _CurrentToken
+  0010b	e9 eb 01 00 00	 jmp	 $L46456
+$L46478:
+
+; 69   : 		break;
+; 70   : 	
+; 71   : 	case 0x7B:	// {
+; 72   : 		return CurrentToken = 0x7B;
+
+  00110	c7 05 00 00 00
+	00 7b 00 00 00	 mov	 DWORD PTR _CurrentToken, 123 ; 0000007bH
+  0011a	a1 00 00 00 00	 mov	 eax, DWORD PTR _CurrentToken
+  0011f	e9 d7 01 00 00	 jmp	 $L46456
+$L46479:
+
+; 73   : 		break;
+; 74   : 
+; 75   : 	case 0x7D:	// }
+; 76   : 		return CurrentToken = 0x7D;
+
+  00124	c7 05 00 00 00
+	00 7d 00 00 00	 mov	 DWORD PTR _CurrentToken, 125 ; 0000007dH
+  0012e	a1 00 00 00 00	 mov	 eax, DWORD PTR _CurrentToken
+  00133	e9 c3 01 00 00	 jmp	 $L46456
+$L46480:
+
+; 77   : 		break;
+; 78   : 	// Nice Index Table :)	by Deathway
+; 79   : 	// Numbers Case
+; 80   : 	case 0x2D:	//-
+; 81   : 	case 0x2E:	//.
+; 82   : 	case '0':	//0
+; 83   : 	case '1':	//1
+; 84   : 	case '2':	//2
+; 85   : 	case '3':	//3
+; 86   : 	case '4':	//4		
+; 87   : 	case '5':	//5
+; 88   : 	case '6':	//6
+; 89   : 	case '7':	//7
+; 90   : 	case '8':	//8
+; 91   : 	case '9':	//9
+; 92   : 		ungetc(ch, SMDFile);
+
+  00138	8b 15 00 00 00
+	00		 mov	 edx, DWORD PTR _SMDFile
+  0013e	52		 push	 edx
+  0013f	0f be 45 fc	 movsx	 eax, BYTE PTR _ch$[ebp]
+  00143	50		 push	 eax
+  00144	e8 00 00 00 00	 call	 _ungetc
+  00149	83 c4 08	 add	 esp, 8
+
+; 93   : 		p = TempString;
+
+  0014c	8d 4d 94	 lea	 ecx, DWORD PTR _TempString$[ebp]
+  0014f	89 4d f8	 mov	 DWORD PTR _p$[ebp], ecx
+$L46482:
+
+; 94   : 		
+; 95   : 		while (((ch=getc(SMDFile)) != -1) && ((ch == 0x2E) || (isdigit(ch) != 0) || (ch == 0x2D)))  // 2e '.'  2D '-'
+
+  00152	8b 15 00 00 00
+	00		 mov	 edx, DWORD PTR _SMDFile
+  00158	52		 push	 edx
+  00159	e8 00 00 00 00	 call	 _getc
+  0015e	83 c4 04	 add	 esp, 4
+  00161	88 45 fc	 mov	 BYTE PTR _ch$[ebp], al
+  00164	0f be 45 fc	 movsx	 eax, BYTE PTR _ch$[ebp]
+  00168	83 f8 ff	 cmp	 eax, -1
+  0016b	74 36		 je	 SHORT $L46483
+  0016d	0f be 4d fc	 movsx	 ecx, BYTE PTR _ch$[ebp]
+  00171	83 f9 2e	 cmp	 ecx, 46			; 0000002eH
+  00174	74 1a		 je	 SHORT $L46484
+  00176	0f be 55 fc	 movsx	 edx, BYTE PTR _ch$[ebp]
+  0017a	52		 push	 edx
+  0017b	e8 00 00 00 00	 call	 _isdigit
+  00180	83 c4 04	 add	 esp, 4
+  00183	85 c0		 test	 eax, eax
+  00185	75 09		 jne	 SHORT $L46484
+  00187	0f be 45 fc	 movsx	 eax, BYTE PTR _ch$[ebp]
+  0018b	83 f8 2d	 cmp	 eax, 45			; 0000002dH
+  0018e	75 13		 jne	 SHORT $L46483
+$L46484:
+
+; 97   : 			*p = ch;	// Construct a String
+
+  00190	8b 4d f8	 mov	 ecx, DWORD PTR _p$[ebp]
+  00193	8a 55 fc	 mov	 dl, BYTE PTR _ch$[ebp]
+  00196	88 11		 mov	 BYTE PTR [ecx], dl
+
+; 98   : 			p++;
+
+  00198	8b 45 f8	 mov	 eax, DWORD PTR _p$[ebp]
+  0019b	83 c0 01	 add	 eax, 1
+  0019e	89 45 f8	 mov	 DWORD PTR _p$[ebp], eax
+
+; 99   : 		}		
+
+  001a1	eb af		 jmp	 SHORT $L46482
+$L46483:
+
+; 100  : 		*p = 0;
+
+  001a3	8b 4d f8	 mov	 ecx, DWORD PTR _p$[ebp]
+  001a6	c6 01 00	 mov	 BYTE PTR [ecx], 0
+
+; 101  : 		TokenNumber = atof( TempString);	// Select the first Byte as Main ID
+
+  001a9	8d 55 94	 lea	 edx, DWORD PTR _TempString$[ebp]
+  001ac	52		 push	 edx
+  001ad	e8 00 00 00 00	 call	 _atof
+  001b2	83 c4 04	 add	 esp, 4
+  001b5	d9 1d 00 00 00
+	00		 fstp	 DWORD PTR _TokenNumber
+
+; 102  : 		return CurrentToken  = 1 ;
+
+  001bb	c7 05 00 00 00
+	00 01 00 00 00	 mov	 DWORD PTR _CurrentToken, 1
+  001c5	a1 00 00 00 00	 mov	 eax, DWORD PTR _CurrentToken
+  001ca	e9 2c 01 00 00	 jmp	 $L46456
+$L46485:
+
+; 103  : 		break;
+; 104  : 
+; 105  : 	case '\"':	// "	String Case
+; 106  : 		p=&TokenString[0];
+
+  001cf	c7 45 f8 00 00
+	00 00		 mov	 DWORD PTR _p$[ebp], OFFSET FLAT:_TokenString
+$L46487:
+
+; 107  : 		
+; 108  : 		while (((ch=getc(SMDFile)) != -1 ) && (ch != 0x22))	// nice
+
+  001d6	a1 00 00 00 00	 mov	 eax, DWORD PTR _SMDFile
+  001db	50		 push	 eax
+  001dc	e8 00 00 00 00	 call	 _getc
+  001e1	83 c4 04	 add	 esp, 4
+  001e4	88 45 fc	 mov	 BYTE PTR _ch$[ebp], al
+  001e7	0f be 4d fc	 movsx	 ecx, BYTE PTR _ch$[ebp]
+  001eb	83 f9 ff	 cmp	 ecx, -1
+  001ee	74 1c		 je	 SHORT $L46488
+  001f0	0f be 55 fc	 movsx	 edx, BYTE PTR _ch$[ebp]
+  001f4	83 fa 22	 cmp	 edx, 34			; 00000022H
+  001f7	74 13		 je	 SHORT $L46488
+
+; 110  : 			*p = ch;
+
+  001f9	8b 45 f8	 mov	 eax, DWORD PTR _p$[ebp]
+  001fc	8a 4d fc	 mov	 cl, BYTE PTR _ch$[ebp]
+  001ff	88 08		 mov	 BYTE PTR [eax], cl
+
+; 111  : 			p++;
+
+  00201	8b 55 f8	 mov	 edx, DWORD PTR _p$[ebp]
+  00204	83 c2 01	 add	 edx, 1
+  00207	89 55 f8	 mov	 DWORD PTR _p$[ebp], edx
+
+; 112  : 		}
+
+  0020a	eb ca		 jmp	 SHORT $L46487
+$L46488:
+
+; 113  : 		if (ch != 0x22 )
+
+  0020c	0f be 45 fc	 movsx	 eax, BYTE PTR _ch$[ebp]
+  00210	83 f8 22	 cmp	 eax, 34			; 00000022H
+  00213	74 14		 je	 SHORT $L46489
+
+; 115  : 			ungetc(ch, SMDFile);
+
+  00215	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR _SMDFile
+  0021b	51		 push	 ecx
+  0021c	0f be 55 fc	 movsx	 edx, BYTE PTR _ch$[ebp]
+  00220	52		 push	 edx
+  00221	e8 00 00 00 00	 call	 _ungetc
+  00226	83 c4 08	 add	 esp, 8
+$L46489:
+
+; 117  : 		*p = 0;
+
+  00229	8b 45 f8	 mov	 eax, DWORD PTR _p$[ebp]
+  0022c	c6 00 00	 mov	 BYTE PTR [eax], 0
+
+; 118  : 		return CurrentToken = 0;
+
+  0022f	c7 05 00 00 00
+	00 00 00 00 00	 mov	 DWORD PTR _CurrentToken, 0
+  00239	a1 00 00 00 00	 mov	 eax, DWORD PTR _CurrentToken
+  0023e	e9 b8 00 00 00	 jmp	 $L46456
+$L46490:
+
+; 119  : 		break;
+; 120  : 
+; 121  : 	default:	// Others
+; 122  : 		if (isalpha(ch))
+
+  00243	0f be 4d fc	 movsx	 ecx, BYTE PTR _ch$[ebp]
+  00247	51		 push	 ecx
+  00248	e8 00 00 00 00	 call	 _isalpha
+  0024d	83 c4 04	 add	 esp, 4
+  00250	85 c0		 test	 eax, eax
+  00252	0f 84 94 00 00
+	00		 je	 $L46491
+
+; 124  : 			p=&TokenString[0];
+
+  00258	c7 45 f8 00 00
+	00 00		 mov	 DWORD PTR _p$[ebp], OFFSET FLAT:_TokenString
+
+; 125  : 			*p=ch;
+
+  0025f	8b 55 f8	 mov	 edx, DWORD PTR _p$[ebp]
+  00262	8a 45 fc	 mov	 al, BYTE PTR _ch$[ebp]
+  00265	88 02		 mov	 BYTE PTR [edx], al
+
+; 126  : 			p++;
+
+  00267	8b 4d f8	 mov	 ecx, DWORD PTR _p$[ebp]
+  0026a	83 c1 01	 add	 ecx, 1
+  0026d	89 4d f8	 mov	 DWORD PTR _p$[ebp], ecx
+$L46493:
+
+; 127  : 
+; 128  : 			while ( ((ch=getc(SMDFile)) != -1) && ( (ch == 0x2E) || (ch == 0x5F) || (isalnum(ch) != 0) ) )
+
+  00270	8b 15 00 00 00
+	00		 mov	 edx, DWORD PTR _SMDFile
+  00276	52		 push	 edx
+  00277	e8 00 00 00 00	 call	 _getc
+  0027c	83 c4 04	 add	 esp, 4
+  0027f	88 45 fc	 mov	 BYTE PTR _ch$[ebp], al
+  00282	0f be 45 fc	 movsx	 eax, BYTE PTR _ch$[ebp]
+  00286	83 f8 ff	 cmp	 eax, -1
+  00289	74 36		 je	 SHORT $L46494
+  0028b	0f be 4d fc	 movsx	 ecx, BYTE PTR _ch$[ebp]
+  0028f	83 f9 2e	 cmp	 ecx, 46			; 0000002eH
+  00292	74 1a		 je	 SHORT $L46495
+  00294	0f be 55 fc	 movsx	 edx, BYTE PTR _ch$[ebp]
+  00298	83 fa 5f	 cmp	 edx, 95			; 0000005fH
+  0029b	74 11		 je	 SHORT $L46495
+  0029d	0f be 45 fc	 movsx	 eax, BYTE PTR _ch$[ebp]
+  002a1	50		 push	 eax
+  002a2	e8 00 00 00 00	 call	 _isalnum
+  002a7	83 c4 04	 add	 esp, 4
+  002aa	85 c0		 test	 eax, eax
+  002ac	74 13		 je	 SHORT $L46494
+$L46495:
+
+; 130  : 				*p=ch;
+
+  002ae	8b 4d f8	 mov	 ecx, DWORD PTR _p$[ebp]
+  002b1	8a 55 fc	 mov	 dl, BYTE PTR _ch$[ebp]
+  002b4	88 11		 mov	 BYTE PTR [ecx], dl
+
+; 131  : 				p++;
+
+  002b6	8b 45 f8	 mov	 eax, DWORD PTR _p$[ebp]
+  002b9	83 c0 01	 add	 eax, 1
+  002bc	89 45 f8	 mov	 DWORD PTR _p$[ebp], eax
+
+; 132  : 				
+; 133  : 			}
+
+  002bf	eb af		 jmp	 SHORT $L46493
+$L46494:
+
+; 134  : 
+; 135  : 			ungetc(ch, SMDFile);
+
+  002c1	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR _SMDFile
+  002c7	51		 push	 ecx
+  002c8	0f be 55 fc	 movsx	 edx, BYTE PTR _ch$[ebp]
+  002cc	52		 push	 edx
+  002cd	e8 00 00 00 00	 call	 _ungetc
+  002d2	83 c4 08	 add	 esp, 8
+
+; 136  : 			*p=0;
+
+  002d5	8b 45 f8	 mov	 eax, DWORD PTR _p$[ebp]
+  002d8	c6 00 00	 mov	 BYTE PTR [eax], 0
+
+; 137  : 			CurrentToken=0;
+
+  002db	c7 05 00 00 00
+	00 00 00 00 00	 mov	 DWORD PTR _CurrentToken, 0
+
+; 138  : 			return CurrentToken;
+
+  002e5	a1 00 00 00 00	 mov	 eax, DWORD PTR _CurrentToken
+  002ea	eb 0f		 jmp	 SHORT $L46456
+$L46491:
+
+; 142  : 			return CurrentToken = 0x3C; // '<'
+
+  002ec	c7 05 00 00 00
+	00 3c 00 00 00	 mov	 DWORD PTR _CurrentToken, 60 ; 0000003cH
+  002f6	a1 00 00 00 00	 mov	 eax, DWORD PTR _CurrentToken
+$L46456:
+
+; 147  : 
+; 148  : 	return 0;
+; 149  : }
+
+  002fb	5f		 pop	 edi
+  002fc	5e		 pop	 esi
+  002fd	5b		 pop	 ebx
+  002fe	8b e5		 mov	 esp, ebp
+  00300	5d		 pop	 ebp
+  00301	c3		 ret	 0
+$L48236:
+  00302	00 00 00 00	 DD	 $L46485
+  00306	00 00 00 00	 DD	 $L46475
+  0030a	00 00 00 00	 DD	 $L46477
+  0030e	00 00 00 00	 DD	 $L46480
+  00312	00 00 00 00	 DD	 $L46476
+  00316	00 00 00 00	 DD	 $L46478
+  0031a	00 00 00 00	 DD	 $L46479
+  0031e	00 00 00 00	 DD	 $L46490
+$L48235:
+  00322	00		 DB	 0
+  00323	01		 DB	 1
+  00324	07		 DB	 7
+  00325	07		 DB	 7
+  00326	07		 DB	 7
+  00327	07		 DB	 7
+  00328	07		 DB	 7
+  00329	07		 DB	 7
+  0032a	07		 DB	 7
+  0032b	07		 DB	 7
+  0032c	02		 DB	 2
+  0032d	03		 DB	 3
+  0032e	03		 DB	 3
+  0032f	07		 DB	 7
+  00330	03		 DB	 3
+  00331	03		 DB	 3
+  00332	03		 DB	 3
+  00333	03		 DB	 3
+  00334	03		 DB	 3
+  00335	03		 DB	 3
+  00336	03		 DB	 3
+  00337	03		 DB	 3
+  00338	03		 DB	 3
+  00339	03		 DB	 3
+  0033a	07		 DB	 7
+  0033b	04		 DB	 4
+  0033c	07		 DB	 7
+  0033d	07		 DB	 7
+  0033e	07		 DB	 7
+  0033f	07		 DB	 7
+  00340	07		 DB	 7
+  00341	07		 DB	 7
+  00342	07		 DB	 7
+  00343	07		 DB	 7
+  00344	07		 DB	 7
+  00345	07		 DB	 7
+  00346	07		 DB	 7
+  00347	07		 DB	 7
+  00348	07		 DB	 7
+  00349	07		 DB	 7
+  0034a	07		 DB	 7
+  0034b	07		 DB	 7
+  0034c	07		 DB	 7
+  0034d	07		 DB	 7
+  0034e	07		 DB	 7
+  0034f	07		 DB	 7
+  00350	07		 DB	 7
+  00351	07		 DB	 7
+  00352	07		 DB	 7
+  00353	07		 DB	 7
+  00354	07		 DB	 7
+  00355	07		 DB	 7
+  00356	07		 DB	 7
+  00357	07		 DB	 7
+  00358	07		 DB	 7
+  00359	07		 DB	 7
+  0035a	07		 DB	 7
+  0035b	07		 DB	 7
+  0035c	07		 DB	 7
+  0035d	07		 DB	 7
+  0035e	07		 DB	 7
+  0035f	07		 DB	 7
+  00360	07		 DB	 7
+  00361	07		 DB	 7
+  00362	07		 DB	 7
+  00363	07		 DB	 7
+  00364	07		 DB	 7
+  00365	07		 DB	 7
+  00366	07		 DB	 7
+  00367	07		 DB	 7
+  00368	07		 DB	 7
+  00369	07		 DB	 7
+  0036a	07		 DB	 7
+  0036b	07		 DB	 7
+  0036c	07		 DB	 7
+  0036d	07		 DB	 7
+  0036e	07		 DB	 7
+  0036f	07		 DB	 7
+  00370	07		 DB	 7
+  00371	07		 DB	 7
+  00372	07		 DB	 7
+  00373	07		 DB	 7
+  00374	07		 DB	 7
+  00375	07		 DB	 7
+  00376	07		 DB	 7
+  00377	07		 DB	 7
+  00378	07		 DB	 7
+  00379	07		 DB	 7
+  0037a	07		 DB	 7
+  0037b	05		 DB	 5
+  0037c	07		 DB	 7
+  0037d	06		 DB	 6
+?GetToken@@YAHXZ ENDP					; GetToken
+_TEXT	ENDS
+PUBLIC	?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z	; CMonsterSetBase::LoadSetBase
+PUBLIC	?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPADH@Z@4FA ; `CMonsterSetBase::LoadSetBase'::`2'::__LINE__Var
+EXTRN	___CxxFrameHandler:NEAR
+EXTRN	??0CWzMemScript@@QAE@XZ:NEAR			; CWzMemScript::CWzMemScript
+EXTRN	??1CWzMemScript@@UAE@XZ:NEAR			; CWzMemScript::~CWzMemScript
+EXTRN	?SetBuffer@CWzMemScript@@QAEHPADH@Z:NEAR	; CWzMemScript::SetBuffer
+EXTRN	?GetNumber@CWzMemScript@@QAEHXZ:NEAR		; CWzMemScript::GetNumber
+EXTRN	?GetString@CWzMemScript@@QAEPADXZ:NEAR		; CWzMemScript::GetString
+EXTRN	?GetToken@CWzMemScript@@QAEHXZ:NEAR		; CWzMemScript::GetToken
+;	COMDAT ?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPADH@Z@4FA
+; File C:\Deathway\C++\GameServer\SOURCE\MonsterSetBase.cpp
+_DATA	SEGMENT
+?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPADH@Z@4FA DW 0143H ; `CMonsterSetBase::LoadSetBase'::`2'::__LINE__Var
+_DATA	ENDS
+;	COMDAT xdata$x
+xdata$x	SEGMENT
+__ehfuncinfo$?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z DD 019930520H
+	DD	01H
+	DD	FLAT:__unwindtable$?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z
+	DD	2 DUP(00H)
+	DD	2 DUP(00H)
+	ORG $+4
+__unwindtable$?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z DD 0ffffffffH
+	DD	FLAT:__unwindfunclet$?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z$0
+xdata$x	ENDS
+;	COMDAT ?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z
+_TEXT	SEGMENT
+__$EHRec$ = -12
+_Buffer$ = 8
+_iSize$ = 12
+_this$ = -16
+_WzMemScript$ = -148
+_Token$ = -152
+_rcount$ = -156
+_copycount$ = -160
+_Sdir$ = -164
+_Type$46680 = -168
+_w$46689 = -172
+_h$46690 = -176
+_w$46697 = -180
+_h$46698 = -184
+_k$46700 = -188
+?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z PROC NEAR	; CMonsterSetBase::LoadSetBase, COMDAT
+
+; 323  : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	6a ff		 push	 -1
+  00005	68 00 00 00 00	 push	 __ehhandler$?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z
+  0000a	64 a1 00 00 00
+	00		 mov	 eax, DWORD PTR fs:__except_list
+  00010	50		 push	 eax
+  00011	64 89 25 00 00
+	00 00		 mov	 DWORD PTR fs:__except_list, esp
+  00018	81 ec f0 00 00
+	00		 sub	 esp, 240		; 000000f0H
+  0001e	53		 push	 ebx
+  0001f	56		 push	 esi
+  00020	57		 push	 edi
+  00021	89 4d f0	 mov	 DWORD PTR _this$[ebp], ecx
+
+; 324  : 	CWzMemScript WzMemScript;
+
+  00024	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  0002a	e8 00 00 00 00	 call	 ??0CWzMemScript@@QAE@XZ	; CWzMemScript::CWzMemScript
+  0002f	c7 45 fc 00 00
+	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 0
+
+; 325  : 	int Token;
+; 326  : 	int rcount;
+; 327  : 	int copycount;
+; 328  : 	BYTE Sdir;
+; 329  : 
+; 330  : 	WzMemScript.SetBuffer(Buffer, iSize);
+
+  00036	8b 45 0c	 mov	 eax, DWORD PTR _iSize$[ebp]
+  00039	50		 push	 eax
+  0003a	8b 4d 08	 mov	 ecx, DWORD PTR _Buffer$[ebp]
+  0003d	51		 push	 ecx
+  0003e	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00044	e8 00 00 00 00	 call	 ?SetBuffer@CWzMemScript@@QAEHPADH@Z ; CWzMemScript::SetBuffer
+
+; 331  : 
+; 332  : 	this->m_iMonsterCount = 0;
+
+  00049	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  0004c	c7 82 e4 0f 01
+	00 00 00 00 00	 mov	 DWORD PTR [edx+69604], 0
+$L46676:
+
+; 333  : 
+; 334  : 	while ( true )
+
+  00056	b8 01 00 00 00	 mov	 eax, 1
+  0005b	85 c0		 test	 eax, eax
+  0005d	0f 84 d1 06 00
+	00		 je	 $L46677
+
+; 336  : 		Token = WzMemScript.GetToken();
+
+  00063	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00069	e8 00 00 00 00	 call	 ?GetToken@CWzMemScript@@QAEHXZ ; CWzMemScript::GetToken
+  0006e	89 85 68 ff ff
+	ff		 mov	 DWORD PTR _Token$[ebp], eax
+
+; 337  : 
+; 338  : 		if ( Token == 2 )
+
+  00074	83 bd 68 ff ff
+	ff 02		 cmp	 DWORD PTR _Token$[ebp], 2
+  0007b	75 05		 jne	 SHORT $L46678
+
+; 340  : 			break;
+
+  0007d	e9 b2 06 00 00	 jmp	 $L46677
+$L46678:
+
+; 342  : 
+; 343  : 		if ( Token == 1 )
+
+  00082	83 bd 68 ff ff
+	ff 01		 cmp	 DWORD PTR _Token$[ebp], 1
+  00089	0f 85 a0 06 00
+	00		 jne	 $L46683
+
+; 345  : 			int Type = WzMemScript.GetNumber();
+
+  0008f	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00095	e8 00 00 00 00	 call	 ?GetNumber@CWzMemScript@@QAEHXZ ; CWzMemScript::GetNumber
+  0009a	89 85 58 ff ff
+	ff		 mov	 DWORD PTR _Type$46680[ebp], eax
+$L46682:
+
+; 346  : 
+; 347  : 			while ( true )
+
+  000a0	b9 01 00 00 00	 mov	 ecx, 1
+  000a5	85 c9		 test	 ecx, ecx
+  000a7	0f 84 82 06 00
+	00		 je	 $L46683
+
+; 349  : 				Token = WzMemScript.GetToken();
+
+  000ad	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  000b3	e8 00 00 00 00	 call	 ?GetToken@CWzMemScript@@QAEHXZ ; CWzMemScript::GetToken
+  000b8	89 85 68 ff ff
+	ff		 mov	 DWORD PTR _Token$[ebp], eax
+
+; 350  : 
+; 351  : 				if ( strcmp("end", WzMemScript.GetString()) == 0 )
+
+  000be	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  000c4	e8 00 00 00 00	 call	 ?GetString@CWzMemScript@@QAEPADXZ ; CWzMemScript::GetString
+  000c9	50		 push	 eax
+  000ca	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_03DNBD@end?$AA@ ; `string'
+  000cf	e8 00 00 00 00	 call	 _strcmp
+  000d4	83 c4 08	 add	 esp, 8
+  000d7	85 c0		 test	 eax, eax
+  000d9	75 05		 jne	 SHORT $L46684
+
+; 353  : 					break;
+
+  000db	e9 4f 06 00 00	 jmp	 $L46683
+$L46684:
+
+; 355  : 				
+; 356  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].sMonsterIndex = WzMemScript.GetNumber();
+
+  000e0	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  000e6	e8 00 00 00 00	 call	 ?GetNumber@CWzMemScript@@QAEHXZ ; CWzMemScript::GetNumber
+  000eb	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  000ee	8b 8a e4 0f 01
+	00		 mov	 ecx, DWORD PTR [edx+69604]
+  000f4	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  000f7	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  000fa	66 89 44 0a 06	 mov	 WORD PTR [edx+ecx+6], ax
+
+; 357  : 
+; 358  : 				Token = WzMemScript.GetToken();
+
+  000ff	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00105	e8 00 00 00 00	 call	 ?GetToken@CWzMemScript@@QAEHXZ ; CWzMemScript::GetToken
+  0010a	89 85 68 ff ff
+	ff		 mov	 DWORD PTR _Token$[ebp], eax
+
+; 359  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btMapNumber = WzMemScript.GetNumber();
+
+  00110	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00116	e8 00 00 00 00	 call	 ?GetNumber@CWzMemScript@@QAEHXZ ; CWzMemScript::GetNumber
+  0011b	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  0011e	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  00124	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00127	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  0012a	88 44 11 08	 mov	 BYTE PTR [ecx+edx+8], al
+
+; 360  : 
+; 361  : 				Token = WzMemScript.GetToken();
+
+  0012e	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00134	e8 00 00 00 00	 call	 ?GetToken@CWzMemScript@@QAEHXZ ; CWzMemScript::GetToken
+  00139	89 85 68 ff ff
+	ff		 mov	 DWORD PTR _Token$[ebp], eax
+
+; 362  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btDistance = WzMemScript.GetNumber();
+
+  0013f	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00145	e8 00 00 00 00	 call	 ?GetNumber@CWzMemScript@@QAEHXZ ; CWzMemScript::GetNumber
+  0014a	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  0014d	8b 8a e4 0f 01
+	00		 mov	 ecx, DWORD PTR [edx+69604]
+  00153	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00156	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  00159	88 44 0a 09	 mov	 BYTE PTR [edx+ecx+9], al
+
+; 363  : 
+; 364  : 				Token = WzMemScript.GetToken();
+
+  0015d	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00163	e8 00 00 00 00	 call	 ?GetToken@CWzMemScript@@QAEHXZ ; CWzMemScript::GetToken
+  00168	89 85 68 ff ff
+	ff		 mov	 DWORD PTR _Token$[ebp], eax
+
+; 365  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartX = WzMemScript.GetNumber();
+
+  0016e	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00174	e8 00 00 00 00	 call	 ?GetNumber@CWzMemScript@@QAEHXZ ; CWzMemScript::GetNumber
+  00179	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  0017c	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  00182	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00185	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  00188	88 44 11 0a	 mov	 BYTE PTR [ecx+edx+10], al
+
+; 366  : 
+; 367  : 				Token = WzMemScript.GetToken();
+
+  0018c	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00192	e8 00 00 00 00	 call	 ?GetToken@CWzMemScript@@QAEHXZ ; CWzMemScript::GetToken
+  00197	89 85 68 ff ff
+	ff		 mov	 DWORD PTR _Token$[ebp], eax
+
+; 368  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartY = WzMemScript.GetNumber();
+
+  0019d	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  001a3	e8 00 00 00 00	 call	 ?GetNumber@CWzMemScript@@QAEHXZ ; CWzMemScript::GetNumber
+  001a8	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  001ab	8b 8a e4 0f 01
+	00		 mov	 ecx, DWORD PTR [edx+69604]
+  001b1	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  001b4	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  001b7	88 44 0a 0b	 mov	 BYTE PTR [edx+ecx+11], al
+
+; 369  : 
+; 370  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btType = Type;
+
+  001bb	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  001be	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  001c4	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  001c7	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  001ca	8a 85 58 ff ff
+	ff		 mov	 al, BYTE PTR _Type$46680[ebp]
+  001d0	88 44 0a 04	 mov	 BYTE PTR [edx+ecx+4], al
+
+; 371  : 
+; 372  : 				if ( Type == 1 || Type == 3 )
+
+  001d4	83 bd 58 ff ff
+	ff 01		 cmp	 DWORD PTR _Type$46680[ebp], 1
+  001db	74 09		 je	 SHORT $L46686
+  001dd	83 bd 58 ff ff
+	ff 03		 cmp	 DWORD PTR _Type$46680[ebp], 3
+  001e4	75 63		 jne	 SHORT $L46685
+$L46686:
+
+; 374  : 					Token = WzMemScript.GetToken();
+
+  001e6	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  001ec	e8 00 00 00 00	 call	 ?GetToken@CWzMemScript@@QAEHXZ ; CWzMemScript::GetToken
+  001f1	89 85 68 ff ff
+	ff		 mov	 DWORD PTR _Token$[ebp], eax
+
+; 375  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndX = WzMemScript.GetNumber();
+
+  001f7	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  001fd	e8 00 00 00 00	 call	 ?GetNumber@CWzMemScript@@QAEHXZ ; CWzMemScript::GetNumber
+  00202	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  00205	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  0020b	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  0020e	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  00211	88 44 11 0d	 mov	 BYTE PTR [ecx+edx+13], al
+
+; 376  : 
+; 377  : 					Token = WzMemScript.GetToken();
+
+  00215	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  0021b	e8 00 00 00 00	 call	 ?GetToken@CWzMemScript@@QAEHXZ ; CWzMemScript::GetToken
+  00220	89 85 68 ff ff
+	ff		 mov	 DWORD PTR _Token$[ebp], eax
+
+; 378  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndY = WzMemScript.GetNumber();
+
+  00226	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  0022c	e8 00 00 00 00	 call	 ?GetNumber@CWzMemScript@@QAEHXZ ; CWzMemScript::GetNumber
+  00231	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  00234	8b 8a e4 0f 01
+	00		 mov	 ecx, DWORD PTR [edx+69604]
+  0023a	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0023d	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  00240	88 44 0a 0e	 mov	 BYTE PTR [edx+ecx+14], al
+
+; 380  : 				else if ( Type == 2 )
+
+  00244	e9 36 01 00 00	 jmp	 $L46693
+$L46685:
+  00249	83 bd 58 ff ff
+	ff 02		 cmp	 DWORD PTR _Type$46680[ebp], 2
+  00250	0f 85 ce 00 00
+	00		 jne	 $L46688
+
+; 382  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndX = 0;
+
+  00256	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  00259	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  0025f	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00262	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  00265	c6 44 0a 0d 00	 mov	 BYTE PTR [edx+ecx+13], 0
+
+; 383  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndY = 0;
+
+  0026a	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  0026d	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00273	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00276	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  00279	c6 44 0a 0e 00	 mov	 BYTE PTR [edx+ecx+14], 0
+
+; 384  : 
+; 385  : 					auto int w = this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartX - 3;
+
+  0027e	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  00281	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00287	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0028a	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  0028d	33 c0		 xor	 eax, eax
+  0028f	8a 44 0a 0a	 mov	 al, BYTE PTR [edx+ecx+10]
+  00293	83 e8 03	 sub	 eax, 3
+  00296	89 85 54 ff ff
+	ff		 mov	 DWORD PTR _w$46689[ebp], eax
+
+; 386  : 					auto int h = this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartY - 3;
+
+  0029c	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  0029f	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  002a5	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  002a8	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  002ab	33 c9		 xor	 ecx, ecx
+  002ad	8a 4c 10 0b	 mov	 cl, BYTE PTR [eax+edx+11]
+  002b1	83 e9 03	 sub	 ecx, 3
+  002b4	89 8d 50 ff ff
+	ff		 mov	 DWORD PTR _h$46690[ebp], ecx
+
+; 387  : 
+; 388  : 					w += rand() % 7;
+
+  002ba	e8 00 00 00 00	 call	 _rand
+  002bf	99		 cdq
+  002c0	b9 07 00 00 00	 mov	 ecx, 7
+  002c5	f7 f9		 idiv	 ecx
+  002c7	8b 85 54 ff ff
+	ff		 mov	 eax, DWORD PTR _w$46689[ebp]
+  002cd	03 c2		 add	 eax, edx
+  002cf	89 85 54 ff ff
+	ff		 mov	 DWORD PTR _w$46689[ebp], eax
+
+; 389  : 					h += rand() % 7;
+
+  002d5	e8 00 00 00 00	 call	 _rand
+  002da	99		 cdq
+  002db	b9 07 00 00 00	 mov	 ecx, 7
+  002e0	f7 f9		 idiv	 ecx
+  002e2	8b 85 50 ff ff
+	ff		 mov	 eax, DWORD PTR _h$46690[ebp]
+  002e8	03 c2		 add	 eax, edx
+  002ea	89 85 50 ff ff
+	ff		 mov	 DWORD PTR _h$46690[ebp], eax
+
+; 390  : 
+; 391  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartX = w;
+
+  002f0	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  002f3	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  002f9	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  002fc	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  002ff	8a 8d 54 ff ff
+	ff		 mov	 cl, BYTE PTR _w$46689[ebp]
+  00305	88 4c 10 0a	 mov	 BYTE PTR [eax+edx+10], cl
+
+; 392  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartY = h;
+
+  00309	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  0030c	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  00312	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00315	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  00318	8a 95 50 ff ff
+	ff		 mov	 dl, BYTE PTR _h$46690[ebp]
+  0031e	88 54 01 0b	 mov	 BYTE PTR [ecx+eax+11], dl
+
+; 394  : 				else if ( Type == 4 )
+
+  00322	eb 5b		 jmp	 SHORT $L46693
+$L46688:
+  00324	83 bd 58 ff ff
+	ff 04		 cmp	 DWORD PTR _Type$46680[ebp], 4
+  0032b	75 2a		 jne	 SHORT $L46692
+
+; 396  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndX = 0;
+
+  0032d	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  00330	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00336	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00339	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  0033c	c6 44 0a 0d 00	 mov	 BYTE PTR [edx+ecx+13], 0
+
+; 397  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndY = 0;
+
+  00341	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  00344	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  0034a	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0034d	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  00350	c6 44 0a 0e 00	 mov	 BYTE PTR [edx+ecx+14], 0
+
+; 399  : 				else
+
+  00355	eb 28		 jmp	 SHORT $L46693
+$L46692:
+
+; 401  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndX = 0;
+
+  00357	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  0035a	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00360	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00363	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  00366	c6 44 0a 0d 00	 mov	 BYTE PTR [edx+ecx+13], 0
+
+; 402  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndY = 0;
+
+  0036b	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  0036e	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00374	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00377	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  0037a	c6 44 0a 0e 00	 mov	 BYTE PTR [edx+ecx+14], 0
+$L46693:
+
+; 404  : 
+; 405  : 				Token = WzMemScript.GetToken();
+
+  0037f	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00385	e8 00 00 00 00	 call	 ?GetToken@CWzMemScript@@QAEHXZ ; CWzMemScript::GetToken
+  0038a	89 85 68 ff ff
+	ff		 mov	 DWORD PTR _Token$[ebp], eax
+
+; 406  : 				this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection = WzMemScript.GetNumber();
+
+  00390	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00396	e8 00 00 00 00	 call	 ?GetNumber@CWzMemScript@@QAEHXZ ; CWzMemScript::GetNumber
+  0039b	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  0039e	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  003a4	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  003a7	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  003aa	88 44 11 0c	 mov	 BYTE PTR [ecx+edx+12], al
+
+; 407  : 
+; 408  : 				Sdir = this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection;
+
+  003ae	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  003b1	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  003b7	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  003ba	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  003bd	8a 54 01 0c	 mov	 dl, BYTE PTR [ecx+eax+12]
+  003c1	88 95 5c ff ff
+	ff		 mov	 BYTE PTR _Sdir$[ebp], dl
+
+; 409  : 
+; 410  : 				if ( this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection == -1 )
+
+  003c7	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  003ca	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  003d0	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  003d3	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  003d6	33 c0		 xor	 eax, eax
+  003d8	8a 44 0a 0c	 mov	 al, BYTE PTR [edx+ecx+12]
+  003dc	83 f8 ff	 cmp	 eax, -1
+  003df	75 1b		 jne	 SHORT $L46694
+
+; 412  : 					this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection = rand() & 7;
+
+  003e1	e8 00 00 00 00	 call	 _rand
+  003e6	83 e0 07	 and	 eax, 7
+  003e9	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  003ec	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  003f2	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  003f5	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  003f8	88 44 11 0c	 mov	 BYTE PTR [ecx+edx+12], al
+$L46694:
+
+; 414  : 
+; 415  : 				if ( Type == 1 || Type == 3 )
+
+  003fc	83 bd 58 ff ff
+	ff 01		 cmp	 DWORD PTR _Type$46680[ebp], 1
+  00403	74 0d		 je	 SHORT $L46696
+  00405	83 bd 58 ff ff
+	ff 03		 cmp	 DWORD PTR _Type$46680[ebp], 3
+  0040c	0f 85 8d 02 00
+	00		 jne	 $L46703
+$L46696:
+
+; 417  : 					BYTE w = this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartX;
+
+  00412	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  00415	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  0041b	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  0041e	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  00421	8a 54 01 0a	 mov	 dl, BYTE PTR [ecx+eax+10]
+  00425	88 95 4c ff ff
+	ff		 mov	 BYTE PTR _w$46697[ebp], dl
+
+; 418  : 					BYTE h = this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartY;
+
+  0042b	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  0042e	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00434	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00437	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  0043a	8a 44 0a 0b	 mov	 al, BYTE PTR [edx+ecx+11]
+  0043e	88 85 48 ff ff
+	ff		 mov	 BYTE PTR _h$46698[ebp], al
+
+; 419  : 
+; 420  : 					Token = WzMemScript.GetToken();
+
+  00444	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  0044a	e8 00 00 00 00	 call	 ?GetToken@CWzMemScript@@QAEHXZ ; CWzMemScript::GetToken
+  0044f	89 85 68 ff ff
+	ff		 mov	 DWORD PTR _Token$[ebp], eax
+
+; 421  : 					rcount = WzMemScript.GetNumber();
+
+  00455	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  0045b	e8 00 00 00 00	 call	 ?GetNumber@CWzMemScript@@QAEHXZ ; CWzMemScript::GetNumber
+  00460	89 85 64 ff ff
+	ff		 mov	 DWORD PTR _rcount$[ebp], eax
+
+; 422  : 					copycount = this->m_iMonsterCount;
+
+  00466	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  00469	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  0046f	89 95 60 ff ff
+	ff		 mov	 DWORD PTR _copycount$[ebp], edx
+
+; 423  : 
+; 424  : 					if ( rcount > 1 )
+
+  00475	83 bd 64 ff ff
+	ff 01		 cmp	 DWORD PTR _rcount$[ebp], 1
+  0047c	0f 8e 1d 02 00
+	00		 jle	 $L46703
+
+; 426  : 						for ( int k = 0; k<rcount-1 ; k++ )
+
+  00482	c7 85 44 ff ff
+	ff 00 00 00 00	 mov	 DWORD PTR _k$46700[ebp], 0
+  0048c	eb 0f		 jmp	 SHORT $L46701
+$L46702:
+  0048e	8b 85 44 ff ff
+	ff		 mov	 eax, DWORD PTR _k$46700[ebp]
+  00494	83 c0 01	 add	 eax, 1
+  00497	89 85 44 ff ff
+	ff		 mov	 DWORD PTR _k$46700[ebp], eax
+$L46701:
+  0049d	8b 8d 64 ff ff
+	ff		 mov	 ecx, DWORD PTR _rcount$[ebp]
+  004a3	83 e9 01	 sub	 ecx, 1
+  004a6	39 8d 44 ff ff
+	ff		 cmp	 DWORD PTR _k$46700[ebp], ecx
+  004ac	0f 8d ed 01 00
+	00		 jge	 $L46703
+
+; 428  : 							if ( g_MapServerManager.CheckMapCanMove(this->m_sttMonsterSetBase[copycount].btMapNumber) == FALSE )
+
+  004b2	8b 95 60 ff ff
+	ff		 mov	 edx, DWORD PTR _copycount$[ebp]
+  004b8	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  004bb	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  004be	33 c9		 xor	 ecx, ecx
+  004c0	8a 4c 10 08	 mov	 cl, BYTE PTR [eax+edx+8]
+  004c4	51		 push	 ecx
+  004c5	b9 00 00 00 00	 mov	 ecx, OFFSET FLAT:?g_MapServerManager@@3VCMapServerManager@@A
+  004ca	e8 00 00 00 00	 call	 ?CheckMapCanMove@CMapServerManager@@QAEHH@Z ; CMapServerManager::CheckMapCanMove
+  004cf	85 c0		 test	 eax, eax
+  004d1	75 05		 jne	 SHORT $L46704
+
+; 430  : 								break;
+
+  004d3	e9 c7 01 00 00	 jmp	 $L46703
+$L46704:
+
+; 432  : 						
+; 433  : 							this->m_iMonsterCount++;
+
+  004d8	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  004db	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  004e1	83 c0 01	 add	 eax, 1
+  004e4	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  004e7	89 81 e4 0f 01
+	00		 mov	 DWORD PTR [ecx+69604], eax
+
+; 434  : 
+; 435  : 							if ( this->m_iMonsterCount > OBJ_MAXMONSTER-1 )
+
+  004ed	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  004f0	81 ba e4 0f 01
+	00 a7 16 00 00	 cmp	 DWORD PTR [edx+69604], 5799 ; 000016a7H
+  004fa	7e 34		 jle	 SHORT $L46705
+
+; 437  : 								MsgBox("Monster attribute max over %s %d", __FILE__, __LINE__);
+
+  004fc	0f bf 05 00 00
+	00 00		 movsx	 eax, WORD PTR ?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPADH@Z@4FA ; `CMonsterSetBase::LoadSetBase'::`2'::__LINE__Var
+  00503	83 c0 72	 add	 eax, 114		; 00000072H
+  00506	50		 push	 eax
+  00507	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0DF@OCHB@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@ ; `string'
+  0050c	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0CB@IBLK@Monster?5attribute?5max?5over?5?$CFs?5?$CFd@ ; `string'
+  00511	e8 00 00 00 00	 call	 ?MsgBox@@YAXPBDZZ	; MsgBox
+  00516	83 c4 0c	 add	 esp, 12			; 0000000cH
+
+; 438  : 								//fclose(SMDFile);
+; 439  : 								return;
+
+  00519	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
+  00520	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00526	e8 00 00 00 00	 call	 ??1CWzMemScript@@UAE@XZ	; CWzMemScript::~CWzMemScript
+  0052b	e9 16 02 00 00	 jmp	 $L46669
+$L46705:
+
+; 441  : 
+; 442  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btDistance = this->m_sttMonsterSetBase[copycount].btDistance;
+
+  00530	8b 8d 60 ff ff
+	ff		 mov	 ecx, DWORD PTR _copycount$[ebp]
+  00536	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00539	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  0053c	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  00542	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00545	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  00548	8b 75 f0	 mov	 esi, DWORD PTR _this$[ebp]
+  0054b	8a 4c 0e 09	 mov	 cl, BYTE PTR [esi+ecx+9]
+  0054f	88 4c 02 09	 mov	 BYTE PTR [edx+eax+9], cl
+
+; 443  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].sMonsterIndex = this->m_sttMonsterSetBase[copycount].sMonsterIndex;
+
+  00553	8b 95 60 ff ff
+	ff		 mov	 edx, DWORD PTR _copycount$[ebp]
+  00559	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  0055c	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  0055f	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00565	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  00568	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  0056b	8b 75 f0	 mov	 esi, DWORD PTR _this$[ebp]
+  0056e	66 8b 54 16 06	 mov	 dx, WORD PTR [esi+edx+6]
+  00573	66 89 54 08 06	 mov	 WORD PTR [eax+ecx+6], dx
+
+; 444  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btMapNumber = this->m_sttMonsterSetBase[copycount].btMapNumber;
+
+  00578	8b 85 60 ff ff
+	ff		 mov	 eax, DWORD PTR _copycount$[ebp]
+  0057e	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00581	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  00584	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  0058a	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  0058d	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  00590	8b 75 f0	 mov	 esi, DWORD PTR _this$[ebp]
+  00593	8a 44 06 08	 mov	 al, BYTE PTR [esi+eax+8]
+  00597	88 44 11 08	 mov	 BYTE PTR [ecx+edx+8], al
+
+; 445  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndX = this->m_sttMonsterSetBase[copycount].btEndX;
+
+  0059b	8b 8d 60 ff ff
+	ff		 mov	 ecx, DWORD PTR _copycount$[ebp]
+  005a1	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  005a4	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  005a7	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  005ad	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  005b0	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  005b3	8b 75 f0	 mov	 esi, DWORD PTR _this$[ebp]
+  005b6	8a 4c 0e 0d	 mov	 cl, BYTE PTR [esi+ecx+13]
+  005ba	88 4c 02 0d	 mov	 BYTE PTR [edx+eax+13], cl
+
+; 446  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btEndY = this->m_sttMonsterSetBase[copycount].btEndY;
+
+  005be	8b 95 60 ff ff
+	ff		 mov	 edx, DWORD PTR _copycount$[ebp]
+  005c4	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  005c7	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  005ca	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  005d0	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  005d3	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  005d6	8b 75 f0	 mov	 esi, DWORD PTR _this$[ebp]
+  005d9	8a 54 16 0e	 mov	 dl, BYTE PTR [esi+edx+14]
+  005dd	88 54 08 0e	 mov	 BYTE PTR [eax+ecx+14], dl
+
+; 447  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartX = this->m_sttMonsterSetBase[copycount].btStartX;
+
+  005e1	8b 85 60 ff ff
+	ff		 mov	 eax, DWORD PTR _copycount$[ebp]
+  005e7	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  005ea	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  005ed	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  005f3	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  005f6	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  005f9	8b 75 f0	 mov	 esi, DWORD PTR _this$[ebp]
+  005fc	8a 44 06 0a	 mov	 al, BYTE PTR [esi+eax+10]
+  00600	88 44 11 0a	 mov	 BYTE PTR [ecx+edx+10], al
+
+; 448  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btStartY = this->m_sttMonsterSetBase[copycount].btStartY;
+
+  00604	8b 8d 60 ff ff
+	ff		 mov	 ecx, DWORD PTR _copycount$[ebp]
+  0060a	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0060d	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  00610	8b 82 e4 0f 01
+	00		 mov	 eax, DWORD PTR [edx+69604]
+  00616	6b c0 0c	 imul	 eax, 12			; 0000000cH
+  00619	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  0061c	8b 75 f0	 mov	 esi, DWORD PTR _this$[ebp]
+  0061f	8a 4c 0e 0b	 mov	 cl, BYTE PTR [esi+ecx+11]
+  00623	88 4c 02 0b	 mov	 BYTE PTR [edx+eax+11], cl
+
+; 449  : 							this->m_sttMonsterSetBase[this->m_iMonsterCount].btType = this->m_sttMonsterSetBase[copycount].btType;
+
+  00627	8b 95 60 ff ff
+	ff		 mov	 edx, DWORD PTR _copycount$[ebp]
+  0062d	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00630	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  00633	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00639	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0063c	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  0063f	8b 75 f0	 mov	 esi, DWORD PTR _this$[ebp]
+  00642	8a 54 16 04	 mov	 dl, BYTE PTR [esi+edx+4]
+  00646	88 54 08 04	 mov	 BYTE PTR [eax+ecx+4], dl
+
+; 450  : 
+; 451  : 							if ( Sdir == -1 )
+
+  0064a	8b 85 5c ff ff
+	ff		 mov	 eax, DWORD PTR _Sdir$[ebp]
+  00650	25 ff 00 00 00	 and	 eax, 255		; 000000ffH
+  00655	83 f8 ff	 cmp	 eax, -1
+  00658	75 1d		 jne	 SHORT $L46707
+
+; 453  : 								this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection = rand() & 7;
+
+  0065a	e8 00 00 00 00	 call	 _rand
+  0065f	83 e0 07	 and	 eax, 7
+  00662	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  00665	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  0066b	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  0066e	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  00671	88 44 11 0c	 mov	 BYTE PTR [ecx+edx+12], al
+
+; 455  : 							else
+
+  00675	eb 23		 jmp	 SHORT $L46708
+$L46707:
+
+; 457  : 								this->m_sttMonsterSetBase[this->m_iMonsterCount].btDirection = this->m_sttMonsterSetBase[copycount].btDirection;
+
+  00677	8b 95 60 ff ff
+	ff		 mov	 edx, DWORD PTR _copycount$[ebp]
+  0067d	6b d2 0c	 imul	 edx, 12			; 0000000cH
+  00680	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  00683	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00689	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  0068c	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  0068f	8b 75 f0	 mov	 esi, DWORD PTR _this$[ebp]
+  00692	8a 54 16 0c	 mov	 dl, BYTE PTR [esi+edx+12]
+  00696	88 54 08 0c	 mov	 BYTE PTR [eax+ecx+12], dl
+$L46708:
+
+; 459  : 						}
+
+  0069a	e9 ef fd ff ff	 jmp	 $L46702
+$L46703:
+
+; 462  : 
+; 463  : 				if ( g_MapServerManager.CheckMapCanMove(this->m_sttMonsterSetBase[this->m_iMonsterCount].btMapNumber) == FALSE )
+
+  0069f	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  006a2	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  006a8	6b c9 0c	 imul	 ecx, 12			; 0000000cH
+  006ab	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  006ae	33 c0		 xor	 eax, eax
+  006b0	8a 44 0a 08	 mov	 al, BYTE PTR [edx+ecx+8]
+  006b4	50		 push	 eax
+  006b5	b9 00 00 00 00	 mov	 ecx, OFFSET FLAT:?g_MapServerManager@@3VCMapServerManager@@A
+  006ba	e8 00 00 00 00	 call	 ?CheckMapCanMove@CMapServerManager@@QAEHH@Z ; CMapServerManager::CheckMapCanMove
+  006bf	85 c0		 test	 eax, eax
+  006c1	75 05		 jne	 SHORT $L46709
+
+; 465  : 					continue;
+
+  006c3	e9 d8 f9 ff ff	 jmp	 $L46682
+$L46709:
+
+; 467  : 
+; 468  : 				this->m_iMonsterCount++;
+
+  006c8	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  006cb	8b 91 e4 0f 01
+	00		 mov	 edx, DWORD PTR [ecx+69604]
+  006d1	83 c2 01	 add	 edx, 1
+  006d4	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  006d7	89 90 e4 0f 01
+	00		 mov	 DWORD PTR [eax+69604], edx
+
+; 469  : 
+; 470  : 				if ( this->m_iMonsterCount > OBJ_MAXMONSTER-1 )
+
+  006dd	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  006e0	81 b9 e4 0f 01
+	00 a7 16 00 00	 cmp	 DWORD PTR [ecx+69604], 5799 ; 000016a7H
+  006ea	7e 3e		 jle	 SHORT $L46710
+
+; 472  : 					MsgBox("Monster attribute max over %d (%s,%d)", this->m_iMonsterCount, __FILE__, __LINE__);
+
+  006ec	0f bf 15 00 00
+	00 00		 movsx	 edx, WORD PTR ?__LINE__Var@?1??LoadSetBase@CMonsterSetBase@@QAEXPADH@Z@4FA ; `CMonsterSetBase::LoadSetBase'::`2'::__LINE__Var
+  006f3	81 c2 95 00 00
+	00		 add	 edx, 149		; 00000095H
+  006f9	52		 push	 edx
+  006fa	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0DF@OCHB@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@ ; `string'
+  006ff	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  00702	8b 88 e4 0f 01
+	00		 mov	 ecx, DWORD PTR [eax+69604]
+  00708	51		 push	 ecx
+  00709	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0CG@OGEN@Monster?5attribute?5max?5over?5?$CFd?5?$CI?$CF@ ; `string'
+  0070e	e8 00 00 00 00	 call	 ?MsgBox@@YAXPBDZZ	; MsgBox
+  00713	83 c4 10	 add	 esp, 16			; 00000010H
+
+; 473  : 					//fclose(SMDFile);
+; 474  : 					return;
+
+  00716	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
+  0071d	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00723	e8 00 00 00 00	 call	 ??1CWzMemScript@@UAE@XZ	; CWzMemScript::~CWzMemScript
+  00728	eb 1c		 jmp	 SHORT $L46669
+$L46710:
+
+; 476  : 			}
+
+  0072a	e9 71 f9 ff ff	 jmp	 $L46682
+$L46683:
+
+; 478  : 	}
+
+  0072f	e9 22 f9 ff ff	 jmp	 $L46676
+$L46677:
+
+; 479  : 
+; 480  : 	//fclose(SMDFile);
+; 481  : }
+
+  00734	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
+  0073b	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00741	e8 00 00 00 00	 call	 ??1CWzMemScript@@UAE@XZ	; CWzMemScript::~CWzMemScript
+$L46669:
+  00746	8b 4d f4	 mov	 ecx, DWORD PTR __$EHRec$[ebp]
+  00749	64 89 0d 00 00
+	00 00		 mov	 DWORD PTR fs:__except_list, ecx
+  00750	5f		 pop	 edi
+  00751	5e		 pop	 esi
+  00752	5b		 pop	 ebx
+  00753	8b e5		 mov	 esp, ebp
+  00755	5d		 pop	 ebp
+  00756	c2 08 00	 ret	 8
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__unwindfunclet$?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z$0:
+  00000	8d 8d 6c ff ff
+	ff		 lea	 ecx, DWORD PTR _WzMemScript$[ebp]
+  00006	e8 00 00 00 00	 call	 ??1CWzMemScript@@UAE@XZ	; CWzMemScript::~CWzMemScript
+  0000b	c3		 ret	 0
+__ehhandler$?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z:
+  0000c	b8 00 00 00 00	 mov	 eax, OFFSET FLAT:__ehfuncinfo$?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z
+  00011	e9 00 00 00 00	 jmp	 ___CxxFrameHandler
+text$x	ENDS
+?LoadSetBase@CMonsterSetBase@@QAEXPADH@Z ENDP		; CMonsterSetBase::LoadSetBase
+PUBLIC	?id@?$ctype@G@std@@$D				; std::ctype<unsigned short>::id
+;	COMDAT _$E27
+_TEXT	SEGMENT
+_$E27	PROC NEAR					; COMDAT
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	e8 00 00 00 00	 call	 ?id@?$ctype@G@std@@$D	; std::ctype<unsigned short>::id
+  0000e	e8 00 00 00 00	 call	 _$E26
+  00013	5f		 pop	 edi
+  00014	5e		 pop	 esi
+  00015	5b		 pop	 ebx
+  00016	8b e5		 mov	 esp, ebp
+  00018	5d		 pop	 ebp
+  00019	c3		 ret	 0
+_$E27	ENDP
+_TEXT	ENDS
+_DATA	SEGMENT
+COMM	??_B?1???id@?$ctype@G@std@@$D@@9@51:BYTE							; ??_B?1???id@?$ctype@G@std@@$D@@9@51
+_DATA	ENDS
+;	COMDAT ?id@?$ctype@G@std@@$D
+_TEXT	SEGMENT
+?id@?$ctype@G@std@@$D PROC NEAR				; std::ctype<unsigned short>::id, COMDAT
+
+; 467  :                 {_Ctype = _Lobj._Getctype(); }
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	33 c0		 xor	 eax, eax
+  0000b	a0 00 00 00 00	 mov	 al, BYTE PTR ??_B?1???id@?$ctype@G@std@@$D@@9@51 ; ??_B?1???id@?$ctype@G@std@@$D@@9@51
+  00010	83 e0 01	 and	 eax, 1
+  00013	85 c0		 test	 eax, eax
+  00015	75 0f		 jne	 SHORT $L47708
+  00017	8a 0d 00 00 00
+	00		 mov	 cl, BYTE PTR ??_B?1???id@?$ctype@G@std@@$D@@9@51 ; ??_B?1???id@?$ctype@G@std@@$D@@9@51
+  0001d	80 c9 01	 or	 cl, 1
+  00020	88 0d 00 00 00
+	00		 mov	 BYTE PTR ??_B?1???id@?$ctype@G@std@@$D@@9@51, cl ; ??_B?1???id@?$ctype@G@std@@$D@@9@51
+$L47708:
+  00026	5f		 pop	 edi
+  00027	5e		 pop	 esi
+  00028	5b		 pop	 ebx
+  00029	8b e5		 mov	 esp, ebp
+  0002b	5d		 pop	 ebp
+  0002c	c3		 ret	 0
+?id@?$ctype@G@std@@$D ENDP				; std::ctype<unsigned short>::id
+_TEXT	ENDS
+PUBLIC	?id@?$ctype@G@std@@$E				; std::ctype<unsigned short>::id
+EXTRN	_atexit:NEAR
+;	COMDAT _$E26
+_TEXT	SEGMENT
+_$E26	PROC NEAR					; COMDAT
+
+; 467  :                 {_Ctype = _Lobj._Getctype(); }
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	68 00 00 00 00	 push	 OFFSET FLAT:?id@?$ctype@G@std@@$E ; std::ctype<unsigned short>::id
+  0000e	e8 00 00 00 00	 call	 _atexit
+  00013	83 c4 04	 add	 esp, 4
+  00016	5f		 pop	 edi
+  00017	5e		 pop	 esi
+  00018	5b		 pop	 ebx
+  00019	8b e5		 mov	 esp, ebp
+  0001b	5d		 pop	 ebp
+  0001c	c3		 ret	 0
+_$E26	ENDP
+_TEXT	ENDS
+;	COMDAT ?id@?$ctype@G@std@@$E
+_TEXT	SEGMENT
+?id@?$ctype@G@std@@$E PROC NEAR				; std::ctype<unsigned short>::id, COMDAT
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	5f		 pop	 edi
+  0000a	5e		 pop	 esi
+  0000b	5b		 pop	 ebx
+  0000c	8b e5		 mov	 esp, ebp
+  0000e	5d		 pop	 ebp
+  0000f	c3		 ret	 0
+?id@?$ctype@G@std@@$E ENDP				; std::ctype<unsigned short>::id
+_TEXT	ENDS
+END

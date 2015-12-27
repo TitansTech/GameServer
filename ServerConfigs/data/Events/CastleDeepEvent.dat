@@ -1,0 +1,98 @@
+//===================
+// CASTLE DEEP EVENT
+//===================
+//by DaRKav [SCFMT Team][darkav@hotmail.com]
+
+//Invasion of monsters in Castle Siege-Event Castle Deep
+
+// Event Time (format of hours: 24:00)
+// Hours minutoes
+
+0
+	1	30
+	6	00
+	10	30
+	15	00
+	19	30
+end
+
+// Event raiding type
+// raiding type probability
+//-----------------------------------------------
+1
+	1	60	//General raiding
+	2	40	//Special raiding (C group addition)
+end
+
+// Monster groups settings
+//Group number / Time of incoming of group (minutes)
+//-----------------------------------------------
+2
+	//Group A Rading
+	1	1	0
+	1	2	10
+
+	//Group C Rading
+	2	1	0
+	2	2	10
+	2	3	20
+end
+
+// Monsters Settings
+// Group number / Monster number / Amount of monsters / X1 / Y1 / X2 / Y2
+//-----------------------------------------------
+3
+1	1	294	25	60	58	132	101	//Axe Warrior
+1	1	290	25	60	58	132	101	//Lizard Warrior
+1	1	139	25	60	58	132	101	//Orc Archer
+1	1	123	25	60	58	132	101	//Spirit Knight
+1	1	59	25	60	58	132	101	//Zaikan
+1	1	74	25	60	58	132	101	//Alpha Crust
+1	1	62	25	60	58	132	101	//Mutant
+1	1	293	25	60	58	132	101	//Poison Golem
+1	1	292	25	60	58	132	101	//Queen Bee
+1	1	291	25	60	58	132	101	//Fire Golem	
+
+1	2	295	2	60	58	132	101	//Erohim
+1	2	445	25	60	58	132	101	//
+1	2	441	25	60	58	132	101	//
+1	2	444	25	60	58	132	101	//
+1	2	443	25	60	58	132	101	//
+1	2	447	25	60	58	132	101	//
+1	2	448	25	60	58	132	101	//
+1	2	442	25	60	58	132	101	//
+1	2	449	25	60	58	132	101	//
+1	2	446	25	60	58	132	101	//
+
+2	1	294	20	60	58	132	101	//Axe Warrior
+2	1	290	20	60	58	132	101	//Lizard Warrior
+2	1	193	20	60	58	132	101	//Aegis
+2	1	194	20	60	58	132	101	//Lord Centurion
+2	1	192	20	60	58	132	101	//Bloody Soldier
+2	1	190	20	60	58	132	101	//Death Angel
+2	1	195	20	60	58	132	101	//Necron
+2	1	61	20	60	58	132	101	//Beam Knight
+2	1	73	20	60	58	132	101	//Drakan
+2	1	127	20	60	58	132	101	//Elite Orc
+
+2	2	49	10	60	58	132	101	//Hydra
+2	2	139	20	60	58	132	101	//Orc Archer
+2	2	123	20	60	58	132	101	//Spirit Knight
+2	2	59	20	60	58	132	101	//Zaikan
+2	2	74	20	60	58	132	101	//Alpha Crust
+2	2	62	20	60	58	132	101	//Mutant
+2	2	293	20	60	58	132	101	//Poison Golem
+2	2	292	20	60	58	132	101	//Queen Bee
+2	2	291	20	60	58	132	101	//Fire Golem
+
+2	3	295	10	60	58	132	101	//Erohim
+2	3	445	20	60	58	132	101	//
+2	3	441	20	60	58	132	101	//
+2	3	444	20	60	58	132	101	//
+2	3	443	20	60	58	132	101	//
+2	3	447	20	60	58	132	101	//
+2	3	448	20	60	58	132	101	//
+2	3	442	20	60	58	132	101	//
+2	3	449	20	60	58	132	101	//
+2	3	446	20	60	58	132	101	//
+end

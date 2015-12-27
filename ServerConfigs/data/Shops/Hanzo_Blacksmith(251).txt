@@ -1,0 +1,52 @@
+//==============================================================================
+//www.titanstech.com
+//------------------------------------------------------------------------------
+//Revised 11 Aug, 2005			
+//==============================================================================
+//shop0 - Lorencia IronWorkshop Armory
+//
+
+//Helmets(DK)
+7 6 0 0 0 0 0 0 //Scale helm
+7 0 0 0 0 0 0 0 //Bronze helm
+
+//Shields
+6 1 0 0 0 0 0 0 //Hornshield
+6 2 0 0 0 0 0 0 //kitesheild
+
+//Armor(DK)
+8 6 0 0 0 0 0 0 //Scale armor
+8 0 0 0 0 0 0 0 //Bronze armor
+
+1 2 0 0 0 0 0 0 //Doubleaxe
+1 2 0 0 1 0 0 0 //Doubleaxe
+1 3 0 0 0 0 0 0 //Tomahawk
+1 3 0 0 1 0 0 0 //Tomahawk
+
+//Gloves(DK)
+10 6 0 0 0 0 0 0 //Scale gloves
+10 0 0 0 0 0 0 0 //Bronze gloves
+
+2 1 0 0 0 0 0 0 //Morningstar
+0 6 0 0 0 0 0 0 //Gladius
+
+0 3 0 0 0 0 0 0 //Katache
+0 4 0 0 0 0 0 0 //Scimitar
+
+//Pants(DK)
+9 6 0 0 0 0 0 0 //Scale pants
+9 0 0 0 0 0 0 0 //Bronze pants
+
+//Boots(DK)
+11 6 0 0 0 0 0 0 //Scale boots
+11 0 0 0 0 0 0 0 //Bronze boots
+
+0 5 0 0 0 0 0 0 //Blade
+0 5 0 0 1 0 0 0 //Blade
+0 7 0 0 0 0 0 0 //Falchion
+0 7 0 0 1 0 0 0 //Falchion
+
+3 2 0 0 0 0 0 0 //Dragonlance
+
+   
+end

@@ -1,0 +1,80 @@
+//=======================================================================================================================
+//SCF Item Drop Rate System
+//www.titanstech.com
+//DaRKav Revision [MAX ITEMS = 1000]
+//=======================================================================================================================
+//Type		-	Section of them (0,1,2 etc...)
+//Index		-	Id of item in that above section
+//Level		-	Level of item to be dropped (+1 will drop +1)
+//ZOpt		-	z28 Option (1 = +4, 2 = +8, etc...)
+//Luck		-	Has luck on item (1 - YES/0 - NO)
+//Skill		-	Has skill on item (1 - YES/0 - NO)
+//Dur		-	Item durability (0 to 255)
+//ExcNum	-	Number of random excellent options (0 = OFF, 1 to 6 = random range, 7 = full exc options)
+//Rate		-	Item drop rate (out of 10000)
+//VipRate	-	Item drop rate (out of 10000) for VIP users (-1 = use regular drop rate)
+//NoTrade	-	Item will drop with FFFFFFFF serial as untradeable (1 - ON/0 - OFF)
+//MobId		-	If specific monster needs to drop that item (-1=any monster)
+//MinLvl	-	Minimum monster level to drop the desired item (0 to 200)
+//MaxLvl	-	Maximum monster level to drop the desired item (0 to 200)
+//DropMap	-	Number of map to drop specific item (-1=all map)
+//=======================================================================================================================
+//Type	Index	Level	ZOpt	Luck	Skill	Dur	ExcNum	Rate	VipRate	NoTrade	MobId	MinLvl	MaxLvl	DropMap
+//=======================================================================================================================
+0
+//Event Items
+//13	29	0	0	0	0	1	0	100	120	0	-1	20	200	-1	//Armor of Guardman (Chaos Castle)
+
+//14	51	1	0	0	0	1	0	70	90	0	-1	30	55	-1	//Star (SkyEvent)+1
+//14	51	2	0	0	0	1	0	60	80	0	-1	50	75	-1	//Star (SkyEvent)+2
+//14	51	3	0	0	0	1	0	50	70	0	-1	60	85	-1	//Star (SkyEvent)+3
+//14	51	4	0	0	0	1	0	40	60	0	-1	80	105	-1	//Star (SkyEvent)+4
+//14	51	5	0	0	0	1	0	30	50	0	-1	90	200	-1	//Star (SkyEvent)+5
+
+//13	49	1	0	0	0	1	0	130	150	0	-1	30	55	-1	//Illusion Temple Scrool +1
+//13	49	2	0	0	0	1	0	120	140	0	-1	50	65	-1	//Illusion Temple Scrool +2
+//13	49	3	0	0	0	1	0	110	130	0	-1	60	75	-1	//Illusion Temple Scrool +3
+//13	49	4	0	0	0	1	0	100	120	0	-1	70	85	-1	//Illusion Temple Scrool +4
+//13	49	5	0	0	0	1	0	90	110	0	-1	80	95	-1	//Illusion Temple Scrool +5
+//13	49	6	0	0	0	1	0	80	100	0	-1	90	200	-1	//Illusion Temple Scrool +6
+
+//13	50	1	0	0	0	1	0	130	150	0	-1	30	55	-1	//Illusion Temple Potion +1
+//13	50	2	0	0	0	1	0	120	140	0	-1	50	65	-1	//Illusion Temple Potion +2
+//13	50	3	0	0	0	1	0	110	130	0	-1	60	75	-1	//Illusion Temple Potion +3
+//13	50	4	0	0	0	1	0	100	120	0	-1	70	85	-1	//Illusion Temple Potion +4
+//13	50	5	0	0	0	1	0	90	110	0	-1	80	95	-1	//Illusion Temple Potion +5
+//13	50	6	0	0	0	1	0	80	100	0	-1	90	200	-1	//Illusion Temple Potion +6
+
+14	101	0	0	0	0	1	0	140	160	0	-1	60	200	-1	//Piece of Paper
+14	110	0	0	0	0	1	0	120	140	0	-1	60	200	-1	//Goer Invitation Piece
+14	103	0	0	0	0	1	0	20	-1	0	-1	60	200	-1	//Imperial Sunday Invitation
+14	104	0	0	0	0	1	0	30	-1	0	-1	60	200	-1	//Imperial Sunday Invitation
+14	105	0	0	0	0	1	0	20	-1	0	-1	60	200	-1	//Imperial Sunday Invitation
+14	106	0	0	0	0	1	0	30	-1	0	-1	60	200	-1	//Imperial Sunday Invitation
+14	107	0	0	0	0	1	0	20	-1	0	-1	60	200	-1	//Imperial Sunday Invitation
+14	108	0	0	0	0	1	0	30	-1	0	-1	60	200	-1	//Imperial Sunday Invitation
+
+14	100	0	0	0	0	1	0	20	40	0	-1	20	200	-1	//Lucky Coin
+
+//Wings Combination Parts
+13	14	0	0	0	0	1	0	20	30	0	-1	68	200	-1	//Blue Feather
+13	52	0	0	0	0	1	0	10	15	0	-1	90	200	-1	//Crystal
+
+//Chaos Card Event
+14	54	0	0	0	0	1	0	5	10	0	-1	40	200	-1	//Chaos Cards
+
+//Pets
+13	64	0	0	0	1	255	0	10	-1	0	-1	40	200	-1	//Primo de Juanito
+13	65	0	0	0	1	255	0	15	-1	0	-1	30	200	-1	//Angelito Coqueto
+13	80	0	0	0	0	255	0	5	-1	0	-1	50	200	-1	//Panda Pet
+
+//Regular Jewels Drop
+12	15	0	0	0	0	1	0	10	15	0	-1	12	200	-1	//Jewel of Chaos
+14	13	0	0	0	0	1	0	8	13	0	-1	25	200	-1	//Jewel of Bless
+14	14	0	0	0	0	1	0	9	14	0	-1	30	200	-1	//Jewel of Soul
+14	16	0	0	0	0	1	0	5	10	0	-1	69	200	-1	//Jewel of Life
+14	22	0	0	0	0	1	0	5	10	0	-1	75	200	-1	//Jewel of Creation
+14	41	0	0	0	0	1	0	1	6	0	-1	80	200	-1	//Jewel of Harmony
+12	30	0	0	0	0	1	0	1	-1	0	-1	110	200	-1	//Bundled Jewel of Bless
+12	31	0	0	0	0	1	0	2	-1	0	-1	100	200	-1	//Bundled Jewel of Soul
+end

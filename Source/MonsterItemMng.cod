@@ -1,0 +1,3175 @@
+	TITLE	C:\Deathway\C++\GameServer\SOURCE\MonsterItemMng.cpp
+	.386P
+include listing.inc
+if @Version gt 510
+.model FLAT
+else
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+_BSS	SEGMENT PARA USE32 PUBLIC 'BSS'
+_BSS	ENDS
+$$SYMBOLS	SEGMENT BYTE USE32 'DEBSYM'
+$$SYMBOLS	ENDS
+$$TYPES	SEGMENT BYTE USE32 'DEBTYP'
+$$TYPES	ENDS
+_TLS	SEGMENT DWORD USE32 PUBLIC 'TLS'
+_TLS	ENDS
+;	COMDAT ??_C@_00A@?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0BP@KLJH@invalid?5vector?$DMbool?$DO?5subscript?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0FG@ILEN@?3Sun?3Sunday?3Mon?3Monday?3Tue?3Tuesd@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0IH@JLLA@?3Jan?3January?3Feb?3February?3Mar?3Ma@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_05NAGO@false?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_04NCCD@true?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_02ELCB@no?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_03LGKI@yes?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_01FKHJ@C?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0DF@IKIJ@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_C@_0CJ@FAJI@error?9L3?5?3?5Monster?5Level?5Overflo@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?__LINE__Var@?1??gObjGiveItemSearch@CMonsterItemMng@@QAEXHH@Z@4FA
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_C@_0BF@MMAA@missing?5locale?5facet?$AA@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+CRT$XCA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+CRT$XCA	ENDS
+CRT$XCU	SEGMENT DWORD USE32 PUBLIC 'DATA'
+CRT$XCU	ENDS
+CRT$XCL	SEGMENT DWORD USE32 PUBLIC 'DATA'
+CRT$XCL	ENDS
+CRT$XCC	SEGMENT DWORD USE32 PUBLIC 'DATA'
+CRT$XCC	ENDS
+CRT$XCZ	SEGMENT DWORD USE32 PUBLIC 'DATA'
+CRT$XCZ	ENDS
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ?SetTimeStamp@_GUILD_INFO_STRUCT@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?Init@BILL_CLASS@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?GetDist@PATH@@QAEHHHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?VerifyThatOnPath@PATH@@QAEHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?CanWeMoveForward@PATH@@QAEHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?CanWeMoveForward2@PATH@@QAEHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?IsThisSpotOK@PATH@@QAEHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?FindNextDir@PATH@@QAEHHHHHHEH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?FindNextDir2@PATH@@QAEHHHHHHEH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0PATH@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1PATH@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_GPATH@@QAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT _$E20
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT _$E21
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT _$E22
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT _$E23
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0CMonsterItemMng@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_GCMonsterItemMng@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1CMonsterItemMng@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?Init@CMonsterItemMng@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_H@YGXPAXIHP6EX0@Z@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?Clear@CMonsterItemMng@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?InsertItem@CMonsterItemMng@@QAEEHHHHHHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?GetItem@CMonsterItemMng@@QAEPAVCItem@@H@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?gObjGiveItemSearch@CMonsterItemMng@@QAEXHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PBDABV?$allocator@D@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@PBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$vector@IV?$allocator@I@std@@@std@@QAE@ABV?$allocator@I@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$vector@IV?$allocator@I@std@@@std@@QAE@IABIABV?$allocator@I@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$vector@IV?$allocator@I@std@@@std@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?reserve@?$vector@IV?$allocator@I@std@@@std@@QAEXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?capacity@?$vector@IV?$allocator@I@std@@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?begin@?$vector@IV?$allocator@I@std@@@std@@QAEPAIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?begin@?$vector@IV?$allocator@I@std@@@std@@QBEPBIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?end@?$vector@IV?$allocator@I@std@@@std@@QAEPAIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?resize@?$vector@IV?$allocator@I@std@@@std@@QAEXIABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?size@?$vector@IV?$allocator@I@std@@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?max_size@?$vector@IV?$allocator@I@std@@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?get_allocator@?$vector@IV?$allocator@I@std@@@std@@QBE?AV?$allocator@I@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??A?$vector@IV?$allocator@I@std@@@std@@QAEAAII@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?erase@?$vector@IV?$allocator@I@std@@@std@@QAEPAIPAI0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Eq@?$vector@IV?$allocator@I@std@@@std@@QBE_NABV12@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Lt@?$vector@IV?$allocator@I@std@@@std@@QBE_NABV12@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?swap@?$vector@IV?$allocator@I@std@@@std@@QAEXAAV12@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$reverse_iterator@Viterator@?$vector@_NV?$allocator@I@std@@@std@@_NVreference@23@PAV423@H@std@@QAE@Viterator@?$vector@_NV?$allocator@I@std@@@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$reverse_iterator@Vconst_iterator@?$vector@_NV?$allocator@I@std@@@std@@_N$$CBVreference@23@PBV423@H@std@@QAE@Vconst_iterator@?$vector@_NV?$allocator@I@std@@@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@D@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_ostream@GU?$char_traits@G@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?put@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAEAAV12@G@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?flush@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAEAAV12@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_ios@GU?$char_traits@G@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?setstate@?$basic_ios@GU?$char_traits@G@std@@@std@@QAEXH_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?rdbuf@?$basic_ios@GU?$char_traits@G@std@@@std@@QBEPAV?$basic_streambuf@GU?$char_traits@G@std@@@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_istream@DU?$char_traits@D@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0sentry@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE@AAV12@_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Bsentry@?$basic_istream@DU?$char_traits@D@std@@@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sgetc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?snextc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?overflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pbackfail@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?underflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHPADH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHPBDH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?seekoff@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE?AV?$fpos@H@2@JW4seekdir@ios_base@2@H@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?seekpos@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE?AV?$fpos@H@2@V32@H@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEPAV12@PADH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEXABVlocale@2@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_istream@GU?$char_traits@G@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0sentry@?$basic_istream@GU?$char_traits@G@std@@@std@@QAE@AAV12@_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Bsentry@?$basic_istream@GU?$char_traits@G@std@@@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$basic_streambuf@GU?$char_traits@G@std@@@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sgetc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?snextc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?overflow@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEGG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pbackfail@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEGG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?showmanyc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?underflow@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?uflow@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?xsgetn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHPAGH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?xsputn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHPBGH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?seekoff@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAE?AV?$fpos@H@2@JW4seekdir@ios_base@2@H@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?seekpos@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAE?AV?$fpos@H@2@V32@H@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?setbuf@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEPAV12@PAGH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sync@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?imbue@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEXABVlocale@2@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?is@?$ctype@G@std@@QBE_NFG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$ctype@G@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_is@?$ctype@G@std@@MBE_NFG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_is@?$ctype@G@std@@MBEPBGPBG0PAF@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_scan_is@?$ctype@G@std@@MBEPBGFPBG0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_scan_not@?$ctype@G@std@@MBEPBGFPBG0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_tolower@?$ctype@G@std@@MBEGG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_tolower@?$ctype@G@std@@MBEPBGPAGPBG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_toupper@?$ctype@G@std@@MBEGG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_toupper@?$ctype@G@std@@MBEPBGPAGPBG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_widen@?$ctype@G@std@@MBEGD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_widen@?$ctype@G@std@@MBEPBDPBD0PAG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_narrow@?$ctype@G@std@@MBEDGD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_narrow@?$ctype@G@std@@MBEPBGPBG0DPAD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_ostream@DU?$char_traits@D@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_ios@DU?$char_traits@D@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_ostream@GU?$char_traits@G@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_ios@GU?$char_traits@G@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_istream@DU?$char_traits@D@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_istream@GU?$char_traits@G@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$basic_streambuf@GU?$char_traits@G@std@@@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$ctype@G@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_D?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_D?$basic_ostream@GU?$char_traits@G@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_D?$basic_istream@DU?$char_traits@D@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_D?$basic_istream@GU?$char_traits@G@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?allocate@?$allocator@I@std@@QAEPAIIPBX@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?deallocate@?$allocator@I@std@@QAEXPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?max_size@?$allocator@I@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$vector@IV?$allocator@I@std@@@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??4?$vector@IV?$allocator@I@std@@@std@@QAEAAV01@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?end@?$vector@IV?$allocator@I@std@@@std@@QBEPBIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?insert@?$vector@IV?$allocator@I@std@@@std@@QAEXPAIIABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Destroy@?$vector@IV?$allocator@I@std@@@std@@IAEXPAI0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Ucopy@?$vector@IV?$allocator@I@std@@@std@@IAEPAIPBI0PAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Ufill@?$vector@IV?$allocator@I@std@@@std@@IAEXPAIIABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$fpos@H@std@@QAE@J@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?clear@?$basic_ios@GU?$char_traits@G@std@@@std@@QAEXH_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0sentry@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAE@AAV12@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1sentry@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Bsentry@?$basic_ostream@GU?$char_traits@G@std@@@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pubsync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sbumpc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?egptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?gbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?epptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Gninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?ipfx@?$basic_istream@GU?$char_traits@G@std@@@std@@QAE_N_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pubsync@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sbumpc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?sputc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEGG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?gptr@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IBEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pptr@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IBEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?egptr@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IBEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?gbump@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEXH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?epptr@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IBEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Gninc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?pbump@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEXH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?widen@?$ctype@G@std@@QBEGD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?narrow@?$ctype@G@std@@QBEDGD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?capacity@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Refcnt@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAEPBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?deallocate@?$allocator@D@std@@QAEXPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?construct@?$allocator@I@std@@QAEXPAIABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?destroy@?$allocator@I@std@@QAEXPAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?opfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?opfx@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?osfx@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?tie@?$basic_ios@GU?$char_traits@G@std@@@std@@QBEPAV?$basic_ostream@GU?$char_traits@G@std@@@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Pninc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEPAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Split@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?allocate@?$allocator@D@std@@QAEPADIPBX@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?max_size@?$allocator@D@std@@QBEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy_backward@std@@YA?AViterator@?$vector@_NV?$allocator@I@std@@@1@V231@00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?fill@std@@YAXViterator@?$vector@_NV?$allocator@I@std@@@1@0AB_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Distance@std@@YAXVconst_iterator@?$vector@_NV?$allocator@I@std@@@1@0AAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@std@@YA?AViterator@?$vector@_NV?$allocator@I@std@@@1@Vconst_iterator@31@0V231@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@std@@YA?AViterator@?$vector@_NV?$allocator@I@std@@@1@V231@00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?swap@std@@YAXAAI0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?use_facet@std@@YAABV?$ctype@D@1@ABVlocale@1@PBV21@_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?use_facet@std@@YAABV?$ctype@G@1@ABVlocale@1@PBV21@_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@std@@YAPAIPAI00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?equal@std@@YA_NPBI00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?lexicographical_compare@std@@YA_NPBI000@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??8std@@YA_NABV?$allocator@I@0@0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?swap@std@@YAXAAPAI0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??8std@@YA_NABV?$allocator@D@0@0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Allocate@std@@YAPAIHPAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@std@@YAPAIPBI0PAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?fill@std@@YAXPAI0ABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy_backward@std@@YAPAIPAI00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Construct@std@@YAXPAIABI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Destroy@std@@YAXPAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Allocate@std@@YAPADHPAD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$ctype@G@std@@QAE@I@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Save@?$_Tidyfac@V?$ctype@D@std@@@std@@SAPAV?$ctype@D@2@PAV32@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Save@?$_Tidyfac@V?$ctype@G@std@@@std@@SAPAV?$ctype@G@2@PAV32@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Init@?$ctype@G@std@@IAEXABV_Locinfo@2@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Tidy@?$_Tidyfac@V?$ctype@D@std@@@std@@SAXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Tidy@?$_Tidyfac@V?$ctype@G@std@@@std@@SAXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Iter_cat@std@@YA?AUrandom_access_iterator_tag@1@ABU?$iterator@Urandom_access_iterator_tag@std@@_NH@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Distance@std@@YAXVconst_iterator@?$vector@_NV?$allocator@I@std@@@1@0AAIUrandom_access_iterator_tag@1@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?id@?$ctype@G@std@@$D
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT _$E29
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?mismatch@std@@YA?AU?$pair@PBIPBI@1@PBI00@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?id@?$ctype@G@std@@$E
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT _$E30
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0?$pair@PBIPBI@std@@QAE@ABQBI0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@domain_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0domain_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0logic_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7logic_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??1logic_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7domain_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVdomain_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1domain_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVdomain_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVdomain_error@std@@@8??0domain_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVdomain_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT __CT??_R0?AVlogic_error@std@@@8??0logic_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVlogic_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT __CT??_R0?AVexception@@@8??0exception@@QAE@ABV0@@Z12
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVexception@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gdomain_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@range_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0range_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0runtime_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7runtime_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??1runtime_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7range_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVrange_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1range_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVrange_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVrange_error@std@@@8??0range_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVrange_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT __CT??_R0?AVruntime_error@std@@@8??0runtime_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVruntime_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Grange_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@underflow_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0underflow_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7underflow_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVunderflow_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1underflow_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVunderflow_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVunderflow_error@std@@@8??0underflow_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVunderflow_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gunderflow_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@bad_exception@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0bad_exception@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7bad_exception@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI2?AVbad_exception@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1bad_exception@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA2?AVbad_exception@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVbad_exception@std@@@8??0bad_exception@std@@QAE@ABV01@@Z12
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVbad_exception@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gbad_exception@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_length@?$codecvt@GDH@std@@MBEHAAHPBG1I@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_out@?$codecvt@GDH@std@@MBEHAAHPBG1AAPBGPAD3AAPAD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_in@?$codecvt@GDH@std@@MBEHAAHPBD1AAPBDPAG3AAPAG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_encoding@?$codecvt@GDH@std@@MBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_max_length@?$codecvt@GDH@std@@MBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_always_noconv@?$codecvt@GDH@std@@MBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$codecvt@GDH@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$codecvt@GDH@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$codecvt@GDH@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??1codecvt_base@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1facet@locale@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7facet@locale@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_Gfacet@locale@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_Gctype_base@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@bad_alloc@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0bad_alloc@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7bad_alloc@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI2?AVbad_alloc@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1bad_alloc@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA2?AVbad_alloc@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QAE@ABV01@@Z12
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVbad_alloc@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gbad_alloc@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_toupper@?$ctype@D@std@@MBEDD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_toupper@?$ctype@D@std@@MBEPBDPADPBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_tolower@?$ctype@D@std@@MBEDD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_tolower@?$ctype@D@std@@MBEPBDPADPBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_G?$ctype@D@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1?$ctype@D@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$ctype@D@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_G__non_rtti_object@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1__non_rtti_object@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1bad_typeid@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7bad_typeid@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?_Doraise@overflow_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0overflow_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7overflow_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVoverflow_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1overflow_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVoverflow_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVoverflow_error@std@@@8??0overflow_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVoverflow_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Goverflow_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@failure@ios_base@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0failure@ios_base@std@@QAE@ABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7failure@ios_base@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVfailure@ios_base@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1failure@ios_base@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVfailure@ios_base@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVfailure@ios_base@std@@@8??0failure@ios_base@std@@QAE@ABV012@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVfailure@ios_base@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gfailure@ios_base@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@bad_typeid@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0bad_typeid@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __TI2?AVbad_typeid@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CTA2?AVbad_typeid@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVbad_typeid@std@@@8??0bad_typeid@std@@QAE@ABV01@@Z12
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVbad_typeid@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gbad_typeid@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@runtime_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __TI2?AVruntime_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CTA2?AVruntime_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ?what@runtime_error@std@@UBEPBDXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_Gruntime_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@out_of_range@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0out_of_range@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7out_of_range@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVout_of_range@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1out_of_range@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVout_of_range@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVout_of_range@std@@@8??0out_of_range@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVout_of_range@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Gout_of_range@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@bad_cast@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0bad_cast@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7bad_cast@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_Gbad_cast@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1bad_cast@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@length_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0length_error@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7length_error@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVlength_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1length_error@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVlength_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVlength_error@std@@@8??0length_error@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVlength_error@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Glength_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@invalid_argument@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0invalid_argument@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7invalid_argument@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT __TI3?AVinvalid_argument@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??1invalid_argument@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __CTA3?AVinvalid_argument@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVinvalid_argument@std@@@8??0invalid_argument@std@@QAE@ABV01@@Z28
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVinvalid_argument@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??_Ginvalid_argument@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_encoding@codecvt_base@std@@MBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_max_length@codecvt_base@std@@MBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?do_always_noconv@codecvt_base@std@@MBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_Gcodecvt_base@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Doraise@logic_error@std@@MBEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT __TI2?AVlogic_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CTA2?AVlogic_error@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ?what@logic_error@std@@UBEPBDXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_Glogic_error@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_Gios_base@std@@UAEPAXI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Gconst_iterator@?$vector@_NV?$allocator@I@std@@@std@@QBEHV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Decref@facet@locale@std@@QAEPAV123@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Getctype@_Locinfo@std@@QBE?AU_Ctypevec@@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Facsav@?$_Tidyfac@V?$ctype@G@std@@@std@@0PAV?$ctype@G@2@A
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ?_Incref@facet@locale@std@@QAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Facsav@?$_Tidyfac@V?$ctype@D@std@@@std@@0PAV?$ctype@D@2@A
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??0ctype_base@std@@QAE@I@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0facet@locale@std@@IAE@I@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7ctype_base@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??2@YAPAXIPAX@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Psave@?1??use_facet@std@@YAABV?$ctype@G@2@ABVlocale@2@PBV32@_N@Z@4PBVfacet@42@B
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??0?$ctype@D@std@@QAE@PBF_NI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Init@?$ctype@D@std@@IAEXABV_Locinfo@2@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Term@?$ctype@D@std@@KAXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Psave@?1??use_facet@std@@YAABV?$ctype@D@2@ABVlocale@2@PBV32@_N@Z@4PBVfacet@42@B
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT __TI2?AVbad_cast@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CTA2?AVbad_cast@std@@
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT __CT??_R0?AVbad_cast@std@@@8??0bad_cast@std@@QAE@ABV01@@Z12
+xdata$x	SEGMENT DWORD USE32 PUBLIC 'CONST'
+xdata$x	ENDS
+;	COMDAT ??_R0?AVbad_cast@std@@@8
+_DATA	SEGMENT DWORD USE32 PUBLIC 'DATA'
+_DATA	ENDS
+;	COMDAT ??0bad_cast@std@@QAE@PBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Bid@locale@std@@QAEIXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Dconst_iterator@?$vector@_NV?$allocator@I@std@@@std@@QBE?BVreference@12@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0reference@?$vector@_NV?$allocator@I@std@@@std@@QAE@IPAI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??9const_iterator@?$vector@_NV?$allocator@I@std@@@std@@QBE_NABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??8const_iterator@?$vector@_NV?$allocator@I@std@@@std@@QBE_NABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Econst_iterator@?$vector@_NV?$allocator@I@std@@@std@@QAEAAV012@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Inc@const_iterator@?$vector@_NV?$allocator@I@std@@@std@@IAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??4reference@?$vector@_NV?$allocator@I@std@@@std@@QAEAAV012@_N@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Eiterator@?$vector@_NV?$allocator@I@std@@@std@@QAEAAV012@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Fiterator@?$vector@_NV?$allocator@I@std@@@std@@QAEAAV012@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Dec@const_iterator@?$vector@_NV?$allocator@I@std@@@std@@IAEXXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Diterator@?$vector@_NV?$allocator@I@std@@@std@@QBE?AVreference@12@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??4reference@?$vector@_NV?$allocator@I@std@@@std@@QAEAAV012@ABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??Breference@?$vector@_NV?$allocator@I@std@@@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??9iterator@?$vector@_NV?$allocator@I@std@@@std@@QBE_NABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??8iterator@?$vector@_NV?$allocator@I@std@@@std@@QBE_NABV012@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?assign@?$char_traits@D@std@@SAXAADABD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?move@?$char_traits@D@std@@SAPADPADPBDI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?is@?$ctype@D@std@@QBE_NFD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?getloc@ios_base@std@@QBE?AVlocale@2@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??0locale@std@@QAE@ABV01@@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?flags@ios_base@std@@QBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?good@ios_base@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?length@?$char_traits@D@std@@SAIPBD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Narrow@std@@YAHG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?_Widen@std@@YAGDPAG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1ctype_base@std@@UAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$ctype@G@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?to_char_type@?$char_traits@G@std@@SAGABG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@?$char_traits@G@std@@SAPAGPAGPBGI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT _wmemcpy
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?to_int_type@?$char_traits@G@std@@SAGABG@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$basic_streambuf@GU?$char_traits@G@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_7?$basic_istream@GU?$char_traits@G@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?to_char_type@?$char_traits@D@std@@SADABH@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?copy@?$char_traits@D@std@@SAPADPADPBDI@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?to_int_type@?$char_traits@D@std@@SAHABD@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??1locale@std@@QAE@XZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$basic_streambuf@DU?$char_traits@D@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_7?$basic_istream@DU?$char_traits@D@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_7?$basic_ios@GU?$char_traits@G@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?eof@?$char_traits@G@std@@SAGXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?eq_int_type@?$char_traits@G@std@@SA_NABG0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$basic_ostream@GU?$char_traits@G@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?rdstate@ios_base@std@@QBEHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$basic_ios@DU?$char_traits@D@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?fail@ios_base@std@@QBE_NXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?eof@?$char_traits@D@std@@SAHXZ
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ?eq_int_type@?$char_traits@D@std@@SA_NABH0@Z
+_TEXT	SEGMENT PARA USE32 PUBLIC 'CODE'
+_TEXT	ENDS
+;	COMDAT ??_7?$basic_ostream@DU?$char_traits@D@std@@@std@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+;	COMDAT ??_7CMonsterItemMng@@6B@
+CONST	SEGMENT DWORD USE32 PUBLIC 'CONST'
+CONST	ENDS
+FLAT	GROUP _DATA, CONST, _BSS, CRT$XCA, CRT$XCU, CRT$XCL, CRT$XCC, CRT$XCZ, xdata$x
+	ASSUME	CS: FLAT, DS: FLAT, SS: FLAT
+endif
+PUBLIC	?g_MonsterItemMng@@3VCMonsterItemMng@@A		; g_MonsterItemMng
+_BSS	SEGMENT
+?g_MonsterItemMng@@3VCMonsterItemMng@@A DB 04c8H DUP (?) ; g_MonsterItemMng
+_BSS	ENDS
+CRT$XCU	SEGMENT
+_$S24	DD	FLAT:_$E23
+_$S31	DD	FLAT:_$E30
+CRT$XCU	ENDS
+;	COMDAT _$E23
+_TEXT	SEGMENT
+_$E23	PROC NEAR					; COMDAT
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	e8 00 00 00 00	 call	 _$E20
+  0000e	e8 00 00 00 00	 call	 _$E22
+  00013	5f		 pop	 edi
+  00014	5e		 pop	 esi
+  00015	5b		 pop	 ebx
+  00016	8b e5		 mov	 esp, ebp
+  00018	5d		 pop	 ebp
+  00019	c3		 ret	 0
+_$E23	ENDP
+_TEXT	ENDS
+PUBLIC	??0CMonsterItemMng@@QAE@XZ			; CMonsterItemMng::CMonsterItemMng
+;	COMDAT _$E20
+_TEXT	SEGMENT
+_$E20	PROC NEAR					; COMDAT
+
+; 11   : CMonsterItemMng g_MonsterItemMng;
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	b9 00 00 00 00	 mov	 ecx, OFFSET FLAT:?g_MonsterItemMng@@3VCMonsterItemMng@@A
+  0000e	e8 00 00 00 00	 call	 ??0CMonsterItemMng@@QAE@XZ ; CMonsterItemMng::CMonsterItemMng
+  00013	5f		 pop	 edi
+  00014	5e		 pop	 esi
+  00015	5b		 pop	 ebx
+  00016	8b e5		 mov	 esp, ebp
+  00018	5d		 pop	 ebp
+  00019	c3		 ret	 0
+_$E20	ENDP
+_TEXT	ENDS
+EXTRN	_atexit:NEAR
+;	COMDAT _$E22
+_TEXT	SEGMENT
+_$E22	PROC NEAR					; COMDAT
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	68 00 00 00 00	 push	 OFFSET FLAT:_$E21
+  0000e	e8 00 00 00 00	 call	 _atexit
+  00013	83 c4 04	 add	 esp, 4
+  00016	5f		 pop	 edi
+  00017	5e		 pop	 esi
+  00018	5b		 pop	 ebx
+  00019	8b e5		 mov	 esp, ebp
+  0001b	5d		 pop	 ebp
+  0001c	c3		 ret	 0
+_$E22	ENDP
+_TEXT	ENDS
+PUBLIC	??1CMonsterItemMng@@UAE@XZ			; CMonsterItemMng::~CMonsterItemMng
+;	COMDAT _$E21
+_TEXT	SEGMENT
+_$E21	PROC NEAR					; COMDAT
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	b9 00 00 00 00	 mov	 ecx, OFFSET FLAT:?g_MonsterItemMng@@3VCMonsterItemMng@@A
+  0000e	e8 00 00 00 00	 call	 ??1CMonsterItemMng@@UAE@XZ ; CMonsterItemMng::~CMonsterItemMng
+  00013	5f		 pop	 edi
+  00014	5e		 pop	 esi
+  00015	5b		 pop	 ebx
+  00016	8b e5		 mov	 esp, ebp
+  00018	5d		 pop	 ebp
+  00019	c3		 ret	 0
+_$E21	ENDP
+_TEXT	ENDS
+PUBLIC	??_7CMonsterItemMng@@6B@			; CMonsterItemMng::`vftable'
+PUBLIC	??_GCMonsterItemMng@@UAEPAXI@Z			; CMonsterItemMng::`scalar deleting destructor'
+PUBLIC	??_ECMonsterItemMng@@UAEPAXI@Z			; CMonsterItemMng::`vector deleting destructor'
+;	COMDAT ??_7CMonsterItemMng@@6B@
+; File C:\Deathway\C++\GameServer\SOURCE\MonsterItemMng.cpp
+CONST	SEGMENT
+??_7CMonsterItemMng@@6B@ DD FLAT:??_ECMonsterItemMng@@UAEPAXI@Z ; CMonsterItemMng::`vftable'
+CONST	ENDS
+;	COMDAT ??0CMonsterItemMng@@QAE@XZ
+_TEXT	SEGMENT
+_this$ = -4
+??0CMonsterItemMng@@QAE@XZ PROC NEAR			; CMonsterItemMng::CMonsterItemMng, COMDAT
+
+; 15   : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 44	 sub	 esp, 68			; 00000044H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+  0000c	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  0000f	c7 00 00 00 00
+	00		 mov	 DWORD PTR [eax], OFFSET FLAT:??_7CMonsterItemMng@@6B@ ; CMonsterItemMng::`vftable'
+
+; 16   : 	return;
+; 17   : }
+
+  00015	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00018	5f		 pop	 edi
+  00019	5e		 pop	 esi
+  0001a	5b		 pop	 ebx
+  0001b	8b e5		 mov	 esp, ebp
+  0001d	5d		 pop	 ebp
+  0001e	c3		 ret	 0
+??0CMonsterItemMng@@QAE@XZ ENDP				; CMonsterItemMng::CMonsterItemMng
+_TEXT	ENDS
+EXTRN	??3@YAXPAX@Z:NEAR				; operator delete
+;	COMDAT ??_GCMonsterItemMng@@UAEPAXI@Z
+_TEXT	SEGMENT
+___flags$ = 8
+_this$ = -4
+??_GCMonsterItemMng@@UAEPAXI@Z PROC NEAR		; CMonsterItemMng::`scalar deleting destructor', COMDAT
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 44	 sub	 esp, 68			; 00000044H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+  0000c	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  0000f	e8 00 00 00 00	 call	 ??1CMonsterItemMng@@UAE@XZ ; CMonsterItemMng::~CMonsterItemMng
+  00014	8b 45 08	 mov	 eax, DWORD PTR ___flags$[ebp]
+  00017	83 e0 01	 and	 eax, 1
+  0001a	85 c0		 test	 eax, eax
+  0001c	74 0c		 je	 SHORT $L45931
+  0001e	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00021	51		 push	 ecx
+  00022	e8 00 00 00 00	 call	 ??3@YAXPAX@Z		; operator delete
+  00027	83 c4 04	 add	 esp, 4
+$L45931:
+  0002a	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  0002d	5f		 pop	 edi
+  0002e	5e		 pop	 esi
+  0002f	5b		 pop	 ebx
+  00030	8b e5		 mov	 esp, ebp
+  00032	5d		 pop	 ebp
+  00033	c2 04 00	 ret	 4
+??_GCMonsterItemMng@@UAEPAXI@Z ENDP			; CMonsterItemMng::`scalar deleting destructor'
+_TEXT	ENDS
+PUBLIC	?Clear@CMonsterItemMng@@QAEXXZ			; CMonsterItemMng::Clear
+;	COMDAT ??1CMonsterItemMng@@UAE@XZ
+_TEXT	SEGMENT
+_this$ = -4
+??1CMonsterItemMng@@UAE@XZ PROC NEAR			; CMonsterItemMng::~CMonsterItemMng, COMDAT
+
+; 21   : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 44	 sub	 esp, 68			; 00000044H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+  0000c	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  0000f	c7 00 00 00 00
+	00		 mov	 DWORD PTR [eax], OFFSET FLAT:??_7CMonsterItemMng@@6B@ ; CMonsterItemMng::`vftable'
+
+; 22   : 	this->Clear();
+
+  00015	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00018	e8 00 00 00 00	 call	 ?Clear@CMonsterItemMng@@QAEXXZ ; CMonsterItemMng::Clear
+
+; 23   : }
+
+  0001d	5f		 pop	 edi
+  0001e	5e		 pop	 esi
+  0001f	5b		 pop	 ebx
+  00020	8b e5		 mov	 esp, ebp
+  00022	5d		 pop	 ebp
+  00023	c3		 ret	 0
+??1CMonsterItemMng@@UAE@XZ ENDP				; CMonsterItemMng::~CMonsterItemMng
+_TEXT	ENDS
+PUBLIC	??_H@YGXPAXIHP6EX0@Z@Z				; `vector constructor iterator'
+PUBLIC	?Init@CMonsterItemMng@@QAEXXZ			; CMonsterItemMng::Init
+PUBLIC	?gObjGiveItemSearch@CMonsterItemMng@@QAEXHH@Z	; CMonsterItemMng::gObjGiveItemSearch
+EXTRN	??2@YAPAXI@Z:NEAR				; operator new
+EXTRN	?GetAttr@CMonsterAttr@@QAEPAUtagMONSTERATTR@@H@Z:NEAR ; CMonsterAttr::GetAttr
+EXTRN	__except_list:DWORD
+EXTRN	___CxxFrameHandler:NEAR
+EXTRN	?gMAttr@@3VCMonsterAttr@@A:BYTE			; gMAttr
+EXTRN	??0CItem@@QAE@XZ:NEAR				; CItem::CItem
+EXTRN	_memset:NEAR
+EXTRN	_strcpy:NEAR
+;	COMDAT xdata$x
+; File C:\Deathway\C++\GameServer\SOURCE\MonsterItemMng.cpp
+xdata$x	SEGMENT
+__ehfuncinfo$?Init@CMonsterItemMng@@QAEXXZ DD 019930520H
+	DD	01H
+	DD	FLAT:__unwindtable$?Init@CMonsterItemMng@@QAEXXZ
+	DD	2 DUP(00H)
+	DD	2 DUP(00H)
+	ORG $+4
+__unwindtable$?Init@CMonsterItemMng@@QAEXXZ DD 0ffffffffH
+	DD	FLAT:__unwindfunclet$?Init@CMonsterItemMng@@QAEXXZ$0
+xdata$x	ENDS
+;	COMDAT ?Init@CMonsterItemMng@@QAEXXZ
+_TEXT	SEGMENT
+$T47587 = -28
+$T47588 = -32
+__$EHRec$ = -12
+_this$ = -16
+_i$ = -20
+_lpm$45950 = -24
+?Init@CMonsterItemMng@@QAEXXZ PROC NEAR			; CMonsterItemMng::Init, COMDAT
+
+; 27   : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	6a ff		 push	 -1
+  00005	68 00 00 00 00	 push	 __ehhandler$?Init@CMonsterItemMng@@QAEXXZ
+  0000a	64 a1 00 00 00
+	00		 mov	 eax, DWORD PTR fs:__except_list
+  00010	50		 push	 eax
+  00011	64 89 25 00 00
+	00 00		 mov	 DWORD PTR fs:__except_list, esp
+  00018	83 ec 58	 sub	 esp, 88			; 00000058H
+  0001b	53		 push	 ebx
+  0001c	56		 push	 esi
+  0001d	57		 push	 edi
+  0001e	89 4d f0	 mov	 DWORD PTR _this$[ebp], ecx
+
+; 28   : 	memset(this->m_iItemCount, 0, sizeof(this->m_iItemCount));
+
+  00021	68 58 02 00 00	 push	 600			; 00000258H
+  00026	6a 00		 push	 0
+  00028	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  0002b	05 5c 02 00 00	 add	 eax, 604		; 0000025cH
+  00030	50		 push	 eax
+  00031	e8 00 00 00 00	 call	 _memset
+  00036	83 c4 0c	 add	 esp, 12			; 0000000cH
+
+; 29   : 
+; 30   : 	for ( int i=0 ; i< MAX_LEVEL_MONSTER ; i++ )
+
+  00039	c7 45 ec 00 00
+	00 00		 mov	 DWORD PTR _i$[ebp], 0
+  00040	eb 09		 jmp	 SHORT $L45939
+$L45940:
+  00042	8b 4d ec	 mov	 ecx, DWORD PTR _i$[ebp]
+  00045	83 c1 01	 add	 ecx, 1
+  00048	89 4d ec	 mov	 DWORD PTR _i$[ebp], ecx
+$L45939:
+  0004b	81 7d ec 96 00
+	00 00		 cmp	 DWORD PTR _i$[ebp], 150	; 00000096H
+  00052	7d 60		 jge	 SHORT $L45941
+
+; 32   : 		this->m_pItem[i] = new CItem[MAX_ITEM_IN_MONSTER];
+
+  00054	68 a0 80 02 00	 push	 164000			; 000280a0H
+  00059	e8 00 00 00 00	 call	 ??2@YAPAXI@Z		; operator new
+  0005e	83 c4 04	 add	 esp, 4
+  00061	89 45 e0	 mov	 DWORD PTR $T47588[ebp], eax
+  00064	c7 45 fc 00 00
+	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 0
+  0006b	83 7d e0 00	 cmp	 DWORD PTR $T47588[ebp], 0
+  0006f	74 20		 je	 SHORT $L47589
+  00071	68 00 00 00 00	 push	 OFFSET FLAT:??0CItem@@QAE@XZ ; CItem::CItem
+  00076	68 e8 03 00 00	 push	 1000			; 000003e8H
+  0007b	68 a4 00 00 00	 push	 164			; 000000a4H
+  00080	8b 55 e0	 mov	 edx, DWORD PTR $T47588[ebp]
+  00083	52		 push	 edx
+  00084	e8 00 00 00 00	 call	 ??_H@YGXPAXIHP6EX0@Z@Z	; `vector constructor iterator'
+  00089	8b 45 e0	 mov	 eax, DWORD PTR $T47588[ebp]
+  0008c	89 45 dc	 mov	 DWORD PTR -36+[ebp], eax
+  0008f	eb 07		 jmp	 SHORT $L47590
+$L47589:
+  00091	c7 45 dc 00 00
+	00 00		 mov	 DWORD PTR -36+[ebp], 0
+$L47590:
+  00098	8b 4d dc	 mov	 ecx, DWORD PTR -36+[ebp]
+  0009b	89 4d e4	 mov	 DWORD PTR $T47587[ebp], ecx
+  0009e	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
+  000a5	8b 55 ec	 mov	 edx, DWORD PTR _i$[ebp]
+  000a8	8b 45 f0	 mov	 eax, DWORD PTR _this$[ebp]
+  000ab	8b 4d e4	 mov	 ecx, DWORD PTR $T47587[ebp]
+  000ae	89 4c 90 04	 mov	 DWORD PTR [eax+edx*4+4], ecx
+
+; 33   : 	}
+
+  000b2	eb 8e		 jmp	 SHORT $L45940
+$L45941:
+
+; 34   : 
+; 35   : 	for ( i = 0; i< MAX_MONSTER_TYPE ; i++ )
+
+  000b4	c7 45 ec 00 00
+	00 00		 mov	 DWORD PTR _i$[ebp], 0
+  000bb	eb 09		 jmp	 SHORT $L45947
+$L45948:
+  000bd	8b 55 ec	 mov	 edx, DWORD PTR _i$[ebp]
+  000c0	83 c2 01	 add	 edx, 1
+  000c3	89 55 ec	 mov	 DWORD PTR _i$[ebp], edx
+$L45947:
+  000c6	81 7d ec 00 02
+	00 00		 cmp	 DWORD PTR _i$[ebp], 512	; 00000200H
+  000cd	7d 51		 jge	 SHORT $L45949
+
+; 37   : 		LPMONSTERATTR lpm = gMAttr.GetAttr(i);
+
+  000cf	8b 45 ec	 mov	 eax, DWORD PTR _i$[ebp]
+  000d2	50		 push	 eax
+  000d3	b9 00 00 00 00	 mov	 ecx, OFFSET FLAT:?gMAttr@@3VCMonsterAttr@@A
+  000d8	e8 00 00 00 00	 call	 ?GetAttr@CMonsterAttr@@QAEPAUtagMONSTERATTR@@H@Z ; CMonsterAttr::GetAttr
+  000dd	89 45 e8	 mov	 DWORD PTR _lpm$45950[ebp], eax
+
+; 38   : 
+; 39   : 		if ( lpm != NULL )
+
+  000e0	83 7d e8 00	 cmp	 DWORD PTR _lpm$45950[ebp], 0
+  000e4	74 38		 je	 SHORT $L45952
+
+; 41   : 			strcpy( this->unk4B4, lpm->szMonsterName);
+
+  000e6	8b 4d e8	 mov	 ecx, DWORD PTR _lpm$45950[ebp]
+  000e9	83 c1 08	 add	 ecx, 8
+  000ec	51		 push	 ecx
+  000ed	8b 55 f0	 mov	 edx, DWORD PTR _this$[ebp]
+  000f0	81 c2 b4 04 00
+	00		 add	 edx, 1204		; 000004b4H
+  000f6	52		 push	 edx
+  000f7	e8 00 00 00 00	 call	 _strcpy
+  000fc	83 c4 08	 add	 esp, 8
+
+; 42   : 
+; 43   : 			if ( lpm->iLevel != 0 )
+
+  000ff	8b 45 e8	 mov	 eax, DWORD PTR _lpm$45950[ebp]
+  00102	83 78 1c 00	 cmp	 DWORD PTR [eax+28], 0
+  00106	74 16		 je	 SHORT $L45952
+
+; 45   : 				this->gObjGiveItemSearch(lpm->iLevel, lpm->iMaxItemLevel);
+
+  00108	8b 4d e8	 mov	 ecx, DWORD PTR _lpm$45950[ebp]
+  0010b	8b 51 68	 mov	 edx, DWORD PTR [ecx+104]
+  0010e	52		 push	 edx
+  0010f	8b 45 e8	 mov	 eax, DWORD PTR _lpm$45950[ebp]
+  00112	8b 48 1c	 mov	 ecx, DWORD PTR [eax+28]
+  00115	51		 push	 ecx
+  00116	8b 4d f0	 mov	 ecx, DWORD PTR _this$[ebp]
+  00119	e8 00 00 00 00	 call	 ?gObjGiveItemSearch@CMonsterItemMng@@QAEXHH@Z ; CMonsterItemMng::gObjGiveItemSearch
+$L45952:
+
+; 48   : 	}
+
+  0011e	eb 9d		 jmp	 SHORT $L45948
+$L45949:
+
+; 49   : }
+
+  00120	8b 4d f4	 mov	 ecx, DWORD PTR __$EHRec$[ebp]
+  00123	64 89 0d 00 00
+	00 00		 mov	 DWORD PTR fs:__except_list, ecx
+  0012a	5f		 pop	 edi
+  0012b	5e		 pop	 esi
+  0012c	5b		 pop	 ebx
+  0012d	8b e5		 mov	 esp, ebp
+  0012f	5d		 pop	 ebp
+  00130	c3		 ret	 0
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__unwindfunclet$?Init@CMonsterItemMng@@QAEXXZ$0:
+  00000	8b 45 e0	 mov	 eax, DWORD PTR $T47588[ebp]
+  00003	50		 push	 eax
+  00004	e8 00 00 00 00	 call	 ??3@YAXPAX@Z		; operator delete
+  00009	59		 pop	 ecx
+  0000a	c3		 ret	 0
+__ehhandler$?Init@CMonsterItemMng@@QAEXXZ:
+  0000b	b8 00 00 00 00	 mov	 eax, OFFSET FLAT:__ehfuncinfo$?Init@CMonsterItemMng@@QAEXXZ
+  00010	e9 00 00 00 00	 jmp	 ___CxxFrameHandler
+text$x	ENDS
+?Init@CMonsterItemMng@@QAEXXZ ENDP			; CMonsterItemMng::Init
+;	COMDAT ??_H@YGXPAXIHP6EX0@Z@Z
+_TEXT	SEGMENT
+___t$ = 8
+___s$ = 12
+___n$ = 16
+___f$ = 20
+??_H@YGXPAXIHP6EX0@Z@Z PROC NEAR			; `vector constructor iterator', COMDAT
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+$L45961:
+  00009	8b 45 10	 mov	 eax, DWORD PTR ___n$[ebp]
+  0000c	83 e8 01	 sub	 eax, 1
+  0000f	89 45 10	 mov	 DWORD PTR ___n$[ebp], eax
+  00012	83 7d 10 00	 cmp	 DWORD PTR ___n$[ebp], 0
+  00016	7c 11		 jl	 SHORT $L45962
+  00018	8b 4d 08	 mov	 ecx, DWORD PTR ___t$[ebp]
+  0001b	ff 55 14	 call	 DWORD PTR ___f$[ebp]
+  0001e	8b 4d 08	 mov	 ecx, DWORD PTR ___t$[ebp]
+  00021	03 4d 0c	 add	 ecx, DWORD PTR ___s$[ebp]
+  00024	89 4d 08	 mov	 DWORD PTR ___t$[ebp], ecx
+  00027	eb e0		 jmp	 SHORT $L45961
+$L45962:
+  00029	5f		 pop	 edi
+  0002a	5e		 pop	 esi
+  0002b	5b		 pop	 ebx
+  0002c	8b e5		 mov	 esp, ebp
+  0002e	5d		 pop	 ebp
+  0002f	c2 10 00	 ret	 16			; 00000010H
+??_H@YGXPAXIHP6EX0@Z@Z ENDP				; `vector constructor iterator'
+_TEXT	ENDS
+;	COMDAT ?Clear@CMonsterItemMng@@QAEXXZ
+_TEXT	SEGMENT
+$T47606 = -12
+_this$ = -4
+_i$ = -8
+?Clear@CMonsterItemMng@@QAEXXZ PROC NEAR		; CMonsterItemMng::Clear, COMDAT
+
+; 53   : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 4c	 sub	 esp, 76			; 0000004cH
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+
+; 54   : 	memset(this->m_iItemCount, 0, sizeof(this->m_iItemCount));
+
+  0000c	68 58 02 00 00	 push	 600			; 00000258H
+  00011	6a 00		 push	 0
+  00013	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00016	05 5c 02 00 00	 add	 eax, 604		; 0000025cH
+  0001b	50		 push	 eax
+  0001c	e8 00 00 00 00	 call	 _memset
+  00021	83 c4 0c	 add	 esp, 12			; 0000000cH
+
+; 55   : 
+; 56   : 	for ( int i =0 ; i< MAX_LEVEL_MONSTER ; i++ )
+
+  00024	c7 45 f8 00 00
+	00 00		 mov	 DWORD PTR _i$[ebp], 0
+  0002b	eb 09		 jmp	 SHORT $L45968
+$L45969:
+  0002d	8b 4d f8	 mov	 ecx, DWORD PTR _i$[ebp]
+  00030	83 c1 01	 add	 ecx, 1
+  00033	89 4d f8	 mov	 DWORD PTR _i$[ebp], ecx
+$L45968:
+  00036	81 7d f8 96 00
+	00 00		 cmp	 DWORD PTR _i$[ebp], 150	; 00000096H
+  0003d	7d 1b		 jge	 SHORT $L45970
+
+; 58   : 		delete this->m_pItem[i];
+
+  0003f	8b 55 f8	 mov	 edx, DWORD PTR _i$[ebp]
+  00042	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  00045	8b 4c 90 04	 mov	 ecx, DWORD PTR [eax+edx*4+4]
+  00049	89 4d f4	 mov	 DWORD PTR $T47606[ebp], ecx
+  0004c	8b 55 f4	 mov	 edx, DWORD PTR $T47606[ebp]
+  0004f	52		 push	 edx
+  00050	e8 00 00 00 00	 call	 ??3@YAXPAX@Z		; operator delete
+  00055	83 c4 04	 add	 esp, 4
+
+; 59   : 	}
+
+  00058	eb d3		 jmp	 SHORT $L45969
+$L45970:
+
+; 60   : }
+
+  0005a	5f		 pop	 edi
+  0005b	5e		 pop	 esi
+  0005c	5b		 pop	 ebx
+  0005d	8b e5		 mov	 esp, ebp
+  0005f	5d		 pop	 ebp
+  00060	c3		 ret	 0
+?Clear@CMonsterItemMng@@QAEXXZ ENDP			; CMonsterItemMng::Clear
+_TEXT	ENDS
+PUBLIC	?InsertItem@CMonsterItemMng@@QAEEHHHHHHH@Z	; CMonsterItemMng::InsertItem
+PUBLIC	__real@8@4005c800000000000000
+EXTRN	__fltused:NEAR
+EXTRN	?Convert@CItem@@QAEXHEEEEEE@Z:NEAR		; CItem::Convert
+EXTRN	_rand:NEAR
+;	COMDAT __real@8@4005c800000000000000
+; File C:\Deathway\C++\GameServer\SOURCE\MonsterItemMng.cpp
+CONST	SEGMENT
+__real@8@4005c800000000000000 DQ 04059000000000000r ; 100
+CONST	ENDS
+;	COMDAT ?InsertItem@CMonsterItemMng@@QAEEHHHHHHH@Z
+_TEXT	SEGMENT
+_monsterlevel$ = 8
+_type$ = 12
+_index$ = 16
+_itemlevel$ = 20
+_op1$ = 24
+_op2$ = 28
+_op3$ = 32
+_this$ = -4
+_itemcount$ = -8
+_item$ = -12
+_item_type$ = -16
+_rd$45989 = -20
+?InsertItem@CMonsterItemMng@@QAEEHHHHHHH@Z PROC NEAR	; CMonsterItemMng::InsertItem, COMDAT
+
+; 63   : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 58	 sub	 esp, 88			; 00000058H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+
+; 64   : 	if ( monsterlevel > MAX_LEVEL_MONSTER || monsterlevel < 0 )
+
+  0000c	81 7d 08 96 00
+	00 00		 cmp	 DWORD PTR _monsterlevel$[ebp], 150 ; 00000096H
+  00013	7f 06		 jg	 SHORT $L45983
+  00015	83 7d 08 00	 cmp	 DWORD PTR _monsterlevel$[ebp], 0
+  00019	7d 07		 jge	 SHORT $L45982
+$L45983:
+
+; 66   : 		return -1;
+
+  0001b	0c ff		 or	 al, 255			; 000000ffH
+  0001d	e9 ca 00 00 00	 jmp	 $L45981
+$L45982:
+
+; 68   : 
+; 69   : 	int itemcount = this->m_iItemCount[monsterlevel];
+
+  00022	8b 45 08	 mov	 eax, DWORD PTR _monsterlevel$[ebp]
+  00025	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00028	8b 94 81 5c 02
+	00 00		 mov	 edx, DWORD PTR [ecx+eax*4+604]
+  0002f	89 55 f8	 mov	 DWORD PTR _itemcount$[ebp], edx
+
+; 70   : 
+; 71   : 	if ( itemcount > MAX_ITEM_IN_MONSTER )
+
+  00032	81 7d f8 e8 03
+	00 00		 cmp	 DWORD PTR _itemcount$[ebp], 1000 ; 000003e8H
+  00039	7e 07		 jle	 SHORT $L45985
+
+; 73   : 		return -1;
+
+  0003b	0c ff		 or	 al, 255			; 000000ffH
+  0003d	e9 aa 00 00 00	 jmp	 $L45981
+$L45985:
+
+; 75   : 
+; 76   : 	CItem * item = &this->m_pItem[monsterlevel][itemcount];
+
+  00042	8b 45 f8	 mov	 eax, DWORD PTR _itemcount$[ebp]
+  00045	69 c0 a4 00 00
+	00		 imul	 eax, 164		; 000000a4H
+  0004b	8b 4d 08	 mov	 ecx, DWORD PTR _monsterlevel$[ebp]
+  0004e	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00051	8b 4c 8a 04	 mov	 ecx, DWORD PTR [edx+ecx*4+4]
+  00055	03 c8		 add	 ecx, eax
+  00057	89 4d f4	 mov	 DWORD PTR _item$[ebp], ecx
+
+; 77   : 	int item_type = (type * MAX_SUBTYPE_ITEMS) + index;
+
+  0005a	8b 55 0c	 mov	 edx, DWORD PTR _type$[ebp]
+  0005d	c1 e2 05	 shl	 edx, 5
+  00060	03 55 10	 add	 edx, DWORD PTR _index$[ebp]
+  00063	89 55 f0	 mov	 DWORD PTR _item_type$[ebp], edx
+
+; 78   : 	item->m_sItemLevel = itemlevel;
+
+  00066	8b 45 f4	 mov	 eax, DWORD PTR _item$[ebp]
+  00069	66 8b 4d 14	 mov	 cx, WORD PTR _itemlevel$[ebp]
+  0006d	66 89 48 08	 mov	 WORD PTR [eax+8], cx
+
+; 79   : 	item->Convert(item_type, op1, op2, op3, 0, 0, 1);
+
+  00071	6a 01		 push	 1
+  00073	6a 00		 push	 0
+  00075	6a 00		 push	 0
+  00077	8a 55 20	 mov	 dl, BYTE PTR _op3$[ebp]
+  0007a	52		 push	 edx
+  0007b	8a 45 1c	 mov	 al, BYTE PTR _op2$[ebp]
+  0007e	50		 push	 eax
+  0007f	8a 4d 18	 mov	 cl, BYTE PTR _op1$[ebp]
+  00082	51		 push	 ecx
+  00083	8b 55 f0	 mov	 edx, DWORD PTR _item_type$[ebp]
+  00086	52		 push	 edx
+  00087	8b 4d f4	 mov	 ecx, DWORD PTR _item$[ebp]
+  0008a	e8 00 00 00 00	 call	 ?Convert@CItem@@QAEXHEEEEEE@Z ; CItem::Convert
+
+; 80   : 
+; 81   : 	if ( type == 13 && index == 10 )
+
+  0008f	83 7d 0c 0d	 cmp	 DWORD PTR _type$[ebp], 13 ; 0000000dH
+  00093	75 27		 jne	 SHORT $L45988
+  00095	83 7d 10 0a	 cmp	 DWORD PTR _index$[ebp], 10 ; 0000000aH
+  00099	75 21		 jne	 SHORT $L45988
+
+; 83   : 		int rd = rand() % 100;
+
+  0009b	e8 00 00 00 00	 call	 _rand
+  000a0	99		 cdq
+  000a1	b9 64 00 00 00	 mov	 ecx, 100		; 00000064H
+  000a6	f7 f9		 idiv	 ecx
+  000a8	89 55 ec	 mov	 DWORD PTR _rd$45989[ebp], edx
+
+; 84   : 		item->m_WingOption = rd + 100.0;
+
+  000ab	db 45 ec	 fild	 DWORD PTR _rd$45989[ebp]
+  000ae	dc 05 00 00 00
+	00		 fadd	 QWORD PTR __real@8@4005c800000000000000
+  000b4	8b 55 f4	 mov	 edx, DWORD PTR _item$[ebp]
+  000b7	d9 5a 24	 fstp	 DWORD PTR [edx+36]
+
+; 86   : 	else
+
+  000ba	eb 15		 jmp	 SHORT $L45990
+$L45988:
+
+; 88   : 		item->m_WingOption = item->unk2C;
+
+  000bc	8b 45 f4	 mov	 eax, DWORD PTR _item$[ebp]
+  000bf	33 c9		 xor	 ecx, ecx
+  000c1	66 8b 48 2c	 mov	 cx, WORD PTR [eax+44]
+  000c5	89 4d e8	 mov	 DWORD PTR -24+[ebp], ecx
+  000c8	db 45 e8	 fild	 DWORD PTR -24+[ebp]
+  000cb	8b 55 f4	 mov	 edx, DWORD PTR _item$[ebp]
+  000ce	d9 5a 24	 fstp	 DWORD PTR [edx+36]
+$L45990:
+
+; 90   : 
+; 91   : 	itemcount ++;
+
+  000d1	8b 45 f8	 mov	 eax, DWORD PTR _itemcount$[ebp]
+  000d4	83 c0 01	 add	 eax, 1
+  000d7	89 45 f8	 mov	 DWORD PTR _itemcount$[ebp], eax
+
+; 92   : 	this->m_iItemCount[monsterlevel] = itemcount;
+
+  000da	8b 4d 08	 mov	 ecx, DWORD PTR _monsterlevel$[ebp]
+  000dd	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  000e0	8b 45 f8	 mov	 eax, DWORD PTR _itemcount$[ebp]
+  000e3	89 84 8a 5c 02
+	00 00		 mov	 DWORD PTR [edx+ecx*4+604], eax
+
+; 93   : 	return 0;
+
+  000ea	32 c0		 xor	 al, al
+$L45981:
+
+; 94   : }
+
+  000ec	5f		 pop	 edi
+  000ed	5e		 pop	 esi
+  000ee	5b		 pop	 ebx
+  000ef	8b e5		 mov	 esp, ebp
+  000f1	5d		 pop	 ebp
+  000f2	c2 1c 00	 ret	 28			; 0000001cH
+?InsertItem@CMonsterItemMng@@QAEEHHHHHHH@Z ENDP		; CMonsterItemMng::InsertItem
+_TEXT	ENDS
+PUBLIC	?GetItem@CMonsterItemMng@@QAEPAVCItem@@H@Z	; CMonsterItemMng::GetItem
+;	COMDAT ?GetItem@CMonsterItemMng@@QAEPAVCItem@@H@Z
+_TEXT	SEGMENT
+_monsterlevel$ = 8
+_this$ = -4
+_itemcount$ = -8
+_itemindex$ = -12
+?GetItem@CMonsterItemMng@@QAEPAVCItem@@H@Z PROC NEAR	; CMonsterItemMng::GetItem, COMDAT
+
+; 98   : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 4c	 sub	 esp, 76			; 0000004cH
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+
+; 99   : 	if ( monsterlevel > MAX_LEVEL_MONSTER || monsterlevel < 0 )
+
+  0000c	81 7d 08 96 00
+	00 00		 cmp	 DWORD PTR _monsterlevel$[ebp], 150 ; 00000096H
+  00013	7f 06		 jg	 SHORT $L45996
+  00015	83 7d 08 00	 cmp	 DWORD PTR _monsterlevel$[ebp], 0
+  00019	7d 04		 jge	 SHORT $L45995
+$L45996:
+
+; 101  : 		return NULL;
+
+  0001b	33 c0		 xor	 eax, eax
+  0001d	eb 3b		 jmp	 SHORT $L45994
+$L45995:
+
+; 103  : 
+; 104  : 	int itemcount = this->m_iItemCount[monsterlevel];
+
+  0001f	8b 45 08	 mov	 eax, DWORD PTR _monsterlevel$[ebp]
+  00022	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00025	8b 94 81 5c 02
+	00 00		 mov	 edx, DWORD PTR [ecx+eax*4+604]
+  0002c	89 55 f8	 mov	 DWORD PTR _itemcount$[ebp], edx
+
+; 105  : 
+; 106  : 	if ( itemcount <= 0 )
+
+  0002f	83 7d f8 00	 cmp	 DWORD PTR _itemcount$[ebp], 0
+  00033	7f 04		 jg	 SHORT $L45998
+
+; 108  : 		return NULL;
+
+  00035	33 c0		 xor	 eax, eax
+  00037	eb 21		 jmp	 SHORT $L45994
+$L45998:
+
+; 110  : 
+; 111  : 	int itemindex = rand() % itemcount;
+
+  00039	e8 00 00 00 00	 call	 _rand
+  0003e	99		 cdq
+  0003f	f7 7d f8	 idiv	 DWORD PTR _itemcount$[ebp]
+  00042	89 55 f4	 mov	 DWORD PTR _itemindex$[ebp], edx
+
+; 112  : 	return &this->m_pItem[monsterlevel][itemcount];
+
+  00045	8b 45 f8	 mov	 eax, DWORD PTR _itemcount$[ebp]
+  00048	69 c0 a4 00 00
+	00		 imul	 eax, 164		; 000000a4H
+  0004e	8b 4d 08	 mov	 ecx, DWORD PTR _monsterlevel$[ebp]
+  00051	8b 55 fc	 mov	 edx, DWORD PTR _this$[ebp]
+  00054	8b 4c 8a 04	 mov	 ecx, DWORD PTR [edx+ecx*4+4]
+  00058	03 c1		 add	 eax, ecx
+$L45994:
+
+; 113  : }
+
+  0005a	5f		 pop	 edi
+  0005b	5e		 pop	 esi
+  0005c	5b		 pop	 ebx
+  0005d	8b e5		 mov	 esp, ebp
+  0005f	5d		 pop	 ebp
+  00060	c2 04 00	 ret	 4
+?GetItem@CMonsterItemMng@@QAEPAVCItem@@H@Z ENDP		; CMonsterItemMng::GetItem
+_TEXT	ENDS
+PUBLIC	?__LINE__Var@?1??gObjGiveItemSearch@CMonsterItemMng@@QAEXHH@Z@4FA ; `CMonsterItemMng::gObjGiveItemSearch'::`2'::__LINE__Var
+PUBLIC	??_C@_0DF@IKIJ@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@ ; `string'
+PUBLIC	??_C@_0CJ@FAJI@error?9L3?5?3?5Monster?5Level?5Overflo@ ; `string'
+EXTRN	?gDevilSquareEvent@@3HA:DWORD			; gDevilSquareEvent
+EXTRN	?gEyesOfDevilSquareDropRate@@3HA:DWORD		; gEyesOfDevilSquareDropRate
+EXTRN	?gKeyOfDevilSquareDropRate@@3HA:DWORD		; gKeyOfDevilSquareDropRate
+EXTRN	?LogAdd@@3P6AXPADZZA:DWORD			; LogAdd
+EXTRN	?GetLevelItem@@YAHHHH@Z:NEAR			; GetLevelItem
+EXTRN	?zzzItemLevel@@YAHHHH@Z:NEAR			; zzzItemLevel
+;	COMDAT ?__LINE__Var@?1??gObjGiveItemSearch@CMonsterItemMng@@QAEXHH@Z@4FA
+; File C:\Deathway\C++\GameServer\SOURCE\MonsterItemMng.cpp
+_DATA	SEGMENT
+?__LINE__Var@?1??gObjGiveItemSearch@CMonsterItemMng@@QAEXHH@Z@4FA DW 074H ; `CMonsterItemMng::gObjGiveItemSearch'::`2'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ??_C@_0DF@IKIJ@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@
+CONST	SEGMENT
+??_C@_0DF@IKIJ@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@ DB 'C:\Deathw'
+	DB	'ay\C++\GameServer\SOURCE\MonsterItemMng.cpp', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0CJ@FAJI@error?9L3?5?3?5Monster?5Level?5Overflo@
+CONST	SEGMENT
+??_C@_0CJ@FAJI@error?9L3?5?3?5Monster?5Level?5Overflo@ DB 'error-L3 : Mon'
+	DB	'ster Level Overflow~ %s %d', 00H		; `string'
+CONST	ENDS
+;	COMDAT ?gObjGiveItemSearch@CMonsterItemMng@@QAEXHH@Z
+_TEXT	SEGMENT
+_monsterlevel$ = 8
+_maxlevel$ = 12
+_this$ = -4
+_result$ = -8
+_incount$ = -12
+_type$ = -16
+_index$ = -20
+_BallTable$ = -84
+_lc22$46030 = -88
+_lc23$46031 = -92
+_lc24$46041 = -96
+?gObjGiveItemSearch@CMonsterItemMng@@QAEXHH@Z PROC NEAR	; CMonsterItemMng::gObjGiveItemSearch, COMDAT
+
+; 116  : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	81 ec a4 00 00
+	00		 sub	 esp, 164		; 000000a4H
+  00009	53		 push	 ebx
+  0000a	56		 push	 esi
+  0000b	57		 push	 edi
+  0000c	89 4d fc	 mov	 DWORD PTR _this$[ebp], ecx
+
+; 117  : 	int result;
+; 118  : 	int incount = 0;
+
+  0000f	c7 45 f4 00 00
+	00 00		 mov	 DWORD PTR _incount$[ebp], 0
+
+; 119  : 	int type;
+; 120  : 	int index;
+; 121  : 
+; 122  : 	if ( monsterlevel > MAX_LEVEL_MONSTER-1 )
+
+  00016	81 7d 08 95 00
+	00 00		 cmp	 DWORD PTR _monsterlevel$[ebp], 149 ; 00000095H
+  0001d	7e 23		 jle	 SHORT $L46009
+
+; 124  : 		LogAdd("error-L3 : Monster Level Overflow~ %s %d", __FILE__, __LINE__ );
+
+  0001f	0f bf 05 00 00
+	00 00		 movsx	 eax, WORD PTR ?__LINE__Var@?1??gObjGiveItemSearch@CMonsterItemMng@@QAEXHH@Z@4FA ; `CMonsterItemMng::gObjGiveItemSearch'::`2'::__LINE__Var
+  00026	83 c0 08	 add	 eax, 8
+  00029	50		 push	 eax
+  0002a	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0DF@IKIJ@C?3?2Deathway?2C?$CL?$CL?2GameServer?2SOURC@ ; `string'
+  0002f	68 00 00 00 00	 push	 OFFSET FLAT:??_C@_0CJ@FAJI@error?9L3?5?3?5Monster?5Level?5Overflo@ ; `string'
+  00034	ff 15 00 00 00
+	00		 call	 DWORD PTR ?LogAdd@@3P6AXPADZZA ; LogAdd
+  0003a	83 c4 0c	 add	 esp, 12			; 0000000cH
+
+; 125  : 		return;
+
+  0003d	e9 c2 04 00 00	 jmp	 $L46004
+$L46009:
+
+; 129  : 
+; 130  : 	BallTable[0] = 7;
+
+  00042	c7 45 ac 07 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp], 7
+
+; 131  : 	BallTable[1] = 8;
+
+  00049	c7 45 b0 08 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+4], 8
+
+; 132  : 	BallTable[2] = 9;
+
+  00050	c7 45 b4 09 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+8], 9
+
+; 133  : 	BallTable[3] = 10;
+
+  00057	c7 45 b8 0a 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+12], 10 ; 0000000aH
+
+; 134  : 	BallTable[4] = 11;
+
+  0005e	c7 45 bc 0b 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+16], 11 ; 0000000bH
+
+; 135  : 	BallTable[5] = 12;
+
+  00065	c7 45 c0 0c 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+20], 12 ; 0000000cH
+
+; 136  : 	BallTable[6] = 13;
+
+  0006c	c7 45 c4 0d 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+24], 13 ; 0000000dH
+
+; 137  : 	BallTable[7] = 14;
+
+  00073	c7 45 c8 0e 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+28], 14 ; 0000000eH
+
+; 138  : 	BallTable[8] = 16;
+
+  0007a	c7 45 cc 10 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+32], 16 ; 00000010H
+
+; 139  : 	BallTable[9] = 17;
+
+  00081	c7 45 d0 11 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+36], 17 ; 00000011H
+
+; 140  : 	BallTable[10] = 18;
+
+  00088	c7 45 d4 12 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+40], 18 ; 00000012H
+
+; 141  : 	BallTable[11] = 19;
+
+  0008f	c7 45 d8 13 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+44], 19 ; 00000013H
+
+; 142  : 	BallTable[12] = 21;
+
+  00096	c7 45 dc 15 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+48], 21 ; 00000015H
+
+; 143  : 	BallTable[13] = 22;
+
+  0009d	c7 45 e0 16 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+52], 22 ; 00000016H
+
+; 144  : 	BallTable[14] = 23;
+
+  000a4	c7 45 e4 17 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+56], 23 ; 00000017H
+
+; 145  : 	BallTable[15] = 24;
+
+  000ab	c7 45 e8 18 00
+	00 00		 mov	 DWORD PTR _BallTable$[ebp+60], 24 ; 00000018H
+$L46015:
+
+; 146  : 
+; 147  : 	while ( true )
+
+  000b2	b9 01 00 00 00	 mov	 ecx, 1
+  000b7	85 c9		 test	 ecx, ecx
+  000b9	0f 84 45 04 00
+	00		 je	 $L46016
+
+; 149  : 		if ( (rand() % 20) ==  0 ) 
+
+  000bf	e8 00 00 00 00	 call	 _rand
+  000c4	99		 cdq
+  000c5	b9 14 00 00 00	 mov	 ecx, 20			; 00000014H
+  000ca	f7 f9		 idiv	 ecx
+  000cc	85 d2		 test	 edx, edx
+  000ce	75 3d		 jne	 SHORT $L46017
+
+; 151  : 			if ( (rand() & 1)	!= 0 )
+
+  000d0	e8 00 00 00 00	 call	 _rand
+  000d5	83 e0 01	 and	 eax, 1
+  000d8	85 c0		 test	 eax, eax
+  000da	74 20		 je	 SHORT $L46018
+
+; 153  : 				type = MAX_TYPE_ITEMS-1;
+
+  000dc	c7 45 f0 0f 00
+	00 00		 mov	 DWORD PTR _type$[ebp], 15 ; 0000000fH
+
+; 154  : 				index = rand() % MAX_SUBTYPE_ITEMS-1;
+
+  000e3	e8 00 00 00 00	 call	 _rand
+  000e8	25 1f 00 00 80	 and	 eax, -2147483617	; 8000001fH
+  000ed	79 05		 jns	 SHORT $L47618
+  000ef	48		 dec	 eax
+  000f0	83 c8 e0	 or	 eax, -32		; ffffffe0H
+  000f3	40		 inc	 eax
+$L47618:
+  000f4	83 e8 01	 sub	 eax, 1
+  000f7	89 45 ec	 mov	 DWORD PTR _index$[ebp], eax
+
+; 156  : 			else
+
+  000fa	eb 0f		 jmp	 SHORT $L46019
+$L46018:
+
+; 158  : 				index = BallTable[rand() & MAX_TYPE_ITEMS-1];
+
+  000fc	e8 00 00 00 00	 call	 _rand
+  00101	83 e0 0f	 and	 eax, 15			; 0000000fH
+  00104	8b 54 85 ac	 mov	 edx, DWORD PTR _BallTable$[ebp+eax*4]
+  00108	89 55 ec	 mov	 DWORD PTR _index$[ebp], edx
+$L46019:
+
+; 161  : 		else
+
+  0010b	eb 45		 jmp	 SHORT $L46021
+$L46017:
+
+; 163  : 			type = rand() % MAX_TYPE_ITEMS-1;
+
+  0010d	e8 00 00 00 00	 call	 _rand
+  00112	25 0f 00 00 80	 and	 eax, -2147483633	; 8000000fH
+  00117	79 05		 jns	 SHORT $L47619
+  00119	48		 dec	 eax
+  0011a	83 c8 f0	 or	 eax, -16		; fffffff0H
+  0011d	40		 inc	 eax
+$L47619:
+  0011e	83 e8 01	 sub	 eax, 1
+  00121	89 45 f0	 mov	 DWORD PTR _type$[ebp], eax
+
+; 164  : 			index = rand() % MAX_SUBTYPE_ITEMS-1;
+
+  00124	e8 00 00 00 00	 call	 _rand
+  00129	25 1f 00 00 80	 and	 eax, -2147483617	; 8000001fH
+  0012e	79 05		 jns	 SHORT $L47620
+  00130	48		 dec	 eax
+  00131	83 c8 e0	 or	 eax, -32		; ffffffe0H
+  00134	40		 inc	 eax
+$L47620:
+  00135	83 e8 01	 sub	 eax, 1
+  00138	89 45 ec	 mov	 DWORD PTR _index$[ebp], eax
+
+; 165  : 
+; 166  : 			if ( type == 15 || (type == 12 && index != 15 ) )
+
+  0013b	83 7d f0 0f	 cmp	 DWORD PTR _type$[ebp], 15 ; 0000000fH
+  0013f	74 0c		 je	 SHORT $L46022
+  00141	83 7d f0 0c	 cmp	 DWORD PTR _type$[ebp], 12 ; 0000000cH
+  00145	75 0b		 jne	 SHORT $L46021
+  00147	83 7d ec 0f	 cmp	 DWORD PTR _index$[ebp], 15 ; 0000000fH
+  0014b	74 05		 je	 SHORT $L46021
+$L46022:
+
+; 168  : 				continue;
+
+  0014d	e9 60 ff ff ff	 jmp	 $L46015
+$L46021:
+
+; 171  : 
+; 172  : 		if ( type == 13 && index == 3 )
+
+  00152	83 7d f0 0d	 cmp	 DWORD PTR _type$[ebp], 13 ; 0000000dH
+  00156	75 0b		 jne	 SHORT $L46023
+  00158	83 7d ec 03	 cmp	 DWORD PTR _index$[ebp], 3
+  0015c	75 05		 jne	 SHORT $L46023
+
+; 174  : 			continue;
+
+  0015e	e9 4f ff ff ff	 jmp	 $L46015
+$L46023:
+
+; 176  : 
+; 177  : 		if ( (type == 13 && index < 8) || ( (type == 14) && (index == 9 || index == 10 || index == 13 || index == 14 || index ==16 || index == 17 || index == 18 || index == 22 ) ) || (type == 12 && index == 15) || (type == 13 && index == 14) || (type == 14 && index == 31 ) )
+
+  00163	83 7d f0 0d	 cmp	 DWORD PTR _type$[ebp], 13 ; 0000000dH
+  00167	75 06		 jne	 SHORT $L46026
+  00169	83 7d ec 08	 cmp	 DWORD PTR _index$[ebp], 8
+  0016d	7c 62		 jl	 SHORT $L46025
+$L46026:
+  0016f	83 7d f0 0e	 cmp	 DWORD PTR _type$[ebp], 14 ; 0000000eH
+  00173	75 30		 jne	 SHORT $L46027
+  00175	83 7d ec 09	 cmp	 DWORD PTR _index$[ebp], 9
+  00179	74 56		 je	 SHORT $L46025
+  0017b	83 7d ec 0a	 cmp	 DWORD PTR _index$[ebp], 10 ; 0000000aH
+  0017f	74 50		 je	 SHORT $L46025
+  00181	83 7d ec 0d	 cmp	 DWORD PTR _index$[ebp], 13 ; 0000000dH
+  00185	74 4a		 je	 SHORT $L46025
+  00187	83 7d ec 0e	 cmp	 DWORD PTR _index$[ebp], 14 ; 0000000eH
+  0018b	74 44		 je	 SHORT $L46025
+  0018d	83 7d ec 10	 cmp	 DWORD PTR _index$[ebp], 16 ; 00000010H
+  00191	74 3e		 je	 SHORT $L46025
+  00193	83 7d ec 11	 cmp	 DWORD PTR _index$[ebp], 17 ; 00000011H
+  00197	74 38		 je	 SHORT $L46025
+  00199	83 7d ec 12	 cmp	 DWORD PTR _index$[ebp], 18 ; 00000012H
+  0019d	74 32		 je	 SHORT $L46025
+  0019f	83 7d ec 16	 cmp	 DWORD PTR _index$[ebp], 22 ; 00000016H
+  001a3	74 2c		 je	 SHORT $L46025
+$L46027:
+  001a5	83 7d f0 0c	 cmp	 DWORD PTR _type$[ebp], 12 ; 0000000cH
+  001a9	75 06		 jne	 SHORT $L46028
+  001ab	83 7d ec 0f	 cmp	 DWORD PTR _index$[ebp], 15 ; 0000000fH
+  001af	74 20		 je	 SHORT $L46025
+$L46028:
+  001b1	83 7d f0 0d	 cmp	 DWORD PTR _type$[ebp], 13 ; 0000000dH
+  001b5	75 06		 jne	 SHORT $L46029
+  001b7	83 7d ec 0e	 cmp	 DWORD PTR _index$[ebp], 14 ; 0000000eH
+  001bb	74 14		 je	 SHORT $L46025
+$L46029:
+  001bd	83 7d f0 0e	 cmp	 DWORD PTR _type$[ebp], 14 ; 0000000eH
+  001c1	0f 85 12 02 00
+	00		 jne	 $L46024
+  001c7	83 7d ec 1f	 cmp	 DWORD PTR _index$[ebp], 31 ; 0000001fH
+  001cb	0f 85 08 02 00
+	00		 jne	 $L46024
+$L46025:
+
+; 179  : 			int lc22 = rand() % 11;
+
+  001d1	e8 00 00 00 00	 call	 _rand
+  001d6	99		 cdq
+  001d7	b9 0b 00 00 00	 mov	 ecx, 11			; 0000000bH
+  001dc	f7 f9		 idiv	 ecx
+  001de	89 55 a8	 mov	 DWORD PTR _lc22$46030[ebp], edx
+
+; 180  : 			int lc23 = 0;
+
+  001e1	c7 45 a4 00 00
+	00 00		 mov	 DWORD PTR _lc23$46031[ebp], 0
+
+; 181  : 
+; 182  : 			if ( type == 12 && index == 15 )
+
+  001e8	83 7d f0 0c	 cmp	 DWORD PTR _type$[ebp], 12 ; 0000000cH
+  001ec	75 44		 jne	 SHORT $L47617
+  001ee	83 7d ec 0f	 cmp	 DWORD PTR _index$[ebp], 15 ; 0000000fH
+  001f2	75 3e		 jne	 SHORT $L47617
+
+; 184  : 				if ( monsterlevel >= 13 && monsterlevel <= 66 )
+
+  001f4	83 7d 08 0d	 cmp	 DWORD PTR _monsterlevel$[ebp], 13 ; 0000000dH
+  001f8	7c 38		 jl	 SHORT $L47617
+  001fa	83 7d 08 42	 cmp	 DWORD PTR _monsterlevel$[ebp], 66 ; 00000042H
+  001fe	7f 32		 jg	 SHORT $L47617
+
+; 186  : 					lc22 = rand() % 7;
+
+  00200	e8 00 00 00 00	 call	 _rand
+  00205	99		 cdq
+  00206	b9 07 00 00 00	 mov	 ecx, 7
+  0020b	f7 f9		 idiv	 ecx
+  0020d	89 55 a8	 mov	 DWORD PTR _lc22$46030[ebp], edx
+
+; 187  : 
+; 188  : 					(lc22 < 3) ? lc22 = 0 : lc22 = 1;
+
+  00210	83 7d a8 03	 cmp	 DWORD PTR _lc22$46030[ebp], 3
+  00214	7d 0f		 jge	 SHORT $L47616
+  00216	c7 45 a8 00 00
+	00 00		 mov	 DWORD PTR _lc22$46030[ebp], 0
+  0021d	8b 55 a8	 mov	 edx, DWORD PTR _lc22$46030[ebp]
+  00220	89 55 9c	 mov	 DWORD PTR -100+[ebp], edx
+  00223	eb 0d		 jmp	 SHORT $L47617
+$L47616:
+  00225	c7 45 a8 01 00
+	00 00		 mov	 DWORD PTR _lc22$46030[ebp], 1
+  0022c	8b 45 a8	 mov	 eax, DWORD PTR _lc22$46030[ebp]
+  0022f	89 45 9c	 mov	 DWORD PTR -100+[ebp], eax
+$L47617:
+
+; 191  : 
+; 192  : 			if ( type == 14 && index == 17 )
+
+  00232	83 7d f0 0e	 cmp	 DWORD PTR _type$[ebp], 14 ; 0000000eH
+  00236	75 3f		 jne	 SHORT $L46036
+  00238	83 7d ec 11	 cmp	 DWORD PTR _index$[ebp], 17 ; 00000011H
+  0023c	75 39		 jne	 SHORT $L46036
+
+; 194  : 				if ( gEyesOfDevilSquareDropRate <= 0 )
+
+  0023e	83 3d 00 00 00
+	00 00		 cmp	 DWORD PTR ?gEyesOfDevilSquareDropRate@@3HA, 0 ; gEyesOfDevilSquareDropRate
+  00245	7f 30		 jg	 SHORT $L46036
+
+; 196  : 					gEyesOfDevilSquareDropRate = 1;
+
+  00247	c7 05 00 00 00
+	00 01 00 00 00	 mov	 DWORD PTR ?gEyesOfDevilSquareDropRate@@3HA, 1 ; gEyesOfDevilSquareDropRate
+
+; 197  : 
+; 198  : 					lc22 = rand() % gEyesOfDevilSquareDropRate;
+
+  00251	e8 00 00 00 00	 call	 _rand
+  00256	99		 cdq
+  00257	f7 3d 00 00 00
+	00		 idiv	 DWORD PTR ?gEyesOfDevilSquareDropRate@@3HA ; gEyesOfDevilSquareDropRate
+  0025d	89 55 a8	 mov	 DWORD PTR _lc22$46030[ebp], edx
+
+; 199  : 					lc23 = 1;
+
+  00260	c7 45 a4 01 00
+	00 00		 mov	 DWORD PTR _lc23$46031[ebp], 1
+
+; 200  : 
+; 201  : 					if ( gDevilSquareEvent == 0 )
+
+  00267	83 3d 00 00 00
+	00 00		 cmp	 DWORD PTR ?gDevilSquareEvent@@3HA, 0 ; gDevilSquareEvent
+  0026e	75 07		 jne	 SHORT $L46036
+
+; 203  : 						lc22 = 1;
+
+  00270	c7 45 a8 01 00
+	00 00		 mov	 DWORD PTR _lc22$46030[ebp], 1
+$L46036:
+
+; 207  : 
+; 208  : 			if ( type == 14 && index == 18 )
+
+  00277	83 7d f0 0e	 cmp	 DWORD PTR _type$[ebp], 14 ; 0000000eH
+  0027b	75 2b		 jne	 SHORT $L46038
+  0027d	83 7d ec 12	 cmp	 DWORD PTR _index$[ebp], 18 ; 00000012H
+  00281	75 25		 jne	 SHORT $L46038
+
+; 210  : 				lc22 = rand() & gKeyOfDevilSquareDropRate;
+
+  00283	e8 00 00 00 00	 call	 _rand
+  00288	23 05 00 00 00
+	00		 and	 eax, DWORD PTR ?gKeyOfDevilSquareDropRate@@3HA ; gKeyOfDevilSquareDropRate
+  0028e	89 45 a8	 mov	 DWORD PTR _lc22$46030[ebp], eax
+
+; 211  : 				lc23 = 1;
+
+  00291	c7 45 a4 01 00
+	00 00		 mov	 DWORD PTR _lc23$46031[ebp], 1
+
+; 212  : 
+; 213  : 				if ( gDevilSquareEvent == 0 )
+
+  00298	83 3d 00 00 00
+	00 00		 cmp	 DWORD PTR ?gDevilSquareEvent@@3HA, 0 ; gDevilSquareEvent
+  0029f	75 07		 jne	 SHORT $L46038
+
+; 215  : 					lc22 = 1;
+
+  002a1	c7 45 a8 01 00
+	00 00		 mov	 DWORD PTR _lc22$46030[ebp], 1
+$L46038:
+
+; 219  : 
+; 220  : 			if ( lc22 == 0 )
+
+  002a8	83 7d a8 00	 cmp	 DWORD PTR _lc22$46030[ebp], 0
+  002ac	0f 85 22 01 00
+	00		 jne	 $L46061
+
+; 222  : 				if ( lc23 == 1 )
+
+  002b2	83 7d a4 01	 cmp	 DWORD PTR _lc23$46031[ebp], 1
+  002b6	0f 85 18 01 00
+	00		 jne	 $L46061
+
+; 224  : 					int lc24 = 0;
+
+  002bc	c7 45 a0 00 00
+	00 00		 mov	 DWORD PTR _lc24$46041[ebp], 0
+
+; 225  : 
+; 226  : 					if ( (rand() % 5) != 0 )
+
+  002c3	e8 00 00 00 00	 call	 _rand
+  002c8	99		 cdq
+  002c9	b9 05 00 00 00	 mov	 ecx, 5
+  002ce	f7 f9		 idiv	 ecx
+  002d0	85 d2		 test	 edx, edx
+  002d2	0f 84 a6 00 00
+	00		 je	 $L46042
+
+; 228  : 						if ( monsterlevel < 3 )
+
+  002d8	83 7d 08 03	 cmp	 DWORD PTR _monsterlevel$[ebp], 3
+  002dc	7d 09		 jge	 SHORT $L46043
+
+; 230  : 							lc24 = 0;
+
+  002de	c7 45 a0 00 00
+	00 00		 mov	 DWORD PTR _lc24$46041[ebp], 0
+
+; 232  : 						else if ( monsterlevel < 36 ) 
+
+  002e5	eb 52		 jmp	 SHORT $L46054
+$L46043:
+  002e7	83 7d 08 24	 cmp	 DWORD PTR _monsterlevel$[ebp], 36 ; 00000024H
+  002eb	7d 09		 jge	 SHORT $L46045
+
+; 234  : 							lc24 = 1;
+
+  002ed	c7 45 a0 01 00
+	00 00		 mov	 DWORD PTR _lc24$46041[ebp], 1
+
+; 236  : 						else if ( monsterlevel < 47 )
+
+  002f4	eb 43		 jmp	 SHORT $L46054
+$L46045:
+  002f6	83 7d 08 2f	 cmp	 DWORD PTR _monsterlevel$[ebp], 47 ; 0000002fH
+  002fa	7d 09		 jge	 SHORT $L46047
+
+; 238  : 							lc24 = 2;
+
+  002fc	c7 45 a0 02 00
+	00 00		 mov	 DWORD PTR _lc24$46041[ebp], 2
+
+; 240  : 						else if ( monsterlevel < 60 )
+
+  00303	eb 34		 jmp	 SHORT $L46054
+$L46047:
+  00305	83 7d 08 3c	 cmp	 DWORD PTR _monsterlevel$[ebp], 60 ; 0000003cH
+  00309	7d 09		 jge	 SHORT $L46049
+
+; 242  : 							lc24 = 3;
+
+  0030b	c7 45 a0 03 00
+	00 00		 mov	 DWORD PTR _lc24$46041[ebp], 3
+
+; 244  : 						else if ( monsterlevel < 70 )
+
+  00312	eb 25		 jmp	 SHORT $L46054
+$L46049:
+  00314	83 7d 08 46	 cmp	 DWORD PTR _monsterlevel$[ebp], 70 ; 00000046H
+  00318	7d 09		 jge	 SHORT $L46051
+
+; 246  : 							lc24 = 4;
+
+  0031a	c7 45 a0 04 00
+	00 00		 mov	 DWORD PTR _lc24$46041[ebp], 4
+
+; 248  : 						else if ( monsterlevel < 80 )
+
+  00321	eb 16		 jmp	 SHORT $L46054
+$L46051:
+  00323	83 7d 08 50	 cmp	 DWORD PTR _monsterlevel$[ebp], 80 ; 00000050H
+  00327	7d 09		 jge	 SHORT $L46053
+
+; 250  : 							lc24 = 5;
+
+  00329	c7 45 a0 05 00
+	00 00		 mov	 DWORD PTR _lc24$46041[ebp], 5
+
+; 252  : 						else 
+
+  00330	eb 07		 jmp	 SHORT $L46054
+$L46053:
+
+; 254  : 							lc24 = 6;
+
+  00332	c7 45 a0 06 00
+	00 00		 mov	 DWORD PTR _lc24$46041[ebp], 6
+$L46054:
+
+; 256  : 
+; 257  : 						if ( lc24 != 0 )
+
+  00339	83 7d a0 00	 cmp	 DWORD PTR _lc24$46041[ebp], 0
+  0033d	74 3d		 je	 SHORT $L46057
+
+; 259  : 							if ( this->InsertItem(monsterlevel, type, index, 0, 0, 0, 0) != -1 )
+
+  0033f	6a 00		 push	 0
+  00341	6a 00		 push	 0
+  00343	6a 00		 push	 0
+  00345	6a 00		 push	 0
+  00347	8b 55 ec	 mov	 edx, DWORD PTR _index$[ebp]
+  0034a	52		 push	 edx
+  0034b	8b 45 f0	 mov	 eax, DWORD PTR _type$[ebp]
+  0034e	50		 push	 eax
+  0034f	8b 4d 08	 mov	 ecx, DWORD PTR _monsterlevel$[ebp]
+  00352	51		 push	 ecx
+  00353	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00356	e8 00 00 00 00	 call	 ?InsertItem@CMonsterItemMng@@QAEEHHHHHHH@Z ; CMonsterItemMng::InsertItem
+  0035b	25 ff 00 00 00	 and	 eax, 255		; 000000ffH
+  00360	83 f8 ff	 cmp	 eax, -1
+  00363	74 17		 je	 SHORT $L46057
+
+; 261  : 								incount++;
+
+  00365	8b 55 f4	 mov	 edx, DWORD PTR _incount$[ebp]
+  00368	83 c2 01	 add	 edx, 1
+  0036b	89 55 f4	 mov	 DWORD PTR _incount$[ebp], edx
+
+; 262  : 
+; 263  : 								if ( incount > MAX_ITEM_IN_MONSTER -1 )
+
+  0036e	81 7d f4 e7 03
+	00 00		 cmp	 DWORD PTR _incount$[ebp], 999 ; 000003e7H
+  00375	7e 05		 jle	 SHORT $L46057
+
+; 265  : 									return;
+
+  00377	e9 88 01 00 00	 jmp	 $L46004
+$L46057:
+
+; 270  : 					else if ( zzzItemLevel(type, index, monsterlevel ) == TRUE )
+
+  0037c	eb 56		 jmp	 SHORT $L46061
+$L46042:
+  0037e	8b 45 08	 mov	 eax, DWORD PTR _monsterlevel$[ebp]
+  00381	50		 push	 eax
+  00382	8b 4d ec	 mov	 ecx, DWORD PTR _index$[ebp]
+  00385	51		 push	 ecx
+  00386	8b 55 f0	 mov	 edx, DWORD PTR _type$[ebp]
+  00389	52		 push	 edx
+  0038a	e8 00 00 00 00	 call	 ?zzzItemLevel@@YAHHHH@Z	; zzzItemLevel
+  0038f	83 c4 0c	 add	 esp, 12			; 0000000cH
+  00392	83 f8 01	 cmp	 eax, 1
+  00395	75 3d		 jne	 SHORT $L46061
+
+; 272  : 						if ( this->InsertItem(monsterlevel, type, index, 0, 0, 0, 0) != -1 )
+
+  00397	6a 00		 push	 0
+  00399	6a 00		 push	 0
+  0039b	6a 00		 push	 0
+  0039d	6a 00		 push	 0
+  0039f	8b 45 ec	 mov	 eax, DWORD PTR _index$[ebp]
+  003a2	50		 push	 eax
+  003a3	8b 4d f0	 mov	 ecx, DWORD PTR _type$[ebp]
+  003a6	51		 push	 ecx
+  003a7	8b 55 08	 mov	 edx, DWORD PTR _monsterlevel$[ebp]
+  003aa	52		 push	 edx
+  003ab	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  003ae	e8 00 00 00 00	 call	 ?InsertItem@CMonsterItemMng@@QAEEHHHHHHH@Z ; CMonsterItemMng::InsertItem
+  003b3	25 ff 00 00 00	 and	 eax, 255		; 000000ffH
+  003b8	83 f8 ff	 cmp	 eax, -1
+  003bb	74 17		 je	 SHORT $L46061
+
+; 274  : 							incount++;
+
+  003bd	8b 45 f4	 mov	 eax, DWORD PTR _incount$[ebp]
+  003c0	83 c0 01	 add	 eax, 1
+  003c3	89 45 f4	 mov	 DWORD PTR _incount$[ebp], eax
+
+; 275  : 
+; 276  : 							if ( incount > MAX_ITEM_IN_MONSTER -1 )
+
+  003c6	81 7d f4 e7 03
+	00 00		 cmp	 DWORD PTR _incount$[ebp], 999 ; 000003e7H
+  003cd	7e 05		 jle	 SHORT $L46061
+
+; 278  : 								return;
+
+  003cf	e9 30 01 00 00	 jmp	 $L46004
+$L46061:
+
+; 285  : 		else
+
+  003d4	e9 26 01 00 00	 jmp	 $L46082
+$L46024:
+
+; 287  : 			result = GetLevelItem(type, index, monsterlevel);
+
+  003d9	8b 4d 08	 mov	 ecx, DWORD PTR _monsterlevel$[ebp]
+  003dc	51		 push	 ecx
+  003dd	8b 55 ec	 mov	 edx, DWORD PTR _index$[ebp]
+  003e0	52		 push	 edx
+  003e1	8b 45 f0	 mov	 eax, DWORD PTR _type$[ebp]
+  003e4	50		 push	 eax
+  003e5	e8 00 00 00 00	 call	 ?GetLevelItem@@YAHHHH@Z	; GetLevelItem
+  003ea	83 c4 0c	 add	 esp, 12			; 0000000cH
+  003ed	89 45 f8	 mov	 DWORD PTR _result$[ebp], eax
+
+; 288  : 
+; 289  : 			if ( result >= 0 )
+
+  003f0	83 7d f8 00	 cmp	 DWORD PTR _result$[ebp], 0
+  003f4	7c 5c		 jl	 SHORT $L46063
+
+; 291  : 				if ( (type == 13 && index == 10) || (type == 12 && index == 11 ) )
+
+  003f6	83 7d f0 0d	 cmp	 DWORD PTR _type$[ebp], 13 ; 0000000dH
+  003fa	75 06		 jne	 SHORT $L46066
+  003fc	83 7d ec 0a	 cmp	 DWORD PTR _index$[ebp], 10 ; 0000000aH
+  00400	74 0c		 je	 SHORT $L46065
+$L46066:
+  00402	83 7d f0 0c	 cmp	 DWORD PTR _type$[ebp], 12 ; 0000000cH
+  00406	75 45		 jne	 SHORT $L46068
+  00408	83 7d ec 0b	 cmp	 DWORD PTR _index$[ebp], 11 ; 0000000bH
+  0040c	75 3f		 jne	 SHORT $L46068
+$L46065:
+
+; 293  : 					if ( this->InsertItem(monsterlevel, type, index, result, 0,0,0) != -1 )
+
+  0040e	6a 00		 push	 0
+  00410	6a 00		 push	 0
+  00412	6a 00		 push	 0
+  00414	8b 4d f8	 mov	 ecx, DWORD PTR _result$[ebp]
+  00417	51		 push	 ecx
+  00418	8b 55 ec	 mov	 edx, DWORD PTR _index$[ebp]
+  0041b	52		 push	 edx
+  0041c	8b 45 f0	 mov	 eax, DWORD PTR _type$[ebp]
+  0041f	50		 push	 eax
+  00420	8b 4d 08	 mov	 ecx, DWORD PTR _monsterlevel$[ebp]
+  00423	51		 push	 ecx
+  00424	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  00427	e8 00 00 00 00	 call	 ?InsertItem@CMonsterItemMng@@QAEEHHHHHHH@Z ; CMonsterItemMng::InsertItem
+  0042c	25 ff 00 00 00	 and	 eax, 255		; 000000ffH
+  00431	83 f8 ff	 cmp	 eax, -1
+  00434	74 17		 je	 SHORT $L46068
+
+; 295  : 						incount++;
+
+  00436	8b 55 f4	 mov	 edx, DWORD PTR _incount$[ebp]
+  00439	83 c2 01	 add	 edx, 1
+  0043c	89 55 f4	 mov	 DWORD PTR _incount$[ebp], edx
+
+; 296  : 
+; 297  : 						if ( incount > MAX_ITEM_IN_MONSTER -1 )
+
+  0043f	81 7d f4 e7 03
+	00 00		 cmp	 DWORD PTR _incount$[ebp], 999 ; 000003e7H
+  00446	7e 05		 jle	 SHORT $L46068
+
+; 299  : 							return;
+
+  00448	e9 b7 00 00 00	 jmp	 $L46004
+$L46068:
+
+; 304  : 			else if ( result <= maxlevel )
+
+  0044d	e9 ad 00 00 00	 jmp	 $L46082
+$L46063:
+  00452	8b 45 f8	 mov	 eax, DWORD PTR _result$[ebp]
+  00455	3b 45 0c	 cmp	 eax, DWORD PTR _maxlevel$[ebp]
+  00458	0f 8f 8c 00 00
+	00		 jg	 $L46070
+
+; 306  : 				if ( type == 12 )
+
+  0045e	83 7d f0 0c	 cmp	 DWORD PTR _type$[ebp], 12 ; 0000000cH
+  00462	75 0d		 jne	 SHORT $L46072
+
+; 308  : 					if ( index == 11 )
+
+  00464	83 7d ec 0b	 cmp	 DWORD PTR _index$[ebp], 11 ; 0000000bH
+  00468	75 07		 jne	 SHORT $L46072
+
+; 310  : 						result = 0;
+
+  0046a	c7 45 f8 00 00
+	00 00		 mov	 DWORD PTR _result$[ebp], 0
+$L46072:
+
+; 313  : 
+; 314  : 				if ( type == 12 && index == 11 )
+
+  00471	83 7d f0 0c	 cmp	 DWORD PTR _type$[ebp], 12 ; 0000000cH
+  00475	75 08		 jne	 SHORT $L46073
+  00477	83 7d ec 0b	 cmp	 DWORD PTR _index$[ebp], 11 ; 0000000bH
+  0047b	75 02		 jne	 SHORT $L46073
+
+; 318  : 				else
+
+  0047d	eb 0e		 jmp	 SHORT $L46075
+$L46073:
+
+; 320  : 					if ( result > maxlevel )
+
+  0047f	8b 4d f8	 mov	 ecx, DWORD PTR _result$[ebp]
+  00482	3b 4d 0c	 cmp	 ecx, DWORD PTR _maxlevel$[ebp]
+  00485	7e 06		 jle	 SHORT $L46075
+
+; 322  : 						result = maxlevel;
+
+  00487	8b 55 0c	 mov	 edx, DWORD PTR _maxlevel$[ebp]
+  0048a	89 55 f8	 mov	 DWORD PTR _result$[ebp], edx
+$L46075:
+
+; 325  : 
+; 326  : 				if ( (type == 4 && index == 7) || (type == 4 && index == 15) )
+
+  0048d	83 7d f0 04	 cmp	 DWORD PTR _type$[ebp], 4
+  00491	75 06		 jne	 SHORT $L46078
+  00493	83 7d ec 07	 cmp	 DWORD PTR _index$[ebp], 7
+  00497	74 0c		 je	 SHORT $L46077
+$L46078:
+  00499	83 7d f0 04	 cmp	 DWORD PTR _type$[ebp], 4
+  0049d	75 0d		 jne	 SHORT $L46076
+  0049f	83 7d ec 0f	 cmp	 DWORD PTR _index$[ebp], 15 ; 0000000fH
+  004a3	75 07		 jne	 SHORT $L46076
+$L46077:
+
+; 328  : 					result = 0;
+
+  004a5	c7 45 f8 00 00
+	00 00		 mov	 DWORD PTR _result$[ebp], 0
+$L46076:
+
+; 330  : 
+; 331  : 				if ( this->InsertItem(monsterlevel, type, index,result, 0,0,0) != -1 )
+
+  004ac	6a 00		 push	 0
+  004ae	6a 00		 push	 0
+  004b0	6a 00		 push	 0
+  004b2	8b 45 f8	 mov	 eax, DWORD PTR _result$[ebp]
+  004b5	50		 push	 eax
+  004b6	8b 4d ec	 mov	 ecx, DWORD PTR _index$[ebp]
+  004b9	51		 push	 ecx
+  004ba	8b 55 f0	 mov	 edx, DWORD PTR _type$[ebp]
+  004bd	52		 push	 edx
+  004be	8b 45 08	 mov	 eax, DWORD PTR _monsterlevel$[ebp]
+  004c1	50		 push	 eax
+  004c2	8b 4d fc	 mov	 ecx, DWORD PTR _this$[ebp]
+  004c5	e8 00 00 00 00	 call	 ?InsertItem@CMonsterItemMng@@QAEEHHHHHHH@Z ; CMonsterItemMng::InsertItem
+  004ca	25 ff 00 00 00	 and	 eax, 255		; 000000ffH
+  004cf	83 f8 ff	 cmp	 eax, -1
+  004d2	74 14		 je	 SHORT $L46080
+
+; 333  : 					incount++;
+
+  004d4	8b 4d f4	 mov	 ecx, DWORD PTR _incount$[ebp]
+  004d7	83 c1 01	 add	 ecx, 1
+  004da	89 4d f4	 mov	 DWORD PTR _incount$[ebp], ecx
+
+; 334  : 
+; 335  : 					if ( incount > MAX_ITEM_IN_MONSTER-1 )
+
+  004dd	81 7d f4 e7 03
+	00 00		 cmp	 DWORD PTR _incount$[ebp], 999 ; 000003e7H
+  004e4	7e 02		 jle	 SHORT $L46080
+
+; 337  : 						return;
+
+  004e6	eb 1c		 jmp	 SHORT $L46004
+$L46080:
+
+; 342  : 			else if ( this->m_iItemCount[monsterlevel] >= MAX_ITEM_IN_MONSTER )
+
+  004e8	eb 15		 jmp	 SHORT $L46082
+$L46070:
+  004ea	8b 55 08	 mov	 edx, DWORD PTR _monsterlevel$[ebp]
+  004ed	8b 45 fc	 mov	 eax, DWORD PTR _this$[ebp]
+  004f0	81 bc 90 5c 02
+	00 00 e8 03 00
+	00		 cmp	 DWORD PTR [eax+edx*4+604], 1000 ; 000003e8H
+  004fb	7c 02		 jl	 SHORT $L46082
+
+; 344  : 				return;
+
+  004fd	eb 05		 jmp	 SHORT $L46004
+$L46082:
+
+; 347  : 	}
+
+  004ff	e9 ae fb ff ff	 jmp	 $L46015
+$L46016:
+$L46004:
+
+; 348  : }
+
+  00504	5f		 pop	 edi
+  00505	5e		 pop	 esi
+  00506	5b		 pop	 ebx
+  00507	8b e5		 mov	 esp, ebp
+  00509	5d		 pop	 ebp
+  0050a	c2 08 00	 ret	 8
+?gObjGiveItemSearch@CMonsterItemMng@@QAEXHH@Z ENDP	; CMonsterItemMng::gObjGiveItemSearch
+_TEXT	ENDS
+PUBLIC	?id@?$ctype@G@std@@$D				; std::ctype<unsigned short>::id
+;	COMDAT _$E30
+_TEXT	SEGMENT
+_$E30	PROC NEAR					; COMDAT
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	e8 00 00 00 00	 call	 ?id@?$ctype@G@std@@$D	; std::ctype<unsigned short>::id
+  0000e	e8 00 00 00 00	 call	 _$E29
+  00013	5f		 pop	 edi
+  00014	5e		 pop	 esi
+  00015	5b		 pop	 ebx
+  00016	8b e5		 mov	 esp, ebp
+  00018	5d		 pop	 ebp
+  00019	c3		 ret	 0
+_$E30	ENDP
+_TEXT	ENDS
+_DATA	SEGMENT
+COMM	??_B?1???id@?$ctype@G@std@@$D@@9@51:BYTE							; ??_B?1???id@?$ctype@G@std@@$D@@9@51
+_DATA	ENDS
+;	COMDAT ?id@?$ctype@G@std@@$D
+_TEXT	SEGMENT
+?id@?$ctype@G@std@@$D PROC NEAR				; std::ctype<unsigned short>::id, COMDAT
+
+; 467  :                 {_Ctype = _Lobj._Getctype(); }
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	33 c0		 xor	 eax, eax
+  0000b	a0 00 00 00 00	 mov	 al, BYTE PTR ??_B?1???id@?$ctype@G@std@@$D@@9@51 ; ??_B?1???id@?$ctype@G@std@@$D@@9@51
+  00010	83 e0 01	 and	 eax, 1
+  00013	85 c0		 test	 eax, eax
+  00015	75 0f		 jne	 SHORT $L47080
+  00017	8a 0d 00 00 00
+	00		 mov	 cl, BYTE PTR ??_B?1???id@?$ctype@G@std@@$D@@9@51 ; ??_B?1???id@?$ctype@G@std@@$D@@9@51
+  0001d	80 c9 01	 or	 cl, 1
+  00020	88 0d 00 00 00
+	00		 mov	 BYTE PTR ??_B?1???id@?$ctype@G@std@@$D@@9@51, cl ; ??_B?1???id@?$ctype@G@std@@$D@@9@51
+$L47080:
+  00026	5f		 pop	 edi
+  00027	5e		 pop	 esi
+  00028	5b		 pop	 ebx
+  00029	8b e5		 mov	 esp, ebp
+  0002b	5d		 pop	 ebp
+  0002c	c3		 ret	 0
+?id@?$ctype@G@std@@$D ENDP				; std::ctype<unsigned short>::id
+_TEXT	ENDS
+PUBLIC	?id@?$ctype@G@std@@$E				; std::ctype<unsigned short>::id
+;	COMDAT _$E29
+_TEXT	SEGMENT
+_$E29	PROC NEAR					; COMDAT
+
+; 467  :                 {_Ctype = _Lobj._Getctype(); }
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	68 00 00 00 00	 push	 OFFSET FLAT:?id@?$ctype@G@std@@$E ; std::ctype<unsigned short>::id
+  0000e	e8 00 00 00 00	 call	 _atexit
+  00013	83 c4 04	 add	 esp, 4
+  00016	5f		 pop	 edi
+  00017	5e		 pop	 esi
+  00018	5b		 pop	 ebx
+  00019	8b e5		 mov	 esp, ebp
+  0001b	5d		 pop	 ebp
+  0001c	c3		 ret	 0
+_$E29	ENDP
+_TEXT	ENDS
+;	COMDAT ?id@?$ctype@G@std@@$E
+_TEXT	SEGMENT
+?id@?$ctype@G@std@@$E PROC NEAR				; std::ctype<unsigned short>::id, COMDAT
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 40	 sub	 esp, 64			; 00000040H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	5f		 pop	 edi
+  0000a	5e		 pop	 esi
+  0000b	5b		 pop	 ebx
+  0000c	8b e5		 mov	 esp, ebp
+  0000e	5d		 pop	 ebp
+  0000f	c3		 ret	 0
+?id@?$ctype@G@std@@$E ENDP				; std::ctype<unsigned short>::id
+_TEXT	ENDS
+END

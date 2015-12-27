@@ -1,0 +1,404 @@
+//====================================================================================================================================
+//Skill File [Season 6]
+//DaRKav Revision [October 22,2010]
+//====================================================================================================================================
+//ID		=	Id number of the skill
+//Name		=	Name of the skill
+//rLevel	=	Required Level to use the skill
+//Damage	=	Maximum damage caused by skill
+//Mana		=	Mana usage when skill used
+//BP		=	Agility Gauge Usage (Requirement)
+//Dist		=	Distance of the skill
+//Delay		=	[NOT USED ON SERVER] Delay between skill hits
+//rEnergy	=	Required Energy on character
+//rLeader	=	Required Command on character
+//Resist	=	Add extra damage: ICE 0, POISON 1, LIGHTNING 2, FIRE 3, EARTH 4, WIND 5, WATER 6, NONE -1
+//Type		=	Attack Type (True = Magic Dmg Send, False = regular DMG send) 
+//UseType	=	Do not check skill usage status: 0, 4(Masters)
+//Brand		=	[NOT USED ON SERVER] Brand of the skill 
+//Count		=	Any number above 0 means the skill is passive (no dmg caused)
+//Status1	=	1 = do not check skill status if user is Guild Master
+//Status2	=	1 = do not check skill status if user is Guild Assistant
+//Status3	=	1 = do not check skill status if user is Guild Battle Master
+//====================================================================================================================================
+//ID	Name				rLevel	Damage	Mana	BP	Dist	Delay	rEnergy	rLeader	Resist	Type	UseType	Brand	Count	Status1	Status2	Status3	DWSM	DKBK	EME	MG	DL	SUM	RF
+1	"Poison"			30	12	42	0	6	0	100	0	1	1	0	0	0	0	0	0	1	0	0	1	0	0	0
+2	"Meteorite"			21	21	12	0	6	0	100	0	4	1	0	0	0	0	0	0	1	0	0	1	0	1	0
+3	"Lighting"			13	17	15	0	6	0	100	0	2	1	0	0	0	0	0	0	1	0	0	1	0	0	0
+4	"Fire Ball"			5	8	3	0	6	0	100	0	3	1	0	0	0	0	0	0	1	0	0	1	0	1	0
+5	"Flame"				35	25	50	0	6	0	100	0	3	1	0	0	0	0	0	0	1	0	0	1	0	0	0
+6	"Teleport"			17	0	30	0	6	0	100	0	-1	1	0	0	0	0	0	0	1	0	0	0	0	0	0
+7	"Ice"				25	10	38	0	6	0	100	0	0	1	0	0	0	0	0	0	1	0	0	1	0	1	0
+8	"Twister"			40	35	60	0	6	0	100	0	5	1	0	0	0	0	0	0	1	0	0	1	0	0	0
+9	"Evil Spirit"			50	45	90	0	6	0	100	0	-1	1	0	0	0	0	0	0	1	0	0	1	0	0	0
+10	"Hellfire"			60	120	160	0	0	0	100	0	3	1	0	0	0	0	0	0	1	0	0	1	0	0	0
+11	"Power Wave"			9	14	5	0	6	0	100	0	-1	1	0	0	0	0	0	0	1	0	0	1	0	1	0
+12	"Aqua Beam"			74	80	140	0	6	0	110	0	6	1	0	0	0	0	0	0	1	0	0	1	0	0	0
+13	"Cometfall"			80	70	150	0	3	0	150	0	2	1	0	0	0	0	0	0	1	0	0	1	0	0	0
+14	"Inferno"			88	100	200	0	0	0	200	0	3	1	0	0	0	0	0	0	1	0	0	1	0	0	0
+15	"Teleport Ally"			83	0	90	25	6	0	188	0	-1	1	0	0	0	0	0	0	2	0	0	0	0	0	0
+16	"Soul Barrier"			77	0	70	22	6	0	126	0	-1	1	0	0	0	0	0	0	1	0	0	0	0	0	0
+17	"Energy Ball"			2	3	1	0	6	0	100	0	-1	1	0	0	0	0	0	0	1	0	0	1	0	0	0
+18	"Defense"			0	0	30	0	0	0	100	0	-1	-1	0	0	0	0	0	0	0	1	0	1	1	0	0
+19	"Falling Slash"			0	0	9	0	3	0	100	0	-1	0	0	0	0	0	0	0	0	1	0	1	1	0	1
+20	"Lunge"				0	0	9	0	2	0	100	0	-1	0	0	0	0	0	0	0	0	1	0	1	1	0	0
+21	"Uppercut"			0	0	8	0	2	0	100	0	-1	0	0	0	0	0	0	0	0	1	0	1	1	0	0
+22	"Cyclone"			0	0	9	0	2	0	100	0	-1	0	0	0	0	0	0	0	0	1	0	1	1	0	0
+23	"Slash"				0	0	10	0	2	0	100	0	-1	0	0	0	0	0	0	0	0	1	0	1	1	0	0
+24	"Triple Shot"			0	0	5	0	6	0	100	0	-1	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+26	"Heal"				8	0	20	0	6	0	100	0	-1	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+27	"Greater Defense"		13	0	30	0	6	0	100	0	-1	-1	0	0	0	0	0	0	0	0	1	0	0	0	0
+28	"Greater Damage"		18	0	40	0	6	0	100	0	-1	-1	0	0	0	0	0	0	0	0	1	0	0	0	0
+30	"Summon Goblin"			0	0	40	0	0	0	90	0	-1	-1	0	0	0	0	0	0	0	0	1	0	0	0	0
+31	"Summon Stone Golem"		0	0	70	0	0	0	170	0	-1	-1	0	0	0	0	0	0	0	0	1	0	0	0	0
+32	"Summon Assassin"		0	0	110	0	0	0	190	0	-1	-1	0	0	0	0	0	0	0	0	1	0	0	0	0
+33	"Summon Elite Yeti"		0	0	160	0	0	0	230	0	-1	-1	0	0	0	0	0	0	0	0	1	0	0	0	0
+34	"Summon Dark Knight"		0	0	200	0	0	0	250	0	-1	-1	0	0	0	0	0	0	0	0	1	0	0	0	0
+35	"Summon Bali"			0	0	250	0	0	0	260	0	-1	-1	0	0	0	0	0	0	0	0	1	0	0	0	0
+36	"Summon Soldier"		0	0	350	0	0	0	280	0	-1	-1	0	0	0	0	0	0	0	0	1	0	0	0	0
+38	"Decay"				96	95	110	7	6	0	243	0	1	1	0	0	0	0	0	0	2	0	0	0	0	0	0
+39	"Ice Storm"			93	80	100	5	6	0	223	0	0	1	0	0	0	0	0	0	2	0	0	0	0	0	0
+40	"Nova"				100	0	180	45	6	0	258	0	3	1	0	0	0	0	0	0	2	0	0	0	0	0	0
+41	"Twisting Slash"		0	0	10	10	2	0	100	0	5	0	0	0	0	0	0	0	0	1	0	1	0	0	0
+42	"Rageful Blow"			170	60	25	20	3	0	0	0	4	0	0	0	0	0	0	0	0	2	0	0	0	0	0
+43	"Death Stab"			160	70	15	12	2	0	0	0	5	0	0	0	0	0	0	0	0	2	0	0	0	0	0
+44	"Crescent Moon Slash"		0	90	22	15	4	0	0	0	-1	-1	0	75	0	0	0	0	0	1	0	0	0	0	0
+45	"Mana Glaive"			0	90	150	10	6	0	0	0	-1	-1	0	75	0	0	0	0	1	0	0	0	0	1	0
+46	"Starfall"			0	120	20	15	8	0	0	0	-1	-1	0	75	0	0	0	0	0	0	1	0	0	0	0
+47	"Impale"			28	15	8	0	3	0	0	0	-1	0	0	0	0	0	0	0	0	1	0	1	0	0	0
+48	"Greater Fortitude"		120	0	22	24	0	0	0	0	-1	-1	0	0	0	0	0	0	0	1	0	0	0	0	0
+49	"Fire Breath"			110	30	9	0	3	0	0	0	-1	0	0	0	0	0	0	0	0	1	0	0	0	0	0
+50	"Flame of Evil Monster"		60	120	160	0	0	0	100	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	0	0
+51	"Ice Arrow"			0	105	10	12	8	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0
+52	"Penetration"			130	70	7	9	6	0	0	0	5	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+53	"Add Elf Skill"			84	0	70	40	0	0	0	0	-1	-1	0	0	0	0	0	0	0	0	2	0	0	0	0
+55	"Fire Slash"			0	80	15	20	2	0	0	0	1	-1	0	0	0	0	0	0	0	0	0	1	0	0	0
+56	"Power Slash"			0	0	15	0	5	0	100	0	-1	-1	0	0	0	0	0	0	0	0	0	1	0	0	0
+57	"Spiral Slash"			0	75	20	15	5	0	0	0	-1	-1	0	75	0	0	0	0	0	0	0	1	0	0	0
+60	"Force"				0	10	10	0	4	0	0	0	-1	1	0	0	0	0	0	0	0	0	0	0	1	0	0
+61	"FireBurst"			74	100	25	0	6	0	20	0	-1	1	0	0	0	0	0	0	0	0	0	0	1	0	0
+62	"Earthshake"			0	150	0	50	10	10000	0	0	2	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+63	"Summon"			98	0	70	30	0	30000	34	400	-1	-1	0	0	0	0	0	0	0	0	0	0	1	0	0
+64	"Increase Critical Dmg"		82	0	50	50	0	0	25	300	-1	-1	0	0	0	0	0	0	0	0	0	0	1	0	0
+65	"Electric Spike"		92	250	0	100	10	5000	29	340	-1	1	0	0	0	0	0	0	0	0	0	0	1	0	0
+66	"Force Wave"			0	50	10	0	4	0	0	0	-1	1	0	0	0	0	0	0	0	0	0	0	1	0	0
+67	"Stern"				0	0	70	50	2	0	0	0	-1	-1	1	0	4	0	0	1	1	1	1	1	1	1	0
+68	"Cancel Stern"			0	0	25	30	0	0	0	0	-1	-1	1	0	2	0	0	1	1	1	1	1	1	1	0
+69	"Swell Mana"			0	0	35	30	0	0	0	0	-1	-1	1	0	4	0	0	1	1	1	1	1	1	1	0
+70	"Transparency"			0	0	80	60	0	0	0	0	-1	-1	1	0	5	1	1	0	1	1	1	1	1	1	0
+71	"Cancel Transparency"		0	0	40	30	0	0	0	0	-1	-1	1	0	2	1	1	0	1	1	1	1	1	1	0
+72	"Cancel Magic"			0	0	90	70	0	0	0	0	-1	-1	1	0	8	1	0	0	0	0	0	0	1	0	0
+73	"Mana Rays"			0	85	130	7	6	0	0	0	-1	-1	0	75	0	0	0	0	0	0	0	1	0	0	0
+74	"Fire Blast"			0	150	30	10	6	0	0	0	-1	-1	0	75	0	0	0	0	0	0	0	0	1	0	0
+76	"Plasma Storm"			110	60	50	20	6	1500	0	0	-1	0	0	0	0	0	0	0	2	2	2	1	1	2	1
+77	"Shadow Arrow"			220	0	50	10	6	200	0	0	-1	-1	0	0	0	0	0	0	0	0	1	0	0	0	0
+78	"Fire Scream"			102	130	45	10	6	0	32	70	-1	-1	0	0	0	0	0	0	0	0	0	0	1	0	0
+79	"Explosion"			0	0	0	0	2	0	1	255	1	1	0	0	0	0	0	0	0	0	0	0	1	0	0
+80	"Drain Life"			35	35	50	0	6	0	93	0	-1	-1	0	255	0	0	0	0	0	0	0	0	0	0	0
+
+//ID	Name				rLevel	Damage	Mana	BP	Dist	Delay	rEnergy	rLeader	Resist	Type	UseType	Brand	Count	Status1	Status2	Status3	DWSM	DKBK	EME	MG	DL	SUM	RF
+200	"Summon Monster"		0	0	40	0	0	0	90	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	0	0
+201	"Magic Attack Immunity"		0	0	40	0	0	0	90	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	0	0
+202	"Physical Attack Immu."		0	0	40	0	0	0	90	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	0	0
+203	"Potion of Bless"		0	0	40	0	0	0	90	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	0	0
+204	"Potion of Soul"		0	0	40	0	0	0	90	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	0	0
+210	"Magic Shield Order"		0	0	30	0	3	0	90	0	-1	-1	0	0	1280	0	0	0	1	1	1	1	1	1	0
+211	"Restraint Order"		0	0	30	0	3	0	90	0	-1	-1	0	0	1280	0	0	0	1	1	1	1	1	1	0
+212	"Tracking Order"		0	0	30	0	0	0	90	0	-1	-1	0	0	2560	0	0	0	1	1	1	1	1	1	0
+213	"Freeze Time"			0	0	30	0	3	0	90	0	-1	-1	0	0	1280	0	0	0	1	1	1	1	1	1	0
+214	"Drain Life"			35	35	50	0	6	0	93	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+215	"Chain Lighting"		75	70	85	0	6	0	75	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+216	"Electric Surge"		80	90	100	0	6	0	75	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+217	"Reflex"			80	10	40	10	5	0	136	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+218	"Sword Power"			83	15	40	5	6	0	160	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+219	"Sleep"				40	10	20	3	6	0	1	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+220	"Night"				50	10	30	3	6	0	1	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+221	"MagicSpeed Up"			93	15	50	5	6	0	160	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+222	"MagicDefense Up"		111	15	70	5	6	0	160	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+223	"Sahamutt"			50	40	85	5	6	0	160	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+224	"Neil"				75	65	110	10	6	0	160	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+225	"Ghost Phantom"			85	80	120	15	6	0	160	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	1	0
+230	"Lightning Shock"		93	95	120	0	6	0	160	0	3	1	0	0	0	0	0	0	0	0	0	0	0	1	0
+232	"Explotion"			220	110	20	0	6	0	160	0	3	1	0	0	0	0	0	0	0	2	0	0	0	0	0
+233	"Magic Circle"			121	0	200	5	6	0	160	0	-1	-1	0	0	0	0	0	0	2	0	0	0	0	0	0
+234	"Reduce Dmg Shield"		220	0	30	5	6	0	160	0	-1	-1	0	0	0	0	0	0	0	0	2	0	0	0	0
+235	"Five Shot"			220	40	10	0	6	0	120	0	-1	0	0	0	0	0	0	0	0	0	2	0	0	0	0
+236	"Sword Slash"			220	140	20	0	6	0	100	0	-1	0	0	0	0	0	0	0	0	0	0	1	0	0	0
+237	"Lighting Storm"		220	110	120	5	6	0	255	0	0	1	0	0	0	0	0	0	2	0	0	1	0	0	0
+238	"Birds"				220	190	50	10	6	0	160	0	-1	-1	0	0	0	0	0	0	0	0	0	0	1	0	0
+239	"Dopper Self Explosion Skill"	100	140	20	25	3	0	0	0	3	-1	0	0	0	0	0	0	0	0	0	1	0	0	0
+
+//Season 6
+//ID	Name				rLevel	Damage	Mana	BP	Dist	Delay	rEnergy	rLeader	Resist	Type	UseType	Brand	Count	Status1	Status2	Status3	DWSM	DKBK	EME	MG	DL	SUM	RF
+260	"Large Ring Blower"		0	0	9	0	2	0	0	0	4	-1	0	0	0	0	0	0	0	0	0	0	0	0	1
+261	"Upper Beast"			0	0	9	0	2	0	0	0	3	-1	0	0	0	0	0	0	0	0	0	0	0	0	1
+262	"Chain Drive"			150	0	15	20	4	700	0	0	0	-1	0	0	0	0	0	0	0	0	0	0	0	0	1
+263	"Dark Side"			180	0	70	0	4	0	0	0	5	-1	0	0	0	0	0	0	0	0	0	0	0	0	1
+264	"Dragon Lore"			150	0	50	30	3	700	0	0	4	-1	0	0	0	0	0	0	0	0	0	0	0	0	1
+265	"Dragon Slayer"			200	0	100	100	4	3000	0	0	5	-1	0	0	0	0	0	0	0	0	0	0	0	0	1
+266	"Red Armor Ignore"		120	0	50	10	3	0	80	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	0	1
+267	"Fitness"			80	0	50	10	7	0	35	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	0	1
+268	"Defense success rate increase"	50	0	50	10	7	0	30	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	0	1
+269	"Charge"			0	90	20	15	4	0	0	0	-1	-1	0	0	0	0	0	0	0	0	0	0	0	0	1
+270	"Phoenix G"			0	0	30	0	4	1200	0	0	4	-1	0	0	0	0	0	0	0	0	0	0	0	0	1
+
+//====================================================================================================================================
+//SkillTree
+//====================================================================================================================================
+//ID	Name				rLevel	Damage	Mana	BP	Dist	Delay	rEnergy	rLeader	Resist	Type	UseType	Brand	Count	Status1	Status2	Status3	DWSM	DKBK	EME	MG	DL	SUM	RF
+300	"Rise Attack Success Rate"	1	400	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+301	"Rise Attack Success Rate"	2	900	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+302	"Rise Attack Success Rate"	3	1600	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+303	"Rise Attack Success Rate"	4	2700	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+304	"Rise Attack Success Rate"	5	4400	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+305	"Advanced Attack Success Rate"	1	1000	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+306	"Advanced Attack Success Rate"	2	2300	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+307	"Advanced Attack Success Rate"	3	4000	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+308	"Advanced Attack Success Rate"	4	6500	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+309	"Advanced Attack Success Rate"	5	10000	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+310	"Advanced Defense Success Rate"	1	600	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+311	"Advanced Defense Success Rate"	2	1300	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+312	"Advanced Defense Success Rate"	3	2100	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+313	"Advanced Defense Success Rate"	4	3000	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+314	"Advanced Defense Success Rate"	5	4000	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+315	"Repair Level 1"		1	20	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+316	"Repair Level 1"		2	40	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+317	"Repair Level 1"		3	60	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+318	"Repair Level 1"		4	80	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+319	"Repair Level 1"		5	100	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+320	"Repair Level 2"		1	20	0	0	0	0	0	0	-1	-1	3	63	0	0	0	0	3	3	3	3	3	3	3
+321	"Repair Level 2"		2	40	0	0	0	0	0	0	-1	-1	3	64	0	0	0	0	3	3	3	3	3	3	3
+322	"Repair Level 2"		3	60	0	0	0	0	0	0	-1	-1	3	65	0	0	0	0	3	3	3	3	3	3	3
+323	"Repair Level 2"		4	80	0	0	0	0	0	0	-1	-1	3	66	0	0	0	0	3	3	3	3	3	3	3
+324	"Repair Level 2"		5	100	0	0	0	0	0	0	-1	-1	3	67	0	0	0	0	3	3	3	3	3	3	3
+325	"Poison Resistance"		1	1	0	0	0	0	0	0	1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+326	"Poison Resistance"		2	2	0	0	0	0	0	0	1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+327	"Poison Resistance"		3	3	0	0	0	0	0	0	1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+328	"Poison Resistance"		4	4	0	0	0	0	0	0	1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+329	"Poison Resistance"		5	5	0	0	0	0	0	0	1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+330	"Lightning Resistance"		1	1	0	0	0	0	0	0	2	-1	3	73	0	0	0	0	3	3	3	3	3	3	3
+331	"Lightning Resistance"		2	2	0	0	0	0	0	0	2	-1	3	74	0	0	0	0	3	3	3	3	3	3	3
+332	"Lightning Resistance"		3	3	0	0	0	0	0	0	2	-1	3	75	0	0	0	0	3	3	3	3	3	3	3
+333	"Lightning Resistance"		4	4	0	0	0	0	0	0	2	-1	3	76	0	0	0	0	3	3	3	3	3	3	3
+334	"Lightning Resistance"		5	5	0	0	0	0	0	0	2	-1	3	77	0	0	0	0	3	3	3	3	3	3	3
+335	"Ice Resistance"		1	1	0	0	0	0	0	0	0	-1	3	78	0	0	0	0	3	3	3	3	3	3	3
+336	"Ice Resistance"		2	2	0	0	0	0	0	0	0	-1	3	79	0	0	0	0	3	3	3	3	3	3	3
+337	"Ice Resistance"		3	3	0	0	0	0	0	0	0	-1	3	80	0	0	0	0	3	3	3	3	3	3	3
+338	"Ice Resistance"		4	4	0	0	0	0	0	0	0	-1	3	81	0	0	0	0	3	3	3	3	3	3	3
+339	"Ice Resistance"		5	5	0	0	0	0	0	0	0	-1	3	82	0	0	0	0	3	3	3	3	3	3	3
+340	"Increase Auto-Regeneration"	1	1	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+341	"Increase Auto-Regeneration"	2	2	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+342	"Increase Auto-Regeneration"	3	3	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+343	"Increase Auto-Regeneration"	4	4	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+344	"Increase Auto-Regeneration"	5	5	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+345	"Increase Zen"			1	40	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+346	"Increase Zen"			2	80	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+347	"Increase Zen"			3	120	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+348	"Increase Zen"			4	160	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+349	"Increase Zen"			5	200	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+350	"Increase defense"		1	50	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+351	"Increase defense"		2	100	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+352	"Increase defense"		3	150	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+353	"Increase defense"		4	200	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+354	"Increase defense"		5	250	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+355	"Increase max HP"		1	50	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+356	"Increase max HP"		2	100	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+357	"Increase max HP"		3	150	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+358	"Increase max HP"		4	200	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+359	"Increase max HP"		5	300	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+360	"Increase max AG"		1	60	0	0	0	0	0	0	-1	-1	3	103	0	0	0	0	3	3	3	3	3	3	3
+361	"Increase max AG"		2	120	0	0	0	0	0	0	-1	-1	3	104	0	0	0	0	3	3	3	3	3	3	3
+362	"Increase max AG"		3	180	0	0	0	0	0	0	-1	-1	3	105	0	0	0	0	3	3	3	3	3	3	3
+363	"Increase max AG"		4	240	0	0	0	0	0	0	-1	-1	3	106	0	0	0	0	3	3	3	3	3	3	3
+364	"Increase max AG"		5	300	0	0	0	0	0	0	-1	-1	3	107	0	0	0	0	3	3	3	3	3	3	3
+365	"Increase recover Mana"		1	40	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+366	"Increase recover Mana"		2	20	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+367	"Increase recover Mana"		3	14	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+368	"Increase recover Mana"		4	10	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+369	"Increase recover Mana"		5	8	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+370	"Increase recover Life"		1	40	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+371	"Increase recover Life"		2	20	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+372	"Increase recover Life"		3	14	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+373	"Increase recover Life"		4	10	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+374	"Increase recover Life"		5	8	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+375	"Increase recover SD"		1	7	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+376	"Increase recover SD"		2	6	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+377	"Increase recover SD"		3	5	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+378	"Increase recover SD"		4	4	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+379	"Increase recover SD"		5	3	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+380	"Increase Experience"		1	8	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+381	"Increase Experience"		2	16	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+382	"Increase Experience"		3	24	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+383	"Increase Experience"		4	32	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+384	"Increase Experience"		5	40	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+385	"Increase max SD"		1	300	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+386	"Increase max SD"		2	450	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+387	"Increase max SD"		3	600	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+388	"Increase max SD"		4	750	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+389	"Increase max SD"		5	900	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+390	"Increase SD recovery rate"	1	10	0	0	0	0	0	0	-1	-1	3	133	0	0	0	0	3	3	3	3	3	3	3
+391	"Increase SD recovery rate"	2	20	0	0	0	0	0	0	-1	-1	3	134	0	0	0	0	3	3	3	3	3	3	3
+392	"Increase SD recovery rate"	3	30	0	0	0	0	0	0	-1	-1	3	135	0	0	0	0	3	3	3	3	3	3	3
+393	"Increase SD recovery rate"	4	40	0	0	0	0	0	0	-1	-1	3	136	0	0	0	0	3	3	3	3	3	3	3
+394	"Increase SD recovery rate"	5	50	0	0	0	0	0	0	-1	-1	3	137	0	0	0	0	3	3	3	3	3	3	3
+395	"Increase max damage"		1	10	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+396	"Increase max damage"		2	20	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+397	"Increase max damage"		3	30	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+398	"Increase max damage"		4	40	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+399	"Increase max damage"		5	50	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+400	"Increase min damage"		1	8	0	0	0	0	0	0	-1	-1	3	143	0	0	0	0	3	3	3	3	3	3	3
+401	"Increase min damage"		2	16	0	0	0	0	0	0	-1	-1	3	144	0	0	0	0	3	3	3	3	3	3	3
+402	"Increase min damage"		3	24	0	0	0	0	0	0	-1	-1	3	145	0	0	0	0	3	3	3	3	3	3	3
+403	"Increase min damage"		4	32	0	0	0	0	0	0	-1	-1	3	146	0	0	0	0	3	3	3	3	3	3	3
+404	"Increase min damage"		5	40	0	0	0	0	0	0	-1	-1	3	147	0	0	0	0	3	3	3	3	3	3	3
+405	"Increase mana reduction"	1	5	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+406	"Increase mana reduction"	2	10	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+407	"Increase mana reduction"	3	15	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+408	"Increase mana reduction"	4	20	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+409	"Increase mana reduction"	5	25	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+410	"Increase maximum skill power"	1	10	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+411	"Increase maximum skill power"	2	20	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+412	"Increase maximum skill power"	3	30	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+413	"Increase maximum skill power"	4	40	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+414	"Increase maximum skill power"	5	50	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+415	"Increase minimum skill power"	1	8	0	0	0	0	0	0	-1	-1	3	158	0	0	0	0	3	3	3	3	3	3	3
+416	"Increase minimum skill power"	2	16	0	0	0	0	0	0	-1	-1	3	159	0	0	0	0	3	3	3	3	3	3	3
+417	"Increase minimum skill power"	3	24	0	0	0	0	0	0	-1	-1	3	160	0	0	0	0	3	3	3	3	3	3	3
+418	"Increase minimum skill power"	4	32	0	0	0	0	0	0	-1	-1	3	161	0	0	0	0	3	3	3	3	3	3	3
+419	"Increase minimum skill power"	5	40	0	0	0	0	0	0	-1	-1	3	162	0	0	0	0	3	3	3	3	3	3	3
+420	"Decrease pet durability wane"	1	100	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+421	"Decrease pet durability wane"	2	200	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+422	"Decrease pet durability wane"	3	300	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+423	"Decrease pet durability wane"	4	400	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+424	"Decrease pet durability wane"	5	500	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+425	"Increase max kill dmg power"	1	10	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+426	"Increase max kill dmg power"	2	20	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+427	"Increase max kill dmg power"	3	30	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+428	"Increase max kill dmg power"	4	40	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+429	"Increase max kill dmg power"	5	50	0	0	0	0	0	0	-1	-1	3	0	0	0	0	0	3	3	3	3	3	3	3
+430	"Increase min kill dmg power"	1	8	0	0	0	0	0	0	-1	-1	3	173	0	0	0	0	3	3	3	3	3	3	3
+431	"Increase min kill dmg power"	2	16	0	0	0	0	0	0	-1	-1	3	174	0	0	0	0	3	3	3	3	3	3	3
+432	"Increase min kill dmg power"	3	24	0	0	0	0	0	0	-1	-1	3	175	0	0	0	0	3	3	3	3	3	3	3
+433	"Increase min kill dmg power"	4	32	0	0	0	0	0	0	-1	-1	3	176	0	0	0	0	3	3	3	3	3	3	3
+434	"Increase min kill dmg power"	5	40	0	0	0	0	0	0	-1	-1	3	177	0	0	0	0	3	3	3	3	3	3	3
+435	"Increase Soul Barrier Skill"	1	3	77	24	6	0	126	0	-1	-1	4	16	0	0	0	0	3	3	3	3	3	3	3
+436	"Increase Soul Barrier Skill"	2	6	84	26	6	0	126	0	-1	-1	4	179	0	0	0	0	3	3	3	3	3	3	3
+437	"Increase Soul Barrier Skill"	3	9	91	28	6	0	126	0	-1	-1	4	180	0	0	0	0	3	3	3	3	3	3	3
+438	"Increase Soul Barrier Skill"	4	12	98	30	6	0	126	0	-1	-1	4	181	0	0	0	0	3	3	3	3	3	3	3
+439	"Increase Soul Barrier Skill"	5	15	105	33	6	0	126	0	-1	-1	4	182	0	0	0	0	3	3	3	3	3	3	3
+440	"Increase Hellfire Skill"	1	135	176	0	0	0	100	0	3	-1	4	10	0	0	0	0	3	3	3	3	3	3	3
+441	"Increase Hellfire Skill"	2	150	192	0	0	0	100	0	3	-1	4	184	0	0	0	0	3	3	3	3	3	3	3
+442	"Increase Hellfire Skill"	3	165	208	0	0	0	100	0	3	-1	4	185	0	0	0	0	3	3	3	3	3	3	3
+443	"Increase Hellfire Skill"	4	180	224	0	0	0	100	0	3	-1	4	186	0	0	0	0	3	3	3	3	3	3	3
+444	"Increase Hellfire Skill"	5	195	240	0	0	0	100	0	3	-1	4	187	0	0	0	0	3	3	3	3	3	3	3
+445	"Increase Evil Spirits Skill"	1	50	99	0	6	0	100	0	-1	-1	4	9	0	0	0	0	3	3	3	3	3	3	3
+446	"Increase Evil Spirits Skill"	2	55	108	0	6	0	100	0	-1	-1	4	189	0	0	0	0	3	3	3	3	3	3	3
+447	"Increase Evil Spirits Skill"	3	60	117	0	6	0	100	0	-1	-1	4	190	0	0	0	0	3	3	3	3	3	3	3
+448	"Increase Evil Spirits Skill"	4	65	126	0	6	0	100	0	-1	-1	4	191	0	0	0	0	3	3	3	3	3	3	3
+449	"Increase Evil Spirits Skill"	5	70	135	0	6	0	100	0	-1	-1	4	192	0	0	0	0	3	3	3	3	3	3	3
+450	"Increase Ice skill"		1	85	110	5	6	0	223	0	0	-1	4	39	0	0	0	0	3	3	3	3	3	3	3
+451	"Increase Ice skill"		2	90	120	6	6	0	223	0	0	-1	4	194	0	0	0	0	3	3	3	3	3	3	3
+452	"Increase Ice skill"		3	95	130	6	6	0	223	0	0	-1	4	195	0	0	0	0	3	3	3	3	3	3	3
+453	"Increase Ice skill"		4	100	140	7	6	0	223	0	0	-1	4	196	0	0	0	0	3	3	3	3	3	3	3
+454	"Increase Ice skill"		5	105	150	7	6	0	223	0	0	-1	4	197	0	0	0	0	3	3	3	3	3	3	3
+455	"Increase Twisting Slash Skill"	1	2	10	10	2	0	0	0	5	-1	4	41	0	0	0	0	3	3	3	3	3	3	3
+456	"Increase Twisting Slash Skill"	2	4	10	10	2	0	0	0	5	-1	4	199	0	0	0	0	3	3	3	3	3	3	3
+457	"Increase Twisting Slash Skill"	3	6	10	10	2	0	0	0	5	-1	4	200	0	0	0	0	3	3	3	3	3	3	3
+458	"Increase Twisting Slash Skill"	4	8	10	10	2	0	0	0	5	-1	4	201	0	0	0	0	3	3	3	3	3	3	3
+459	"Increase Twisting Slash Skill"	5	10	10	10	3	0	0	0	5	-1	4	202	0	0	0	0	3	3	3	3	3	3	3
+460	"Increase Death Stab Skill"	1	75	15	13	2	0	0	0	5	-1	4	43	0	0	0	0	3	3	3	3	3	3	3
+461	"Increase Death Stab Skill"	2	80	15	14	2	0	0	0	5	-1	4	204	0	0	0	0	3	3	3	3	3	3	3
+462	"Increase Death Stab Skill"	3	85	15	15	2	0	0	0	5	-1	4	205	0	0	0	0	3	3	3	3	3	3	3
+463	"Increase Death Stab Skill"	4	90	15	16	2	0	0	0	5	-1	4	206	0	0	0	0	3	3	3	3	3	3	3
+464	"Increase Death Stab Skill"	5	95	15	18	3	0	0	0	5	-1	4	207	0	0	0	0	3	3	3	3	3	3	3
+465	"Increase Rageful Blow Skill"	1	65	25	22	3	0	0	0	4	-1	4	42	0	0	0	0	3	3	3	3	3	3	3
+466	"Increase Rageful Blow Skill"	2	70	25	24	3	0	0	0	4	-1	4	209	0	0	0	0	3	3	3	3	3	3	3
+467	"Increase Rageful Blow Skill"	3	75	25	26	3	0	0	0	4	-1	4	210	0	0	0	0	3	3	3	3	3	3	3
+468	"Increase Rageful Blow Skill"	4	80	25	28	3	0	0	0	4	-1	4	211	0	0	0	0	3	3	3	3	3	3	3
+469	"Increase Rageful Blow Skill"	5	85	25	30	4	0	0	0	4	-1	4	212	0	0	0	0	3	3	3	3	3	3	3
+470	"Increase Fortitude Skill"	1	2	22	26	0	0	0	0	-1	-1	4	48	0	0	0	0	3	3	3	3	3	3	3
+471	"Increase Fortitude Skill"	2	4	22	28	0	0	0	0	-1	-1	4	214	0	0	0	0	3	3	3	3	3	3	3
+472	"Increase Fortitude Skill"	3	6	22	31	0	0	0	0	-1	-1	4	215	0	0	0	0	3	3	3	3	3	3	3
+473	"Increase Fortitude Skill"	4	8	22	33	0	0	0	0	-1	-1	4	216	0	0	0	0	3	3	3	3	3	3	3
+474	"Increase Fortitude Skill"	5	10	22	36	0	0	0	0	-1	-1	4	217	0	0	0	0	3	3	3	3	3	3	3
+475	"Increase Heal Skill"		1	10	22	0	6	0	100	0	-1	-1	4	26	0	0	0	0	3	3	3	3	3	3	3
+476	"Increase Heal Skill"		2	20	24	0	6	0	100	0	-1	-1	4	219	0	0	0	0	3	3	3	3	3	3	3
+477	"Increase Heal Skill"		3	30	26	0	6	0	100	0	-1	-1	4	220	0	0	0	0	3	3	3	3	3	3	3
+478	"Increase Heal Skill"		4	40	28	0	6	0	100	0	-1	-1	4	221	0	0	0	0	3	3	3	3	3	3	3
+479	"Increase Heal Skill"		5	50	30	0	6	0	100	0	-1	-1	4	222	0	0	0	0	3	3	3	3	3	3	3
+480	"Increase Defence Skill"	1	76	33	0	6	0	100	0	-1	-1	4	27	0	0	0	0	3	3	3	3	3	3	3
+481	"Increase Defence Skill"	2	72	36	0	6	0	100	0	-1	-1	4	224	0	0	0	0	3	3	3	3	3	3	3
+482	"Increase Defence Skill"	3	68	39	0	6	0	100	0	-1	-1	4	225	0	0	0	0	3	3	3	3	3	3	3
+483	"Increase Defence Skill"	4	64	42	0	6	0	100	0	-1	-1	4	226	0	0	0	0	3	3	3	3	3	3	3
+484	"Increase Defence Skill"	5	60	45	0	6	0	100	0	-1	-1	4	227	0	0	0	0	3	3	3	3	3	3	3
+485	"Increase Damage Skill"		1	67	44	0	6	0	100	0	-1	-1	4	28	0	0	0	0	3	3	3	3	3	3	3
+486	"Increase Damage Skill"		2	62	48	0	6	0	100	0	-1	-1	4	229	0	0	0	0	3	3	3	3	3	3	3
+487	"Increase Damage Skill"		3	59	52	0	6	0	100	0	-1	-1	4	230	0	0	0	0	3	3	3	3	3	3	3
+488	"Increase Damage Skill"		4	56	56	0	6	0	100	0	-1	-1	4	231	0	0	0	0	3	3	3	3	3	3	3
+489	"Increase Damage Skill"		5	53	60	0	6	0	100	0	-1	-1	4	232	0	0	0	0	3	3	3	3	3	3	3
+490	"Increase Triple Shot Skill"	1	2	5	0	6	0	0	0	-1	-1	4	24	0	0	0	0	3	3	3	3	3	3	3
+491	"Increase Triple Shot Skill"	2	4	5	0	6	0	0	0	-1	-1	4	234	0	0	0	0	3	3	3	3	3	3	3
+492	"Increase Triple Shot Skill"	3	6	5	0	6	0	0	0	-1	-1	4	235	0	0	0	0	3	3	3	3	3	3	3
+493	"Increase Triple Shot Skill"	4	8	5	0	6	0	0	0	-1	-1	4	236	0	0	0	0	3	3	3	3	3	3	3
+494	"Increase Triple Shot Skill"	5	10	5	0	6	0	0	0	-1	-1	4	237	0	0	0	0	3	3	3	3	3	3	3
+495	"Increase Twisting Slash Skill"	1	2	10	11	2	0	0	0	5	-1	4	41	0	0	0	0	3	3	3	3	3	3	3
+496	"Increase Twisting Slash Skill"	2	4	10	12	2	0	0	0	5	-1	4	239	0	0	0	0	3	3	3	3	3	3	3
+497	"Increase Twisting Slash Skill"	3	6	10	13	2	0	0	0	5	-1	4	240	0	0	0	0	3	3	3	3	3	3	3
+498	"Increase Twisting Slash Skill"	4	8	10	14	2	0	0	0	5	-1	4	241	0	0	0	0	3	3	3	3	3	3	3
+499	"Increase Twisting Slash Skill"	5	10	10	15	3	0	0	0	5	-1	4	242	0	0	0	0	3	3	3	3	3	3	3
+500	"Increase Fire Slash Skill"	1	85	15	22	2	0	0	0	1	-1	4	55	0	0	0	0	3	3	3	3	3	3	3
+501	"Increase Fire Slash Skill"	2	90	15	24	2	0	0	0	1	-1	4	244	0	0	0	0	3	3	3	3	3	3	3
+502	"Increase Fire Slash Skill"	3	95	15	26	2	0	0	0	1	-1	4	245	0	0	0	0	3	3	3	3	3	3	3
+503	"Increase Fire Slash Skill"	4	100	15	28	2	0	0	0	1	-1	4	246	0	0	0	0	3	3	3	3	3	3	3
+504	"Increase Fire Slash Skill"	5	105	15	30	3	0	0	0	1	-1	4	247	0	0	0	0	3	3	3	3	3	3	3
+505	"Increase Power Slash Skill"	1	5	15	0	5	0	100	0	-1	-1	4	56	0	0	0	0	3	3	3	3	3	3	3
+506	"Increase Power Slash Skill"	2	10	15	0	5	0	100	0	-1	-1	4	249	0	0	0	0	3	3	3	3	3	3	3
+507	"Increase Power Slash Skill"	3	15	15	0	5	0	100	0	-1	-1	4	250	0	0	0	0	3	3	3	3	3	3	3
+508	"Increase Power Slash Skill"	4	20	15	0	5	0	100	0	-1	-1	4	251	0	0	0	0	3	3	3	3	3	3	3
+509	"Increase Power Slash Skill"	5	25	15	0	6	0	100	0	-1	-1	4	252	0	0	0	0	3	3	3	3	3	3	3
+510	"Increase Cometfall Skill"	1	80	165	0	3	0	150	0	2	-1	4	13	0	0	0	0	3	3	3	3	3	3	3
+511	"Increase Cometfall Skill"	2	90	180	0	3	0	150	0	2	-1	4	254	0	0	0	0	3	3	3	3	3	3	3
+512	"Increase Cometfall Skill"	3	100	195	0	3	0	150	0	2	-1	4	255	0	0	0	0	3	3	3	3	3	3	3
+513	"Increase Cometfall Skill"	4	110	210	0	3	0	150	0	2	-1	4	0	0	0	0	0	3	3	3	3	3	3	3
+514	"Increase Cometfall Skill"	5	120	225	0	4	0	150	0	2	-1	4	1	0	0	0	0	3	3	3	3	3	3	3
+515	"Increase Earth Shake Skill"	1	155	0	55	10	10000	0	0	2	-1	4	62	0	0	0	0	3	3	3	3	3	3	3
+516	"Increase Earth Shake Skill"	2	160	0	60	10	10000	0	0	2	-1	4	3	0	0	0	0	3	3	3	3	3	3	3
+517	"Increase Earth Shake Skill"	3	165	0	65	10	10000	0	0	2	-1	4	4	0	0	0	0	3	3	3	3	3	3	3
+518	"Increase Earth Shake Skill"	4	170	0	70	10	10000	0	0	2	-1	4	5	0	0	0	0	3	3	3	3	3	3	3
+519	"Increase Earth Shake Skill"	5	175	0	75	10	10000	0	0	2	-1	4	6	0	0	0	0	3	3	3	3	3	3	3
+520	"Increase Fire Burst Skill"	1	105	25	0	6	0	20	0	-1	-1	4	61	0	0	0	0	3	3	3	3	3	3	3
+521	"Increase Fire Burst Skill"	2	110	25	0	6	0	20	0	-1	-1	4	8	0	0	0	0	3	3	3	3	3	3	3
+522	"Increase Fire Burst Skill"	3	115	25	0	6	0	20	0	-1	-1	4	9	0	0	0	0	3	3	3	3	3	3	3
+523	"Increase Fire Burst Skill"	4	120	25	0	6	0	20	0	-1	-1	4	10	0	0	0	0	3	3	3	3	3	3	3
+524	"Increase Fire Burst Skill"	5	125	25	0	6	0	20	0	-1	-1	4	11	0	0	0	0	3	3	3	3	3	3	3
+525	"Increase Fire Scream Skill"	1	135	45	11	6	0	32	70	-1	-1	4	78	0	0	0	0	3	3	3	3	3	3	3
+526	"Increase Fire Scream Skill"	2	140	45	12	6	0	32	70	-1	-1	4	13	0	0	0	0	3	3	3	3	3	3	3
+527	"Increase Fire Scream Skill"	3	145	45	13	6	0	32	70	-1	-1	4	14	0	0	0	0	3	3	3	3	3	3	3
+528	"Increase Fire Scream Skill"	4	150	45	14	6	0	32	70	-1	-1	4	15	0	0	0	0	3	3	3	3	3	3	3
+529	"Increase Fire Scream Skill"	5	155	45	15	6	0	32	70	-1	-1	4	16	0	0	0	0	3	3	3	3	3	3	3
+530	"Increase Evil Spirits Skill"	1	50	99	0	6	0	100	0	-1	-1	4	9	0	0	0	0	3	3	3	3	3	3	3
+531	"Increase Evil Spirits Skill"	2	55	108	0	6	0	100	0	-1	-1	4	18	0	0	0	0	3	3	3	3	3	3	3
+532	"Increase Evil Spirits Skill"	3	60	117	0	6	0	100	0	-1	-1	4	19	0	0	0	0	3	3	3	3	3	3	3
+533	"Increase Evil Spirits Skill"	4	65	126	0	6	0	100	0	-1	-1	4	20	0	0	0	0	3	3	3	3	3	3	3
+534	"Increase Evil Spirits Skill"	5	70	135	0	6	0	100	0	-1	-1	4	21	0	0	0	0	3	3	3	3	3	3	3
+535	"Increase Sleep Skill"		1	40	10	20	3	6	0	1	0	-1	-1	0	0	0	0	0	3	3	3	3	3	3	3
+536	"Increase Sleep Skill"		2	45	10	20	3	6	0	1	0	-1	-1	0	0	0	0	0	3	3	3	3	3	3	3
+537	"Increase Sleep Skill"		3	50	10	20	3	6	0	1	0	-1	-1	0	0	0	0	0	3	3	3	3	3	3	3
+538	"Increase Sleep Skill"		4	55	10	20	3	6	0	1	0	-1	-1	0	0	0	0	0	3	3	3	3	3	3	3
+539	"Increase Sleep Skill"		5	60	10	20	3	6	0	1	0	-1	-1	0	0	0	0	0	3	3	3	3	3	3	3
+540	"Increase Chain Lighting Skill"	1	75	95	0	6	0	75	0	-1	-1	0	0	0	0	0	0	3	3	3	3	3	3	3
+541	"Increase Chain Lighting Skill"	2	80	105	0	6	0	75	0	-1	-1	0	0	0	0	0	0	3	3	3	3	3	3	3
+542	"Increase Chain Lighting Skill"	3	85	115	0	6	0	75	0	-1	-1	0	0	0	0	0	0	3	3	3	3	3	3	3
+543	"Increase Chain Lighting Skill"	4	90	125	0	6	0	75	0	-1	-1	0	0	0	0	0	0	3	3	3	3	3	3	3
+544	"Increase Chain Lighting Skill"	5	95	135	0	6	0	75	0	-1	-1	0	0	0	0	0	0	3	3	3	3	3	3	3
+545	"Increase Lighting Shock Skill"	1	100	130	0	6	0	160	0	3	1	0	0	0	0	0	0	3	3	3	3	3	3	3
+546	"Increase Lighting Shock Skill"	2	105	140	0	6	0	160	0	3	1	0	0	0	0	0	0	3	3	3	3	3	3	3
+547	"Increase Lighting Shock Skill"	3	110	150	0	6	0	160	0	3	1	0	0	0	0	0	0	3	3	3	3	3	3	3
+548	"Increase Lighting Shock Skill"	4	115	160	0	6	0	160	0	3	1	0	0	0	0	0	0	3	3	3	3	3	3	3
+549	"Increase Lighting Shock Skill"	5	120	170	0	6	0	160	0	3	1	0	0	0	0	0	0	3	3	3	3	3	3	3
+550	"Increase Drain Life Skill"	1	40	60	0	6	0	93	0	-1	-1	0	0	0	0	0	0	3	3	3	3	3	3	3
+551	"Increase Drain Life Skill"	2	45	70	0	6	0	93	0	-1	-1	0	0	0	0	0	0	3	3	3	3	3	3	3
+552	"Increase Drain Life Skill"	3	50	80	0	6	0	93	0	-1	-1	0	0	0	0	0	0	3	3	3	3	3	3	3
+553	"Increase Drain Life Skill"	4	55	90	0	6	0	93	0	-1	-1	0	0	0	0	0	0	3	3	3	3	3	3	3
+554	"Increase Drain Life Skill"	5	60	100	0	6	0	93	0	-1	-1	0	0	0	0	0	0	3	3	3	3	3	3	3
+end

@@ -1,0 +1,33 @@
+1
+//	Enabled		//MaxQuestions Per Round
+	1		3
+end
+
+2
+//	ID	Question					Answer
+	1	"With BotTrader, 1 Bless and 1 Soul ="		"A"
+	2	"Bot Alchemist..."				"B"
+	3	"Bot VipShop is in:"				"C"
+end
+
+3
+//	QID	Answers
+	1	"A) Random Wing"
+	1	"B) Chaos"
+	1	"C) Rena"
+	
+	2	"A) Give random items"
+	2	"B) Transfer opts from one item to other"
+	
+	3	"A) Devias"
+	3	"B) Noria"
+	3	"C) Lorencia"
+end
+
+4
+//Rewards: Apply in BotReward (random reward)
+//	Zen	VipMoney	ItemType	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	iSock1	iSock2	iSock3	iSock4	iSock5	iJOH	iDays	ForeverFFFESerial
+	200000	0		13		64		0	0	0	0	0	0	0	0	0	0	0	0	0	7		0
+	200000	0		13		65		0	0	0	0	0	0	0	0	0	0	0	0	0	7		0
+	200000	0		13		67		0	0	0	0	0	0	0	0	0	0	0	0	0	7		0
+end

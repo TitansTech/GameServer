@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.Character add SCFGensFamily smallint default(0) NOT NULL

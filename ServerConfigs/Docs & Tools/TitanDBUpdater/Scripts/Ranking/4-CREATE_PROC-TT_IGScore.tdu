@@ -1,0 +1,22 @@
+CREATE PROCEDURE	[dbo].[TT_IGScore]
+	@ServerCode		INT,
+	@AccountID		VARCHAR(10),
+	@Name			VARCHAR(10),
+	@PlayDay		TINYINT
+As
+Begin
+	BEGIN TRANSACTION
+	SET NOCOUNT ON	
+
+	IF EXISTS (SELECT NULL FROM IMPERIALGUARDIAN_INFO WHERE Account = @AccountID AND Name = @Name AND ServerCode = @ServerCode AND PlayDay = @PlayDay) 
+		UPDATE IMPERIALGUARDIAN_INFO SET WinCount = WinCount+1 WHERE Account = @AccountID AND Name = @Name AND ServerCode = @ServerCode AND PlayDay = @PlayDay
+	ELSE 
+		INSERT INTO IMPERIALGUARDIAN_INFO (ServerCode, Account, Name, WinCount, PlayDay) VALUES (@ServerCode,@AccountID,@Name,1,@PlayDay)
+
+	IF(@@Error <> 0 )
+		ROLLBACK TRANSACTION
+	ELSE	
+		COMMIT TRANSACTION
+
+	SET NOCOUNT OFF	
+End

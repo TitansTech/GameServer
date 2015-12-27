@@ -1,0 +1,67 @@
+//#############################################################################################################
+//Drop Settings: XMas Santa Monster Drops
+//www.titanstech.com
+//#############################################################################################################
+
+//=============================================================================================================
+//ItemDropRate	 	- Drop rate of item VS Zen [x/100]
+//ExRate		- Drop rate of excellent item [x/1000]
+//=============================================================================================================
+//	EventName		DropZen		NA	NA 	NA 	  NA 		ItemDropRate	ExRate
+//=============================================================================================================
+1	
+	"SantaMob"		10000000	0	0	 0	  0		90		800
+end
+
+//=============================================================================================================
+//Type			- Item.TXT index (section) of the Box
+//Index 		- Item.TXT id of the Item
+//minLvl		- Minimal Level of the Item (+1, +2 etc...)
+//maxLvl		- Maximum Level of the Item (+1, +2 etc...)
+//Skill			- Drop Item with Skill (0 - off,1 - on)
+//Luck			- Drop Item with Luck (0 - off,1 - on)
+//maxZ28		- Maximum Z28 option (1 = +4, 2 = +8, 3 = +12, etc...)
+//maxExOpt		- Maximum number of Exc option in item
+//=============================================================================================================
+//	Type	Index	minLvl	maxLvl	Skill	Luck	maxZ28	maxExOpt		
+//=============================================================================================================
+2																		
+	13	0	0	0	0	0	0	0	//Angel Pet
+	13	1	0	0	0	0	0	0	//Satan Pet
+	13	2	0	0	0	0	0	0	//Unicorn Pet
+	13	3	0	0	0	0	0	0	//Dinorant Pet
+
+	13	64	0	0	0	0	0	0	//Devil Pet
+	13	65	0	0	0	0	0	0	//Sorcerer Pet
+	13	67	0	0	0	0	0	0	//Rudolph Pet
+	13	68	0	0	0	0	0	0	//Snowman Ring
+
+	12	15	0	0	0	0	0	0	//Jewel of Chaos
+	14	13	0	0	0	0	0	0	//Jewel of Bless
+	14	14	0	0	0	0	0	0	//Jewel of Soul
+	14	16	0	0	0	0	0	0	//Jewel of Life
+	14	22	0	0	0	0	0	0	//Jewel of Creation
+
+	14	42	0	0	0	0	0	0	//Jewel of Harmony
+	14	42	0	0	0	0	0	0	//Jewel of Guardian
+
+	12	30	0	0	0	0	0	0	//Jewel of Bless Pack [10]
+	12	31	0	0	0	0	0	0	//Jewel of Soul Pack [10]
+
+	14	96	0	0	0	0	0	0	//Chaos machine rate
+
+	14	7	0	0	0	0	0	0	//Siege Potion
+
+	14	37	0	0	0	0	0	0	//Large SD Potion
+	14	40	0	0	0	0	0	0	//Large Complex Potion
+
+	13	38	0	0	0	0	0	0	//Moonstone Pendant
+
+	13	51	1	6	0	0	0	0	//Illusion Invitation [1-6]
+	13	18	1	8	0	0	0	0	//Cloak of Invisibility [1-8]
+	14	19	1	7	0	0	0	0	//Devil Square Invitation [1-7]
+
+	14	102	0	0	0	0	0	0	//Imperial Guardian Invitation [Mon-Sat]
+	14	109	0	0	0	0	0	0	//Imperial Guardian Invitation [Sun]
+	14	111	0	0	0	0	0	0	//Double Goer Invitation
+end

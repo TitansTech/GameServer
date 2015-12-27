@@ -1,0 +1,38 @@
+0
+	// Normal Servers
+	0		0		1		SXX.XX.XX.XX		55901	//[Main]
+
+	// PVP Servers
+	11		0		1		SXX.XX.XX.XX		55911	//[PVP]
+
+	// Castle Siege Servers
+	19		0		0		SXX.XX.XX.XX		55919	//[Castle]
+end
+
+
+
+1
+	// Normal Servers
+	0		0		30		19	//Lorren
+	0		0		31		19	//DareDevil
+	0		0		34		19	//CryWolf
+	0		0		41		19	//Barraks
+	0		0		42		19	//Refuge
+	0		0		56		19	//Swamp
+
+	// PVP Servers
+	11		0		30		19	//Lorren
+	11		0		31		19	//DareDevil
+	11		0		34		19	//CryWolf
+	11		0		41		19	//Barraks
+	11		0		42		19	//Refuge
+	11		0		56		19	//Swamp
+
+	// Castle Siege Servers
+	19		1		30		-1	//Lorren
+	19		1		31		-1	//DareDevil
+	19		1		34		-1	//CryWolf
+	19		1		41		-1	//Barraks
+	19		1		42		-1	//Refuge
+	19		1		56		-1	//Swamp
+end

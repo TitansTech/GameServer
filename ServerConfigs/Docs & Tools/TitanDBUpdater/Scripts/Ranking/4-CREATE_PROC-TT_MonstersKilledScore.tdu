@@ -1,0 +1,22 @@
+CREATE PROCEDURE	[dbo].[TT_MonstersKilledScore]
+	@ServerCode		INT,
+	@AccountID		VARCHAR(10),
+	@Name			VARCHAR(10),
+	@Monster		INT
+As
+Begin
+	BEGIN TRANSACTION
+	SET NOCOUNT ON	
+
+	IF EXISTS (SELECT NULL FROM MONSTERSKILLED_INFO WHERE Account = @AccountID AND Name = @Name AND ServerCode = @ServerCode AND Monster = @Monster) 
+		UPDATE MONSTERSKILLED_INFO SET KillCount = KillCount+1 WHERE Account = @AccountID AND Name = @Name AND ServerCode = @ServerCode AND Monster = @Monster
+	ELSE 
+		INSERT INTO MONSTERSKILLED_INFO (ServerCode, Account, Name, KillCount, Monster) VALUES (@ServerCode,@AccountID,@Name,1,@Monster)
+
+	IF(@@Error <> 0 )
+		ROLLBACK TRANSACTION
+	ELSE	
+		COMMIT TRANSACTION
+
+	SET NOCOUNT OFF	
+End

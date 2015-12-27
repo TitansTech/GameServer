@@ -1,0 +1,209 @@
+//==============================================================================
+//Monster Automatization [KOR]
+//#www.titanstech.com
+//------------------------------------------------------------------------------
+//Revision 10 Mar, 2011
+//==============================================================================
+//Priority 순으로 나열해야 함 [0이 없이 1이 있으면 안됨]
+//State : 0 [일반행동속성] 1 [이동행동속성] 2 [공격행동속성] 3 [치료행동속성] 4 [회피행동속성] 5 [도움행동속성] 6 [특수행동속성] 7 [시나리오]
+//TransitionType : 0 [적없음] 1 [공격범위안적발견] 2 [공격범위밖적발견] 3 [적처치] 4 [HP감소]
+//                 5 [아군공격도움 요청 => 5 : HP % 감소] 6 [아군치료도움요청 => 6 : 무조건 전이]
+//                 0, 1, 2가 반드시 있어야 함. 그래야 데드락을 피할 수 있음 [요령 : 0, 1, 2에 대해 100 % 확률을 만들어 주면 됨]
+//TransitionValue 에 Aggro 를 넣어서 공격일 때 후공, 선공을 처리할 수 있도록 하자 !
+
+//[AutomataNumber] [Description] [Priority] [CurrState]	[NextState] [TransitionType] [TransitionRate] [TransitionValueType] [TransitionValue] [Delay]
+//----------------------------------------------------------------------------------------------------------------------//
+// 	Nro	Description				Prio.	CState	NState	Type	ValueT	Value   Delay	Level	//
+//----------------------------------------------------------------------------------------------------------------------//
+0
+	1	"General -> Go"				0	0	1	0	100	-1	-1	1000
+	1	"General -> Go"				1	0	1	2	100	-1	-1	1000
+	1	"General -> Attack"			2	0	2	1	100	-1	-1	1000
+	1	"Go -> Attack"				0	1	2	1	100	-1	-1	1000
+	1	"Go -> Go"				1	1	1	0	100	-1	-1	1000
+	1	"Go -> Go"				2	1	1	2	100	-1	-1	1000
+	1	"Attacks -> Go"				0	2	1	0	100	-1	-1	1000
+	1	"Attacks -> Avoid"			1	2	4	4	100	-1	10000	1000
+	1	"Attacks -> Attack"			2	2	2	1	100	-1	-1	1000
+	1	"Attacks -> Go"				3	2	1	2	100	-1	-1	1000
+	1	"Attacks -> Attack"			4	2	2	1	100	-1	-1	1000
+	1	"Avoid -> General 1"			0	4	0	0	100	-1	-1	1000
+	1	"Avoid -> Attack"			1	4	2	7	70	-1	3000	1000
+	1	"Avoid -> Go"				2	4	1	2	50	-1	-1	1000
+	1	"Avoid -> Attack"			3	4	2	1	50	-1	-1	1000
+	1	"Avoid -> Avoid"			4	4	4	1	80	-1	-1	1000
+	1	"Avoid -> Avoid"			5	4	4	4	100	-1	2000	1000
+	1	"Avoid -> Avoid"			6	4	4	4	80	-1	10000	1000
+	1	"Avoid -> General 2"			7	4	0	1	100	-1	-1	1000
+	1	"Avoid -> General 3"			8	4	0	2	100	-1	-1	1000
+	2	"General -> Go"				0	0	1	0	50	-1	-1	1000
+	2	"General -> Treatment"			1	0	3	0	10	-1	-1	1000
+	2	"General -> Summon"			2	0	6	0	100	-1	-1	1000
+	2	"General -> Go"				3	0	1	2	80	-1	-1	1000
+	2	"General -> Summon"			4	0	6	2	100	-1	-1	1000
+	2	"General -> Treatment"			5	0	3	1	10	-1	-1	1000
+	2	"General -> Go"				6	0	1	1	100	-1	-1	1000
+	2	"Go -> Treatment"			0	1	3	1	20	-1	-1	1000
+	2	"Go -> Attack"				1	1	2	1	30	-1	-1	1000
+	2	"Go -> Go"				2	1	1	0	100	-1	-1	1000
+	2	"Go -> Summon"				3	1	6	0	20	-1	-1	1000
+	2	"Go -> Go"				4	1	1	0	100	-1	-1	1000
+	2	"Go -> Summon"				5	1	6	2	100	-1	-1	1000
+	2	"Go -> Go"				6	1	1	2	100	-1	-1	1000
+	2	"Attacks -> Go"				0	2	1	0	100	-1	-1	1000
+	2	"Attacks -> Treatment"			1	2	3	4	100	-1	10000	1000
+	2	"Attacks -> Go"				2	2	1	2	100	-1	-1	1000
+	2	"Attacks -> Attack"			3	2	2	1	50	-1	-1	1000
+	2	"Attacks -> General"			4	2	0	1	100	-1	-1	1000
+	2	"Treatment -> General 1"		0	3	0	0	100	-1	-1	1000
+	2	"Treatment -> General 2"		1	3	0	2	100	-1	-1	1000
+	2	"Treatment -> General 3"		2	3	0	1	100	-1	-1	1000
+	2	"Summon -> General 1"			0	6	0	0	100	-1	-1	1000
+	2	"Summon -> General 2"			1	6	0	2	100	-1	-1	1000
+	2	"Summon -> General 3"			2	6	0	1	100	-1	-1	1000
+	3	"General -> Attack"			0	0	2	0	100	-1	-1	1000
+	3	"General -> Attack"			1	0	2	2	100	-1	-1	1000
+	3	"General -> Attack"			2	0	2	1	100	-1	-1	1000
+	3	"Attacks -> General 1"			0	2	0	0	100	-1	-1	1000
+	3	"Attacks -> General 2"			1	2	0	2	100	-1	-1	1000
+	3	"Attacks -> General 3"			2	2	0	1	100	-1	-1	1000
+	4	"General -> Go"				0	0	1	0	100	-1	-1	1000
+	4	"General -> Go"				1	0	1	2	100	-1	-1	1000
+	4	"General -> Attack"			2	0	2	1	100	-1	-1	1000
+	4	"Go -> Go"				0	1	1	0	100	-1	-1	1000
+	4	"Go -> Attack"				1	1	2	1	50	-1	-1	1000
+	4	"Go -> Go"				2	1	1	2	100	-1	-1	1000
+	4	"Attacks -> Go"				0	2	1	0	100	-1	-1	1000
+	4	"Attacks -> Go"				1	2	1	2	100	-1	-1	1000
+	4	"Attacks -> Attack"			2	2	2	1	30	-1	-1	1000
+	4	"Attacks -> General"			3	2	0	1	100	-1	-1	1000
+	4	"Invisible -> General 1"		0	6	0	0	100	-1	-1	1000
+	4	"Invisible -> General 2"		1	6	0	1	100	-1	-1	1000
+	4	"Invisible -> General 3"		2	6	0	2	100	-1	-1	1000
+	5	"General -> Go"				0	0	1	0	100	-1	-1	1000
+	5	"General -> Attack"			1	0	2	1	100	-1	-1	1000
+	5	"General -> Go"				2	0	1	2	100	-1	-1	1000
+	5	"Go -> Go"				0	1	1	0	100	-1	-1	1000
+	5	"Go -> Attack"				1	1	2	1	80	-1	-1	1000
+	5	"Go -> Go"				2	1	1	2	100	-1	-1	1000
+	5	"Attacks -> Go"				0	2	1	0	100	-1	-1	1000
+	5	"Attacks -> Attack"			1	2	2	1	80	-1	-1	1000
+	5	"Attacks -> Go"				2	2	1	2	100	-1	-1	1000
+	5	"Attacks -> General"			3	2	0	1	100	-1	-1	1000
+	6	"General -> Go"				0	0	1	0	100	-1	-1	1000
+	6	"General -> Attack"			1	0	2	1	100	-1	-1	1000
+	6	"General -> Go"				2	0	1	2	100	-1	-1	1000
+	6	"Go -> Go"				0	1	1	0	100	-1	-1	1000
+	6	"Go -> Attack"				1	1	2	1	100	-1	-1	1000
+	6	"Go -> Go"				2	1	1	2	100	-1	-1	1000
+	6	"Attacks -> Go"				0	2	1	0	100	-1	-1	1000
+	6	"Attacks -> Attack"			1	2	2	7	50	-1	3000	1000
+	6	"Attacks -> Attack"			2	2	2	1	100	-1	-1	1000
+	6	"Attacks -> Go"				3	2	1	2	100	-1	-1	1000
+	6	"Attacks -> Avoid"			4	2	4	4	100	-1	10000	1000
+	6	"Avoid -> General 1"			0	4	0	0	100	-1	-1	1000
+	6	"Avoid -> Attack"			1	4	2	7	70	-1	1000	1000
+	6	"Avoid -> Go"				2	4	1	2	50	-1	-1	1000
+	6	"Avoid -> Attack"			3	4	2	1	50	-1	-1	1000
+	6	"Avoid -> Avoid"			4	4	4	1	80	-1	-1	1000
+	6	"Avoid -> Avoid"			5	4	4	4	100	-1	2000	1000
+	6	"Avoid -> General 2"			6	4	0	1	100	-1	-1	1000
+	6	"Avoid -> General 3"			7	4	0	2	100	-1	-1	1000
+	7	"General -> Invisible"			0	0	6	0	100	-1	-1	1000
+	7	"General -> Invisible"			1	0	6	1	100	-1	-1	1000
+	7	"General -> Invisible"			2	0	6	2	100	-1	-1	1000
+	7	"Invisible -> Invisible"		0	6	6	0	100	-1	-1	1000
+	7	"Invisible -> Invisible"		1	6	6	1	100	-1	-1	1000
+	7	"Invisible -> Invisible"		2	6	6	2	100	-1	-1	1000
+	8	"General -> Go"				0	0	1	0	100	-1	-1	1000
+	8	"General -> Go"				1	0	1	2	100	-1	-1	1000
+	8	"General -> Summon"			2	0   	6   	5   	100     -1      80	1000
+	8	"General -> Attack"			3	0	2	1	100	-1	-1	1500
+	8   	"Go -> Go"				0	1	1	0	100	-1	-1	1000
+	8	"Go -> Summon"				1	1   	6   	5   	100     -1      80	1000
+	8	"Go -> Attack"				2	1	2	1	100	-1	-1	1500
+	8	"Go -> Go"				3	1	1	2	100	-1	-1	1000
+	8	"Attacks -> General 1"			0	2	0	0	100	-1	-1	1000
+	8	"Attacks -> General 2"			1	2	0	2	100	-1	-1	1000
+	8	"Attacks -> Summon"			2	2   	6   	5   	100     -1      80	1000
+	8	"Attacks -> Attack"			3	2	2	1	100	-1	-1	1500
+	8	"Summon -> Invisible"			0	6	5	6	100	-1	-1	1000
+	8	"Invisible -> Warp"			0	5	4	6	100	-1	-1	1000
+	8	"Warp -> AI"				0	4	7	6	100	-1	-1	1000
+	8	"AI -> Go"				0	7	1	0	100	-1	-1	1000
+	8	"AI -> Go"				1	7	1	2	100	-1	-1	1000
+	8	"AI -> Go"				2	7	1	1	100	-1	-1	1000
+	9	"General -> Go"				0	0	1	0	100	-1	-1	1000
+	9	"General -> Go"				1	0	1	2	100	-1	-1	1000
+	9	"General -> Attack"			2	0	2	1	100	-1	-1	1500
+	9	"Go -> Go"				0	1	1	0	100	-1	-1	1000
+	9	"Go -> Attack"				1	1	2	1	100	-1	-1	1500
+	9	"Go -> Go"				2	1	1	2	100	-1	-1	1000
+	9	"Attacks -> General 1"			0	2	0	0	100	-1	-1	1000
+	9	"Attacks -> General 2"			1	2	0	2	100	-1	-1	1000
+	9	"Attacks -> Summon"			2	2  	6 	5  	100   	-1      50	1000
+	9	"Attacks -> Attack"			3	2	2	1	100	-1	-1	1500
+	9	"Summon -> Invisible"			0	6	5	6	100	-1	-1	1000
+	9	"Invisible -> Warp"			0	5	4	6	100	-1	-1	1000
+	9	"Warp -> AI"				0	4	7	6	100	-1	-1	1000
+	9	"AI -> Go"				0	7	1	0	100	-1	-1	1000
+	9	"AI -> Go"				1	7	1	2	100	-1	-1	1000
+	9	"AI -> Go"				2	7	1	1	100	-1	-1	1000
+	10	"General -> General"			0	0	0	0	100	-1	-1	1000
+	10	"General -> General"			1	0	0	2	100	-1	-1	1000
+	10	"General -> General"			2	0	0	1	100	-1	-1	1000
+	11  	"General -> Go"				0	0	1	0	100	-1	-1	1000
+	11  	"General -> Go"				1	0	1	2	100	-1	-1	1000
+	11  	"General -> Attack"			2	0	2	1	100	-1	-1	1500
+	11  	"Go -> Go"				0	1	1	0	100	-1	-1	1000
+	11  	"Go -> Attack"				1	1	2	1	100	-1	-1	1500
+	11  	"Go -> Go"				2	1	1	2	100	-1	-1	1000
+	11  	"Attacks -> General 1"			0	2	0	0	100	-1	-1	1000
+	11  	"Attacks -> General 2"			1	2	0	2	100	-1	-1	1000
+	11  	"Attacks -> Attack"			2	2	2	1	100	-1	-1	1500
+	11  	"AI -> Go"				0	7	1	0	100	-1	-1	1000
+	11  	"AI -> Go"				1	7	1	2	100	-1	-1	1000
+	11  	"AI -> Go"				2	7	1	1	100	-1	-1	1000
+	12  	"General -> Go"				0	0	1	0	100	-1	-1	1000
+	12  	"General -> Go"				1	0	1	2	100	-1	-1	1000
+	12  	"General -> Attack"			2	0	2	1	100	-1	-1	1500
+	12  	"Go -> Go"				0	1	1	0	100	-1	-1	1000
+	12  	"Go -> Attack"				1	1	2	1	50	-1	-1	1500
+	12  	"Go -> Go"				2	1	1	2	100	-1	-1	1000
+	12  	"Attacks -> General 1"			0	2	0	0	100	-1	-1	1000
+	12  	"Attacks -> General 2"			1	2	0	2	100	-1	-1	1000
+	12  	"Attacks -> Summon"			2	2   	6   	5   	100     -1      20	1000
+	12  	"Attacks -> Attack"			3	2	2	1	100	-1	-1	1500
+	12  	"Summon -> Invisible"			0	6	5	6	100	-1	-1	1000
+	12  	"Invisible -> Warp"			0	5	4	6	100	-1	-1	1000
+	12  	"Warp -> AI"				0	4	7	6	100	-1	-1	1000
+	12  	"AI -> Go"				0	7	1	0	100	-1	-1	1000
+	12  	"AI -> Go"				1	7	1	2	100	-1	-1	1000
+	12  	"AI -> Go"				2	7	1	1	100	-1	-1	1000
+	13	"General -> Go"				0	0	1	0	50	-1	-1	1000
+	13	"General -> Treatment"			1	0	3	0	35	-1	-1	1000
+	13	"General -> Summon"			2	0	3	11	60	-1	-1	1000
+	13	"General -> Go"				3	0	1	0	80	-1	-1	1000
+	13	"General -> Summon"			4	0	3	11	60	-1	-1	1000
+	13	"General -> Treatment"			5	0	3	1	45	-1	-1	1000
+	13	"General -> Go"				6	0	1	1	100	-1	-1	1000
+	13	"Go -> Treatment"			0	1	3	1	30	-1	-1	1000
+	13	"Go -> Attack"				1	1	2	1	55	-1	-1	1000
+	13	"Go -> Go"				2	1	1	0	60	-1	-1	1000
+	13	"Go -> Summon"				3	1	3	11	60	-1	-1	1000
+	13	"Go -> Go"				4	1	1	0	90	-1	-1	1000
+	13	"Go -> Summon"				5	1	3	11	60	-1	-1	1000
+	13	"Go -> Go"				6	1	1	2	100	-1	-1	1000
+	13	"Attacks -> Go"				0	2	1	0	100	-1	-1	1000
+	13	"Attacks -> Treatment"			1	2	3	4	100	-1	10000	1000
+	13	"Attacks -> Go"				2	2	1	2	100	-1	-1	1000
+	13	"Attacks -> Attack"			3	2	2	1	65	-1	-1	1000
+	13	"Attacks -> General"			4	2	0	1	100	-1	-1	1000
+	13	"Treatment -> General 1"		0	3	0	0	100	-1	-1	1000
+	13	"Treatment -> General 2"		1	3	0	2	100	-1	-1	1000
+	13	"Treatment -> General 3"		2	3	0	1	100	-1	-1	1000
+	13	"Summon -> General 1"			0	6	0	0	100	-1	-1	1000
+	13	"Summon -> General 2"			1	6	0	2	100	-1	-1	1000
+	13	"Summon -> General 3"			2	6	0	1	100	-1	-1	1000
+end
+

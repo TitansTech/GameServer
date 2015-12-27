@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.BotPet add BotVersion Int default(1) NOT NULL

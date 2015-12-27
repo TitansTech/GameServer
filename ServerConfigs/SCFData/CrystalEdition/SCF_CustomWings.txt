@@ -1,0 +1,49 @@
+//Wing = From 0 To 54 (Means Wings 12 200 to 12 254)
+
+//Absorb XX% of damage:
+//Formula = RecvDamage = (RecvDamage * (Opt1 - (WingsLevel * Opt2))) / Opt3
+//Decrease Opt1 or Opt2 Means more Absorb Damage
+//Example I'll Recv 1500 of Dmg and i have 10 level wings:
+//RecvDamage = (1500 * (61 - (10 * 2))) / 100
+//RecvDamage will be 615 now
+//Range Must be 0 To 255
+//Opt3 Must be Higher than 0
+
+1
+//Wing	Opt1	Opt2	Opt3
+0	61	2	100	
+end
+
+//Increase damage by XX%:
+//Formula = AttackDamage = AttackDamage * (WingsLevel * Opt1 + Opt2) / Opt3
+//Increase Opt1 or Opt2 Means more Damage
+//Example I'll attack with 1500 of Dmg and i have 10 level wings:
+//AttackDamage = 1500 * (10 * 2 + 139) / 100
+//AttackDamage will be 2385 now
+//Range Must be 0 To 255
+//Opt3 Must be Higher than 0
+
+2
+//Wing	Opt1	Opt2	Opt3
+0	2	139	100
+end
+
+//Defense per Level:
+//Range Must be 0 To 255
+//Formula: Defense = Defense * Opt1
+3
+//Wing	Opt1
+0	5
+end
+
+//Exc Attributes (%):
+//Opt 1 = Return Damage Success Rate
+//Opt 2 = RecoverFull Life Success Rate
+//Opt 3 = RecoverFull Mana Success Rate
+//Opt 4 = Successfull Blocking Rate
+//Range Must be 1 To 100
+
+4
+//Wing	Opt1	Opt2	Opt3	Opt4
+0	5	5	5	5
+end

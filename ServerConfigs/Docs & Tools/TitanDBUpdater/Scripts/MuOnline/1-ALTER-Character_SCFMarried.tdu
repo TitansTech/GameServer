@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.Character add SCFMarried Int default(0) NOT NULL

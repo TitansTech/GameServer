@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.Guild add SCFG_Gens smallint default(0) NOT NULL

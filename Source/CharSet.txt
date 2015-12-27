@@ -1,0 +1,141 @@
+/*
+ *	CHAR SET	-	By Deathway
+ *	
+ *	It Contains the Character Settings
+ *	CS_CLASS(0)	Contains the Class and the ChangeUP
+ *				You can use CS_GET_CLASS and CS_GET_CHANGEUP
+ *	MAP of CHAR SET
+ *
+ *	    0         1			2		  3			4		  5			6		  7
+ *	0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+ *	AAAB   CC EEEE EEEE GGGG GGGG JJJJ MMMM PPPP SSSS VVVV WWWW XXXX XXXX YYYY YYYY
+ *
+ *	    8         9			10		  11		12		  13		14		  15
+ *	0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+ *	ZZZZ ZZZZ ILOR U    aaaa aaad bbbb bbbc DDDD    e FFFF HHHH KKKK NNNN QQQQ TTTT
+ *
+ *		16		  17
+ *	0000 0000 0000 0000
+ *	       gf         
+ *
+ *	AAA Contain Class Character Definition (DK:1 DW:0 ELF:2 MG:3 DL:4)
+ *	B Contains the Change UP (0:Normal 1:Evolved)
+ *	CC Contains a value Acording m_ActionNumber fron gObj
+ *
+ *	DDDD Contains the 8..11 bits of Rigth Hand Item Index
+ *	EEEE EEEE Contains the 0..7 bits Rigth Hand Item Index
+ *
+ *	FFFF Contains the 8..11 bits of Left Hand Item Index
+ *	GGGG GGGG Contains the 0..7 bits of Left Hand Item Index
+ *
+ *	HHHH Contains the 5..8 Bits from Helmet Item Index
+ *	I Contains the 4 bit from Helmet Item Index
+ *	JJJJ Contains the 0..3 bits from Helmet Item Index
+ *
+ *	KKKK Contains the 5..8 Bits from Armor Item Index
+ *	L Contains the 4 bit from Armor Item Index
+ *	MMMM Contains the 0..3 bits from Armor Item Index
+ *
+ *	NNNN Contains the 5..8 Bits from Pants Item Index
+ *	O Contains the 4 bit from Pants Item Index
+ *	PPPP Contains the 0..3 bits from Pants Item Index
+ *
+ *	QQQQ Contains the 5..8 Bits from Gloves Item Index
+ *	R Contains the 4 bit from Gloves Item Index
+ *	SSSS Contains the 0..3 bits from Gloves Item Index
+ *
+ *	TTTT Contains the 5..8 Bits from Boots Item Index
+ *	U Contains the 4 bit from Boots Item Index
+ *	VVVV Contains the 0..3 bits from Boots Item Index
+ *
+ *	WWWW Contains Wings and Helper
+ *
+ *	XXXX XXXX Contains Levels (Shine Levels) from Wings and Boots
+ *	YYYY YYYY Contains Levels (Shine Levels) from Gloves and Pants and Armor
+ *	ZZZZ ZZZZ Contains Levels (Shine Levels) from Helmet , Right and Left HAnd
+ *
+ *	aaaa aaa Contains the If the item is Excellent
+ *
+ *	bbbb bbb Contains the If the item is SetItem
+ *	c	1 if the Char have the Full Set Item
+ *
+ *	d Unkown
+ *
+ *	e Have Dark Horse?
+ *
+ *	f	Fenrir Inc Attack Damage
+ *	g	Fenrir Dec Attack Damage
+ */
+#define CHAR_SET_SIZE		18
+
+	#define CS_CLASS		0
+
+	#define CS_WEAPON1_TYPE	1
+	#define CS_WEAPON2_TYPE	2
+
+	#define CS_WEAPON1_DATA	12
+	#define CS_WEAPON2_DATA	13
+
+	#define CS_HELMET1		13
+	#define CS_HELMET2		9
+	#define CS_HELMET3		3
+
+	#define CS_ARMOR1		14
+	#define CS_ARMOR2		9
+	#define CS_ARMOR3		3
+
+	#define CS_PANTS1		14
+	#define CS_PANTS2		9
+	#define CS_PANTS3		4
+
+	#define CS_GLOVES1		15
+	#define CS_GLOVES2		9
+	#define CS_GLOVES3		4
+
+	#define CS_BOOTS1		15
+	#define CS_BOOTS2		9
+	#define CS_BOOTS3		5
+
+
+
+
+
+#define CS_GET_CLASS(x) ( (((x)>>4)<<5)&(0xE0) )
+#define CS_GET_CHANGEUP(x) ( ((x)&0x07) )
+#define CS_SET_CLASS(x) ( ((x)<<5)& 0xE0 )
+#define CS_SET_CHANGEUP(x) ( ((x) << 4) & 0x10 )
+
+#define CS_SET_HELMET1(x) ( ((x) & 0x1E0) >> 5 )
+#define CS_SET_HELMET2(x) ( ((x) & 0x10 ) << 3 )
+#define CS_SET_HELMET3(x) ( ((x) & 0x0F ) << 4 )
+
+#define CS_SET_ARMOR1(x) ( ((x) & 0x1E0) >> 1 )
+#define CS_SET_ARMOR2(x) ( ((x) & 0x10 ) << 2 )
+#define CS_SET_ARMOR3(x) ( ((x) & 0x0F )      )
+
+#define CS_SET_PANTS1(x) ( ((x) & 0x1E0) << 5 )
+#define CS_SET_PANTS2(x) ( ((x) & 0x10 ) << 1 )
+#define CS_SET_PANTS3(x) ( ((x) & 0x0F ) << 4 )
+
+#define CS_SET_GLOVES1(x) ( ((x) & 0x1E0) >> 1 )
+#define CS_SET_GLOVES2(x) ( ((x) & 0x10 )      )
+#define CS_SET_GLOVES3(x) ( ((x) & 0x0F )      )
+
+#define CS_SET_BOOTS1(x) ( ((x) & 0x1E0) >> 5 )
+#define CS_SET_BOOTS2(x) ( ((x) & 0x10 ) >> 1 )
+#define CS_SET_BOOTS3(x) ( ((x) & 0x0F )      )
+
+#define CS_SET_WING1(x)  ( ((x) & 0x03 ) << 2 )
+#define CS_SET_HELPER(x) ( ((x) & 0x03 )      )
+
+#define CS_SET_SMALLLEVEL_RH(x)		( (x)       )
+#define CS_SET_SMALLLEVEL_LH(x)		( (x) << 3  ) 
+#define CS_SET_SMALLLEVEL_HELMET(x)	( (x) << 6  )
+#define CS_SET_SMALLLEVEL_ARMOR(x)	( (x) << 9  )
+#define CS_SET_SMALLLEVEL_PANTS(x)	( (x) << 12 )
+#define CS_SET_SMALLLEVEL_GLOVES(x)	( (x) << 15 )
+#define CS_SET_SMALLLEVEL_BOOTS(x)	( (x) << 18 )
+
+#define CS_SET_SMALLLEVEL1(x)		( ((x) >> 16) & 0xFF )
+#define CS_SET_SMALLLEVEL2(x)		( ((x) >> 8 ) & 0xFF )
+#define CS_SET_SMALLLEVEL3(x)		( ((x) >> 8 ) & 0xFF )

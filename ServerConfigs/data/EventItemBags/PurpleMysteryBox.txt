@@ -1,0 +1,88 @@
+//#############################################################################################################
+//Drop Settings: Purple Mystery Box Drops
+//www.titanstech.com
+//#############################################################################################################
+
+//=============================================================================================================
+//	MapIndex	Drop Flag	Min Monster Level	Max MonsterLevel	
+//=============================================================================================================
+0	
+	0		0		0			1000
+end
+
+//=============================================================================================================
+//BoxDropRate		- Drop rate for box from mob [x/1000]
+//ItemDropRate	 	- Drop rate of item VS Zen [x/100]
+//ExRate		- Drop rate of excellent item [x/1000]
+//=============================================================================================================
+//[If item drop settings for the box/not monster]
+//=============================================================================================================
+//BoxType		- Item.TXT index (section) of the Box
+//BoxIndex 		- Item.TXT id of the Box
+//BoxLevel 		- Level of the Box (+1, +2 etc...)
+//BoxDropRate		- Rate at which the Box will drop
+//=============================================================================================================
+//	EventName		DropZen		BoxType	BoxIndex BoxLevel BoxDropRate 	ItemDropRate	ExRate
+//=============================================================================================================
+1	
+	"PurpleMysteryBox"	600000		14	57	 0	  0		80		800
+end
+
+//=============================================================================================================
+//Type			- Item.TXT index (section) of the Box
+//Index 		- Item.TXT id of the Item
+//minLvl		- Minimal Level of the Item (+1, +2 etc...)
+//maxLvl		- Maximum Level of the Item (+1, +2 etc...)
+//Skill			- Drop Item with Skill (0 - off,1 - on)
+//Luck			- Drop Item with Luck (0 - off,1 - on)
+//maxZ28		- Maximum Z28 option (1 = +4, 2 = +8, 3 = +12, etc...)
+//maxExOpt		- Maximum number of Exc option in item
+//=============================================================================================================
+//	Type	Index	minLvl	maxLvl	Skill	Luck	maxZ28	maxExOpt		
+//=============================================================================================================
+2
+	0	16	7	9	1	1	1	1		//Sword of Destruction
+	0	17	7	9	1	1	1	1		//Spirit Sword
+	0	18	7	9	1	1	1	1		//Thunder Blade
+	0	19	7	9	1	1	1	1		//Sword of Archangel
+	2	7	7	9	1	1	1	1		//Elemental Mace
+	2	10	7	9	1	1	1	1		//Great Scepter
+	3	9	7	9	1	1	1	1		//Bill of Balrog
+	4	16	7	9	1	1	1	1		//Saint Crossbow
+	4	17	7	9	1	1	1	1		//Celestial Bow
+	5	8	7	9	1	1	1	1		//Staff of Destruction
+	5	9	7	9	1	1	1	1		//Dragon Soul Staff
+	5	16	7	9	1	1	1	1		//Red Wing Staff
+	7	17	7	9	1	1	1	1		//Dark Phoenix
+	8	17	7	9	1	1	1	1		//Dark Phoenix
+	9	17	7	9	1	1	1	1		//Dark Phoenix
+	10	17	7	9	1	1	1	1		//Dark Phoenix
+	11	17	7	9	1	1	1	1		//Dark Phoenix
+	7	18	7	9	1	1	1	1		//Grand Soul
+	8	18	7	9	1	1	1	1		//Grand Soul
+	9	18	7	9	1	1	1	1		//Grand Soul
+	10	18	7	9	1	1	1	1		//Grand Soul
+	11	18	7	9	1	1	1	1		//Grand Soul
+	7	19	7	9	1	1	1	1		//Divine
+	8	19	7	9	1	1	1	1		//Divine
+	9	19	7	9	1	1	1	1		//Divine
+	10	19	7	9	1	1	1	1		//Divine
+	11	19	7	9	1	1	1	1		//Divine
+	7	27	7	9	1	1	1	1		//Dark Steel
+	8	27	7	9	1	1	1	1		//Dark Steel
+	9	27	7	9	1	1	1	1		//Dark Steel
+	10	27	7	9	1	1	1	1		//Dark Steel
+	11	27	7	9	1	1	1	1		//Dark Steel
+	7	40	7	9	1	1	1	1		//Red Wing
+	8	40	7	9	1	1	1	1		//Red Wing
+	9	40	7	9	1	1	1	1		//Red Wing
+	10	40	7	9	1	1	1	1		//Red Wing
+	11	40	7	9	1	1	1	1		//Red Wing
+	8	20	7	9	1	1	1	1		//Thunder Hawk
+	9	20	7	9	1	1	1	1		//Thunder Hawk
+	10	20	7	9	1	1	1	1		//Thunder Hawk
+	11	20	7	9	1	1	1	1		//Thunder Hawk
+	12	15	0	0	0	0	0	0		//Jewel of Chaos
+	14	13	0	0	0	0	0	0		//Jewel of Bless
+	14	14	0	0	0	0	0	0		//Jewel of Soul
+end

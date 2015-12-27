@@ -1,0 +1,70 @@
+CREATE procedure [dbo].[TT_WriteMemoMail]
+	@SendName 	varchar(10), 
+	@RecvName 	varchar(10), 
+	@Subject	varchar(32), 
+	@Memo		varchar(1000), 
+	@Dir		tinyint, 
+	@Act		tinyint
+as
+BEGIN
+	Set		nocount on 	
+	DECLARE 	@userguid	int
+	DECLARE 	@memocount	int
+	DECLARE	@return		int
+	DECLARE	@MemoTotal	int
+	DECLARE 	@FriendLevel  	int
+	SET	XACT_ABORT ON
+	SET @return	= 0
+	SELECT @userguid=GUID, @MemoTotal=MemoTotal FROM T_FriendMain where Name= @RecvName
+	if( @@ROWCOUNT < 1 )
+	BEGIN
+		SET @return = 2
+		GOTO EndProc
+	END
+	IF( @MemoTotal > 49 )
+	BEGIN
+		SET @return = 5
+		GOTO EndProc
+	END
+	select  @FriendLevel=cLevel FROM Character where Name=@RecvName
+	IF( @@Error <> 0 )
+	begin
+		SET @return = 2		
+		GOTO EndProc
+	end
+	ELSE 
+	BEGIN
+		if( @FriendLevel < 6 )
+		begin
+			SET @return = 6
+			GOTO EndProc
+		end
+	END
+	begin transaction
+	update T_FriendMain set @memocount = MemoCount = MemoCount+1, MemoTotal=MemoTotal+1 where Name = @RecvName
+	if( @@error <> 0 )
+	BEGIN
+		SET @return = 3
+		GOTO EndProcTran
+	END	
+	INSERT INTO T_FriendMail (MemoIndex, GUID, FriendName, wDate, Subject, Memo, bRead,  Dir,  Act) VALUES(@memocount,@userguid, @SendName, getdate(), @Subject, Convert(varbinary(1000),@Memo), 0,  @Dir, @Act)
+	if( @@error <> 0 )
+	BEGIN
+		SET @return = 4
+		GOTO EndProcTran
+	END
+EndProcTran:
+	if ( @return  <> 0 )
+	begin	
+		rollback transaction
+	end 
+	else
+	begin
+		commit transaction
+		SET @return = @memocount
+	end	
+EndProc:
+	SET	XACT_ABORT OFF
+	Set		nocount off
+	SELECT @return, @userguid
+End

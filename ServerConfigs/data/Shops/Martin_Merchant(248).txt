@@ -1,0 +1,49 @@
+//==============================================================================
+//www.titanstech.com
+//------------------------------------------------------------------------------
+//Revised 11 Aug, 2005			
+//==============================================================================
+//shop4 - Lorencia Wanderer Merchant (near the river)
+//
+
+14 0 0 10 0 0 0 0 //
+14 1 0 10 0 0 0 0 //
+14 2 0 10 0 0 0 0 //
+14 3 0 10 0 0 0 0 //
+14 4 0 10 0 0 0 0 //
+14 5 0 10 0 0 0 0 //
+14 6 0 10 0 0 0 0 //
+14 8 0 10 0 0 0 0 //
+
+//Armor Brass(DK)
+7 8 0 0 0 1 0 0 //Brass helm
+8 8 0 0 0 1 0 0 //Brass armor
+9 8 0 0 0 1 0 0 //Brass pants
+10 8 0 0 0 1 0 0 //Brass gloves
+11 8 0 0 0 1 0 0 //Brass boots
+
+//Shields
+6 9 0 0 0 1 1 0 //Ironshield
+6 4 0 0 0 0 2 0 //Buckler
+6 6 0 0 1 1 0 0 //Boneshield
+
+//Axes
+1 5 0 0 1 0 2 0 //Battleaxe
+1 6 0 0 1 0 1 0 //Nikkeaaxe
+1 7 0 0 1 0 0 0 //Larkanaxe
+
+//Maces/Hammers
+2 1 0 0 1 0 0 0 //Morningstar
+2 2 0 0 0 0 0 0 //Iron Hammer
+
+//Swords
+0 9 0 0 1 0 0 0 //Salamandersword
+0 10 0 0 1 0 0 0 //Light Saber
+0 15 0 0 1 0 0 0 //Giant Sword
+
+//Polearms
+3 5 0 0 1 0 0 0 //Double Halberd
+3 6 0 0 1 0 0 0 //Halberd
+0 9 0 0 0 0 2 0 //Salamandersword
+
+end

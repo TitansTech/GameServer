@@ -1,0 +1,33 @@
+CREATE PROCEDURE	[dbo].[TT_DuelScore]
+	@ServerCode		INT,
+	@AccountID		VARCHAR(10),
+	@Name			VARCHAR(10),
+	@Result			INT,
+	@Average		INT
+As
+Begin
+	BEGIN TRANSACTION
+	SET NOCOUNT ON	
+
+	IF EXISTS (SELECT NULL FROM DUEL_INFO WHERE Account = @AccountID AND Name = @Name AND ServerCode = @ServerCode) 
+		IF(@Result = 1)
+			UPDATE DUEL_INFO SET Win = Win+1, Average = Average + @Average WHERE Account = @AccountID AND Name = @Name AND ServerCode = @ServerCode
+		ELSE
+			UPDATE DUEL_INFO SET Lost = Lost+1, Average = Average + @Average WHERE Account = @AccountID AND Name = @Name AND ServerCode = @ServerCode
+	ELSE 
+		IF(@Result = 1)
+			INSERT INTO DUEL_INFO (ServerCode, Account, Name, Win, Lost, Average) VALUES (@ServerCode,@AccountID,@Name,1,0,@Average)
+		ELSE
+			INSERT INTO DUEL_INFO (ServerCode, Account, Name, Win, Lost, Average) VALUES (@ServerCode,@AccountID,@Name,0,1,@Average)
+
+	IF(@@Error <> 0 )
+		ROLLBACK TRANSACTION
+	ELSE	
+		COMMIT TRANSACTION
+
+	SET NOCOUNT OFF	
+End
+
+
+
+

@@ -1,0 +1,133 @@
+//============================================================================
+//Drop Settings: Box of KUNDUN + 1 Drops
+//www.titanstech.com
+//============================================================================
+//	type,	index,	level,	skill,	exc,	option	name
+//============================================================================
+
+//Pad   Set
+	7	2	7	0	0	4	//Helm
+	8	2	7	0	0	4	//Armor
+	9	2	7	0	0	4	//Pants
+	10	2	7	0	0	4	//Gloves
+	11	2	7	0	0	4	//Boots
+
+//Bone  Set
+	7	4	7	0	0	4	//Helm
+	8	4	7	0	0	4	//Armor
+	9	4	7	0	0	4	//Pants
+	10	4	7	0	0	4	//Gloves
+	11	4	7	0	0	4	//Boots
+
+//Leather set
+	7	5	7	0	0	4	//Helm
+	8	5	7	0	0	4	//Armor
+	9	5	7	0	0	4	//Pants
+	10	5	7	0	0	4	//Gloves
+	11	5	7	0	0	4	//Boots
+
+//Vine  Set
+	7	10	7	0	0	4	//Helm
+	8	10	7	0	0	4	//Armor
+	9	10	7	0	0	4	//Pants
+	10	10	7	0	0	4	//Gloves
+	11	10	7	0	0	4	//Boots
+
+//Sword
+	0	0	7	0	0	4	//Kris
+	0	1	7	0	0	4	//Short Sword
+	0	2	7	0	0	4	//Rapier
+	0	3	7	0	0	4	//Katana
+	0	4	7	0	0	4	//Sword of Assassin
+
+//Axes
+	1	0	7	1	0	4	//Small Axe
+	1	1	7	1	0	4	//Hand Axe
+
+//Blunt weapons
+	2	0	7	1	0	4	//Mace
+	2	1	7	1	0	4	//Morning Star
+	2	2	7	1	0	4	//Flail
+
+//Bows & Crossbows
+	4	0	7	1	0	4	//Short Bow
+	4	1	7	1	0	4	//Bow
+	4	8	7	1	0	4	//Crossbow
+	4	9	7	1	0	4	//Golden Crossbow
+
+//Staffs
+	5	0	7	1	0	4	//Skull Staff
+	5	1	7	1	0	4	//Angelic Staff
+	
+//Shields
+	6	0	7	1	0	4	//Small Shield
+	6	1	7	1	0	4	//Horn Shield
+	6	3	7	1	0	4	//Elven Shield
+	6	4	7	1	0	4	//Buckler
+
+//=========================================================================================
+//Pad   Set
+	7	2	7	0	1	4	//Helm
+	8	2	7	0	1	4	//Armor
+	9	2	7	0	1	4	//Pants
+	10	2	7	0	1	4	//Gloves
+	11	2	7	0	1	4	//Boots
+
+//Bone  Set
+	7	4	7	0	1	4	//Helm
+	8	4	7	0	1	4	//Armor
+	9	4	7	0	1	4	//Pants
+	10	4	7	0	1	4	//Gloves
+	11	4	7	0	1	4	//Boots
+
+//Leather set
+	7	5	7	0	1	4	//Helm
+	8	5	7	0	1	4	//Armor
+	9	5	7	0	1	4	//Pants
+	10	5	7	0	1	4	//Gloves
+	11	5	7	0	1	4	//Boots
+
+//Vine  Set
+	7	10	7	0	1	4	//Helm
+	8	10	7	0	1	4	//Armor
+	9	10	7	0	1	4	//Pants
+	10	10	7	0	1	4	//Gloves
+	11	10	7	0	1	4	//Boots
+
+//Sword
+	0	0	7	1	1	4	//Kris
+	0	1	7	1	1	4	//Short Sword
+	0	2	7	1	1	4	//Rapier
+	0	3	7	1	1	4	//Katana
+	0	4	7	1	1	4	//Sword of Assassin
+
+//Axes
+	1	0	7	1	1	4	//Small Axe
+	1	1	7	1	1	4	//Hand Axe
+
+//Blunt weapons
+	2	0	7	1	1	4	//Mace
+	2	1	7	1	1	4	//Morning Star
+	2	2	7	1	1	4	//Flail
+
+//Bows & Crossbows
+	4	0	7	1	1	4	//Short Bow
+	4	1	7	1	1	4	//Bow
+	4	8	7	1	1	4	//Crossbow
+	4	9	7	1	1	4	//Golden Crossbow
+
+//Staffs
+	5	0	7	1	1	4	//Skull Staff
+	5	1	7	1	1	4	//Angelic Staff
+	
+//Shields
+	6	0	7	1	1	4	//Small Shield
+	6	1	7	1	1	4	//Horn Shield
+	6	3	7	1	1	4	//Elven Shield
+	6	4	7	1	1	4	//Buckler
+
+//Rings+Pendant
+	13	8	3	0	1	4	//Ring of Ice
+	13	9	3	0	1	4	//Ring of Poison
+	13	12	3	0	1	4	//Pendant of Lightning
+	13	13	3	0	1	4	//Pendant of Fire

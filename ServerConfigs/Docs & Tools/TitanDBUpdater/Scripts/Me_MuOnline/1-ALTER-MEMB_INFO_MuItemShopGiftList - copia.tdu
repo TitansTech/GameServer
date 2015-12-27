@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.MEMB_INFO add GoldChannelTime int default(0) NOT NULL

@@ -1,0 +1,2308 @@
+//Quests
+//Num	Quest	NPC	Name		MinLvl	MaxLvl
+0	18	257	"Spider Hunt!"	1	14
+//
+//Requeriment		
+//			SkillID
+//			ItemType		ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	Dur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+1	18	1	3	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+1	18	1	2000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+3	18	257	"Dispose of the Town Plunderers!"	15	25
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+4	18	1	7	0		0	0	0	0	0	0	0	15		1	1	0	0	0	0	0
+5	18	1	6	0		0	0	0	0	0	0	0	15		0	0	0	1	1	0	1
+6	18	1	31	0		0	0	0	0	0	0	0	15		0	0	1	0	0	0	0
+7	18	1	419	0		0	0	0	0	0	0	0	15		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+4	18	1	6000		0		0	0	0	0	0	0	0	0
+5	18	1	6000		0		0	0	0	0	0	0	0	0
+6	18	1	6000		0		0	0	0	0	0	0	0	0
+7	18	1	6000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+9	18	257	"Boss of predator treatment!"	26	35
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+10	18	1	14	0		0	0	0	0	0	0	0	20		0	0	0	1	1	0	1
+11	18	1	7	0		0	0	0	0	0	0	0	20		1	1	0	0	0	0	0
+12	18	1	32	0		0	0	0	0	0	0	0	20		0	0	1	0	0	0	0
+13	18	1	419	0		0	0	0	0	0	0	0	20		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+10	18	1	10000		0		0	0	0	0	0	0	0	0
+11	18	1	10000		0		0	0	0	0	0	0	0	0
+12	18	1	10000		0		0	0	0	0	0	0	0	0
+13	18	1	10000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+15	18	257	"Monster Supply Route in Devias!"	36	45
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+16	18	1	22	0		0	0	0	0	0	0	0	25		0	0	0	1	1	0	1
+17	18	1	24	0		0	0	0	0	0	0	0	25		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+16	18	1	14000		0		0	0	0	0	0	0	0	0
+17	18	1	14000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+19	18	257	"Attack on the Supply Corps!"	46	55
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+20	18	1	21	0		0	0	0	0	0	0	0	30		0	0	0	1	1	0	1
+21	18	1	22	0		0	0	0	0	0	0	0	30		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+20	18	1	21000		0		0	0	0	0	0	0	0	0
+21	18	1	21000		0		0	0	0	0	0	0	0	0
+end
+//Quests
+//Num	Quest	NPC	Name			MinLvl	MaxLvl
+23	18	257	"Inland Supply Route!"	56	65
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+24	18	1	19	0		0	0	0	0	0	0	0	30		0	0	0	1	1	0	1
+25	18	1	23	0		0	0	0	0	0	0	0	30		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+24	18	1	28000		0		0	0	0	0	0	0	0	0
+25	18	1	28000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name			MinLvl	MaxLvl
+27	18	257	"Dungeon Sweep!"	66	79
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+28	18	1	17	0		0	0	0	0	0	0	0	40		0	0	0	1	1	0	1
+29	18	1	12	0		0	0	0	0	0	0	0	40		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+28	18	1	36000		0		0	0	0	0	0	0	0	0
+29	18	1	36000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+31	18	257	"and asked the elders of the Elbe!"	80	90
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+32	18	1	423	0		0	0	0	0	0	0	0	50		0	0	0	0	0	1	0
+33	18	1	422	0		0	0	0	0	0	0	0	50		1	1	1	1	1	0	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+32	18	1	38000		0		0	0	0	0	0	0	0	0
+33	18	1	38000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+35	18	257	"Situation at the Dungeon (1)"		91	100
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+36	18	1	5	0		0	0	0	0	0	0	0	50		1	1	1	0	0	1	0
+37	18	1	9	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+36	18	1	43000		0		0	0	0	0	0	0	0	0
+37	18	1	43000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+39	18	257	"Situation at the Dungeon (2)"		101	110
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+40	18	1	13	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+41	18	1	15	0		0	0	0	0	0	0	0	50		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+40	18	1	50000		0		0	0	0	0	0	0	0	0
+41	18	1	50000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+43	18	257	"Situation at the Dungeon (3)"		111	120
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+44	18	1	9	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+45	18	1	5	0		0	0	0	0	0	0	0	50		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+44	18	1	54000		0		0	0	0	0	0	0	0	0
+45	18	1	54000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+47	18	257	"Situation at the Dungeon (4)"		121	130
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+48	18	1	8	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+49	18	1	13	0		0	0	0	0	0	0	0	50		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+48	18	1	60000		0		0	0	0	0	0	0	0	0
+49	18	1	60000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+51	18	257	"Situation at the Dungeon (5)"		131	140
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+52	18	1	10	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+53	18	1	9	0		0	0	0	0	0	0	0	50		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+52	18	1	66000		0		0	0	0	0	0	0	0	0
+53	18	1	66000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+55	18	257	"Situation at the Dungeon (6)"		141	160
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+56	18	1	18	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+57	18	1	8	0		0	0	0	0	0	0	0	15		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+56	18	1	72000		0		0	0	0	0	0	0	0	0
+57	18	1	72000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+59	18	257	"Continuing Requests for Help (1)"	161	165
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+60	18	1	36	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+61	18	1	25	0		0	0	0	0	0	0	0	3		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+60	18	1	80000		0		0	0	0	0	0	0	0	0
+61	18	1	80000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+63	18	257	"Continuing Requests for Help (2)"	166	170
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+64	18	1	39	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+65	18	1	424	0		0	0	0	0	0	0	0	50		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+64	18	1	82000		0		0	0	0	0	0	0	0	0
+65	18	1	82000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+67	18	257	"Continuing Requests for Help (3)"	171	179
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+68	18	1	34	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+69	18	1	425	0		0	0	0	0	0	0	0	50		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+68	18	1	84000		0		0	0	0	0	0	0	0	0
+69	18	1	84000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+71	18	257	"Continuing Requests for Help (4)"	180	189
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+72	18	1	41	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+73	18	1	36	0		0	0	0	0	0	0	0	50		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+72	18	1	95000		0		0	0	0	0	0	0	0	0
+73	18	1	95000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+75	18	257	"Continuing Attacks on Barriers (1)"	190	199
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+76	18	1	37	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+77	18	1	34	0		0	0	0	0	0	0	0	50		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+76	18	1	100000		0		0	0	0	0	0	0	0	0
+77	18	1	100000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+79	18	257	"Continuing Attacks on Barriers (2)"	200	209
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+80	18	1	40	0		0	0	0	0	0	0	0	50		0	0	0	1	1	0	1
+81	18	1	41	0		0	0	0	0	0	0	0	50		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+80	18	1	115000		0		0	0	0	0	0	0	0	0
+81	18	1	115000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+83	18	257	"Continuing Attacks on Barriers (3)"	210	219
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+84	18	1	35	0		0	0	0	0	0	0	0	60		0	0	0	1	1	0	1
+85	18	1	37	0		0	0	0	0	0	0	0	60		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+84	18	1	130000		0		0	0	0	0	0	0	0	0
+85	18	1	130000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+87	18	257	"Clearing a Path to Icarus"		220	229
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+88	18	1	38	0		0	0	0	0	0	0	0	15		0	0	0	1	1	0	1
+89	18	1	40	0		0	0	0	0	0	0	0	60		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+88	18	1	140000		0		0	0	0	0	0	0	0	0
+89	18	1	140000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+91	18	257	"Clearing a Path to Icarus"		220	229
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+92	18	1	38	0		0	0	0	0	0	0	0	15		0	0	0	1	1	0	1
+93	18	1	40	0		0	0	0	0	0	0	0	60		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+92	18	4	12		15		0	0	0	0	0	0	0	1
+93	18	4	12		15		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name						MinLvl	MaxLvl
+95	18	257	"Advancement of the Reconnaissance Party (1)"	230	234
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+96	18	1	62	0		0	0	0	0	0	0	0	60		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+96	18	1	150000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name						MinLvl	MaxLvl
+98	18	257	"Advancement of the Reconnaissance Party (1)"	230	234
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+99	18	1	62	0		0	0	0	0	0	0	0	60		0	0	0	1	1	0	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+99	18	1	150000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name						MinLvl	MaxLvl
+101	18	257	"Advancement of the Reconnaissance Party (2)"	235	239
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+102	18	1	60	0		0	0	0	0	0	0	0	60		0	0	0	1	1	0	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+102	18	4	14		14		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name						MinLvl	MaxLvl
+104	18	257	"Advancement of the Reconnaissance Party (2)"	235	239
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+105	18	1	60	0		0	0	0	0	0	0	0	60		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+105	18	4	14		14		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name						MinLvl	MaxLvl
+107	18	257	"Advancement of the Reconnaissance Party (3)"	240	244
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+108	18	1	57	0		0	0	0	0	0	0	0	60		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+108	18	4	14		14		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name						MinLvl	MaxLvl
+110	18	257	"Advancement of the Reconnaissance Party (3)"	240	244
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+111	18	1	57	0		0	0	0	0	0	0	0	60		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+111	18	1	170000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+113	18	257	"Road to Floating Castle (1)"	245	249
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+114	18	1	69	0		0	0	0	0	0	0	0	80		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+114	18	1	200000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+116	18	257	"Road to Floating Castle (1)"	245	249
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+117	18	1	69	0		0	0	0	0	0	0	0	80		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+117	18	4	14		13		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+119	18	257	"Road to Floating Castle (2)"	250	254
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+120	18	1	71	0		0	0	0	0	0	0	0	80		0	0	0	1	1	0	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+120	18	1	190000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+122	18	257	"Road to Floating Castle (2)"	250	254
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+123	18	1	71	0		0	0	0	0	0	0	0	80		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+123	18	1	190000		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+125	18	257	"Road to Floating Castle (3)"	255	259
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+126	18	1	70	0		0	0	0	0	0	0	0	80		1	1	1	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+126	18	4	14		13		0	0	0	0	0	0	0	1
+126	18	4	14		14		0	0	0	0	0	0	0	1
+126	18	4	12		15		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+128	18	257	"Road to Floating Castle (3)"	255	259
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+129	18	1	70	0		0	0	0	0	0	0	0	80		0	0	0	1	1	0	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+129	18	4	14		13		0	0	0	0	0	0	0	1
+129	18	4	14		14		0	0	0	0	0	0	0	1
+129	18	4	12		15		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+1	15	257	"The Beginning of Requests"	80	90
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+3	15	1	422	0		0	0	0	0	0	0	0	50		0	0	1	0	0	1	0
+3	15	1	19	0		0	0	0	0	0	0	0	50		0	0	1	0	0	1	0
+4	15	1	423	0		0	0	0	0	0	0	0	50		1	1	0	0	0	0	0
+4	15	1	20	0		0	0	0	0	0	0	0	50		1	1	0	0	0	0	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+3	15	1	60000		0		0	0	0	0	0	0	0	0
+3	15	2	1500000		0		0	0	0	0	0	0	0	0
+3	15	4	12		15		0	0	0	0	0	0	0	1
+4	15	1	60000		0		0	0	0	0	0	0	0	0
+4	15	2	1500000		0		0	0	0	0	0	0	0	0
+4	15	4	12		15		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+5	15	257	"Conquer the Dungeon! (1)"	91	100
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+6	15	1	15	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+6	15	1	5	0		0	0	0	0	0	0	0	30		0	1	0	0	0	0	0
+7	15	1	17	0		0	0	0	0	0	0	0	50		1	0	0	0	0	0	0
+7	15	1	11	0		0	0	0	0	0	0	0	30		1	0	0	0	0	0	0
+8	15	1	15	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+8	15	1	5	0		0	0	0	0	0	0	0	30		0	0	1	0	0	0	0
+9	15	1	17	0		0	0	0	0	0	0	0	50		0	0	0	0	0	1	0
+9	15	1	11	0		0	0	0	0	0	0	0	30		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+6	15	4	10		1		8	0	0	0	0	0	0	1
+7	15	4	10		3		8	0	0	0	0	0	0	1
+8	15	4	10		14		8	0	0	0	0	0	0	1
+9	15	4	10		40		8	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+11	15	257	"Conquer the Dungeon! (2)"	101	110
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+12	15	1	5	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+12	15	1	13	0		0	0	0	0	0	0	0	30		0	1	0	0	0	0	0
+13	15	1	15	0		0	0	0	0	0	0	0	50		1	0	0	0	0	0	0
+13	15	1	5	0		0	0	0	0	0	0	0	30		1	0	0	0	0	0	0
+14	15	1	5	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+14	15	1	13	0		0	0	0	0	0	0	0	30		0	0	1	0	0	0	0
+15	15	1	15	0		0	0	0	0	0	0	0	50		0	0	0	0	0	1	0
+15	15	1	5	0		0	0	0	0	0	0	0	30		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+12	15	4	11		1		8	0	0	0	0	0	0	1
+13	15	4	11		3		8	0	0	0	0	0	0	1
+14	15	4	11		14		8	0	0	0	0	0	0	1
+15	15	4	11		40		8	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+17	15	257	"Conquer the Dungeon! (3)"	111	120
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+18	15	1	428	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+18	15	1	9	0		0	0	0	0	0	0	0	30		0	1	0	0	0	0	0
+19	15	1	5	0		0	0	0	0	0	0	0	50		1	0	0	0	0	0	0
+19	15	1	13	0		0	0	0	0	0	0	0	30		1	0	0	0	0	0	0
+20	15	1	428	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+20	15	1	9	0		0	0	0	0	0	0	0	30		0	0	1	0	0	0	0
+21	15	1	5	0		0	0	0	0	0	0	0	50		0	0	0	0	0	1	0
+21	15	1	13	0		0	0	0	0	0	0	0	30		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+18	15	4	7		1		8	0	0	0	0	0	0	1
+19	15	4	7		3		8	0	0	0	0	0	0	1
+20	15	4	7		14		8	0	0	0	0	0	0	1
+21	15	4	7		40		8	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+23	15	257	"Conquer the Dungeon! (4)"	121	130
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+24	15	1	8	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+24	15	1	10	0		0	0	0	0	0	0	0	30		0	1	0	0	0	0	0
+25	15	1	13	0		0	0	0	0	0	0	0	50		1	0	0	0	0	0	0
+25	15	1	428	0		0	0	0	0	0	0	0	30		1	0	0	0	0	0	0
+26	15	1	8	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+26	15	1	10	0		0	0	0	0	0	0	0	30		0	0	1	0	0	0	0
+27	15	1	13	0		0	0	0	0	0	0	0	50		0	0	0	0	0	1	0
+27	15	1	428	0		0	0	0	0	0	0	0	30		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+24	15	4	9		1		8	0	0	0	0	0	0	1
+25	15	4	9		3		8	0	0	0	0	0	0	1
+26	15	4	9		14		8	0	0	0	0	0	0	1
+27	15	4	9		40		8	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+29	15	257	"Conquer the Dungeon! (5)"	131	140
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+30	15	1	10	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+30	15	1	18	0		0	0	0	0	0	0	0	10		0	1	0	0	0	0	0
+31	15	1	428	0		0	0	0	0	0	0	0	50		1	0	0	0	0	0	0
+31	15	1	9	0		0	0	0	0	0	0	0	30		1	0	0	0	0	0	0
+32	15	1	10	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+32	15	1	18	0		0	0	0	0	0	0	0	10		0	0	1	0	0	0	0
+33	15	1	428	0		0	0	0	0	0	0	0	50		0	0	0	0	0	1	0
+33	15	1	9	0		0	0	0	0	0	0	0	30		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+30	15	4	8		1		8	0	0	0	0	0	0	1
+31	15	4	8		3		8	0	0	0	0	0	0	1
+32	15	4	8		14		8	0	0	0	0	0	0	1
+33	15	4	8		40		8	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+35	15	257	"Conquer the Dungeon! (6)"	141	160
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+36	15	1	10	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+36	15	1	18	0		0	0	0	0	0	0	0	30		0	1	0	0	0	0	0
+37	15	1	8	0		0	0	0	0	0	0	0	50		1	0	0	0	0	0	0
+37	15	1	10	0		0	0	0	0	0	0	0	5		1	0	0	0	0	0	0
+37	15	1	18	0		0	0	0	0	0	0	0	1		1	0	0	0	0	0	0
+38	15	1	10	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+38	15	1	18	0		0	0	0	0	0	0	0	30		0	0	1	0	0	0	0
+39	15	1	8	0		0	0	0	0	0	0	0	50		0	0	0	0	0	1	0
+39	15	1	10	0		0	0	0	0	0	0	0	5		0	0	0	0	0	1	0
+39	15	1	18	0		0	0	0	0	0	0	0	1		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+36	15	4	0		13		8	0	0	1	0	0	0	2
+37	15	4	5		5		7	0	0	0	0	0	0	1
+38	15	4	4		13		8	0	0	1	0	0	0	1
+39	15	4	5		16		7	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name						MinLvl	MaxLvl
+41	15	257	"The mission of reconnaissance troops (1)"	161	165
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+42	15	1	36	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+42	15	1	39	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+43	15	1	25	0		0	0	0	0	0	0	0	5		1	0	0	0	0	0	0
+44	15	1	36	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+44	15	1	39	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+45	15	1	25	0		0	0	0	0	0	0	0	5		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+42	15	4	10		34		7	0	0	0	0	0	0	1
+43	15	4	10		35		7	0	0	0	0	0	0	1
+44	15	4	10		36		7	0	0	0	0	0	0	1
+45	15	4	10		41		7	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name						MinLvl	MaxLvl
+47	15	257	"The mission of reconnaissance troops (2)"	166	170
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+48	15	1	39	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+48	15	1	34	0		0	0	0	0	0	0	0	30		0	1	0	0	0	0	0
+49	15	1	424	0		0	0	0	0	0	0	0	100		1	0	0	0	0	0	0
+50	15	1	39	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+50	15	1	34	0		0	0	0	0	0	0	0	30		0	0	1	0	0	0	0
+51	15	1	424	0		0	0	0	0	0	0	0	100		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+48	15	4	11		34		7	0	0	0	0	0	0	1
+49	15	4	11		35		7	0	0	0	0	0	0	1
+50	15	4	11		36		7	0	0	0	0	0	0	1
+51	15	4	11		41		7	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name						MinLvl	MaxLvl
+53	15	257	"The mission of reconnaissance troops (3)"	171	179
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+54	15	1	34	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+54	15	1	41	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+55	15	1	425	0		0	0	0	0	0	0	0	100		1	0	0	0	0	0	0
+56	15	1	34	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+56	15	1	41	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+57	15	1	425	0		0	0	0	0	0	0	0	100		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+54	15	4	9		34		7	0	0	0	0	0	0	1
+54	15	4	7		34		7	0	0	0	0	0	0	1
+55	15	4	9		35		7	0	0	0	0	0	0	1
+55	15	4	7		35		7	0	0	0	0	0	0	1
+56	15	4	9		36		7	0	0	0	0	0	0	1
+56	15	4	7		36		7	0	0	0	0	0	0	1
+57	15	4	9		41		7	0	0	0	0	0	0	1
+57	15	4	7		41		7	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name						MinLvl	MaxLvl
+59	15	257	"The mission of reconnaissance troops (4)"	180	185
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+60	15	1	41	0		0	0	0	0	0	0	0	100		0	1	0	0	0	0	0
+61	15	1	36	0		0	0	0	0	0	0	0	100		1	0	0	0	0	0	0
+62	15	1	41	0		0	0	0	0	0	0	0	100		0	0	1	0	0	0	0
+63	15	1	36	0		0	0	0	0	0	0	0	100		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+60	15	4	8		34		7	0	0	0	0	0	0	1
+60	15	4	2		6		4	4	0	0	0	0	0	1
+61	15	4	8		35		7	0	0	0	0	0	0	1
+61	15	4	2		6		4	4	0	0	0	0	0	1
+62	15	4	8		36		7	0	0	0	0	0	0	1
+62	15	4	2		6		4	4	0	0	0	0	0	1
+63	15	4	8		41		7	0	0	0	0	0	0	1
+63	15	4	2		6		4	4	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+65	15	257	"Put the Lost Tower to Sleep! (1)"	186	189
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+66	15	1	41	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+66	15	1	37	0		0	0	0	0	0	0	0	30		0	1	0	0	0	0	0
+67	15	1	36	0		0	0	0	0	0	0	0	50		1	0	0	0	0	0	0
+67	15	1	39	0		0	0	0	0	0	0	0	30		1	0	0	0	0	0	0
+68	15	1	41	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+68	15	1	37	0		0	0	0	0	0	0	0	30		0	0	1	0	0	0	0
+69	15	1	36	0		0	0	0	0	0	0	0	50		0	0	0	0	0	1	0
+69	15	1	39	0		0	0	0	0	0	0	0	30		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+66	15	4	10		34		8	0	0	0	0	0	0	1
+67	15	4	10		35		8	0	0	0	0	0	0	1
+68	15	4	10		36		8	0	0	0	0	0	0	1
+69	15	4	10		41		8	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+71	15	257	"Put the Lost Tower to Sleep! (2)"	190	193
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+72	15	1	37	0		0	0	0	0	0	0	0	100		0	1	0	0	0	0	0
+73	15	1	39	0		0	0	0	0	0	0	0	50		1	0	0	0	0	0	0
+73	15	1	34	0		0	0	0	0	0	0	0	30		1	0	0	0	0	0	0
+74	15	1	37	0		0	0	0	0	0	0	0	100		0	0	1	0	0	0	0
+75	15	1	39	0		0	0	0	0	0	0	0	50		0	0	0	0	0	1	0
+75	15	1	34	0		0	0	0	0	0	0	0	30		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+72	15	4	11		34		8	0	0	0	0	0	0	1
+73	15	4	11		35		8	0	0	0	0	0	0	1
+74	15	4	11		36		8	0	0	0	0	0	0	1
+75	15	4	11		41		8	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+77	15	257	"Put the Lost Tower to Sleep! (3)"	194	197
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+78	15	1	40	0		0	0	0	0	0	0	0	100		0	1	0	0	0	0	0
+79	15	1	34	0		0	0	0	0	0	0	0	50		1	0	0	0	0	0	0
+79	15	1	41	0		0	0	0	0	0	0	0	50		1	0	0	0	0	0	0
+80	15	1	40	0		0	0	0	0	0	0	0	100		0	0	1	0	0	0	0
+81	15	1	34	0		0	0	0	0	0	0	0	50		0	0	0	0	0	1	0
+81	15	1	41	0		0	0	0	0	0	0	0	50		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+78	15	4	7		34		8	0	0	0	0	0	0	1
+79	15	4	7		35		8	0	0	0	0	0	0	1
+80	15	4	7		36		8	0	0	0	0	0	0	1
+81	15	4	7		41		8	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+83	15	257	"Put the Lost Tower to Sleep! (4)"	198	201
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+84	15	1	40	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+84	15	1	35	0		0	0	0	0	0	0	0	30		0	1	0	0	0	0	0
+85	15	1	41	0		0	0	0	0	0	0	0	100		1	0	0	0	0	0	0
+86	15	1	40	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+86	15	1	35	0		0	0	0	0	0	0	0	30		0	0	1	0	0	0	0
+87	15	1	41	0		0	0	0	0	0	0	0	100		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+84	15	4	9		34		8	0	0	0	0	0	0	1
+85	15	4	9		35		8	0	0	0	0	0	0	1
+86	15	4	9		36		8	0	0	0	0	0	0	1
+87	15	4	9		41		8	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+89	15	257	"Put the Lost Tower to Sleep! (5)"	202	205
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+90	15	1	35	0		0	0	0	0	0	0	0	50		0	1	0	0	0	0	0
+90	15	1	38	0		0	0	0	0	0	0	0	10		0	1	0	0	0	0	0
+91	15	1	37	0		0	0	0	0	0	0	0	100		1	0	0	0	0	0	0
+92	15	1	35	0		0	0	0	0	0	0	0	50		0	0	1	0	0	0	0
+92	15	1	38	0		0	0	0	0	0	0	0	10		0	0	1	0	0	0	0
+93	15	1	37	0		0	0	0	0	0	0	0	100		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+90	15	4	8		34		8	0	0	0	0	0	0	1
+91	15	4	8		35		8	0	0	0	0	0	0	1
+92	15	4	8		36		8	0	0	0	0	0	0	1
+93	15	4	8		41		8	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+95	15	257	"Put the Lost Tower to Sleep! (6)"	206	209
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+96	15	1	35	0		0	0	0	0	0	0	0	30		0	1	0	0	0	0	0
+96	15	1	38	0		0	0	0	0	0	0	0	20		0	1	0	0	0	0	0
+97	15	1	40	0		0	0	0	0	0	0	0	100		1	0	0	0	0	0	0
+98	15	1	35	0		0	0	0	0	0	0	0	30		0	0	1	0	0	0	0
+98	15	1	38	0		0	0	0	0	0	0	0	20		0	0	1	0	0	0	0
+99	15	1	40	0		0	0	0	0	0	0	0	100		0	0	0	0	0	1	0
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+96	15	4	2		5		7	0	0	1	0	0	0	1
+97	15	4	5		5		8	0	0	0	0	0	0	1
+98	15	4	4		14		7	0	0	1	0	0	0	1
+99	15	4	5		16		8	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+3	19	257	"Random Quest (1)"		260	289
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+5	19	1	57	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+6	19	1	57	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+7	19	1	57	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+8	19	1	57	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+9	19	1	57	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+10	19	1	57	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+11	19	1	57	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+12	19	1	57	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+13	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+13	19	1	58	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+14	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+14	19	1	58	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+15	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+15	19	1	58	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+16	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+16	19	1	58	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+17	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+17	19	1	58	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+18	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+18	19	1	58	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+19	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+19	19	1	58	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+20	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+20	19	1	58	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+21	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+21	19	1	61	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+22	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+22	19	1	61	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+23	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+23	19	1	61	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+24	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+24	19	1	61	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+25	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+25	19	1	61	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+26	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+26	19	1	61	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+27	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+27	19	1	61	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+28	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+28	19	1	61	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+29	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+29	19	4	5	6		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+30	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+30	19	4	5	6		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+31	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+31	19	4	5	6		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+32	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+32	19	4	5	6		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+33	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+33	19	4	5	6		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+34	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+34	19	4	5	6		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+35	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+35	19	4	5	6		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+36	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+36	19	4	5	6		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+37	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+37	19	4	13	2		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+38	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+38	19	4	13	2		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+39	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+39	19	4	13	2		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+40	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+40	19	4	13	2		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+41	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+41	19	4	13	2		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+42	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+42	19	4	13	2		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+43	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+43	19	4	13	2		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+44	19	1	62	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+44	19	4	13	2		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+5	19	1	50000		0		0	0	0	0	0	0	0	0
+5	19	4	5		17		4	12	0	0	255	0	0	1
+6	19	4	2		6		4	12	0	1	255	0	0	1
+6	19	2	100000		0		0	0	0	0	0	0	0	0
+7	19	4	14		14		0	0	0	0	1	0	0	1
+8	19	4	13		1		0	0	0	0	255	0	0	1
+8	19	4	14		19		4	0	0	0	255	0	0	1
+9	19	4	12		15		0	0	0	0	1	0	0	1
+10	19	4	13		0		0	0	0	0	255	0	0	1
+11	19	4	4		16		4	12	0	1	255	0	0	1
+12	19	2	200000		0		0	0	0	0	0	0	0	0
+12	19	4	13		18		6	0	0	0	255	0	0	1
+13	19	4	2		10		4	12	0	1	255	0	0	1
+14	19	4	5		9		4	12	0	0	255	0	0	1
+15	19	4	13		3		0	0	0	1	255	0	0	1
+16	19	4	2		6		4	12	0	1	255	0	0	1
+16	19	1	120000		0		0	0	0	0	0	0	0	0
+17	19	4	14		14		0	0	0	0	1	0	0	10
+18	19	4	5		17		4	12	0	0	255	0	0	1
+19	19	4	14		41		0	0	0	0	1	0	0	1
+20	19	4	3		10		4	12	0	1	255	0	0	1
+21	19	4	14		42		0	0	0	0	1	0	0	1
+22	19	4	13		18		5	0	0	0	255	0	0	1
+23	19	4	2		10		4	12	0	1	255	0	0	1
+24	19	4	13		1		0	0	0	0	255	0	0	1
+24	19	4	12		15		0	0	0	0	1	0	0	1
+25	19	4	14		14		0	0	0	0	1	0	0	10
+26	19	4	5		9		4	12	0	0	255	0	0	1
+27	19	1	50000		0		0	0	0	0	0	0	0	0
+27	19	4	13		18		6	0	0	0	255	0	0	1
+28	19	4	14		42		0	0	0	0	1	0	0	1
+29	19	4	14		41		0	0	0	0	1	0	0	1
+30	19	4	14		14		0	0	0	0	1	0	0	1
+31	19	4	3		10		4	12	0	1	255	0	0	1
+32	19	4	14		19		5	0	0	0	255	0	0	1
+33	19	4	13		0		0	0	0	0	255	0	0	1
+34	19	4	14		19		4	0	0	0	255	0	0	1
+35	19	4	4		16		4	12	0	1	255	0	0	1
+35	19	4	13		3		0	0	0	1	255	0	0	1
+36	19	4	14		13		0	0	0	0	1	0	0	1
+37	19	4	5		17		4	12	0	0	255	0	0	1
+38	19	4	2		6		4	12	0	1	255	0	0	1
+39	19	1	50000		0		0	0	0	0	0	0	0	0
+39	19	4	4		16		4	12	0	1	255	0	0	1
+40	19	4	14		19		5	0	0	0	255	0	0	1
+40	19	4	14		14		0	0	0	0	1	0	0	10
+42	19	4	14		42		0	0	0	0	1	0	0	1
+43	19	4	14		41		0	0	0	0	1	0	0	1
+44	19	4	5		9		4	12	0	0	255	0	0	1
+44	19	4	2		6		4	12	0	1	255	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+48	19	257	"Random Quest (2)"		290	319
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+50	19	1	70	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+51	19	1	70	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+52	19	1	70	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+53	19	1	70	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+54	19	1	70	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+55	19	1	70	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+56	19	1	70	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+57	19	1	70	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+58	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+58	19	1	73	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+59	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+59	19	1	73	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+60	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+60	19	1	73	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+61	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+61	19	1	73	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+62	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+62	19	1	73	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+63	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+63	19	1	73	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+64	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+64	19	1	73	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+65	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+65	19	1	73	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+66	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+66	19	1	74	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+67	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+67	19	1	74	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+68	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+68	19	1	74	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+69	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+69	19	1	74	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+70	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+70	19	1	74	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+71	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+71	19	1	74	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+72	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+72	19	1	74	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+73	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+73	19	1	74	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+74	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+74	19	4	0	16		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+75	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+75	19	4	0	16		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+76	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+76	19	4	0	16		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+77	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+77	19	4	0	16		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+78	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+78	19	4	0	16		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+79	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+79	19	4	0	16		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+80	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+80	19	4	0	16		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+81	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+81	19	4	0	16		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+82	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+82	19	4	2	5		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+83	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+83	19	4	2	5		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+84	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+84	19	4	2	5		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+85	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+85	19	4	2	5		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+86	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+86	19	4	2	5		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+87	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+87	19	4	2	5		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+88	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+88	19	4	2	5		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+89	19	1	69	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+89	19	4	2	5		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+50	19	4	5		17		6	12	0	0	255	0	0	1
+51	19	4	14		42		0	0	0	0	1	0	0	1
+52	19	4	2		10		6	12	0	1	255	0	0	1
+53	19	4	14		19		5	0	0	0	255	0	0	1
+53	19	1	140000		0		0	0	0	0	0	0	0	0
+54	19	2	200000		0		0	0	0	0	0	0	0	0
+54	19	4	14		19		6	0	0	0	255	0	0	1
+55	19	4	14		13		0	0	0	0	1	0	0	1
+55	19	4	13		0		0	0	0	0	255	0	0	1
+56	19	4	13		1		0	0	0	0	255	0	0	1
+56	19	1	70000		0		0	0	0	0	0	0	0	0
+57	19	4	14		13		0	0	0	0	1	0	0	10
+58	19	4	4		16		6	12	0	1	255	0	0	1
+59	19	4	12		15		0	0	0	0	1	0	0	1
+59	19	4	13		3		0	0	0	1	255	0	0	1
+60	19	4	13		18		6	0	0	0	255	0	0	1
+61	19	4	14		14		0	0	0	0	1	0	0	1
+62	19	4	3		10		6	12	0	1	255	0	0	1
+63	19	4	14		41		0	0	0	0	1	0	0	1
+63	19	4	13		18		7	0	0	0	255	0	0	1
+64	19	4	14		16		0	0	0	0	1	0	0	1
+64	19	1	140000		0		0	0	0	0	0	0	0	0
+65	19	4	13		18		6	0	0	0	255	0	0	1
+65	19	4	13		3		0	0	0	1	255	0	0	1
+66	19	4	5		9		6	12	0	0	255	0	0	1
+67	19	4	4		16		6	12	0	1	255	0	0	1
+68	19	1	70000		0		0	0	0	0	0	0	0	0
+68	19	4	13		18		7	0	0	0	255	0	0	1
+69	19	2	200000		0		0	0	0	0	0	0	0	0
+69	19	4	14		41		0	0	0	0	1	0	0	1
+70	19	4	3		10		6	12	0	1	255	0	0	1
+71	19	4	5		17		6	12	0	0	255	0	0	1
+72	19	4	14		19		6	0	0	0	255	0	0	1
+72	19	4	13		0		0	0	0	0	255	0	0	1
+73	19	4	14		13		0	0	0	0	1	0	0	10
+74	19	4	5		9		6	12	0	0	255	0	0	1
+75	19	4	2		10		6	12	0	1	255	0	0	1
+76	19	4	13		1		0	0	0	0	255	0	0	1
+76	19	4	12		15		0	0	0	0	1	0	0	1
+77	19	4	14		14		0	0	0	0	1	0	0	1
+78	19	4	14		42		0	0	0	0	1	0	0	1
+79	19	4	14		13		0	0	0	0	1	0	0	1
+79	19	4	14		19		5	0	0	0	255	0	0	1
+80	19	4	14		16		0	0	0	0	1	0	0	1
+80	19	1	140000		0		0	0	0	0	0	0	0	0
+81	19	4	14		19		6	0	0	0	255	0	0	1
+81	19	4	14		14		0	0	0	0	1	0	0	1
+82	19	4	4		16		6	12	0	1	255	0	0	1
+83	19	4	14		13		0	0	0	0	1	0	0	10
+84	19	2	200000		0		0	0	0	0	0	0	0	0
+84	19	4	14		42		0	0	0	0	1	0	0	1
+85	19	4	2		10		6	12	0	1	255	0	0	1
+86	19	4	13		18		7	0	0	0	255	0	0	1
+86	19	4	14		13		0	0	0	0	1	0	0	1
+87	19	4	3		10		6	12	0	1	255	0	0	1
+88	19	4	5		17		6	12	0	0	255	0	0	1
+89	19	4	5		9		6	12	0	0	255	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+93	19	257	"Random Quest (3)"		320	349
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+95	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+95	19	1	353	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+96	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+96	19	1	353	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+97	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+97	19	1	353	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+98	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+98	19	1	353	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+99	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+99	19	1	353	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+100	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+100	19	1	353	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+101	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+101	19	1	353	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+102	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+102	19	1	353	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+103	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+103	19	1	354	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+104	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+104	19	1	354	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+105	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+105	19	1	354	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+106	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+106	19	1	354	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+107	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+107	19	1	354	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+108	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+108	19	1	354	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+109	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+109	19	1	354	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+110	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+110	19	1	354	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+111	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+111	19	1	355	0		0	0	0	0	0	0	0	5		1	1	1	1	1	1	1
+112	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+112	19	1	355	0		0	0	0	0	0	0	0	5		1	1	1	1	1	1	1
+113	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+113	19	1	355	0		0	0	0	0	0	0	0	5		1	1	1	1	1	1	1
+114	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+114	19	1	355	0		0	0	0	0	0	0	0	5		1	1	1	1	1	1	1
+115	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+115	19	1	355	0		0	0	0	0	0	0	0	5		1	1	1	1	1	1	1
+116	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+116	19	1	355	0		0	0	0	0	0	0	0	5		1	1	1	1	1	1	1
+117	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+117	19	1	355	0		0	0	0	0	0	0	0	5		1	1	1	1	1	1	1
+118	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+118	19	1	355	0		0	0	0	0	0	0	0	5		1	1	1	1	1	1	1
+119	19	1	352	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+120	19	1	352	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+121	19	1	352	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+122	19	1	352	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+123	19	1	352	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+124	19	1	352	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+125	19	1	352	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+126	19	1	352	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+127	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+127	19	4	5	17		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+128	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+128	19	4	5	17		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+129	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+129	19	4	5	17		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+130	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+130	19	4	5	17		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+131	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+131	19	4	5	17		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+132	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+132	19	4	5	17		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+133	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+133	19	4	5	17		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+134	19	1	351	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+134	19	4	5	17		0	12	0	0	0	0	0	1		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+95	19	4	5		18		0	12	0	0	255	0	0	1
+96	19	4	14		13		0	0	0	0	1	0	0	10
+97	19	4	13		3		0	0	0	1	255	0	0	1
+97	19	1	90000		0		0	0	0	0	0	0	0	0
+98	19	1	160000		0		0	0	0	0	0	0	0	0
+98	19	4	14		14		0	0	0	0	1	0	0	1
+99	19	4	13		18		7	0	0	0	255	0	0	1
+99	19	4	13		0		0	0	0	0	255	0	0	1
+100	19	4	14		41		0	0	0	0	1	0	0	1
+101	19	4	14		13		0	0	0	0	1	0	0	1
+101	19	4	14		19		5	0	0	0	255	0	0	1
+102	19	4	2		6		5	12	0	1	255	0	0	1
+103	19	4	4		22		0	12	0	1	255	0	0	1
+104	19	4	14		19		6	0	0	0	255	0	0	1
+104	19	4	13		1		0	0	0	0	255	0	0	1
+105	19	4	2		6		6	12	0	1	255	0	0	1
+106	19	4	5		11		0	12	0	0	255	0	0	1
+107	19	4	12		15		0	0	0	0	1	0	0	1
+108	19	4	14		16		0	0	0	0	1	0	0	1
+109	19	4	13		18		6	0	0	0	255	0	0	1
+109	19	4	14		42		0	0	0	0	1	0	0	1
+110	19	4	14		1		0	0	0	0	1	0	0	10
+111	19	4	0		20		0	12	0	1	255	0	0	1
+112	19	4	14		41		0	0	0	0	1	0	0	1
+113	19	1	160000		0		0	0	0	0	0	0	0	0
+113	19	4	13		3		0	0	0	1	255	0	0	1
+114	19	4	5		11		0	12	0	0	255	0	0	1
+115	19	4	13		0		0	0	0	0	255	0	0	1
+115	19	1	90000		0		0	0	0	0	0	0	0	0
+116	19	4	12		15		0	0	0	0	1	0	0	1
+116	19	4	13		1		0	0	0	0	255	0	0	1
+117	19	4	14		19		5	0	0	0	255	0	0	1
+117	19	4	13		18		7	0	0	0	255	0	0	1
+118	19	4	2		6		6	12	0	1	255	0	0	1
+119	19	4	2		6		5	12	0	1	255	0	0	1
+120	19	4	0		20		0	12	0	1	255	0	0	1
+121	19	4	4		22		0	12	0	1	255	0	0	1
+122	19	4	14		14		0	0	0	0	1	0	0	1
+122	19	4	14		16		0	0	0	0	1	0	0	1
+123	19	4	5		18		0	12	0	0	255	0	0	1
+123	19	4	13		18		6	0	0	0	255	0	0	1
+124	19	4	14		19		6	0	0	0	255	0	0	1
+124	19	4	14		42		0	0	0	0	1	0	0	1
+125	19	4	14		13		0	0	0	0	1	0	0	1
+126	19	4	14		13		0	0	0	0	1	0	0	10
+127	19	4	5		18		0	12	0	0	255	0	0	1
+128	19	1	160000		0		0	0	0	0	0	0	0	0
+128	19	4	14		42		0	0	0	0	1	0	0	1
+129	19	1	90000		0		0	0	0	0	0	0	0	0
+129	19	4	14		13		0	0	0	0	1	0	0	1
+130	19	4	12		15		0	0	0	0	1	0	0	1
+130	19	4	2		6		5	12	0	1	255	0	0	1
+131	19	4	0		20		0	12	0	1	255	0	0	1
+132	19	4	13		18		7	0	0	0	255	0	0	1
+132	19	4	14		16		0	0	0	0	1	0	0	1
+133	19	4	5		11		0	12	0	0	255	0	0	1
+134	19	4	14		19		6	0	0	0	255	0	0	1
+134	19	4	14		41		0	0	0	0	1	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+0	16	543	"Rage of Vepars"		230	299
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+2	16	1	46	0		0	0	0	0	0	0	0	50		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+2	16	16	5		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+3	16	543	"End the Spread of Death Trees"		300	339
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+5	16	1	308	0		0	0	0	0	0	0	0	50		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+5	16	16	40		0		0	0	0	0	0	0	0	0
+5	16	4	13		18		7	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+6	16	543	"Eliminate Splinter Wolves"	340	359
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+8	16	1	351	0		0	0	0	0	0	0	0	50		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+8	16	16	60		0		0	0	0	0	0	0	0	0
+8	16	4	12		15		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+9	16	543	"Eliminate Blood Assasins"	360	379
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+11	16	1	486	0		0	0	0	0	0	0	0	50		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+11	16	16	80		0		0	0	0	0	0	0	0	0
+11	16	4	14		13		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name			MinLvl	MaxLvl
+12	16	543	"Eliminate Sapi-Duos"	380	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+14	16	1	442	0		0	0	0	0	0	0	0	50		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+14	16	16	100		0		0	0	0	0	0	0	0	0
+14	16	4	14		13		0	0	0	0	0	0	0	1
+14	16	4	14		14		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name						MinLvl	MaxLvl
+0	17	544	"Eliminate Plundering Silver Valkyries"		230	299
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+2	17	1	52	0		0	0	0	0	0	0	0	50		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+2	17	16	5		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name				MinLvl	MaxLvl
+3	17	544	"Rebels of the Forest"		300	339
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+5	17	1	306	0		0	0	0	0	0	0	0	50		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+5	17	16	40		0		0	0	0	0	0	0	0	0
+5	17	4	13		18		7	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+6	17	544	"Wipe Out the Elusive Iron Riders"	340	359
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+8	17	1	352	0		0	0	0	0	0	0	0	50		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+8	17	16	60		0		0	0	0	0	0	0	0	0
+8	17	4	12		15		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+9	17	544	"Assault of Burning Lava Giants"	360	379
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+11	17	1	489	0		0	0	0	0	0	0	0	50		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+11	17	16	80		0		0	0	0	0	0	0	0	0
+11	17	4	14		13		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name			MinLvl	MaxLvl
+12	17	544	"Lurkers in the Dark"	380	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+14	17	1	448	0		0	0	0	0	0	0	0	50		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+14	17	16	100		0		0	0	0	0	0	0	0	0
+14	17	4	14		13		0	0	0	0	0	0	0	1
+14	17	4	14		14		0	0	0	0	0	0	0	1
+end
+
+//////////////// DAY QUESTS //////////////////
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+0	20	257	"Mercenary Guild Office?"		350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+1	20	0	0	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+2	20	0	0	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+4	20	261	1000000	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+4	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+5	20	257	"Checking The Letter of Request"	350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+7	20	261	500000	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+7	20	4	14		151		0	0	0	0	0	0	0	1
+end
+
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+59	20	257	"Completion of the Request"		350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+60	20	4	14	152		0	0	0	0	10	0	0	1		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+60	20	2	500000		0		0	0	0	0	0	0	0	0
+end
+
+//==================================================================================================
+//======================================== MONDAY ==================================================
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+9	20	257	"Request from the Underwater Temple"	350	400
+//
+//Requerimentt		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+9	20	263	0	0		0	0	0	0	10	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+9	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+10	20	567	"Change of the Underwater Temple"	350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+12	20	1	331	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+12	20	1	332	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+12	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+13	20	567	"Keeping the peace of the hero"		350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+15	20	1	333	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+15	20	1	334	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+15	20	1	500000		0		0	0	0	0	0	0	0	0
+15	20	36	14		13		0	0	0	0	0	0	0	1
+15	20	36	14		14		0	0	0	0	0	0	0	1
+15	20	4	14		158		0	0	0	0	0	0	0	1
+15	20	4	14		152		0	0	0	0	0	0	0	1
+end
+
+//==================================================================================================
+//======================================== TUESDAY =================================================
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+16	20	257	"Find General Goods Merchant Zyro"	350	400
+//
+//Requerimentt		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+16	20	263	0	0		0	0	0	0	10	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+16	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+17	20	257	"Ladies appetite for collecting"	350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+19	20	1	70	0		0	0	0	0	0	0	0	1		1	1	1	1	1	1	1
+19	20	4	14	153		0	0	0	0	20	0	0	1		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+19	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+20	20	257	"Ladies appetite for collecting"	350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+22	20	1	304	0		0	0	0	0	0	0	0	1		1	1	1	1	1	1	1
+22	20	4	14	154		0	0	0	0	10	0	0	1		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+22	20	1	1000000		0		0	0	0	0	0	0	0	0
+22	20	36	14		16		0	0	0	0	0	0	0	1
+22	20	36	14		14		0	0	0	0	0	0	0	1
+22	20	4	14		157		0	0	0	0	0	0	0	1
+22	20	4	14		152		0	0	0	0	0	0	0	1
+end
+
+//=====================================================================================================
+//======================================== WEDNESDAY ==================================================
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+23	20	257	"Call from the Gens"			350	400
+//
+//Requerimentt		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+23	20	263	0	0		0	0	0	0	10	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+23	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+24	20	257	"Expanding businesses"			350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+26	20	1	486	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+26	20	1	487	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+26	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+27	20	257	"Glory to the Gens"			350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+29	20	262	0	0		0	0	0	0	0	0	0	5		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+29	20	16	500		0		0	0	0	0	0	0	0	0
+29	20	36	14		22		0	0	0	0	0	0	0	1
+29	20	36	12		15		0	0	0	0	0	0	0	1
+29	20	4	14		159		0	0	0	0	0	0	0	1
+29	20	4	14		152		0	0	0	0	0	0	0	1
+end
+
+//=====================================================================================================
+//======================================== THURSDAY ===================================================
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+30	20	257	"Request from the priestess"		350	400
+//
+//Requerimentt		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+30	20	263	0	0		0	0	0	0	10	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+30	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+31	20	567	"A taint of insanity"			350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+33	20	1	273	0		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+33	20	1	268	0		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+33	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+34	20	567	"Shadow of Evil"			350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+36	20	1	274	0		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+36	20	1	275	0		0	0	0	0	0	0	0	1		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+36	20	1	500000		0		0	0	0	0	0	0	0	0
+36	20	36	14		13		0	0	0	0	0	0	0	1
+36	20	36	14		16		0	0	0	0	0	0	0	1
+36	20	4	14		158		0	0	0	0	0	0	0	1
+36	20	4	14		152		0	0	0	0	0	0	0	1
+end
+
+//======================================================================================================
+//======================================== FRIDAY ======================================================
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+37	20	257	"Request from the merchant Zyro"	350	400
+//
+//Requerimentt		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+37	20	263	0	0		0	0	0	0	10	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+37	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+38	20	257	"Secure war supplies (1)"		350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+40	20	1	58	0		0	0	0	0	0	0	0	1		1	1	1	1	1	1	1
+40	20	4	14	155		0	0	0	0	20	0	0	1		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+40	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+41	20	257	"Secure war supplies (2)"		350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+43	20	1	484	0		0	0	0	0	0	0	0	1		1	1	1	1	1	1	1
+43	20	4	14	156		0	0	0	0	10	0	0	1		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+43	20	2	1000000		0		0	0	0	0	0	0	0	0
+43	20	36	14		22		0	0	0	0	0	0	0	1
+43	20	36	14		16		0	0	0	0	0	0	0	1
+43	20	4	14		157		0	0	0	0	0	0	0	1
+43	20	4	14		152		0	0	0	0	0	0	0	1
+end
+
+//======================================================================================================
+//======================================== SATURDAY ====================================================
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+44	20	257	"Call from the Gens"			350	400
+//
+//Requerimentt		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+44	20	263	0	0		0	0	0	0	10	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+44	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+45	20	257	"Progress of the business"		350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+47	20	1	481	0		0	0	0	0	0	0	0	1		1	1	1	1	1	1	1
+47	20	1	483	0		0	0	0	0	0	0	0	1		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+47	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+48	20	257	"Glory to the Gens"			350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+50	20	262	0	0		0	0	0	0	0	0	0	5		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+50	20	16	500		0		0	0	0	0	0	0	0	0
+50	20	36	14		22		0	0	0	0	0	0	0	1
+50	20	36	12		15		0	0	0	0	0	0	0	1
+50	20	4	14		159		0	0	0	0	0	0	0	1
+50	20	4	14		152		0	0	0	0	0	0	0	1
+end
+
+//======================================================================================================
+//======================================== SUNDAY ======================================================
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+51	20	257	"Request from the mercenary guild"	350	400
+//
+//Requerimentt		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+51	20	263	0	0		0	0	0	0	10	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+51	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+52	20	257	"Hidden history of the rebellion"	350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+55	20	1	507	0		0	0	0	0	0	0	0	1		1	1	1	1	1	1	1
+55	20	1	506	0		0	0	0	0	0	0	0	1		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+55	20	0	0		0		0	0	0	0	0	0	0	0
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+56	20	257	"Put the past behind"			350	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+58	20	1	505	0		0	0	0	0	0	0	0	1		1	1	1	1	1	1	1
+58	20	1	504	0		0	0	0	0	0	0	0	1		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+58	20	1	1000000		0		0	0	0	0	0	0	0	0
+58	20	4	12		15		0	0	0	0	0	0	0	1
+58	20	4	14		158		0	0	0	0	0	0	0	1
+58	20	4	14		152		0	0	0	0	0	0	0	1
+end
+
+//////////////// WEEK QUESTS //////////////////
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+2	6	257	"Heroic Qualities"			240	270
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+4	6	65	5	10		0	0	0	0	0	0	0	5		1	1	1	1	1	1	1
+4	6	256	5	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+4	6	258	4	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+4	6	36	12		15		0	0	0	0	0	0	0	1
+4	6	36	14		13		0	0	0	0	0	0	0	1
+4	6	36	14		14		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+8	6	257	"Heroic Courage"			300	320
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+10	6	65	6	10		0	0	0	0	0	0	0	10		1	1	1	1	1	1	1
+10	6	256	7	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+10	6	258	6	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+10	6	36	12		15		0	0	0	0	0	0	0	1
+10	6	36	14		13		0	0	0	0	0	0	0	1
+10	6	36	14		14		0	0	0	0	0	0	0	1
+10	6	36	14		42		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+14	6	257	"Heroic Fighting Spirit"		331	350
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+16	6	65	6	10		0	0	0	0	0	0	0	20		1	1	1	1	1	1	1
+16	6	258	7	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+16	6	256	6	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+16	6	36	12		15		0	0	0	0	0	0	0	1
+16	6	36	14		13		0	0	0	0	0	0	0	1
+16	6	36	14		14		0	0	0	0	0	0	0	2
+16	6	36	14		16		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+20	6	257	"Heroic Mentality"			351	380
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+22	6	65	6	10		0	0	0	0	0	0	0	30		1	1	1	1	1	1	1
+22	6	256	7	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+22	6	258	6	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+22	6	36	12		15		0	0	0	0	0	0	0	1
+22	6	36	14		13		0	0	0	0	0	0	0	1
+22	6	36	14		14		0	0	0	0	0	0	0	2
+22	6	36	14		42		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+26	6	257	"Heroic Tenacy"				380	400
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+28	6	257	6	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+28	6	256	7	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+28	6	258	6	0		0	0	0	0	0	0	0	0		1	1	1	1	1	1	1
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+28	6	36	12		15		0	0	0	0	0	0	0	1
+28	6	36	14		13		0	0	0	0	0	0	0	1
+28	6	36	14		14		0	0	0	0	0	0	0	2
+28	6	36	14		42		0	0	0	0	0	0	0	1
+end
+
+//Quests
+//Num	Quest	NPC	Name					MinLvl	MaxLvl
+32	6	257	"Final Test to Becomen a Hero"		400	999
+//
+//Requeriment		
+//			SkillID
+//			ItemType 									ItemCount
+//Num	Quest	Req	MobNum	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	KillCount	DW	DK	ELF	MG	DL	SU	RF
+34	6	257	7	0		0	0	0	0	0	0	0	0		3	3	3	3	3	3	3
+34	6	256	8	0		0	0	0	0	0	0	0	0		3	3	3	3	3	3	3
+34	6	258	7	0		0	0	0	0	0	0	0	0		3	3	3	3	3	3	3
+end
+
+//Reward
+//			ItemType	
+//Num	Quest	Type	Ammount		ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	ItemCount
+34	6	36	12		15		0	0	0	0	0	0	0	1
+34	6	36	14		13		0	0	0	0	0	0	0	1
+34	6	36	14		14		0	0	0	0	0	0	0	2
+end

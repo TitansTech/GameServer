@@ -1,0 +1,110 @@
+# Microsoft Developer Studio Generated Dependency File, included by GameServer.mak
+
+.\TMonsterAI.cpp : \
+	"..\common\classdef.h"\
+	"..\common\zzzitem.h"\
+	"..\common\zzzpath.h"\
+	"..\ggsvr\csauth2.h"\
+	"..\ggsvr\ggsvr.h"\
+	"..\include\prodef.h"\
+	".\ComboAttack.h"\
+	".\CrywolfUtil.h"\
+	".\giocp.h"\
+	".\gObjMonster.h"\
+	".\GuildClass.h"\
+	".\ItemSystemFor380.h"\
+	".\JewelOfHarmonySystem.h"\
+	".\logproc.h"\
+	".\MagicDamage.h"\
+	".\MagicInf.h"\
+	".\MapClass.h"\
+	".\MapItem.h"\
+	".\protocol.h"\
+	".\SkillDelay.h"\
+	".\TDurMagicKeyChecker.h"\
+	".\TMonsterAI.h"\
+	".\TMonsterAIAgro.h"\
+	".\TMonsterAIRule.h"\
+	".\TMonsterAIUnit.h"\
+	".\TMonsterAIUtil.h"\
+	".\TMonsterSkillElementInfo.h"\
+	".\TNotice.h"\
+	".\TRandomPoolMgr.h"\
+	".\user.h"\
+	".\ViewportGuild.h"\
+	
+
+.\TMonsterAIAgro.cpp : \
+	"..\common\classdef.h"\
+	"..\common\MyWinsockBase.h"\
+	"..\common\zzzitem.h"\
+	"..\common\zzzpath.h"\
+	"..\ggsvr\csauth2.h"\
+	"..\ggsvr\ggsvr.h"\
+	"..\include\prodef.h"\
+	"..\simplemodulus\simplemodulus.h"\
+	".\AttackEvent.h"\
+	".\CLoginCount.h"\
+	".\ComboAttack.h"\
+	".\DbSave.h"\
+	".\dirpath.h"\
+	".\DragonEvent.h"\
+	".\GameMain.h"\
+	".\giocp.h"\
+	".\GuildClass.h"\
+	".\IpCache.h"\
+	".\ItemBag.h"\
+	".\ItemBagEx.h"\
+	".\ItemSystemFor380.h"\
+	".\JewelOfHarmonySystem.h"\
+	".\MagicDamage.h"\
+	".\MagicInf.h"\
+	".\MapClass.h"\
+	".\MapItem.h"\
+	".\MonsterAttr.h"\
+	".\MonsterSetBase.h"\
+	".\NSerialCheck.h"\
+	".\PartyClass.h"\
+	".\protocol.h"\
+	".\SkillDelay.h"\
+	".\TDurMagicKeyChecker.h"\
+	".\TMonsterAIAgro.h"\
+	".\TMonsterSkillElementInfo.h"\
+	".\TRandomPoolMgr.h"\
+	".\user.h"\
+	".\ViewportGuild.h"\
+	".\WhisperCash.h"\
+	".\wsGameServer.h"\
+	".\wsJoinServerCli.h"\
+	".\WzQueue.h"\
+	".\WzUdp.h"\
+	
+
+.\TMonsterAIAutomata.cpp : \
+	"..\common\classdef.h"\
+	"..\common\zzzitem.h"\
+	"..\common\zzzpath.h"\
+	"..\ggsvr\csauth2.h"\
+	"..\ggsvr\ggsvr.h"\
+	"..\include\prodef.h"\
+	".\ComboAttack.h"\
+	".\giocp.h"\
+	".\GuildClass.h"\
+	".\ItemSystemFor380.h"\
+	".\JewelOfHarmonySystem.h"\
+	".\MagicDamage.h"\
+	".\MagicInf.h"\
+	".\MapClass.h"\
+	".\MapItem.h"\
+	".\protocol.h"\
+	".\SkillDelay.h"\
+	".\TDurMagicKeyChecker.h"\
+	".\TMonsterAIAgro.h"\
+	".\TMonsterAIAutomata.h"\
+	".\TMonsterAIState.h"\
+	".\TMonsterAIUtil.h"\
+	".\TMonsterSkillElementInfo.h"\
+	".\TRandomPoolMgr.h"\
+	".\user.h"\
+	".\ViewportGuild.h"\
+	

@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.MEMB_INFO add MuItemShopGiftList varbinary(720)

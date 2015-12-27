@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.SCFS5Quest ALTER COLUMN SCFS5Quest varbinary(8000) NOT NULL

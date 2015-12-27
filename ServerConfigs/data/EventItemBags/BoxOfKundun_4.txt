@@ -1,0 +1,171 @@
+//============================================================================
+//Drop Settings: Box of KUNDUN + 4 Drops
+//www.titanstech.com
+//============================================================================
+//	type,	index,	level,	skill,	exc,	option	name
+//============================================================================
+
+//Gaurdian set
+	7	14	7	0	0	4	//Helm
+	8	14	7	0	0	4	//Armor
+	9	14	7	0	0	4	//Pants
+	10	14	7	0	0	4	//Gloves
+	11	14	7	0	0	4	//Boots
+
+//Black Dragon  Set
+	7	16	7	0	0	4	//Helm
+	8	16	7	0	0	4	//Armor
+	9	16	7	0	0	4	//Pants
+	10	16	7	0	0	4	//Gloves
+	11	16	7	0	0	4	//Boots
+
+//Dark Phoenix set
+	7	17	7	0	0	4	//Helm
+	8	17	7	0	0	4	//Armor
+	9	17	7	0	0	4	//Pants
+	10	17	7	0	0	4	//Gloves
+	11	17	7	0	0	4	//Boots
+
+//Grand Soul set	
+	7	18	7	0	0	4	//Helm
+	8	18	7	0	0	4	//Armor
+	9	18	7	0	0	4	//Pants
+	10	18	7	0	0	4	//Gloves
+	11	18	7	0	0	4	//Boots
+
+//Divine Set
+	7	19	7	0	0	4	//Helm
+	8	19	7	0	0	4	//Armor
+	9	19	7	0	0	4	//Pants
+	10	19	7	0	0	4	//Gloves
+	11	19	7	0	0	4	//Boots
+
+//Thunder Hawk Set
+	8	20	7	0	0	4	//Armor
+	9	20	7	0	0	4	//Pants
+	10	20	7	0	0	4	//Gloves
+	11	20	7	0	0	4	//Boots
+
+//Adamantin Set
+	7	26	7	0	0	4	//Helm
+	8	26	7	0	0	4	//Armor
+	9	26	7	0	0	4	//Pants
+	10	26	7	0	0	4	//Gloves
+	11	26	7	0	0	4	//Boots
+
+//Ancient Set
+	7	41	7	0	0	4	//Helm
+	8	41	7	0	0	4	//Armor
+	9	41	7	0	0	4	//Pants
+	10	41	7	0	0	4	//Gloves
+	11	41	7	0	0	4	//Boots	
+
+//Sword	
+	0	13	7	1	0	4	//Double Blade
+	0	14	7	1	0	4	//Lightning Sword
+	0	15	7	1	0	4	//Giant Sword
+	0	16	7	1	0	4	//Sword of Destruction
+
+//Blunt weapons
+	2	9	7	1	0	4	//Master Scepter
+	2	10	7	1	0	4	//Great Scepter
+	2	11	7	1	0	4	//Lord Scepter
+
+//Bows & Crossbows
+	4	5	7	1	0	4	//Silver Bow
+	4	6	7	1	0	4	//Chaos Nature Bow
+	4	14	7	1	0	4	//Aquagold Crossbow
+	4	16	7	1	0	4	//Saint Crossbow
+
+//Staffs
+	5	7	7	1	0	4	//Chaos Lightning Staff
+	5	8	7	1	0	4	//Staff of Destruction
+
+//Shields
+	6	5	7	1	0	4	//Dragon Slayer Shield
+	6	11	7	1	0	4	//Serpent Shield
+	6	12	7	1	0	4	//Bronze Shield
+	6	13	7	1	0	4	//Dragon Shield
+
+//=========================================================================================
+//Gaurdian set
+	7	14	7	0	1	4	//Helm
+	8	14	7	0	1	4	//Armor
+	9	14	7	0	1	4	//Pants
+	10	14	7	0	1	4	//Gloves
+	11	14	7	0	1	4	//Boots
+
+//Black Dragon  Set
+	7	16	7	0	1	4	//Helm
+	8	16	7	0	1	4	//Armor
+	9	16	7	0	1	4	//Pants
+	10	16	7	0	1	4	//Gloves
+	11	16	7	0	1	4	//Boots
+
+//Dark Phoenix set
+	7	17	7	0	1	4	//Helm
+	8	17	7	0	1	4	//Armor
+	9	17	7	0	1	4	//Pants
+	10	17	7	0	1	4	//Gloves
+	11	17	7	0	1	4	//Boots
+
+//Grand Soul set	
+	7	18	7	0	1	4	//Helm
+	8	18	7	0	1	4	//Armor
+	9	18	7	0	1	4	//Pants
+	10	18	7	0	1	4	//Gloves
+	11	18	7	0	1	4	//Boots
+
+//Divine Set
+	7	19	7	0	1	4	//Helm
+	8	19	7	0	1	4	//Armor
+	9	19	7	0	1	4	//Pants
+	10	19	7	0	1	4	//Gloves
+	11	19	7	0	1	4	//Boots
+
+//Thunder Hawk Set
+	8	20	7	0	1	4	//Armor
+	9	20	7	0	1	4	//Pants
+	10	20	7	0	1	4	//Gloves
+	11	20	7	0	1	4	//Boots
+
+//Adamantin Set
+	7	26	7	0	1	4	//Helm
+	8	26	7	0	1	4	//Armor
+	9	26	7	0	1	4	//Pants
+	10	26	7	0	1	4	//Gloves
+	11	26	7	0	1	4	//Boots
+
+//Ancient Set
+	7	41	7	0	1	4	//Helm
+	8	41	7	0	1	4	//Armor
+	9	41	7	0	1	4	//Pants
+	10	41	7	0	1	4	//Gloves
+	11	41	7	0	1	4	//Boots	
+
+//Sword	
+	0	13	7	1	1	4	//Double Blade
+	0	14	7	1	1	4	//Lightning Sword
+	0	15	7	1	1	4	//Giant Sword
+	0	16	7	1	1	4	//Sword of Destruction
+
+//Blunt weapons
+	2	9	7	1	1	4	//Master Scepter
+	2	10	7	1	1	4	//Great Scepter
+	2	11	7	1	1	4	//Lord Scepter
+
+//Bows & Crossbows
+	4	5	7	1	1	4	//Silver Bow
+	4	6	7	1	1	4	//Chaos Nature Bow
+	4	14	7	1	1	4	//Aquagold Crossbow
+	4	16	7	1	1	4	//Saint Crossbow
+
+//Staffs
+	5	7	7	1	1	4	//Chaos Lightning Staff
+	5	8	7	1	1	4	//Staff of Destruction
+
+//Shields
+	6	5	7	1	1	4	//Dragon Slayer Shield
+	6	11	7	1	1	4	//Serpent Shield
+	6	12	7	1	1	4	//Bronze Shield
+	6	13	7	1	1	4	//Dragon Shield

@@ -1,0 +1,41 @@
+//==============================================================================
+//Chaos Castle Settings File
+//#www.darksideofmu.com
+//by DaRKav [SCFMT Team][darkav@hotmail.com]
+//------------------------------------------------------------------------------
+//Revision 31 August, 2009
+//==============================================================================
+// Car five su khay sul su khey cyul position it is possible in hour set
+// some plucky fight of fixed time? Isn't the game advanced the some counterweight? Is the waiting time for a few minutes?
+0
+	5	10	1
+end
+
+// / Car five su khay sul it will drive and su will sprout and item drop ratio and li Jen hour
+// general item drop ratio (the gItemDropPer (10) /n), Eg the item drop ratio which it will count (1/n), li Jen hour (the P.S. Generality and Eg the recording probability where the item drop ratio shame which it will count will be low is high.)
+1
+	100	1000	0
+end
+
+// Car five su khay sul this the hour (HOUR and MIN) when it starts
+2
+	1 	00
+	3 	00
+	5 	00
+	7 	00
+	9 	00
+	11 	00
+	13 	00
+	15 	00
+	17 	00
+	19 	00
+	21 	00
+	23 	00
+end
+
+// Car five su khay sul off-line premium prize winning probability (n/10000)
+3
+	200
+end
+
+

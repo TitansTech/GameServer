@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[MONSTERSKILLED_INFO]
+(
+	[ID] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[ServerCode] [int] NOT NULL DEFAULT ((0)),
+	[Account] [varchar](10) NOT NULL,
+	[Name] [varchar](10) NOT NULL,
+	[Monster] [int] NOT NULL DEFAULT ((0)),
+	[KillCount] [int] NOT NULL DEFAULT ((0))
+)

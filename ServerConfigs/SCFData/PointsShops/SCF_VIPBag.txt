@@ -1,0 +1,165 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Team    : SCF Team                                              		//
+// Date    : 2007 / 09 / 08                                              	//
+// 		                                                		//
+//////////////////////////////////////////////////////////////////////////////////
+//_________________________________________________________________________________
+// 
+//_________________________________________________________________________________
+1
+//Jewels
+15    12   15   0   0   0   0   0   0   0   0   0   0   0   JEWEL     Jewel_of_Chaos         //0 Jewel Of Chaos
+500   14   31   0   0   0   0   0   0   0   0   0   0   0   JEWEL     Jewel_of_Guardian        //1 Jewel Of Guardian
+20    14   42   0   0   0   0   0   0   0   0   0   0   0   JEWEL     Jewel_of_Harmony            //3 Jewel Of Harmony
+//Potions
+5     14   35   0   0   0   0   0   0   0   0   0   0   0   POTIONS   Small_SD_Potion      //Small SD Potion
+7     14   36   0   0   0   0   0   0   0   0   0   0   0   POTIONS   Midle_SD_Potion      //Midle SD Potion
+10    14   37   0   0   0   0   0   0   0   0   0   0   0   POTIONS   Large_SD_Potion      //large SD Potion
+250   14   46   0   0   0   0   0   0   0   0   0   0   0   POTIONS   Attack_Speed+10         //4 Haloween attack Speed +10
+250   14   47   0   0   0   0   0   0   0   0   0   0   0   POTIONS   Attack_Power_Rise+25      //5 Haloween attack power rise +25
+250   14   48   0   0   0   0   0   0   0   0   0   0   0   POTIONS   Defensive_Rise+100      //6 Haloween defensive  strength rise +100
+10    14   6    255 13  0   0   0   0   0   0   0   0   0   POTIONS   Large_Mana_Potion+13 //Large Mana Potion+13 (255)
+10    14   3    255 13  0   0   0   0   0   0   0   0   0   POTIONS   Large_Healing_Potion+13  //Large Healing Potion+13 (255) 
+//Lost Map
+20    14   28   0   1   0   0   0   0   0   0   0   0   0   KALIMA    KALIMA_1         //7 LostMap +1
+30    14   28   0   2   0   0   0   0   0   0   0   0   0   KALIMA    KALIMA_2         //8 LostMap +2
+40    14   28   0   3   0   0   0   0   0   0   0   0   0   KALIMA    KALIMA_3         //9 LostMap +3
+50    14   28   0   4   0   0   0   0   0   0   0   0   0   KALIMA    KALIMA_4         //10 LostMap +4
+60    14   28   0   5   0   0   0   0   0   0   0   0   0   KALIMA    KALIMA_5         //11 LostMap +5
+70    14   28   0   6   0   0   0   0   0   0   0   0   0   KALIMA    KALIMA_6         //12 LostMap +6
+80    14   28   0   7   0   0   0   0   0   0   0   0   0   KALIMA    KALIMA_7         //13 LostMap +7
+//DS
+10    14   19   0   1   0   0   0   0   0   0   0   0   0   EVENT     Devils_Invitation+1  //14 Devil's Invitation +1
+20    14   19   0   2   0   0   0   0   0   0   0   0   0   EVENT     Devils_Invitation+2  //15 Devil's Invitation +2
+30    14   19   0   3   0   0   0   0   0   0   0   0   0   EVENT     Devils_Invitation+3  //16 Devil's Invitation +3
+40    14   19   0   4   0   0   0   0   0   0   0   0   0   EVENT     Devils_Invitation+4  //17 Devil's Invitation +4
+50    14   19   0   5   0   0   0   0   0   0   0   0   0   EVENT     Devils_Invitation+5  //18 Devil's Invitation +5
+60    14   19   0   6   0   0   0   0   0   0   0   0   0   EVENT     Devils_Invitation+6  //19 Devil's Invitation +6
+30    13   18   0   1   0   0   0   0   0   0   0   0   0   EVENT     Invisibility_Cloak+1 //20 Invisibility Cloak+1
+40    13   18   0   2   0   0   0   0   0   0   0   0   0   EVENT     Invisibility_Cloak+2 //21 Invisibility Cloak+2
+50    13   18   0   3   0   0   0   0   0   0   0   0   0   EVENT     Invisibility_Cloak+3 //22 Invisibility Cloak+3
+60    13   18   0   4   0   0   0   0   0   0   0   0   0   EVENT     Invisibility_Cloak+4 //23 Invisibility Cloak+4
+70    13   18   0   5   0   0   0   0   0   0   0   0   0   EVENT     Invisibility_Cloak+5 //24 Invisibility Cloak+5
+80    13   18   0   6   0   0   0   0   0   0   0   0   0   EVENT     Invisibility_Cloak+6 //25 Invisibility Cloak+6
+90    13   18   0   7   0   0   0   0   0   0   0   0   0   EVENT     Invisibility_Cloak+7 //26 Invisibility Cloak+7
+//Wings comb
+500   13   14   0   0   0   0   0   0   0   0   0   0   0   WINGS     Lochs_Feather    //29 Loch's Feather
+1000  13   53   0   0   0   0   0   0   0   0   0   0   0   WINGS     Feather_of_Condor   //30 Feather of Condor
+1000  13   52   0   0   0   0   0   0   0   0   0   0   0   WINGS     Flame_of_Condor     //31 Flame of Condor
+//ArmorsC1
+500   8    16   0   13  7   0   1   0   0   0   0   0   0   ARMORC1   Black_Dragon_Armor+13+28+luck //32 Black Dragon Armor +13 +28 +luck
+500   8    19   0   13  7   0   1   0   0   0   0   0   0   ARMORC1   Divine_Armor+13+28+luck      //33  Divine Armor +13 +28 +luck
+500   8    18   0   13  7   0   1   0   0   0   0   0   0   ARMORC1   Grand_Soul_Armor+13+28+luck //34 Grand Soul Armor +13 +28 +luck
+500   8    20   0   13  7   0   1   0   0   0   0   0   0   ARMORC1   Thunder_Hawk_Armor+13+28+luck //35 Thunder Hawk Armor +13 +28 +luck
+500   8    26   0   13  7   0   1   0   0   0   0   0   0   ARMORC1   Adamantine_Armor+13+28+luck //36 Adamantine Armor +13 +28 +luck
+//ArmorsC2
+5000  8    29   0   10  6   0   1   20   0   0   0   0   0  ARMORC2   Dragon_Knight_Armor+10+24+luck+max_manna_4%+ref_rate_5%  //Dragon Knight Armor +13 +24 +luck max manna 4% ref rate 5%
+5000  8    30   0   10  6   0   1   18   0   0   0   0   0  ARMORC2   Venom_Mist_Armor+10+24+luck+max_manna_4%+def_rate_10%   //Venom Mist Armor +13 +24 +luck  max manna 4% def rate 10%
+5000  8    31   0   10  6   0   1   12   0   0   0   0   0  ARMORC2   Sylpid_Ray_Armor+10+24+luck+dam_dec_4%+ref_rate_5%     //Sylpid Ray Armor +10 +24 +luck demmage decrease 4% ref rate 5%
+5000  8    32   0   10  6   0   1   18   0   0   0   0   0  ARMORC2   Volcano_Armor+10+24+luck+max_manna_4%+def_rate_10%    //Volcano Armor +13 +24 +luck  max manna 4% def rate 10%
+5000  8    33   0   10  6   0   1   20   0   0   0   0   0  ARMORC2   Sunlight_Armor+10+24+luck+max_manna_4%+ref_rate_5%   //Sunlight Armor Armor +13 +24 +luck max manna 4% ref rate 5%
+//AromorsC3
+6000  8    34   0   0   5   0   1   21   0   0   0   0   0  ARMORC3   Ashcrow_Armor+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%  //Ashcrow_Armor+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%
+6000  8    35   0   0   5   0   1   19   0   0   0   0   0  ARMORC3   Eclips_Armor+0+20+luck+max_manna_4%+def_rate_10%+zen_40%  //Eclips_Armor+0+20+luck+max_manna_4%+def_rate_10%+zen_40%
+6000  8    36   0   0   5   0   1   13   0   0   0   0   0  ARMORC3   Iris_Armor+0+20+luck+dam_dec_4%+ref_rate_5%_zen_40%     //Iris_Armor+0+20+luck+dam_dec__4%+ref_rate_5%_zen_40%
+6000  8    37   0   0   5   0   1   21   0   0   0   0   0  ARMORC3   Valiant_Armor+0+20+luck+max_manna_4%+ref_rate_5%+zen_40% //Valiant_Armor+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%
+6000  8    38   0   0   5   0   1   19   0   0   0   0   0  ARMORC3   Glorious_Armor+0+20+luck+max_manna_4%+def_rate_10%+zen_40% //Glorious Armor+0+20+luck+max_manna_4%+def_rate_10%+zen_40%
+//PantsC1
+500   9    16   0   13  7   0   1   0   0   0   0   0   0   PANTSC1   Black_Dragon_Pants+13+28+luck //32 Black Dragon Pants +13 +28 +luck
+500   9    19   0   13  7   0   1   0   0   0   0   0   0   PANTSC1   Divine_Pants+13+28+luck      //33  Divine Pants +13 +28 +luck
+500   9    18   0   13  7   0   1   0   0   0   0   0   0   PANTSC1   Grand_Soul_Pants+13+28+luck //34 Grand Soul Pants +13 +28 +luck
+500   9    20   0   13  7   0   1   0   0   0   0   0   0   PANTSC1   Thunder_Hawk_Pants+13+28+luck //35 Thunder Hawk Pants +13 +28 +luck
+500   9    26   0   13  7   0   1   0   0   0   0   0   0   PANTSC1   Adamantine_Pants+13+28+luck //36 Adamantine Pants +13 +28 +luck
+//PantsC2
+5000  9    29   0   10  6   0   1   20   0   0   0   0   0  PANTSC2   Dragon_Knight_Pants+10+24+luck+max_manna_4%+ref_rate_5%  //Dragon Knight Pants +13 +24 +luck max manna 4% ref rate 5%
+5000  9    30   0   10  6   0   1   18   0   0   0   0   0  PANTSC2   Venom_Mist_Pants+10+24+luck+max_manna_4%+def_rate_10%   //Venom Mist Pants +13 +24 +luck  max manna 4% def rate 10%
+5000  9    31   0   10  6   0   1   12   0   0   0   0   0  PANTSC2   Sylpid_Ray_Pants+10+24+luck+dam_dec_4%+ref_rate_5%     //Sylpid Ray Pants +10 +24 +luck demmage decrease 4% ref rate 5%
+5000  9    32   0   10  6   0   1   18   0   0   0   0   0  PANTSC2   Volcano_Pants+10+24+luck+max_manna_4%+def_rate_10%    //Volcano Pants +13 +24 +luck  max manna 4% def rate 10%
+5000  9    33   0   10  6   0   1   20   0   0   0   0   0  PANTSC2   Sunlight_Pants+10+24+luck+max_manna_4%+ref_rate_5%   //Sunlight Pants Armor +13 +24 +luck max manna 4% ref rate 5%
+//PantsC3
+6000  9    34   0   0   5   0   1   21   0   0   0   0   0  PANTSC3   Ashcrow_Pants+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%  //Ashcrow_Pants+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%
+6000  9    35   0   0   5   0   1   19   0   0   0   0   0  PANTSC3   Eclips_Pants+0+20+luck+max_manna_4%+def_rate_10%+zen_40%  //Eclips_Pants+0+20+luck+max_manna_4%+def_rate_10%+zen_40%
+6000  9    36   0   0   5   0   1   13   0   0   0   0   0  PANTSC3   Iris_Pants+0+20+luck+dam_dec_4%+ref_rate_5%_zen_40%     //Iris_Pants+0+20+luck+dam.dec._4%+ref_rate_5%_zen_40%
+6000  9    37   0   0   5   0   1   21   0   0   0   0   0  PANTSC3   Valiant_Pants+0+20+luck+max_manna_4%+ref_rate_5%+zen_40% //Valiant_Pants+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%
+6000  9    38   0   0   5   0   1   19   0   0   0   0   0  PANTSC3   Glorious_Pants+0+20+luck+max_manna_4%+def_rate_10%+zen_40% //Glorious Pants+0+20+luck+max_manna_4%+def_rate_10%+zen_40%
+//GlovesC1
+500   10   16   0   13  7   0   1   0   0   0   0   0   0   GLOVESC1  Black_Dragon_Gloves+13+28+luck //32 Black Dragon Gloves +13 +28 +luck
+500   10   19   0   13  7   0   1   0   0   0   0   0   0   GLOVESC1  Divine_Gloves+13+28+luck      //33  Divine Gloves +13 +28 +luck
+500   10   18   0   13  7   0   1   0   0   0   0   0   0   GLOVESC1  Grand_Soul_Gloves+13+28+luck //34 Grand Soul Gloves +13 +28 +luck
+500   10   20   0   13  7   0   1   0   0   0   0   0   0   GLOVESC1  Thunder_Hawk_Gloves+13+28+luck //35 Thunder Hawk Gloves +13 +28 +luck
+500   10   26   0   13  7   0   1   0   0   0   0   0   0   GLOVESC1  Adamantine_Gloves+13+28+luck //36 Adamantine Gloves +13 +28 +luck
+//GlovesC2
+5000  10   29   0   10  6   0   1   20   0   0   0   0   0  GLOVESC2  Dragon_Knight_Gloves+10+24+luck+max_manna_4%+ref_rate_5%  //Dragon Knight Gloves +13 +24 +luck max manna 4% ref rate 5%
+5000  10   30   0   10  6   0   1   18   0   0   0   0   0  GLOVESC2  Venom_Mist_Gloves+10+24+luck+max_manna_4%+def_rate_10%   //Venom Mist Gloves +13 +24 +luck  max manna 4% def rate 10%
+5000  10   31   0   10  6   0   1   12   0   0   0   0   0  GLOVESC2  Sylpid_Ray_Gloves+10+24+luck+dam_dec_4%+ref_rate_5%     //Sylpid Ray Gloves +10 +24 +luck demmage decrease 4% ref rate 5%
+5000  10   32   0   10  6   0   1   18   0   0   0   0   0  GLOVESC2  Volcano_Gloves+10+24+luck+max_manna_4%+def_rate_10%    //Volcano Gloves +13 +24 +luck  max manna 4% def rate 10%
+5000  10   33   0   10  6   0   1   20   0   0   0   0   0  GLOVESC2  Sunlight_Gloves+10+24+luck+max_manna_4%+ref_rate_5%   //Sunlight Gloves +13 +24 +luck max manna 4% ref rate 5%
+//GlovesC3
+6000  10   34   0   0   5   0   1   21   0   0   0   0   0  GLOVESC3  Ashcrow_Gloves+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%  //Ashcrow_Gloves+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%
+6000  10   35   0   0   5   0   1   19   0   0   0   0   0  GLOVESC3  Eclips_Gloves+0+20+luck+max_manna_4%+def_rate_10%+zen_40%  //Eclips_Gloves+0+20+luck+max_manna_4%+def_rate_10%+zen_40%
+6000  10   36   0   0   5   0   1   13   0   0   0   0   0  GLOVESC3  Iris_Gloves+0+20+luck+dam_dec_4%+ref_rate_5%_zen_40%     //Iris_Gloves+0+20+luck+dam.dec._4%+ref_rate_5%_zen_40%
+6000  10   37   0   0   5   0   1   21   0   0   0   0   0  GLOVESC3  Valiant_Gloves+0+20+luck+max_manna_4%+ref_rate_5%+zen_40% //Valiant_Gloves+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%
+6000  10   38   0   0   5   0   1   19   0   0   0   0   0  GLOVESC3  Glorious_Gloves+0+20+luck+max_manna_4%+def_rate_10%+zen_40% //Glorious Gloves+0+20+luck+max_manna_4%+def_rate_10%+zen_40%
+//BootsC1
+500   11   16   0   13  7   0   1   0   0   0   0   0   0   BOOTSC1   Black_Dragon_Boots+13+28+luck //32 Black Dragon Boots +13 +28 +luck
+500   11   19   0   13  7   0   1   0   0   0   0   0   0   BOOTSC1   Divine_Boots+13+28+luck      //33  Divine Boots +13 +28 +luck
+500   11   18   0   13  7   0   1   0   0   0   0   0   0   BOOTSC1   Grand_Soul_Boots+13+28+luck //34 Grand Soul Boots +13 +28 +luck
+500   11   20   0   13  7   0   1   0   0   0   0   0   0   BOOTSC1   Thunder_Boots_Boots+13+28+luck //35 Thunder Hawk Boots +13 +28 +luck
+500   11   26   0   13  7   0   1   0   0   0   0   0   0   BOOTSC1   Adamantine_Boots+13+28+luck //36 Adamantine Boots +13 +28 +luck
+//BootsC2
+5000  11   29   0   10  6   0   1   20   0   0   0   0   0  BOOTSC2   Dragon_Knight_Boots+10+24+luck+max_manna_4%+ref_rate_5%  //Dragon Knight Boots +13 +24 +luck max manna 4% ref rate 5%
+5000  11   30   0   10  6   0   1   18   0   0   0   0   0  BOOTSC2   Venom_Mist_Boots+10+24+luck+max_manna_4%+def_rate_10%   //Venom Mist Boots +13 +24 +luck  max manna 4% def rate 10%
+5000  11   31   0   10  6   0   1   12   0   0   0   0   0  BOOTSC2   Sylpid_Ray_Boots+10+24+luck+dam_dec_4%+ref_rate_5%     //Sylpid Ray Boots +10 +24 +luck demmage decrease 4% ref rate 5%
+5000  11   32   0   10  6   0   1   18   0   0   0   0   0  BOOTSC2   Volcano_Boots+10+24+luck+max_manna_4%+def_rate_10%    //Volcano Boots +13 +24 +luck  max manna 4% def rate 10%
+5000  11   33   0   10  6   0   1   20   0   0   0   0   0  BOOTSC2   Sunlight_Boots+10+24+luck+max_manna_4%+ref_rate_5%   //Sunlight Boots +13 +24 +luck max manna 4% ref rate 5%
+//BoorsC3
+6000  11   34   0   0   5   0   1   21   0   0   0   0   0  BOOTSC3   Ashcrow_Boots+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%  //Ashcrow_Boots+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%
+6000  11   35   0   0   5   0   1   19   0   0   0   0   0  BOOTSC3   Eclips_Boots+0+20+luck+max_manna_4%+def_rate_10%+zen_40%  //Eclips_Boots+0+20+luck+max_manna_4%+def_rate_10%+zen_40%
+6000  11   36   0   0   5   0   1   13   0   0   0   0   0  BOOTSC3   Iris_Boots+0+20+luck+dam_dec_4%+ref_rate_5%_zen_40%     //Iris_Boots+0+20+luck+dam.dec._4%+ref_rate_5%_zen_40%
+6000  11   37   0   0   5   0   1   21   0   0   0   0   0  BOOTSC3   Valiant_Boots+0+20+luck+max_manna_4%+ref_rate_5%+zen_40% //Valiant_Boots+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%
+6000  11   38   0   0   5   0   1   19   0   0   0   0   0  BOOTSC3   Glorious_Boots+0+20+luck+max_manna_4%+def_rate_10%+zen_40% //Glorious Boots+0+20+luck+max_manna_4%+def_rate_10%+zen_40%
+//HelmsC1
+500   7    16   0   13  7   0   1   0    0   0   0   0   0  HELMSC1   Black_Dragon_Helm+13+28+luck //32 Black Dragon Helm +13 +28 +luck
+500   7    19   0   13  7   0   1   0    0   0   0   0   0  HELMSC1   Divine_Helm+13+28+luck      //33  Divine Helm +13 +28 +luck
+500   7    18   0   13  7   0   1   0    0   0   0   0   0  HELMSC1   Grand_Soul_Helm+13+28+luck //34 Grand Soul Helm +13 +28 +luck
+500   7    26   0   13  7   0   1   0    0   0   0   0   0  HELMSC1   Adamantine_Helm+13+28+luck //36 Adamantine Helm +13 +28 +luck
+//HelmsC2
+5000  7    29   0   10  6   0   1   20   0   0   0   0   0  HELMSC2   Dragon_Knight_Helm+10+24+luck+max_manna_4%+ref_rate_5%  //Dragon Knight Helm +13 +24 +luck max manna 4% ref rate 5%
+5000  7    30   0   10  6   0   1   18   0   0   0   0   0  HELMSC2   Venom_Mist_Helm+10+24+luck+max_manna_4%+def_rate_10%   //Venom Mist Helm +13 +24 +luck  max manna 4% def rate 10%
+5000  7    31   0   10  6   0   1   12   0   0   0   0   0  HELMSC2   Sylpid_Ray_Helm+10+24+luck+dam_dec_4%+ref_rate_5%     //Sylpid Ray Helm +10 +24 +luck demmage decrease 4% ref rate 5%
+5000  7    33   0   10  6   0   1   20   0   0   0   0   0  HELMSC2   Sunlight_Helm+10+24+luck+max_manna_4%+ref_rate_5%   //Sunlight Helm +13 +24 +luck max manna 4% ref rate 5%
+//HelmsC3
+6000  7    34   0   0   5   0   1   21   0   0   0   0   0  HELMSC3   Ashcrow_Helm+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%  //Ashcrow_Helm+0+20+luck+max_manna_4%+ref_rate_5%+zen_40%
+6000  7    35   0   0   5   0   1   19   0   0   0   0   0  HELMSC3   Eclips_Helm+0+20+luck+max_manna_4%+def_rate_10%+zen_40%  //Eclips_Helm+0+20+luck+max_manna_4%+def_rate_10%+zen_40%
+6000  7    36   0   0   5   0   1   13   0   0   0   0   0  HELMSC3   Iris_Helm+0+20+luck+dam_dec_4%+ref_rate_5%_zen_40%     //Iris_Helm+0+20+luck+dam.dec._4%+ref_rate_5%_zen_40%
+6000  7    38   0   0   5   0   1   19   0   0   0   0   0 HELMSC3   Glorious_Helm+0+20+luck+max_manna_4%+def_rate_10%+zen_40% //Glorious Helm+0+20+luck+max_manna_4%+def_rate_10%+zen_40%
+//Scrolls
+50    15   8    0   0   0   0   0   0    0   0   0   0   0  SCROLLS   Evil_Spirits_Scroll    //Evil Spirits Scroll
+40    15   9    0   0   0   0   0   0    0   0   0   0   0  SCROLLS   Hell_Fire_Scroll       //Hell Fire Scroll
+45    15   11   0   0   0   0   0   0    0   0   0   0   0  SCROLLS   Aqua_Beam_Scroll       //Aqua Beam Scroll
+60    15   12   0   0   0   0   0   0    0   0   0   0   0 SCROLLS   Blast_Scroll           //Blast Scroll
+50    15   14   0   0   0   0   0   0    0   0   0   0   0 SCROLLS   Inferno_Scroll         //Inferno Scroll
+40    15   13   0   0   0   0   0   0    0   0   0   0   0 SCROLLS   Mass_Teleport           //Mass Teleport
+65    15   15   0   0   0   0   0   0    0   0   0   0   0  SCROLLS   Mana_Shield_Scroll    //Mana Shield Scroll
+70    15   16   0   0   0   0   0   0    0   0   0   0   0  SCROLLS   Ice_Storm_Scroll      //Ice Storm Scroll
+70    15   17   0   0   0   0   0   0    0   0   0   0   0  SCROLLS   Decay_Scroll         //Decay Scroll
+90    15   18   0   0   0   0   0   0    0   0   0   0   0  SCROLLS   Nova_Scroll          //Nova Scroll
+//ScrollsDL
+10    12   21   0   0   0   0   0   0    0   0   0   0   0  SCROLLSDL Scroll_of_FireBurst         //Scroll of FireBurst
+11    12   22   0   0   0   0   0   0    0   0   0   0   0  SCROLLSDL Scroll_of_Summon   //Scroll of Summon
+10    12   23   0   0   0   0   0   0    0   0   0   0   0  SCROLLSDL Scroll_of_Damage   //Scroll of Damage
+11    12   24   0   0   0   0   0   0    0   0   0   0   0  SCROLLSDL Scroll_of_Spark    //Scroll of Spark
+//Orbs
+50    12   7    0   0   0   0   0   0    0   0   0   0   0  ORBS      Orb_of_Twisting_Slash //Orb of Twisting Slash
+7     12   12   0   0   0   0   0   0    0   0   0   0   0  ORBS      Orb_of_Rageful_Blow   //Orb of Rageful Blow
+10    12   13   0   0   0   0   0   0    0   0   0   0   0  ORBS      Orb_of_Impale        //Orb of Impale
+5     12   14   0   0   0   0   0   0    0   0   0   0   0  ORBS      Orb_of_Fortitude    //Orb of Fortitude
+15    12   16   0   0   0   0   0   0    0   0   0   0   0 ORBS      Orb_of_Fire_Slash   //Orb of Fire Slash
+13    12   17   0   0   0   0   0   0    0   0   0   0   0  ORBS      Orb_of_Penetration   //Orb of Penetration
+20    12   18   0   0   0   0   0   0    0   0   0   0   0  ORBS      Orb_of_Ice_Arrow   //Orb of Ice Arrow
+15    12   19   0   0   0   0   0   0    0   0   0   0   0 ORBS      Orb_of_Death_Stab  //Orb of Death Stab
+//Guardians
+500   13   37   0   0   0   0   0   0    0   0   0   0   0  GUARD     Horn_of_Fenir    //Horn of Fenir
+//Portal
+100   14   10   0   0   0   0   0   0    0   0   0   0   0  PORTAL    Town_Portal_Scroll   //Town Portal Scroll
+end

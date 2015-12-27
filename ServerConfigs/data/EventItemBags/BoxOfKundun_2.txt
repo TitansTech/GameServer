@@ -1,0 +1,177 @@
+//============================================================================
+//Drop Settings: Box of KUNDUN + 2 Drops
+//www.titanstech.com
+//============================================================================
+//	type,	index,	level,	skill,	exc,	option	name
+//============================================================================
+
+//Bronze set
+	7	0	7	0	0	4	//Helm
+	8	0	7	0	0	4	//Armor
+	9	0	7	0	0	4	//Pants
+	10	0	7	0	0	4	//Gloves
+	11	0	7	0	0	4	//Boots
+
+//Scale set
+	7	6	7	0	0	4	//Helm
+	8	6	7	0	0	4	//Armor
+	9	6	7	0	0	4	//Pants
+	10	6	7	0	0	4	//Gloves
+	11	6	7	0	0	4	//Boots
+
+//Sphinx set
+	7	7	7	0	0	4	//Helm
+	8	7	7	0	0	4	//Armor
+	9	7	7	0	0	4	//Pants
+	10	7	7	0	0	4	//Gloves
+	11	7	7	0	0	4	//Boots
+
+//Silk  Set
+	7	11	7	0	0	4	//Helm
+	8	11	7	0	0	4	//Armor
+	9	11	7	0	0	4	//Pants
+	10	11	7	0	0	4	//Gloves
+	11	11	7	0	0	4	//Boots
+
+//Spirit  Set
+	7	13	7	0	0	4	//Helm
+	8	13	7	0	0	4	//Armor
+	9	13	7	0	0	4	//Pants
+	10	13	7	0	0	4	//Gloves
+	11	13	7	0	0	4	//Boots
+
+//Mistery Set
+	7	39	7	0	0	4	//Helm
+	8	39	7	0	0	4	//Armor
+	9	39	7	0	0	4	//Pants
+	10	39	7	0	0	4	//Gloves
+	11	39	7	0	0	4	//Boots
+
+//Sword
+	0	5	7	1	0	4	//Blade
+	0	6	7	1	0	4	//Gladius
+	0	7	7	1	0	4	//Falchion
+	0	8	7	1	0	4	//Serpent Sword
+
+//Axes
+	1	2	7	1	0	4	//Double Axe
+	1	3	7	1	0	4	//Tomahawk
+	1	4	7	1	0	4	//Elven Axe
+
+//Blunt weapons
+	2	3	7	1	0	4	//Great Hammer
+	2	4	7	1	0	4	//Crystal Morning Star
+
+//Spears
+	3	4	7	1	0	4	//Serpent Spear
+	3	5	7	1	0	4	//Double Poleaxe
+	3	6	7	1	0	4	//Halberd
+	3	7	7	1	0	4	//Berdysh
+	
+//Bows & Crossbows
+	4	2	7	1	0	4	//Elven Bow
+	4	3	7	1	0	4	//Battle Bow
+	4	10	7	1	0	4	//Arquebus
+	4	11	7	1	0	4	//Light Crossbow
+	4	12	7	1	0	4	//Serpent Crossbow
+
+//Staffs
+	5	2	7	1	0	4	//Serpent Staff
+	5	3	7	1	0	4	//Thunder Staff
+	5	4	7	1	0	4	//Gorgon Staff
+	5	21	7	1	0	4	//Book of Sahamutt
+
+//Shields
+	6	2	7	1	0	4	//Kite Shield
+	6	6	7	1	0	4	//Skull Shield
+	6	7	7	1	0	4	//Spiked Shield
+
+//=========================================================================================
+//Bronze set
+	7	0	7	0	1	4	//Helm
+	8	0	7	0	1	4	//Armor
+	9	0	7	0	1	4	//Pants
+	10	0	7	0	1	4	//Gloves
+	11	0	7	0	1	4	//Boots
+
+//Scale set
+	7	6	7	0	1	4	//Helm
+	8	6	7	0	1	4	//Armor
+	9	6	7	0	1	4	//Pants
+	10	6	7	0	1	4	//Gloves
+	11	6	7	0	1	4	//Boots
+
+//Sphinx set
+	7	7	7	0	1	4	//Helm
+	8	7	7	0	1	4	//Armor
+	9	7	7	0	1	4	//Pants
+	10	7	7	0	1	4	//Gloves
+	11	7	7	0	1	4	//Boots
+
+//Silk  Set
+	7	11	7	0	1	4	//Helm
+	8	11	7	0	1	4	//Armor
+	9	11	7	0	1	4	//Pants
+	10	11	7	0	1	4	//Gloves
+	11	11	7	0	1	4	//Boots
+
+//Mistery Set
+	7	39	7	0	1	4	//Helm
+	8	39	7	0	1	4	//Armor
+	9	39	7	0	1	4	//Pants
+	10	39	7	0	1	4	//Gloves
+	11	39	7	0	1	4	//Boots
+
+//Spirit  Set
+	7	13	7	0	1	4	//Helm
+	8	13	7	0	1	4	//Armor
+	9	13	7	0	1	4	//Pants
+	10	13	7	0	1	4	//Gloves
+	11	13	7	0	1	4	//Boots
+
+//Sword
+	0	5	7	1	1	4	//Blade
+	0	6	7	1	1	4	//Gladius
+	0	7	7	1	1	4	//Falchion
+	0	8	7	1	1	4	//Serpent Sword
+
+//Axes
+	1	2	7	1	1	4	//Double Axe
+	1	3	7	1	1	4	//Tomahawk
+	1	4	7	1	1	4	//Elven Axe
+
+//Blunt weapons
+	2	3	7	1	1	4	//Great Hammer
+	2	4	7	1	1	4	//Crystal Morning Star
+
+//Spears
+	3	4	7	1	1	4	//Serpent Spear
+	3	5	7	1	1	4	//Double Poleaxe
+	3	6	7	1	1	4	//Halberd
+	3	7	7	1	1	4	//Berdysh
+	
+//Bows & Crossbows
+	4	2	7	1	1	4	//Elven Bow
+	4	3	7	1	1	4	//Battle Bow
+	4	10	7	1	1	4	//Arquebus
+	4	11	7	1	1	4	//Light Crossbow
+	4	12	7	1	1	4	//Serpent Crossbow
+
+//Staffs
+	5	2	7	1	1	4	//Serpent Staff
+	5	3	7	1	1	4	//Thunder Staff
+	5	4	7	1	1	4	//Gorgon Staff
+	5	21	7	1	1	4	//Book of Sahamutt
+
+//Shields
+	6	2	7	1	1	4	//Kite Shield
+	6	6	7	1	1	4	//Skull Shield
+	6	7	7	1	1	4	//Spiked Shield
+
+//Rings+Pendant
+	13	21	3	0	1	4	//Ring of Fire
+	13	22	3	0	1	4	//Ring of Earth
+	13	23	3	0	1	4	//Ring of Wind
+	13	24	3	0	1	4	//Ring of Magic
+	13	25	3	0	1	4	//Ring of Ice
+	

@@ -1,0 +1,87 @@
+//#############################################################################################################
+//Drop Settings: Kundun Boss Drops
+//www.titanstech.com
+//#############################################################################################################
+
+//=============================================================================================================
+//ItemDropRate	 	- Drop rate of item VS Zen [x/100]
+//ExRate		- Drop rate of excellent item [x/1000]
+//=============================================================================================================
+//	EventName		DropZen		NA	NA 	NA 	  NA 		ItemDropRate	ExRate
+//=============================================================================================================
+1	
+	"KundunBossDrop"	30000000	0	0	 0	  0		70		600
+end
+
+//=============================================================================================================
+//Type			- Item.TXT index (section) of the Box
+//Index 		- Item.TXT id of the Item
+//minLvl		- Minimal Level of the Item (+1, +2 etc...)
+//maxLvl		- Maximum Level of the Item (+1, +2 etc...)
+//Skill			- Drop Item with Skill (0 - off,1 - on)
+//Luck			- Drop Item with Luck (0 - off,1 - on)
+//maxZ28		- Maximum Z28 option (1 = +4, 2 = +8, 3 = +12, etc...)
+//maxExOpt		- Maximum number of Exc option in item
+//=============================================================================================================
+//	Type	Index	minLvl	maxLvl	Skill	Luck	maxZ28	maxExOpt		
+//=============================================================================================================
+2
+	0	22	7	9	1	1	2	4	//Bone Blade
+	0	24	7	9	1	1	2	4	//DayBreak
+	0	23	7	9	1	1	2	4	//Explosion Blade
+	0	25	7	9	1	1	2	4	//Sword Dancer
+	2	12	7	9	1	1	2	4	//Great Lord Scepter
+	2	14	7	9	1	1	2	4	//Solay Scepter
+	3	10	7	9	1	1	2	4	//Dragon Spear
+	4	19	7	9	1	1	2	4	//Great Reign Crossbow
+	4	22	7	9	1	1	2	4	//Albatross Bow
+	4	20	7	9	1	1	2	4	//Arrow Viper Bow
+	4	21	7	9	1	1	2	4	//Sylph Wind Bow
+	5	12	7	9	1	1	2	4	//Grand Viper Staff
+	5	13	7	9	1	1	2	4	//Platina Wing Staff
+	5	20	7	9	1	1	2	4	//Lilium Staff
+	5	11	7	9	1	1	2	4	//Kundun Staff
+	6	13	7	9	1	1	2	4	//Chaos Dragon Shield
+	6	16	7	9	1	1	2	4	//Elemental Shield
+	6	15	7	9	1	1	2	4	//Grand Soul Shield
+
+	13	23	0	7	1	1	1	2	//Ring of Wind
+	13	27	0	7	1	1	1	2	//Pendant of Water
+	13	24	0	7	1	1	1	2	//Ring of Magic
+	13	28	0	7	1	1	1	2	//Pendant of Ability
+
+	7	34	7	9	1	1	2	4	//Ashcrow Helmet
+	8	34	7	9	1	1	2	4	//Ashcrow Armor
+	9	34	7	9	1	1	2	4	//Ashcrow Pants
+	10	34	7	9	1	1	2	4	//Ashcrow Gloves
+	11	34	7	9	1	1	2	4	//Ashcrow Boots
+
+	7	35	7	9	1	1	2	4	//Eclipse Helmet
+	8	35	7	9	1	1	2	4	//Eclipse Armor
+	9	35	7	9	1	1	2	4	//Eclipse Pants
+	10	35	7	9	1	1	2	4	//Eclipse Gloves
+	11	35	7	9	1	1	2	4	//Eclipse Boots
+
+	7	36	7	9	1	1	2	4	//Iris Helmet
+	8	36	7	9	1	1	2	4	//Iris Armor
+	9	36	7	9	1	1	2	4	//Iris Pants
+	10	36	7	9	1	1	2	4	//Iris Gloves
+	11	36	7	9	1	1	2	4	//Iris Boots
+
+	8	37	7	9	1	1	2	4	//Valiant Armor
+	9	37	7	9	1	1	2	4	//Valiant Pants
+	10	37	7	9	1	1	2	4	//Valiant Gloves
+	11	37	7	9	1	1	2	4	//Valiant Boots
+
+	7	38	7	9	1	1	2	4	//Glorious Helmet
+	8	38	7	9	1	1	2	4	//Glorious Armor
+	9	38	7	9	1	1	2	4	//Glorious Pants
+	10	38	7	9	1	1	2	4	//Glorious Gloves
+	11	38	7	9	1	1	2	4	//Glorious Boots
+
+	7	42	7	9	1	1	2	4	//Black Rose Helmet
+	8	42	7	9	1	1	2	4	//Black Rose Armor
+	9	42	7	9	1	1	2	4	//Black Rose Pants
+	10	42	7	9	1	1	2	4	//Black Rose Gloves
+	11	42	7	9	1	1	2	4	//Black Rose Boots
+end

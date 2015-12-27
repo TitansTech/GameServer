@@ -1,0 +1,1743 @@
+/////////////////////////////////////////////////////////////////////////////////////////
+// MuOnline Season 5 / Season 5e4 / Season 6e1 / Season 6e2 Server	[SCFMT TEAM]
+// Main 1.05V+ ~ 1.08B
+//=======================================================================================
+// Coders: IcaruS [English/Spanish], DaRKav [English/Russian]
+// Support: bet0x [English/Spanish/Portuguese]
+//=======================================================================================
+// UPDATE: 11/04/2011
+// GS-GSCS: 10.08.35
+/////////////////////////////////////////////////////////////////////////////////////////
+// Webzen Patches: ftp://muonline.nefficient.co.kr/pub/mupatch/
+/////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// In Test Mode [SERVER]:
+//=======================================================================================
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// To Fix [SERVER]:
+//=======================================================================================
+. [WzShop] Should Kalima tickets work from WzShop inventory or from character inventory?!?!
+. [WzShop] Tickets for Kalima from WzShop do not work when thrown on the ground
+. [WzShop] Tickets for Kalima from WzShop do not show their item names in inventory
+//---------------------------------------
+. [Skill] CHECK ALL RFskills to see if they show to oponent 
+//---------------------------------------
+. [Skill] Rage Fighter Dark Side Empty Attack skill does not show to oponent
+. [Skill] Rage Fighter Increase Block skill does not show to oponent
+. [Skill] Rage Fighter Upper Beast skill does not show to oponent
+. [Skill] Rage Fighters Dark Side skill missing white RF shadows attacking creatures
+//---------------------------------------
+. [Event] Add Raklion Event in style of Swamp Event
+. [Character] RageFighter check full set attribute (check not gloves but same weapons type)
+. [Event] DoubleGoer needs to be recoded 100%
+. [Event] Imperial Guardian Zones on timer do not show properly
+. [Event] Lucky Coins should be requested only when player Talks to NPC, same with modification of coins
+. [Event] Add Castle Siege warping point to the center of the map not the castle
+//---------------------------------------
+. [Items] Talisman of Mobility (13,70)
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// To Add [SERVER]:
+//=======================================================================================
+. [AutoExp] Move configuration settings to EXP System ini file
+. [VIP] VipMony should be requested only when player talks to NPC!!!
+. [Skills] Move SCFElfSoldierMaxLevel to SCF_Skill settings (=> SCF_SkillsBuffs.ini)
+. [Guild] Create separate configuration for Guild settings: guild war, soccer, general
+//---------------------------------------
+. [Packet] Missing packet 0xBF, 0x0D related to Lucky Coin Trading system (size 0x05 bytes)
+. [Packet] Missing packet 0xBF, 0x00 (size 0x05 bytes)
+. [Packet] Missing packet 0xBF, 0x03 (size 0x0A bytes)
+. [Packet] Illusion Temple 0xBF, 0x08 packet missing (size 0x10 bytes)(relic item statue related)
+//---------------------------------------
+. [Quest] Tutorial Quest
+. [Event] Chaos Castle, if minimum number of players not reached - return ticket
+//---------------------------------------
+. [Event] PK Dark Knight Attack [more details after]
+. [Effects] Symbols and time skills dissapear after server switch (add SCFEffectTime = binary) [Word,Dword][effect_id = 0xFFFF, time_sek = 0xFFFFFFFF]
+. [Effect] Add Visual ID: 106	Status: PK Penalty		=> Warp Command Window access restricted for five minutes.
+. [Effect] Add Visual ID: 107	Status: You feel tired.		=> 50% EXP Gain /50% Item Drop Rate 
+. [Effect] Add Visual ID: 108	Status: You feel exhausted.	=> 50% EXP Gain /0% Item Drop Rate 
+. [Effect] Add Visual ID: 120	Status: Punishment for Cheat	=> 50% EXP Gain /0% Item Drop Rate 
+//---------------------------------------
+. [CryWolf] Found UNUSED FUNCTION: NotifyCrywolfStageEffectOnOff(BYTE btOnOff)
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Warnings [SERVER]:
+//=======================================================================================
+. [TO FIX] !!! : Set Item Effect Missing Proper ViewSkill State
+. [TO FIX] !!! : Clear Item Effect Missing Proper ViewSkill State
+. [TO FIX] !!! : Apply this to create SkyLandShielkds -> gObjSkylandBossSheildAttack 
+. [TO FIX] !!! : Set Immunity proper skill view state missing
+. [TO FIX] !!! : Reset Immunity proper skill view state missing
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// MISSING MAIN.EXE FEATURES
+//=======================================================================================
+. [Event] XMas event, Black Little Santa doesnt work
+. [Event] XMas event, White Little Santa doesnt work
+//---------------------------------------
+// CANT EAT CANT DROP
+//---------------------------------------
+. [Item] Add Visual ID: 43	Item: 13,59	Seal of Mobility	=> Mobility enabled
+. [Item] Add Visual ID: 87	Item: 13,62	Seal of Healing		=> EXP gain increase 150%/Automatic Life recovery at 5%
+. [Item] Add Visual ID: 88	Item: 13,63	Seal of Divinity	=> Item gain increase at 150%/Automatic Mana recovery at 5%
+. [Item] Add Visual ID: 119	Item: 13,116	Seal of Wealth		=> Increases Item Drop Rate to 150%.
+. [Item] Add Visual ID: 117	Item: 13,119	Medium Vitality		=> 100% EXP Gain/100% Item Drop Rate/Stops stamina from diminishing for a fixed duration of time.
+. [Item] Add Visual ID: 118	Item: 13,120	High Vitality		=> 100% EXP Gain/100% Item Drop Rate/Stops stamina from diminishing for a fixed duration of time.
+. [Item] Add Visual ID: 121	Item: 14,140	Scroll of Healing	=> +3% HP Regen/+100 HP
+//---------------------------------------
+// DOESNT EXIST
+//---------------------------------------
+. [Item] Add Visual ID: 101	Item: 13,93	Master Seal of Ascension=> EXP gain increase 150%
+. [Item] Add Visual ID: 102	Item: 13,94	Master Seal of Wealth	=> EXP gain increase 200%/Item gain increase 150%
+. [Item] Add Visual ID: 103	Item: 13,95	Gladiator's Honor	=> Increases EXP by 20% /Rare Item drop rate/can be used in Vulcanus only.
+. [Item] Add Visual ID: 104	Item: 13,96	Seal of Strength	=> Increases Attack Rate and Defense Rate'
+. [Item] Add Visual ID: 112	Item: 13,103	Party EXP Bonus Item	=> Up to 170% EXP gain, depending on the number of members in the party.
+. [Item] Add Visual ID: 113	Item: 13,104	Max AG Boost Aura	=> Increases your max AG.
+. [Item] Add Visual ID: 114	Item: 13,105	Max SD Boost Aura	=> Increases your max SD.
+. [Item] Add Visual ID: 115	Item: 13,117	Minimum Vitality	=> 100% EXP Gain/100% Item Drop Rate/Stops stamina from diminishing for a fixed duration of time.
+. [Item] Add Visual ID: 116	Item: 13,118	Low Vitality		=> 100% EXP Gain/100% Item Drop Rate/Stops stamina from diminishing for a fixed duration of time.
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// SERVER FIXES + UPDATES:
+//======================================================================================= 
+. [Skills] Chain Drive back step in safezone FIX
+. [Reset] Reset Max Config Added
+. [Commands] Some old and new commands FIS
+. [Reset] Fixed Reset Max Level Up Points
+. [Server] Max Commands limit increased
+//=======================================================================================
+. [Event] Question and Answer Event Added
+. [Server] Doesnt load TitanLottery Event FIX
+. [Server] Doesnt load TitanRank System FIX
+. [Server] When use "Option reload" or "Monster Reload" bots dont work fine FIX
+. [Skill] Fixed PhoenixShot Skill (doesnt hit multiple monsters (now hit mobs in target range))
+. [Fix] On Option Reload error on bot racer
+. [Skill] Fixed DarkSide Skill (doesnt hit multiple monsters)
+. [Command] After use /vipbuydays or /viprenew display player vip status
+. [Command] Added /vipstatus command for players
+. [Config] SCFUseChangeSellMoneyChange option added to SCF_Items.ini
+. [Config] SCFMaxSellMoney option added to SCF_Items.ini
+. [WzShop] Fixed 0 points for wcoin, goblin point on server login/move
+. [Event] Fix reappearing silver chests in the DoppleGanger event
+. [Config] SCFDoppelNormalMobsDropItems option added to SCF_Doppelganger.ini
+//=======================================================================================
+. [TTCW] New Titan Crystal Wall
+. [GameServer/CrystalEdition] Encrypt Packet Header ON/OFF
+. [ConnectServer] Encrypt Packet Header ON/OFF
+. [Main] 1.04D Show Master Level
+. [Main] 1.04D Encrypt Packet Header ON/OFF
+. [Main] 1.04D SKY Feature ON/OFF
+. [Main] 1.04D FOG Feature ON/OFF
+. [Main] 1.04D 3D Feature ON/OFF
+. [Main] 1.04D Crystal Main Released
+. [Crystal Edition] New Wings FULL Control UNIQUE FEATURE (SCF_CustomWings.ini)
+. [Items] Level 3 Wings Doesnt get real defense FIX
+. [TitanDBUpdater] Updated + 2 New Scripts for Golden Troops Ranking
+. [Server] Added new configs for Golden Troops DB Save in SCF_Ranking.ini
+. [Server/LS] Save Golden Troops Ranking in DB
+. [TitanDBUpdater] Updated + 2 New Scripts for Imperial Guardian Ranking
+. [Server] Added new configs for Imperial Guardian DB Save in SCF_Ranking.ini
+. [Server/LS] Save ImperialGuardian Ranking in DB
+. [TitanDBUpdater] Updated + 2 New Scripts for DoppelGanger Ranking
+. [Server] Added new configs for DoppelGanger DB Save in SCF_Ranking.ini
+. [Server/LS] Save DoppelGanger Ranking in DB
+. [TitanDBUpdater] Updated + 2 New Scripts for Duel Ranking
+. [Server/LS] Asked for CashShop Item On Demand for decrease LS Usage and less lag
+. [Server] Added new configs for Duel DB Save in SCF_Ranking.ini
+. [Server/LS] Save Duel info in DB
+. [Server/LS] Added new link "ExServer" For manage extra data
+. [Server] Added new setting (SCFFixSiegeWarpAttackTeamOnConnect) to SCF_Common.ini into [FIX] (1 for warp guild member to start position on login during siege)
+. [Server] During Castle Siege can't hit the enemy too with SCFFixSiegeCanHitSameTeam FIX
+. [Server] Optimized load time
+. [Server] when use "Monster reload" gameserver freezes for like x minutes FIX
+. [Server] When use "Option reload" the new Bots disappear FIX
+. [CrystalWall] Added new setting (SCFPingCheckSeconds) to SCF_CrystalWall.ini into [Cheats]
+//=======================================================================================
+. [Item] Custom Jewel Added Max Socket Option row on SCF_CustomJewels.txt
+. [Item] Custom Jewel Max Exc doesnt work FIX
+. [Server] Added new setting (SCFFixSiegeCanHitSameTeam) to SCF_Common.ini into [Fix] (1 for dont allow hit to same team)
+. [Event] Added SCF_TitanLottery.txt into SCFData\EventsConfig\
+. [Event] New Titan Lottery Event Added
+. [Event] Added SCF_TitanRank.txt into SCFData\EventsConfig\
+. [Event] TitanRank System/Event Added: Now you can config an event for get the TOP players (3,2 or 1) and give them a reward (with bot reward), TOP System can be by (Level, Reset, Strength, Agility, Energy, Leadership, Vitality, Zen, PK Status, Hero Status, VipDays or VipMoney) and for all classes or for each one.
+. [VIP] Added /vipbuydays command for buy days (for no vip users)
+. [Server] Spliner/Guardian become 1/20 if use "Repair All" FIX
+. [Server] Error on switch character in land of trials (go to black spot) FIX
+. [Server] Spirit of Guardian Only affect On Player VS Monster and not PVP FIX
+. [Server] Bot Hider now make more random the positions FIX
+. [Event] Rain Item Event drop items more random FIX
+. [Event] Rain Item Event drop different items now FIX
+. [Event] Swamp Event now show messages to all servers
+. [Server] ChaosCard low probabilities on all probabilities FIX
+//=======================================================================================
+. [LinkServer] Fix Protocol issue with BotReward and VIP Money
+//=======================================================================================
+. [Anti-Dupe] Increased Anti-Dupe System and add an other options to CrystalWall
+. [Config] Added new settings to SCF_CrystalWall.ini for Add Anti-Dupe features under: [ItemSerials]
+//=======================================================================================
+. [Server] Increase Size for Monsters DmgMin, DmgMax and Defense
+. [Bot] Bot Alchemist new check for non VIP money req
+. [Skills] Bad buffs appears after sertain combination of buffs (infinity arrow + other or elf soldier + other)
+. [Config] Added new setting (SCFIsResetDBLog) to SCF_Reset.ini for Generate a Reset Log in DB under: [Reset System] 
+. [Config] Added new setting (SCFIsResetDBLog) to SCF_ResetMaster.ini for Generate a Reset Log in DB under: [Reset System] 
+. [Server] Added New Table for Reset LOG
+//=======================================================================================
+. [Skills] Dark Side make multi range skill FIX
+. [Skills] Chain Drive now pull of target FIX
+. [Skills] Ignore Defense Apply to all party members (now DONT) FIX
+. [SkillTree] Increase Mana recovery from SkillTree is too high FIX
+. [Anti-Hack] Fixed item duplication possibility on server move
+//=======================================================================================
+. [Server] Added warehouse anti flood seconds option (enabled/dissabled)
+. [LinkServer] Doesnt save level and exp of DarkHorse when you have dark raven equiped FIX
+. [Bots] BotWarper can send you to other GS
+. [Items] Socket Earth doesnt work FIX
+. [Skills] Weapon skills doesnt add dmg fine (Now works new formulas) FIX
+. [Event] Doppelganger (Double Goer) Remaked (Same as GMO) Plus New configs on it (SCF_Doppelganger.dat & SCF_Doppelganger.ini / delete old ones)
+//=======================================================================================
+. [Config] Separated SCF_PCPoint.ini int to 2 separate configs: SCF_PCPoint.txt and SCF_PCPoint.ini
+. [Item] Custom Jewel of Soket does not work when applied to items fix
+. [CQuest] Fixed error with saving custom quest on logout or GS move
+//=======================================================================================
+. [Config] Added new settings to SCF_Items.ini for increase DarkReaven Durability under: [Common] 
+. [Config] Added new settings to SCF_Common.ini for dont restore MasterPoints from older versions under: [Version] 
+. [Config] Added new settings to SCF_Skills.ini for Force and ForceWave Skills under: [DarkLord] 
+. [Config] Added new settings to SCF_VipShop.ini for Add Serial FFFFFFFE to forever items: [Common] 
+. [Config] Added new settings to SCF_VipShop.ini for Add Socket Options to Shop under: [Cost],[Max] 
+. [Config] Added new settings to SCF_BotRacer.txt for Add Serial FFFFFFFE to forever items 
+. [Config] Added new settings to SCF_CrystalWall.ini for Add Anti-SpeedHack features under: [cheats] 
+=>Take a look in config of linkserver, if u use JS of LinkServer and u dont use TitanCS put UseTitanCS=0
+//=======================================================================================
+. [CQuest] Fixed error with long player names on login not being able to get quest info
+. [CQuest] Fixed error with receive custom quest check flag on login
+. [CBMix] Fixed issue with characters being locked by ChaosMix after certain mixes
+. [CBMix] Fixed old school ALT-F4 bug on item failure for certain mixes
+. [CBMix] New system with WZPersonal shop, players now can gain points from their combinations in chaos machine
+. [Config] Added new settings to SCF_CashShop.ini for Goblin Points gain under: [WzShopExtraCBMix]
+. [Config] Moved /SCFData/PointsShops/SCF_CashShop.ini to /SCFData/PointsShops/WzShop/SCF_CashShop.ini
+. [Config] Moved /SCFData/PointsShops/SCF_CashShop_Category.txt to /SCFData/PointsShops/WzShop/SCF_CashShop_Category.txt
+. [Config] Moved /SCFData/PointsShops/SCF_CashShop_Package.txt to /SCFData/PointsShops/WzShop/SCF_CashShop_Package.txt
+. [Config] Moved /SCFData/PointsShops/SCF_CashShop_Product.txt to /SCFData/PointsShops/WzShop/SCF_CashShop_Product.txt
+. [Config] Moved /SCFData/SCF_PCPoint.ini to /SCFData/PointsShops/SCF_PCPoint.ini
+. [Config] Moved /SCFData/SCF_VIPBag.txt to /SCFData/PointsShops/SCF_VIPBag.txt
+. [Config] Renamed directory /CashShop/ to /PointsShops/
+. [Config] Renamed SCF_PCPoint.txt to SCF_PCPoint.ini
+. [Config] Moved [PCPointShop] options from SCF_Common.ini to SCF_PCPoint.txt
+//=======================================================================================
+. [Skill] Added mastering mana reduction fix and 380 item BP reduction option fix for all skills
+. [Skill] Fixed nonusage of AG by Nova skill
+//=======================================================================================
+. [CrystalWall] Added SCFAntiHackSpeedMinDetect Option
+. [CrystalWall] Added SCFAntiHackSpeedMaxDif Option
+. [Server] Added 0xFFFFFFFE Serial on Items of Bot Reward (Optional)
+. [Crystal Edition] Added 0xFFFFFFFE Serial on Items of VIP Shop (Optional)
+. [Server] Fix v2 of Disconnection (Still in test mode)
+. [Crystal Edition] Added Sockets on Titan VIP Shop
+//=======================================================================================
+. [LinkServer<=>ConnectServer] New Comunication between them for show info of servers is via port and not Server Code.
+. [ConnectServer] Intelligence Upgraded
+. [Server] When Multi-Ware is Enabled you can dupe Zen when you die FIX
+. [Server] Pets dissapear (visually) when you warp to other map FIX
+. [BotReward] VIP Money and Zen Doesnt dissapear in DB after get them ingame (when there is no item for reward) FIX
+. [Skills] Formula for Force and ForceWave ADDED
+. [Items] Option for increase DarkReaven Durability ADDED
+. [Events] BotPet can enter into Events, now CANT FIX
+//=======================================================================================
+. [Event] Fix on Gens Close Map (Allow Trace Marry, now dont) 
+. [Event] Fix on Guardian for Siege
+. [Event] Added town teleport fix for siege
+. [Config] Added new config for dont restore MasterPoints from older versions
+. [Server] Added /invisible Command
+. [Server] Fix delete items from expanded inventory when level is lower than 6
+. [BotRacer] Appear also when event is off FIX
+. [Skill] DarkSide from SkillTree get bugged FIX
+. [Gens] Doesnt save Contribution Points After Quest FIX
+. [BotHider] Doesnt make Random Position FIX
+. [Configs] Changed the meaning of SCFDkAddLifeSkillGralDivider in SCF_Skills.ini
+. [Configs] Added new variable to DK Life Swell SCFDkAddLifeSkillTimeDivider in SCF_Skills.ini
+. [Configs] Added new variable to DK Life Swell SCFDkMaxMultiplierHP in SCF_Skills.ini
+. [Configs] SCF_CustomJewels.txt added new column after MaxExc = IsSoket
+. [Configs] Messages.txt added new lines from 14,156 to 14,163
+. [Items] When do mass repair, items like invitations get repaired too BUG fix
+. [Configs] SCF_CustomJewels.txt added new column after isExc = MaxExc
+//=======================================================================================
+. [Items] When add a jewel on Time Item (for example cshop item) doesnt display the item name FIX
+. [Server] Custom Jewels fail errors FIX
+. [Configs] Added txt files of new ancient (itemsetoption(Kor).txt and itemsettype(Kor).txt)
+. [DataServer] Added Bot Reward Table management
+. [DataServer] Added Bot Racer Tables management
+. [Configs] Bot Racer Added	(/ScfData/ScfBots/SCF_BotRacer.txt)
+. [Configs] Bot Reward Added	(/ScfData/ScfBots/SCF_BotReward.txt)
+. [Configs] Bot Warper Added	(/ScfData/ScfBots/SCF_BotWarper.txt)
+. [WzExDB] Sometimes doesnt allow to ask guild to GuildMaster FIX
+. [WzExDB] Sometimes doesnt show alliances FIX
+. [WzExDB] Doesnt Send new Info of GM assistance and battle master FIX
+//===================================
+. [Configs] Bird Skill Formula Added to SCF_Skills.ini
+. [Items] New Ancient can add JOH FIX
+. [Skills] Nova doesnt hit other players FIX
+. [Configs] BK Combo Added Divisor to SCF_Skills.ini
+. [Server] Q,W,E,R Keys saves FIX
+. [Crystal] Cant Repair New Wings (Lvl 4 and Higher) FIX
+. [Server] Double Damage when is Critical DMG FIX
+. [Reset] Added new opt for doesnt erase the points
+. [MuShop] GoldChannel Doesnt Dissapear from List when used FIX
+//===================================
+. [Configs] New options SCFXMasAllowInvitationWhenDisabled, SCFXMasAllowGiftsWhenDisabled in SCF_XMasEvent.ini
+. [Configs] Remove SCF_SCFExDBIP and SCF_SCFExDBPort from SCF_Connect.ini
+. [WzExDB] Cant dissband Alliances FIX
+. [WzExDB] Cant add Alliances FIX
+. [WzExDB] Cant chat with Alliances FIX
+. [WzExDB] Crash FIX
+. [Server] BotStore Dont work in old Seasons FIX
+. [MuShop] Added separate logs for the WZ MuShop for easier trace 
+//===================================
+. [Configs] Added new skill config options for Dark Lord, Dark Wizard, Elf to SCF_Skills.ini
+. [Configs] Added SCFWZRibbonBoxEvent to [WZ_XMas] in SCF_XMasEvent.ini
+. [Configs] Removed option RibbonBoxEvent from commonserver.cfg
+. [Configs] Added new skill config options for Dark Lord to SCF_Skills.ini
+//===================================
+. [Skills] Fixed double damage implementation among with excellent and critical damage
+. [Event] Fixed Xmas pets and items durability during drop
+. [Server] Fixed crash on item get serial function (possible extended warehouse/inventory issue)
+. [Server] Season 6 Episode 3 Rage Figher Completed Skill Tree
+//===================================
+. [Configs] Added new option to SCF_RaklionEvent.ini = SCFRaklionSelupanDropItems for Selupans drop quantity
+. [Configs] Added new message lines under IDs: 13,63 and 13,64 to Messages.txt
+. [Configs] Swamp Event changed messages from 14,124 to 14,134
+. [Configs] Swamp Event new options added to the SCF_SwampEvent.ini for event flexibility
+. [Configs] Swamp Event monster loading changed in SCF_SwampEvent.dat
+//===================================
+. [Event] Swamp Event needs to be recoded and map opened (new options in SCF_SwampEvent.ini)
+. [Event] Added Santa Girl Ring and XMas Blessing Buff feature to the event
+//===================================
+. [Configs] Added new item value to ItemAddOption for item (13,41 = Santa Helper Ring)
+. [Configs] Added new options to SCF_XMasEvent.ini for new Buffs and new Santa Helper
+//===================================
+. [Skill] Some skills make miss when you have low stats FIX
+. [Skill] DarkLord Master Critical Dmg FIX
+. [WzExDB] Some important FIX
+. [Links] Minnor fixes in all Links
+. [JoinServer] Fixes on JoinServer for Account/Password with 10 characters
+. [Server] Minnor fixes on GameServer
+. [Events] Doesnt hit Monsters inside BC and DS FIX
+. [Skills] Skill tree will not work after applying it to 30 or so skills (fixed by recoding the structure of skills)
+//===================================
+. [Configs] Complete rebuilt of SCF_Skills.ini
+//===================================
+. [Character] Fixed RF full set succesful blocking bonus addon
+. [Character] MG Lucky set does not provide full set bonus
+. [Character] Fixed MG new full set succesful blocking bonus addon
+. [Server] Fixed Buffer overflow error with exteded warehouse open-view packet
+. [Event] If HideAndSeek bot appears on map that is not part of server - no message will be displayed
+//===================================
+. [Configs] Recoded Item Level Up mix settings in SCF_ChaosMachine.ini
+. [Configs] ./SCFData/EventsConfig/SCF_XMasEvent.ini added new config section: [WZ_XMas]
+. [Configs] ./SCFData/EventsConfig/SCF_XMasEvent.ini renamed [Common] to [SCF_XMas]
+. [Configs] commonserver.cfg removed: XMasEvent, HappyNewYearTalkNpc, MerryXMasTalkNpc
+. [Configs] ./SCFData/EventsConfig/SCF_HalloweenEvent.ini renamed [HalloweenInMaps] to [SCFHalloweenInMaps]
+. [Configs] ./SCFData/EventsConfig/SCF_HalloweenEvent.ini renamed [Common] to [SCFHalloween]
+. [Configs] ./SCFData/EventsConfig/SCF_HalloweenEvent.ini added new config section: [WZHalloween]
+. [Configs] commonserver.cfg removed: HalloweenEventOn, HalloweenEventJOLBlessDropRate, HalloweenEventJOLAngerDropRate
+. [Configs] commonserver.cfg removed: HalloweenEventJOLScreamDropRate, HalloweenEventJOLFoodDropRate
+. [Configs] commonserver.cfg removed: HalloweenEventJOLDrinkDropRate, HalloweenEventJOLPolymorphRingDropRate
+//===================================
+. [Buff] Rage Fighter Buff Fix: Red Armor, Fitness, Defence Success Rate
+. [Skill] Rage Figter Skill Fix: Dragon Lore, Dragon Slayer, Dark Side, Chain Drive, Upper Beast, Large Ring Blower
+. [Skill] New Rage Fighter skill settings (SCF_Skill.ini)
+. [Event] BotHider now gives hints on his location in the world
+//===================================
+. [Configs] ./SCFData/SCF_Character.ini => New Options: [OfficialHelper], [RageFighter]
+. [Configs] ./SCFData/SCF_Common.ini => New options: SCFUseAllowedMoveperSecs, SCFAllowedMoveperSecs
+. [Configs] ./SCFData/SCF_GensPvP.ini => New option: SCFGensWinPointsIfRivalDoesntHavePoints
+. [Configs] ./SCFData/Skills/SCF_Skills.ini =>  [ElfBuffs] section change, new options
+. [Configs] ./SCFData/Items/SCF_Items.ini => Dark Raven Configuration added
+. [Configs] New: ./SCFData/EventsConfig/SCF_RainItemEventPosition.txt
+. [Configs] ./S6 & S5E4/S6E1/Data/lang/kor/Item(New).txt added new items
+. [Configs] ./GameServer/SCF_Reset.ini & ./GameServer/SCF_ResetMasters.ini new changes [TITAN TECH EDITION]
+. [Configs] ./data/lang/Message.txt => Added new lines from 14,153 to 14,156
+. [Configs] ./data/Events/EventManagement.dat => Event 14 (Rain Items)
+. [Configs] New: ./SCFData/CrystalEdition/SCF_CrystalWall.ini
+. [Configs] Deleted: ./SCFData/CrystalEdition/SCF_CrystalConfig.ini 
+. [Configs] EventBag83 = ..\Data\EventItemBags\BlueEvent.txt => SCF_Connect.ini
+//===================================
+. [Skill] DarkSide Shadow shows to other players
+. [RageFighter] New Formulas (Like Global)
+. [SkillTree] Skill Icon Change in Skill Bar
+. [Skill] Party BK Swell skill fix (adds too much HP)
+. [CBMix] Added fix for upgrading item level (+5% in log recorded but not added to total %)(WZ SCAM)
+. [CBMix] Changed logs format (Added produced percentage VS random percentage records)
+. [Skill] Fixed 220 level new skill energy requirement (should be 0)
+//===================================
+. [Configs] Added new bag in SCF_Connect.ini (EventBag82 = ..\Data\EventItemBags\CrywolfPedestalReward.txt)
+. [Configs] New Config \SCFData\Items\SCF_ChaosMachine.ini
+. [Configs] Removed DQChaosSuccessRateLevel1 from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed DQChaosSuccessRateLevel2 from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed DQChaosSuccessRateLevel3 from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed DQChaosSuccessRateLevel4 from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed DQChaosSuccessRateLevel5 from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed DQChaosSuccessRateLevel6 from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed DQChaosSuccessRateLevel7 from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed Fenrir_01Level_MixRate from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed Fenrir_02Level_MixRate from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed Fenrir_03Level_MixRate from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed ShieldPotionLv1MixSuccessRate from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed ShieldPotionLv1MixMoney from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed ShieldPotionLv2MixSuccessRate from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed ShieldPotionLv2MixMoney from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed ShieldPotionLv3MixSuccessRate from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Removed ShieldPotionLv3MixMoney from commonserv.cfg (New in SCF_ChaosMachine.ini)
+. [Configs] Move: \SCFData\SCF_LuckyPenny.ini 		=> \SCFData\EventsConfig\SCF_LuckyPenny.ini
+. [Configs] Move: \SCFData\SCF_LuckyPenny.txt 		=> \SCFData\EventsConfig\SCF_LuckyPenny.txt
+. [Configs] Move: \SCFData\SCF_CherryBlossom.ini 	=> \SCFData\EventsConfig\SCF_CherryBlossom.ini
+. [Configs] Move: \SCFData\SCF_CherryBlossom.txt 	=> \SCFData\EventsConfig\SCF_CherryBlossom.txt
+. [Configs] Move: \SCFData\SCF_CashShop.ini 		=> \SCFData\CashShop\SCF_CashShop.ini 
+. [Configs] Move: \SCFData\SCF_CashShop_Category.txt 	=> \SCFData\CashShop\SCF_CashShop_Category.txt 
+. [Configs] Move: \SCFData\SCF_CashShop_Package.txt 	=> \SCFData\CashShop\SCF_CashShop_Package.txt
+. [Configs] Move: \SCFData\SCF_CashShop_Product.txt 	=> \SCFData\CashShop\SCF_CashShop_Product.txt
+. [Configs] Move: \SCFData\SCF_CrystalConfig.ini 	=> \SCFData\CrystalEdition\SCF_CrystalConfig.ini
+. [Configs] Move: \SCFData\SCF_CustomJewels.txt 	=> \SCFData\CrystalEdition\SCF_CustomJewels.txt
+. [Configs] Move: \SCFData\SCF_VipShop.ini 		=> \SCFData\CrystalEdition\BotVipShop\SCF_VipShop.ini
+. [Configs] Move: \SCFData\SCF_VipShop.txt 		=> \SCFData\CrystalEdition\BotVipShop\SCF_VipShop.txt
+. [Configs] Move: \SCFData\SCFBots\SCF_BotVipShop.txt 	=> \SCFData\CrystalEdition\BotVipShop\SCF_BotVipShop.txt
+. [Configs] Move: \SCFData\SCF_Items.ini 		=> \SCFData\Items\SCF_Items.ini
+. [Configs] Move: \SCFData\SCF_SocketItems.txt 		=> \SCFData\Items\SCF_SocketItems.txt
+. [Configs] Move: \SCFData\SCF_SocketOptions.ini 	=> \SCFData\Items\SCF_SocketOptions.ini
+. [Configs] Move: \SCFData\SCF_SocketOptions.txt 	=> \SCFData\Items\SCF_SocketOptions.txt
+. [Configs] Move: \SCFData\SCF_ItemDropRate.txt 	=> \SCFData\Items\SCF_ItemDropRate.txt
+. [Configs] Move: \SCFData\SCF_Skills.ini 		=> \SCFData\Skills\SCF_Skills.ini
+. [Configs] Move: \SCFData\SCF_SkillTreeData.txt 	=> \SCFData\Skills\SCF_SkillTreeData.txt
+. [Configs] Move: \SCFData\SCF_SkillsAutoLearn.txt 	=> \SCFData\Skills\SCF_SkillsAutoLearn.txt
+. [Configs] Added SCFBerserkerAttackMax to SCF_Skills.ini config (to cap Multiplier of Attack)
+//===================================
+. [Event] Changes to Cherry Blossom mix configuration (SCF_CherryBlossom.txt)
+. [NPC] David NPC has issue with combining items if Full inventory (add check for space)
+. [SkillTree] Added overflow of points per skill check on character login
+. [SkillTree] Added anti-flood system to skill-add-points function, to prevent overflow of points
+. [SkillTree] Fixed calculation of all skills stats (rewrote character calc function)
+. [Imperial Guardian] Added monster delete logs for better trace of missing monsters
+. [NPC] Auto Move 568 "Wandering Merchant Zyro" (0 131,138), (3 186, 109), (2 226, 52), (51 55,199) 
+. [Event] Illusion Temple if finishes on 7 goals (not with the time) provides no prizes
+. [Player] Fix respawn position for Karlutan1 and Karlutan2 when dieing
+. [Effect] ItemAddOption increase SD and AG not coded
+. [Event] Cherry Blossom Event is fully complete
+. [Item] Elite Medium Healing Potion added (14,94)
+. [Monsters] Fixed issue with monsters over ID 490 not dropping zen/items (NPC vs MON bug)
+. [Server] Recoded drop function, added extra check if item out of bounds or if item not dropable
+. [Event] Imperial Guardian fixed monster delition and boss kill errors
+. [Server] Season 6 Episode 2 - Some monsters dont attack visual bug Fixed
+. [Crystal Edition] No more agility bug (Speed Bug)
+. [Crystal Edition] [Anti-Hack] Speed Hack Detect Added
+. [Server] Auto Learn Skills System Added
+. [Items] Talisman of Resurrection added
+. [Server] [CashShop] Show Correct Time
+. [Server] [CashShop] Save CashShop Buffs in DB
+. [Server] [CashShop] Load CashShop Buffs from DB
+. [Server] [CashShop] Cant Put in PShop CashShop Items
+. [Server] [CashShop] Cant Trade CashShop Items
+. [Server] [CashShop] Cant drop CashShop Items
+. [Server] [CashShop] Auto Eat Reset Fruits when you "Use" them
+. [Server] [CashShop] Reset Fruits Items Added
+. [Server] [CashShop] Auto Eat Extended inventory and Extended Warehouse when you "Use" them
+. [Server] [CashShop] Auto Eat Buff Items when you "Use" them
+. [Event] Imperial Guardian Boss item drop fix (only Statue worked before)
+. [Event] Hidden Treasure Box added success rate configuration to the bag (PS: BAG NOT USED)
+. [CBMix] Added success rate for lord mix in the BAG configuration
+. [Skill] Changed BK Mastering Swell skill from straight multiplier to a percentage
+. [Anti-Hack] No more autoclose pshop and warehouse on move, it will cancell the move procedure
+. [Anti-Hack] Added more information about buffer overflow hack attempts to see whats going on there
+. [Anti-Hack] Move Gate function added extra Hack check
+. [Anti-Hack] Wallhack reconstruction, changed from path of players walk to point of the mouse
+. [Event] Fixed crash on Chaos Card mix (Add option parameter issue if over 0)
+. [Event] Moss shop bag style has been changed!!! Now a lot more random features implemented!
+. [Item] Added Lethal Wizard's Ring (13,107) functionality
+. [Skill] Fixed Stamina on Mastering Skill tree Swell (Increase HP not BP)
+. [Event] Fixed Double Goer entrance for certain situations (error on main)
+. [BotPet] Fixed crashes on /botpet make and /botpet invoke
+. [Server] [CashShop] Crash Fixes for object out of bound errors
+. [Item] Season 6 Episode 2 - Pshop Item mapping Fix (Dissapearing items, shadow bug)
+. [Item] Season 6 Episode 2 - Extra inventory alignment fix
+. [Item] Season 6 Episode 2 - Item pickup (1x2) dimensions pickup fix
+. [Event] Added changes to ChaosCardProbability.txt for different lotery types
+. [Event] Added New Chaos Cards [14,92] [14,93] [14,95]
+. [Server] Season 6 Episode 2 - Item pickup inventory map out of bounce fix
+. [Server] Season 6 Episode 2 - Fixed extra inventory login-server move dissapearance
+. [Server] Removed reference to character creation levels from dataserver (MG/DL)
+. [Event] Sky Event warp fix when with party (states issue)
+. [Event] Imperial Guardian massive warp fix when with party (states issue)
+. [Event] Double Goer massive warp fix when with party (states issue)
+. [Event] Illusion Temple, add durability to the items configuration of Illusion.txt
+. [Event] Illusion Temple box drop is incorrect = need to change zen drop from static to normal kill one
+. [Event] Illusion Temple, if party leader leaves the game, party gets disbanned (add party recreate)
+. [Event] Illusion Temple, if player moves to another map, kick him from party (add leader check)
+. [Event] Moss event, remove its delition during event finish, and implement invisibility
+. [Bot] BotAlchemist fix with PcPoints and VIPMoney negative bug
+. [Server] Season 6 Episode 2 - CashShop Added
+. [Crystal] Cant Drop Custom Jewels and Custom Wings
+. [Server] Season 6 Episode 2 - Cherry Blossom Machine Added
+. [Server] Season 6 Episode 2 - Mu Official Helper Added
+. [DS] Season 6 Episode 2 - Fixed warehouse extension 'kris' bug (set full Inventory to FF first)
+. [SCFDS] Season 6 Episode 2 - Fixed warehouse extension 'kris' bug (set full Inventory to FF first)
+. [Server] Season 6 Episode 2 - Fixed warehouse extension for non-multiwarehouse servers
+. [CBMix] Season 6 Episode 2 - Stacking JOH does not work properly (unable to stack)
+. [PShop] Season 6 Episode 2 - Personal Shop items recovery does not work
+. [Skill] Fixed RF party buff skills (fitness and defence ignore rate)
+. [Event] Added RF extra point during HitAndUP event: SCF_HitAndUpEvent.ini => SCFHaPRFExtraPoint
+. [Drop] Added BoxOfGoldMinMobLevel option to commonserv.cfg to control box of heaven minimum mob level
+. [Drop] Added BoxOfGoldMaxMobLevel option to commonserv.cfg to control box of heaven maximum mob level
+. [Drop] Added ItemExDropRateForBoxOfGold option to commonserv.cfg to control exc drop of Box of Heaven (x/1000)
+. [SCFDS] Fixed error with MapServer for the HuntZone Open/Close state
+. [DS] Fixed inventory SizeBug on login (size change issue)
+. [Event] Imperial Guardian, each stage lasts 10 minutes now, like on Global
+. [Event] Imperial Guardian, before each stage, there is 60 seconds preparation, like on Global
+. [Event] Imperial Guardian, monster DIE count has been fixed
+. [Event] Imperial Guardian, implemented statues and its drop list (bonus structure)
+. [Event] Double Goer monster die count fixed
+. [Event] Raklion monster count during event has been fixed
+. [Event] Illusion Temple points count during monster die fix (always credited now)
+. [Event] PcPoints on monster die fix (always credited now)
+. [Server] Season 6 Episode 2 - Create Summoner, RageFigher, MagicGladiator, DarkLord FIXED (Global Protocol)
+. [Server] Season 6 Episode 2 - Fixed Personal Shop issue
+. [Server] Season 6 Episode 2 - Personal Shop Migrate System Added (Old->New) FIXED/TESTED
+. [Server] Season 6 Episode 2 - New JewelMix Added/Fixed
+. [Server] Season 6 Episode 2 - Pickup item from anywhere when u have one or more extended inventory FIX
+. [Server] Season 6 Episode 2 - SkillTree Effect after Login FIX
+. [Server] Season 6 Episode 2 - Skills Patchments Consume FIX (In global has other item for other skills)
+. [Event] Halloween PK event removed GM loggos appearing above players heads
+. [Event] Halloween PK event fixed the character view of items
+. [Event] Halloween PK event disabled trading during event
+. [Event] Halloween PK event added check on gObjTeleport, to prevent warping during event
+. [Event] Halloween PK event added fix for all event maps if warping there from halloween map
+. [Event] Halloween PK event added autowarp all people in the map to random spot
+. [Event] Halloween PK added config variable: SCFHalloweenEventWarpRandomLocation
+. [Server] Season 6 Episode 1 - Day Quests Added
+. [Server] Season 6 Episode 2 - Week Quests Added
+. [Server] Season 6 Episode 2 - Lucky Items Chaos Machine - Ticket -> Lucky Item Mix Done
+. [Server] Season 6 Episode 2 - Lucky Items Chaos Machine - Jewel of Extension Mix Done
+. [Server] Season 6 Episode 2 - Added Jewel of Elevation (Lucky Items Reinforcement)
+. [Server] Season 6 Episode 2 - Added Jewel of Extension (Increase Lucky Items Durability)
+. [Server] Season 6 Episode 2 - Lucky Items Decrease Durability after 40 mins of use Added
+. [Server] Season 6 Episode 2 - Lucky Items Added
+. [Server] Season 6 Episode 2 - Fixed MuMail Protocol (Global Protocol)
+. [Server] Season 6 Episode 2 - Unicorn Pet Added (Global)
+. [Skill]  Season 6 Episode 2 - PhoenixShot Added
+. [Server] Season 6 Episode 2 - Master SkillTree Migrate System Added (Recover Old Skills & Recover Master Points)
+. [Server] Season 6 Episode 2 - Personal Shop Migrate System Added (Old->New)
+. [Server] Season 6 Episode 2 - Personal Shop Fixed
+. [DataServer] Season 6 Episode 2 - New Inventories Suppport
+. [Server] Season 6 Episode 2 - Extended Inventory 2 Added
+. [Server] Season 6 Episode 2 - Extended Inventory 1 Added
+. [SCFExDB] Season 6 Episode 2 - New Vault Support
+. [Server] Season 6 Episode 2 - Extended Vault Added
+. [Server] Season 6 Episode 2 - Master Skill Tree Rebuilded And Added
+. [Server] Season 6 Episode 2 - Global Protocol Added
+. [Server] Season 6 Episode 2 - Season 6 Episode 2 Protocol Added
+. [Server] Item Drop with Socket Options FIX
+. [Server] Multiples lines added in message.txt
+. [Server] CloseClient when player makes X count of attacks per second (attacks can be skills or hand attack)
+. [Server] Added in chaoslog chaos items lost
+. [Skills] ElfBuffs Configs Added
+. [DarkSpirit] Multiple var for control darkspirit attack added in Configs
+. [Server] Crash Fixes
+. [Event] Rain Item Events Added
+. [Event] Gens Close Map Added 4 and 5 values (FOREVER VALUES)
+. [Reset] SP System Extended to 7
+. [Server] Vip Extra Exp FIX
+. [Skill] Drain Life FIX
+. [Berserker] Remaked
+. [BotPet] Cant invoke BotPet when you have a Summon Monster FIX
+. [Skill] Elf Summon Monster FIX
+. [Berserker] Mutiples Fixes
+. [Server] No more arguments
+. [Duel] Min Level Option Added
+. [Marry] Trace Marry Min Level Added
+. [BotTrader] Excellent Item Fix
+. [Marry] Cant trace marry to other gens close map
+. [Gens] Close Map System Map Warp On Login and on Event Finish Fix
+. [Events] On monster delition added check to ALL EVENTS if its the monster with proper ID and Map Number
+. [Server] Cleaned CS related variables, to make memory consumption less
+. [Server] Moved Guardian and Mercenary to the GSCS definitions only
+. [Event] Halloween Event will work on nonPVP servers as well once its started
+. [Event] Fixed the issue with defending guild being able to hold switches
+. [Event] Fixed CharacterView for Halloween PK event
+. [Event] Double Goer, fied delition of wrong monsters when boxes are opened
+. [Move] Fixed warping to CryWolf from another server (If protected, brings player straight to the city)
+. [Gens] Close Map System Added
+. [Item] Added Shuffle function to ItemDropRate loader, to make item drop more random
+. [Item] Added VipRate to SCF_ItemDropRate.txt for VIP users drop rate adjustment
+. [Server] Added log view lines for the Ancient Sets application
+. [Server] Added fix for unusual situations with ERROR_HOST_UNREACHABLE error
+. [Monster] Skill ID over 100 visual attack FIX
+. [Event] Double Goer, fixed posion catapilars appearing next to the box position
+. [Event] Double Goer, catapilar should not respawn when killed FIX
+. [Event] Double Goer, when boss is killed, boxes appear next to the killed BOSS
+. [EventBags] If Zen ammount is set to 0, box does not drop any zen implementation
+. [GMSystem] Added "/goevent TYPE ID" to SCF_Commands.ini to launch events from eventmanager by GM
+. [GMSystem] Fixed logs for personal messages, general talk and post messages
+. [Logs] Added "SCFWritePMLog", "SCFWriteMSGLog" to SCF_Connect.ini
+. [DS] Still error on DS EXEC WZ_CS_GetGuildMarkRegInfo 0, 'GMCSTESTÿÿÿÿReplay' << Must Be GMCSTEST
+. [Event] Fixed CastleSiege interface when warping there from another server
+. [Event] Fixed CryWolf interface when joining the event that just started
+. [ChaosCard] Move all Chaos Card logs to CBMIX log where they should be
+. [GMSystem] Added extra log features to the GM system (Trade from GM in gm log, chat messages)
+. [Items] Added new options for drop between socket items with 1 or more socket and no sockets
+. [Anti-Hack]  Add move/walk player antihack, if walk location is bigger than 15 => teleport to base
+. [Character] Moved all configuration for character from SCF_Common => SCF_Character
+. [Character] Recoded all formula settings separately for each class
+. [Character] Added level requirement for MagicGladiator and DarkLord to SFC_Character.ini
+. [CBMix] Fixed overflow for success rate on 'ChaosSuccessRate' variable
+. [Config] Fixed load of SCFIncreaseFFFFFFFFSerialDurDownBy (SCF_Items.ini)
+. [Server] CloseClient(int index) => added => ResponErrorCloseClient(index); for socket error fix
+. [Event] Castle Deep regular monster eventitem bag change (if zen 0 = proceed to normal mob drop)
+. [Event] Castle Siege the protecting guild, once looses its crown cant operate switches
+. [Event] Castle Siege changed the JoinSide definition of involved guild in source
+. [Event] Castle Siege added [CastleSiege][ChangeWinner] to log for trace behaviour
+. [Event] Castle Siege changed behaviour of [CastleSiege][Defending]
+. [Event] Castle Siege changed behaviour of [CastleSiege][NonCS]
+. [Event] Castle Siege changed behaviour of [CastleSiege] CCastleSiege::SetUserCsJoinSide()
+. [Event] Castle Siege Cannon Tower can not be destroyed FIX
+. [Event] Raklion Event spider eggs added to non-moving mobs
+. [Anti-Cheat] DC hack fixed by checking player packets count with pingTime
+. [Anti-Cheat] Say stuff for other users fix (Check on received player ID)
+. [Command] Added define variable for test command '/effect'
+. [Server] Added Summoner and RageFighter Min Level Creation
+. [Event] Hide And Seek Event with random positions
+. [Event] Reactivated function 'NotifyCrywolfCurrentStateByUserId' >> Moved to CryWolfSync
+. [DataServer] Castle Siege guild registration seems to be providing wrong info (check)
+. [DataServer] Castle Siege owner map: Land of Trials add map server group to table in database + send
+. [Event] If CryWolf is in start state, when moving to the map, player should appear in the city
+. [Event] If CryWolf is protected, when moving to the map, player should appear in the city
+. [Server] Removed unused variable m_MoveGateNumber
+. [Event] Hide And Seek Event with bot Added (you can add much locations and reward they are random)
+. [Shops] Added feature that if user sells items to store and has max zen, can still sell to store
+. [Character] Added system feature that if user selling item goes over max zen it corrects it
+. [Quest] Fixed Seson 5 error with Zen overflow...
+. [Event] Added [CastleStateSync] logline for STATE check to trace some errors in Synch process
+. [Gens] Fixed error during Guild Union, if no Gens, guild should be able to join union anyways
+. [Skill] Reset System require energy formula fixed
+. [Event] Castle Siege During Registration list of guilds not shown
+. [Event] Illusion Temple statue drops more than one ball FIX
+. [Event] CryWolf state save in database missing (WZ_CW_InfoSave: iMapSvrGroup, iCrywolfState, iOccupationState)
+. [Event] During CryWolf start, warp all in the map to the city
+. [Event] During CryWolf start, do not allow anyone to leave the city
+. [Event] During CryWolf start, no monsters on the map should be able to be killed
+. [Skill] Berserker skill life restore fix after skill ends
+. [NPC] After talking to Guardsman npc and cancelling the dialog, player needs to relogin
+. [NPC] After talking to Double Goer npc and cancelling the dialog, player needs to relogin
+. [NPC] After talking to Imperial Guardian npc and cancelling the dialog, player needs to relogin
+. [NPC] After talking to Illusion Temple npc and cancelling the dialog, player needs to relogin
+. [NPC] After talking to Kanturu Gate npc and cancelling the dialog, player needs to relogin
+. [Skill] Berserker skill time fix (limited the skill time to a set number)
+. [Skill] Berserker skill Wizardy attack damage fix (limited the multiplier)
+. [Skill] Berserker skill attack damage fix (only wizardy affected)
+. [Skill] Berserker skill mana increase/life decrease fix
+. [Skill] Damage from summoner book skills gets cancelled if distance is further then skill reach
+. [BotTrader] Item Result Serialized
+. [GensPvP] Added SCFGensWinPointsIfRivalDoesntHavePoints Option
+. [BotAlchemist] Added Exc Max Option
+. [Item] 3rd Wings damage return probability option fixed
+. [Skill] Books attack damage affects SD now
+. [Skill] Life drain skill for summoner FIX/CHANGE of formula
+. [Event] Illusion Temple, when enter in event, party list names are wrong
+. [Event] Illusion Temple, when enter with party, party doesnt cancell bug
+. [Event] Illusion Temple all the members of the temple appear in the party
+. [Event] Illusion Temple monsters removed once fireball has been secured/dropped to pedestal
+. [Event] Illusion Temple monsters show up only after fire ball has been taken
+. [Event] Halloween PK Event - Enable/Dissable in Each Map
+. [Event] Illusion Temple add minimum players count check when event running (end even if other team forfeits)
+. [Event] Illusion Temple add minimal counter of players online for entrance (return ticket on fail)
+. [Event] Kanturu date start calculation formula fix
+. [Event] Illusion Temple monsters should drop potions and zen (add itembag with nonset zen ammount)
+. [BotTrader] Mix cant put 2 or more THE SAME items FIX
+. [Event] Fixed DoubleGoer Golden Treasure Drop Much Items
+. [Server] Cant add Seed Sphere Fire Attack/Wizardry increase FIX
+. [Server] Fixed Water Increase defense success rate 10% Socket Options
+. [Server] Fixed Water Increase defense shield by 7% Socket Options
+. [Server] Fixed Ice Increase Durabilty in 30% Socket Options
+. [Server] Fixed Wind Increase maximum life 4% Socket Options
+. [Server] Fixed Wind Increase maximum mana 4% Socket Options
+. [Server] Reset ClearSkills = 0 FIXED
+. [Packet] Fixed player/monster die packet when killed with certain skill
+. [Event] Illusion Temple add BC style sync function to the engine
+. [Event] Illusion Temple add variables for total score calculation in ranking
+. [Event] Illusion Temple none of the members of the temple can cancell party
+. [Event] Illusion Temple statue breaks when dialog bar finishes
+. [Event] Illusion Temple 0xBF, 0x02 skill packet length FIX
+. [Skill] Illusion Temple missing skill: IL_ORDER_OF_SHIELD
+. [Event] Illusion Temple do not allow party in temporary waiting room
+. [Event] Illusion Temple total bonus experience calculation change (prevent farming)
+. [Event] Illusion Temple when statue broken, the spark is dropped and not given to a player
+. [Event] Illusion Temple skills do not have proper visual effects
+. [Event] Illusion Temple player kill = 5 points (config)
+. [Event] Illusion Temple monster kill = 2 points (config)
+. [Event] Illusion Temple using teleport skill gives you 100% shield as well (less time)
+. [Event] Illusion Temple cancel any party when warping to temporary room
+. [Event] Illusion Temple cant attack oponent if its Non-PK Server
+. [Event] Illusion Temple only player from the winning team gets a chance of his fernir update FIX
+. [Event] Illusion Temple missing proper view of the Failure/Success packet
+. [Event] Illusion Temple when player is killed, he should reappear with invincible shield skill
+. [Event] Illusion Temple NPC room listing shows wrong number of players inside
+. [Event] Illusion Temple random team start implemented when first player entering
+. [Event] Illusion Temple add overflow check on var kill_points
+. [Event] Illusion Temple add default start points for skills to config (def: 10)
+. [Event] Illusion Temple points for monster kills add in config file (def: 1)
+. [Event] Illusion Temple points for player kills add in config file (def: 2)
+. [Event] Illusion Temple add variable for extra EXP at the end of event per each kill
+. [Event] Illusion Temple add variable for max winning points to stop event (def: 7)
+. [Event] Illusion Temple removed MaxPlayer variable, constant is 10
+. [Event] Recoded Experience calculation at the ranking message for Illusion Temple
+. [Server] MonsterPosition reload, reloads Illusion Temple timer
+. [Server] Option Reload does not reload Illusion Temple info
+. [NPC] After talking to Lucky Coins npc and cancelling the dialog, player needs to relogin
+. [Server] All Players have GM Globe in Illusion Temple and Castle Siege when GM its in event FIX
+. [Class] Add fruits have visual bug
+. [Map] Add gRegenRect coordinates to new maps added in Season 6
+. [CastleSiege] Horse Skill on DL does not PUSH people away from the attacker
+. [Event] Recoded Experience calculation at the ranking message for Illusion Temple
+. [Skill] Illusion Temple added 100% damage absorb skill functionality
+. [Skill] Illusion Temple missing original skill packets
+. [Skill] Illusion Temple skills crash GS
+. [Event] Illusion Temple changed rand on statue positioning to be more unpredictable
+. [Event] Illusion Temple add points for monster kills
+. [Event] Illusion Temple Mass Move outside on event end, has error
+. [Event] Illusion Temple player sort has error if room is full (array overflow)
+. [Event] Illusion Temple give EXP for each player killed
+. [Event] Illusion Temple when player gets killed, he looses his inventory
+. [Event] Illusion Temple when player gets killed, he looses his skin
+. [Event] Illusion Temple add minimal counter of players online for extra presents
+. [Event] Illusion Temple top 3 players get extra jewels (1st = bless, 2nd = soul, 3rd extra chaos)
+. [Event] Illusion Temple add minimal counter of players online for Fernir Upgrade
+. [Event] Illusion Temple add extra EXP for each player kill (add variable to config)
+. [Event] Illusion Temple give EXP for each Ball dropped off (add variable to config)
+. [Event] Illusion Temple winning prize should be dropped beside the user, not put in inventory
+. [Event] Illusion Temple Mass Move to start point and close gate on finish event
+. [Event] Illusion Temple portals crash main when used
+. [Event] Illusion Temple remove fireball from user after time runs out	
+. [Event] Illusion Temple fixed skins for RED and BLUE team (they were reversed)
+. [Event] Illusion Temple upper corner has wrong statue direction
+. [Event] Illusion Temple FireBall ViewSkill State remain shown on player when drop fireball
+. [Event] Illusion Temple missing coordinates of the team members
+. [Event] Illusion Temple kill points occumulated not for team but for each player
+. [Event] Illusion Temple kill point overflow check added
+. [Event] Illusion Temple FireBall ViewSkill State not shown on player when get fireball
+. [Server] Account stuck in GS FIX
+. [Server] Season 6 Elf Wings Lvl 2 in selection screen FIX
+. [Item] Add Visual ID: 122	Item: 13,128	Statuette of falcon		=> Critical damage +10%
+. [Item] Add Visual ID: 123	Item: 13,129	Statuette of a goat		=> Excellent Damage +10%
+. [Item] Add Visual ID: 124	Item: 13,130	Amulet of Oak			=> Maximum life +50
+. [Item] Add Visual ID: 125	Item: 13,131	Amulet board			=> Maximum mana +50
+. [Item] Add Visual ID: 126	Item: 13,132	Amulet golden oak		=> Max HP +100 / Max SD +500
+. [Item] Add Visual ID: 127	Item: 13,133	Golden Amulet board		=> Maximum mana +150 / Max AG +50
+. [Item] Add Visual ID: 128	Item: 13,134	Horseshoe spends		=> Increased drop rate of items
+. [Item] Add Visual ID: 99	Item: 13,81	Talisman of Guardian		=> No penalty for dying.
+. [Item] Add Visual ID: 100	Item: 13,82	Talisman of Item Protection	=> Keeps item durable
+. [Item] Add Visual ID: 44	Item: 14,72	Scroll of Quickness		=> Attack speed increase +15
+. [Item] Add Visual ID: 45	Item: 14,73	Scroll of Defense		=> Defensibility increase +60
+. [Item] Add Visual ID: 46	Item: 14,74	Scroll of Wrath			=> Attack power increase +30
+. [Item] Add Visual ID: 47	Item: 14,75	Scroll of Wizardry		=> Wizardry increase +30
+. [Item] Add Visual ID: 48	Item: 14,76	Scroll of Health		=> HP increase +200
+. [Item] Add Visual ID: 49	Item: 14,77	Scroll of Mana			=> Mana increase +300
+. [Item] Add Visual ID: 50	Item: 14,78	Elixir of Strength		=> Strength Status +50
+. [Item] Add Visual ID: 51	Item: 14,79	Elixir of Agility		=> Agility Status +50
+. [Item] Add Visual ID: 52	Item: 14,80	Elixir of Health		=> Health Status +50
+. [Item] Add Visual ID: 53	Item: 14,81	Elixir of Energy		=> Energy Status +50
+. [Item] Add Visual ID: 54	Item: 14,82	Elixir of Control		=> Control Status +50
+. [Item] Add Visual ID: 89	Item: 14,97	Scroll of Battle		=> Critical damage increase at 20%
+. [Item] Add Visual ID: 90	Item: 14,98	Scroll of Strength		=> Excellent damage increase at 20%
+. [Event] Illusion Temple when enter the temp room and warp outside, illusion thinks u still inside
+. [Event] Illusion Temple should warp you to the room and Wait 30 Seconds Before opening Gate
+. [Event] Illusion Temple manual warp outside of the event will keep player looking like the skin
+. [Event] Illusion Temple should show your ORIGINAL skin when warped to the temporary room
+. [Event] Illusion Temple player should respawn on the base when killed
+. [Event] Illusion Temple Must Hold CTRL to attack the other player [ILLUSIONTEMPLE_ENEMY_PKLEVEL]
+. [Event] Illusion Temple statue positioning and direction error
+. [Event] Illusion Temple fireball should be dropped when player is killed
+. [Event] Illusion Temple statue should dissapear when fireball is taken
+. [Event] Illusion Temple new hero assigned when fireball picked up
+. [Event] Illusion Temple removes player if player DC
+. [Event] Illusion Temple fixed timer value on NPC click
+. [Event] Illusion Temple should announce the objective of the illusion temple (attack/defend)
+. [Event] Illusion Temple fixed timer value on Invitation right-click
+. [Event] Illusion Temple fixed right-click on Invitation
+. [Event] Illusion Temple add check if can register with statue if inventory is full
+. [Event] Illusion Temple timer is going up not down (must be a 15 or 20 min countdown)
+. [Event] Illusion Temple statue and its NPCs can be killed fix
+. [Item] Fixed durability reduction of Rage Fighters gloves
+. [Event] Kalima level entrance fix for Rage Fighter
+. [Move] Fixed warp level for Rage Fighter
+. [Gate] Fixed entrance level for Rage Fighter
+. [SCFDS] Fixed error in parameter conversion when calling WZ_CS_ModifyCastleSchedule
+. [Server] Fixed lock of ItemAddOption.txt by Load380ItemOptionInfo function
+. [Monster] Add Hell Maine box drop (Aida Boss)
+. [Event] Auto Allow PvP on Halloween Event
+. [Event] Halloween Custom Event <<< Turn players in to Halloween Mobs (make others kill them)
+. [Skill] Rage Fighters Dark Side skill Wind Attribute check
+. [Skill] Rage Fighters Dragon Slayer skill Wind Attribute check
+. [Skill] Rage Fighters Dragon Lore skill Earth Attribute check
+. [Skill] Rage Fighters Fitness visual Fix for character panel
+. [Skill] Rage Fighters Deffence Success Rate visual Fix for character panel
+. [Skill] Rage Fighters Chain Drive skill Ice Attribute check
+. [Monster] Mobs of Season 4 to Season 6 dont do the original skills, or animation.
+. [Event] CryWolf Altar players can not be moved by range skills
+. [Warning] Here must be somthing to put the Name [CJewelOfHarmonySystem::LoadScriptOfSmelt]
+. [Warning] !!! : Sacrefice Skill Missing Proper ViewSkill State
+. [Items] Joh works on weapon, SD and DD on armor doesnt
+. [Event] Illusion Temple Added Gold Fenrir Reward
+. [Resistance] Implement R_WATER (6) resistance to skills with: water element
+. [Resistance] Implement R_WIND (5) resistance to skills with: wind element
+. [Resistance] Implement R_EARTH (4) resistance to skills with: earth element
+. [Resistance] Implement R_FIRE (3) resistance to skills with: fire element
+. [Resistance] Implement R_LIGHTNING (2) resistance to skills with: light element
+. [Event] Illusion Temple Added when event finish warp to Team Base
+. [Event] Illusion Temple Fixed Pedestal issue
+. [Event] Illusion Temple Added Random Position for Statue
+. [Skill] Added Sacrifice skill VS Ice Resistance implementation
+. [Resistance] Recoded resistance implementation for all resistance types
+. [Items] Fixed add mana and add life on gObjCalCharacter for Item Effect
+. [Skill] Mana Swell skill fixed on gObjCalCharacter
+. [Skill] Add Life skill fixed on gObjCalCharacter
+. [BotPet] Not complete, but added talk dialog of botpets talking to attract players
+. [Server] Reduced player structure memory usage (BOOL => bool or byte)
+. [Skills] Rewriten attack behaviour for all poison type skills (ObjUseSkill.cpp)
+. [Event] CryWolf Altar players can not be killed by other users addon
+. [GMSystem] GM cant drop nonexisting items (prevent constant empty drop)
+. [Items] Added elite Mana,Health,SD potions usage (14,70)(14,71)(14,133)
+. [ChaosBox] Cleaned and reduced size of chaosmachine structures, less memory consumption (.h)
+. [MonsterAI] Cleaned and reduced size of MonsterAI structures, less memory consumption (.h)
+. [Event] Cleaned and reduced size of all event structures and variables (.h)
+. [EventItemBag] Added better tracing logs to see how the system behaves
+. [EventItemBag] Increased drop rate random value for better drop configuration of boxes
+. [CastleSiege] Fixed iterator warning in GetNpcData function
+. [Event] Double Goer monster count fix during spawn 
+. [Event] Imperial Guardian gate kill for friday fix  
+. [Event] Imperial Guardian trap spawn instant (to increase mob count inside event)
+. [Event] Imperial Guardian trap fix (acting like traps from 100 to 110)
+. [Event] Imperial Guardian monster count fix during spawn (if cant spawn 1 or 2 monsters)
+. [Event] Double Goer gate entrance fix for one of the rooms
+. [Event] Double Goer doesnt drop excellent items FIX
+. [RageFighter] Dark Raven doesnt hit him FIX
+. [JoinServer] Doesnt Allow Join Banned Account FIX
+. [Gens] Some guild players kick from guild FIX
+. [Skills] Elf Buffs doesnt dissapear when u put more that 1 minute FIX
+. [CastleSiege] Optimized GSCS Less CPU, Less RAM, No freeze, No Crash
+. [Reset] Added RF Reset System Support
+. [BotVipShop] Allow to Open VipShop with BotVipShop (CRYSTAL EDITION)
+. [Warehouse] MultiWare System 3 FIXED
+. [Anti-Hack] LuckyCoins, DoubleGoer, Imperial, Alchemist, Kanturu Gate antidupe protection
+. [Server] Pet Bug Cheat FIX
+. [Crash] Crash Prevent (Doesnt Get more than 60 pet info (dark horse, dark raven) from warehouse)
+. [Bots] Cant Kill Bots NPC Fixed
+. [Gens] Doesnt give reward FIXED
+. [Gens] Added Rank Control in SCF_GensPvP.txt
+. [Skills] FireBurst Option Added in SCF_Skills.ini
+. [Items] SCFJOHLevelMax Option Added in SCF_Items.ini
+. [AntiAFK] Fixed Cant warp to Lorencia when ppl bug it (/trade, etc)
+. [Items] S3 Wings enemy attack power it returns with 5% probabilities Hit You too FIXED
+. [Items] Cant repair Mini Wings and RageFighter Wings FIXED
+. [Skills] Flame Strike AKA Sword Slash can hit in Non-PvP server FIXED
+. [BotPet] Added command /botpet relife (for relife all life of your bot (must be used before bot dies))
+. [Bots] Added some fixes
+. [RageFighter] Upper Beast and Large Ring Blower Added to Weapons and remove them from Char Creation and Evolution
+. [RageFighter] Fixed DS Entry
+. [BotTrader] Percent to Luck and Skill
+. [BotTrader] Added Max and Min Options on Level and Options
+. [Event] Implemented proper excellent drop in all older event itembags
+. [Reset] Added PCPoint and VIPMoney Reward
+. [VIP] VIP Account Cant do Switch Server (Added Config in SCF_VIP.ini)
+. [BotBuffer] Now works with /trade
+. [Monsters] Fixed RegenTime
+. [RageFighter] Fitness skill stamina increase fix (VitalityToLife)
+. [VIP] VIP Account Cant do Switch Server (VIP Icon FIX)
+. [Quests] Fixed Quests on Season 6
+. [Quests] Added better inventory check when finish quest and receive item
+. [RageFighter] Cant hit RF FIX
+. [GMSystem] Decreased memory usage by changing variables like month, day, year in the structure array
+. [CustomJewels] Decreased memory usage, redesigned the engine for jewel application
+. [Event] CryWolf state during GS load fixed (no need to wait for event to start/end to fix penalty)
+. [RageFighter] Added fix on evolution skill, if skill dissapears, gets added on login
+. [BotTrader] Added BotTrader (Same as TradeMix but with Bots and other features) (MAX 10 BOTS)
+. [TradeMix] Removed TradeMix
+. [BotPet] Increased BotPet AI
+. [BotPet] botpet 2.0 Auto Evolve in Lvl 150 and 400
+. [ChaosBox] If season 6 disabled, the new RF capes are still being considered for mix result
+. [BotPet] Increased BotPet AI
+. [BotPet] Allow to Add Skills via "/botpet trade" with botpet 2.0
+. [BotPet] Allow to Change Items via "/botpet trade" with botpet 2.0
+. [BotPet] Added BotPet 2.0 [ALTER TABLE MuOnline.dbo.BotPet add BotVersion Int default(1) NOT NULL]
+. [Items] Fixed creation of random SET items (if item set to no drop in item.txt, it will not drop)
+. [VipSystem] Added balance display of SCFVIPMONEY even if player is not VIP
+. [Player] Changed login exp display and penalty display to avoid owerflow
+. [SwampEvent] Changed the way mobs are being spawned in swamp (BOSS LIMIT 255)
+. [SwampEvent] Fix on Swamp Login when switch servers
+. [Skills] FireBurst Change Damage Style (Related to Str now)
+. [Skills] Sword Slash Dynamic Poison Added
+. [BotAlchemist] Added Bot Alchemist (Bots for Migrate Options from one item to other)
+. [Server] Added Guild Warehouse (Check SCF_Warehouse.ini for configs)
+. [BotBuffer] Added BotBuffer (BOTS like NPC Phantom Soldier)
+. [Anti-Hack] Prevent talking to NPC during move request
+. [Anti-Hack] Item drop, move during server move can no longer be completed
+. [Items] Socket Machine, Cant add a seed if same seed (also with dif lvl) has added before.
+. [Items] Socket Option Items with same Seed (Also with same seeds with dif lvls) AutoRemove Option in SCF_SocketOptions.ini
+. [Items] SCFJOHItemMaxLevel Added in SCF_Items
+. [Server][SCFExDB] Save and load on DB if Trials is Open or Closed
+. [BotStore] Doesnt save vipmoney after buy item REFIX
+. [Evolution] Fixed RF evolution login issues
+. [Marry] Recoded GetSex function from Marriage System
+. [Event] Fixed RF BloodCastle, Kalima, ChaosCastle entrance levels
+. [Monsters] Reduced size of monster attribute structure
+. [PcPoints] Fixed issue with array overflow for PcPoints prize
+. [ConnectServer] Added option to change UDP Port
+. [ConnectServer] SCFConnectServer Show Users in Server Added!
+. [JoinServer] Remote Connection to MSSQL and ConnectServer Support!
+. [JoinServer] MD5/No MD5 Support
+. [JoinServer] Added Move to all subservers without problems
+. [JoinServer<->GameServer] Added AutoDisconnect "Sticky Accounts"
+. [JoinServer] Send users online to ConnectServer
+. [JoinServer] New SCFJoinServer Working 100% stable!
+. [Skills] Dragon Lore and DarkSide Skills rebuilded for less mobs hit
+. [Items] Added small cape of Rage Fighter
+. [Skills] Skill 261 for rage figher (after quest finished) added
+. [Skills] Skill 260 for rage figher (in char creation) added
+. [Skills] Skill 269 for rage figher (siege) added
+. [Items] Scrolls for Rage Figher Added
+. [Items] 3rd Wings damage return option fix (refills the HP and sends the info)
+. [Server] Decreased memory usage by different variables
+. [Items] Recoded function that gives random excellent options (faster, better, no deadlock)
+. [Events] Added overflow check to all Season 4,5,6 and SCFMT events
+. [Items] New Wings Allow to warp to kanturu and icarus
+. [Items] New Wings Allow to use jewels
+. [Server] Options for Manage the new Character and his skills Added
+. [Skills] New Skills for Rage Fighter ADDED
+. [Server] New Character Rage Fighter and his Evo Added
+. [Server] Wings Visual Bug on Season 6 FIX
+. [Server] Season 6 Episode 1 Support
+. [Skills] Infinite Mana Bug FIX
+. [Skills] SkillTree Sudden Ice doesnt Freeze FIX
+. [SCFLinkServer] Fixed crash error when TRACER define is enabled
+. [SCFLinkServer] Added GM post capability (like chat) and kept GM announcement capability
+. [SCFLinkServer] Fixed error with deadlock of queries on WinXP and earlier 2003 versions
+. [Event] White Wizard Event reload options added to the menu of GS
+. [Event] White Wizard Event fix: chaos drop % by orc and ring drop % by wizzard
+. [PcPoints] Fixed error with PCPoints not being added in S5E2 and higher
+. [LevelUp] Fixed issue with extra levelup points not being added in events during levelup
+. [Gens] Added new PvP Map Option in SCF_PvPSystem.ini for Gens System
+. [SkyEvent] Fixed "[Anti-Hack][Move] DUPE ATTEMPT: Character in use state!" when try to enter into the event.
+. [Post] If post is in blank no post FIX
+. [Items] Added SCFJOHItemMaxLevelApply in SCF_Items
+. [Items] +12 & +14 Effect Fixed.
+. [Skill] Fixed DL EarthQuake SkillTree Skill
+. [Log] Added logs for tracing info received from linkserver regarding character
+. [Log] Added separate logs for Chaos Mix combinations
+. [Log] Added separate logs for Jewel Mixer
+. [Item] Small wings dissapear if their durability is exausted
+. [Item] Small wings level requirement fix (had +20 enabled)
+. [Item] Small wings damage absorbtion/attack fix
+. [Anti-Hack] Close ChaosBox Reques added on server move (anti-dupe)
+. [Anti-Hack] Close PShop if switching between servers (anti-dupe)
+. [Anti-Hack] Cant open Warehouse if personal shop is open (anti-dupe)
+. [Monsters] Moving process changed, added Raklion Eggs to non-moving monsters list
+. [Config] DevilSquare.dat change and Devil Square portion on MonsterSetBase.txt
+. [GameServer] Support new character
+. [GameServer] GUI Links Checker (No need to restart gs if js close (if link checker its on))
+. [GameServer] GUI Events Checker
+. [GameServer] GUI Changed
+. [BotStore] Sell the same items FIX
+. [BotStore] All botstore have the same items FIX
+. [Server] AntiFlood System Added
+. [BotStore] Doesnt save vipmoney and pcpoints after buy item FIX
+. [Server] Weird warehouse item lost FIX
+. [Server] ExWarehouse New account dupe attempt FIX
+. [CastleSiege] Doesnt save fine the Reg Guilds FIX
+. [CastleSiege] Fixed crash on STATE 5 (NOTIFY)
+. [Pets] Doesnt show correct exp FIX
+. [Item] Box 14,141 Dissapear from inventory FIX
+. [Monster] Medusa drops items in random places (like kundun)
+. [VIP] Added SCFVipServer Option (Dont allow to join into vipserver non vip players (via scfexdb recv info))
+. [Server] Added amount of members required in clan before declare War
+. [Server] Added Reset Requeriment for Guild Creation
+. [Skill] Added Option for disable level requeriment for use that skill
+. [Bot] BotPet and BotStore allow summoner class and subclasses FIX
+. [Server] Zen Drop Rate Added
+. [Event] Lucky Penny Added Rank Table (Update 1 day of months)
+. [Event] Lucky Penny (Lucky Coins) Event Added - (1 day of month all Lucky Coins records will be deleted from DB)
+. [Skill] Fixed error of SkillTree Passive skills on relogin
+. [BotPet] Increased BotPet AI
+. [BotPet] Bot pet attack to BotStore FIX
+. [BotStore] Added Bot Personal Store Feature
+. [S5Quest] Dont accept item with level (REQ) FIX
+. [ChaosCastle] Fixed set item drop in CC1
+. [GensPvP] Added Option for Allow Guild Alliance With other Gens Family
+. [GensPvP] Added Option for Allow War With same Gens Family
+. [GensPvP] Added Option for Allow Duel With same Gens Family
+. [Skill] Added MagicCircle custom values in SCF_Skills.ini
+. [Server] Can go out from LorenMarket with trace marry and keep your PShop open FIX
+. [Server] Erohim doesnt drop items when die FIX
+. [S5Quest] Random Quest cant cancel and check again (FOR SELECT REWARD) FIX
+. [GensPvP] Dont remove quest of gens (Visual Bug) when you live gens FIX
+. [Server] Cant connect to PostServer & SCFRankingServer FIX
+. [GensPvP] Dont allow join gens after three days FIX
+. [ChaosCastle] Added percent drop settings for CC1 to CC7 (commonserver.cfg)
+. [SwampEvent] Added extra check during monster spawn in event
+. [Server] Added Option for only open PShop in LorenMarket (SCF_Common.ini)
+. [Skill] SkillTree Sleep Fixed
+. [ChaosBox] Sealed Boxes Mix Added.
+. [PKSystem] If you are murder hero system will not apply.
+. [ChaosBox] Wing Combination with Summoner Wings FIXED
+. [Marry] Trace Command: Fix for invisible for monsters (Random X - Y Param)
+. [Server] Spawn monsters command save fix.
+. [ExpSystem] Fixed Exp System 2
+. [Items] +14 & +15 Effect Added.
+. [SkillTree] SkillTree HP dont work after relogin
+. [SCFExDB] Mixed Event Server in SCFExDB (Optional in GS)
+. [GensPvP] can do quest of other gens family FIX
+. [Duel] Fix Spectator can hit duelers if are in other gens or in hostil guild.
+. [Duel] Allow make duel if you are not in gens family FIX
+. [SCFPostServer] Added GM Messages by ! and /gg for view that msg in all GS (Optional in GS)
+. [SCFPostServer] Optimized for LESS RAM USSAGE
+. [SCFPostServer] Allow to Use SCFPostServer for view post in all GS (Optional in GS)
+. [SCFExDB] Mixed Ranking Server in SCFExDB (Optional in GS)
+. [SCFExDB] Optimized for LESS RAM USSAGE
+. [CastleSiege] Dont allow to reg guilds without alliance FIX
+. [Items] Items +14 +15 Full Repair FIX
+. [SCFExDB] Support MSSQL 2000 for new quests
+. [S5Quest] Added Anti-Hack features
+. [Server] Added Options in SCF_Common.ini for enabled/dissabled disconnection for lag
+. [SocketItem] Added Combination for Empty Spear Lvl 4 and Lvl 5
+. [GensPvP] Allow stay in gens if GM Join in other guild, optional, binded on SCFGensAllowJoinIfGuildMemberIsInOtherGens Opt
+. [Items] New Transformation Ring
+. [S5Quest] Visual Bug on T Window when you add other quest and accept it again FIX
+. [CastleSiege] Fixed Sync issue on Castle Gameserver itself (Empty values were set)
+. [CQuest] Added Kill counter message, when doing monsterkill quests
+. [S5Quest] Receive items without options fix
+. [S5Quest] Switch character and reward receive fix
+. [SocketItem] Added Combination for Empty Spear Lvl 2 and Lvl 3
+. [SocketItem] Added Config File for All Seed Spears Levels
+. [BotPet] Added protection against botPet using Mastering Skills (crash prevention)
+. [BotPet] Fix for nBlockUser error on variable delete (Mastering Structure)
+. [BotPet] Fix for botPet following the user when user warps to another map
+. [BotPet] Fix for botPet respawn on botPet die
+. [BotPet] Fix for botPet respawn on user die
+. [SocketItem] Fixed crash on socket addition and removal
+. [LorenDeep] Made regular hunt zone box drop random ammount of zen (max set in the box)
+. [BotPet] Can not create more than one BotPet at the time (Added fix on login)
+. [BotPet] Added extra log lines with error pointers to logs for better error tracing
+. [BotPet] Fixed botpet Trade and TradeMap cleanup
+. [BotPet] Added extra cleanup to BotPet variables on Botpet close
+. [SocketItem] Fixed Crash on item out of range requests
+. [SCFExDB] New SCFExDB
+. [GensPvP] New Config Options ADDED
+. [Mastering] Added protection against gs crashes during structure access
+. [S5Quest] Changed protection on structure access against crashes
+. [Marry] Added protection from GS crashing on certain functions
+. [SocketItem] Changed SocketItem system: faster, less memory, any item may be socket item
+. [CQuest] Fixed GS crash on monster die (if monster kill monster = crash)
+. [Items] Event Free Admision Ticket Added
+. [Items] Added Item 13,121 item (Free chaos castle entry)
+. [VIP] Added PC Cafe Icon for VIP users
+. [Socket] Added more options in SCF_SocketOptions.ini
+. [TradeMix] Option Mix FIX
+. [CQuest] Accept Quest MSG Added
+. [CQuest] Sometimes doesnt send mail FIX
+. [ExpSystem] Fixed Continuous growing of EXP with pets and symbols
+. [S5Quest] Dont Accept Quest msg Added
+. [CQuest] OK Quest Error FIX
+. [Skills] Fixed read error with energy requirement during GS Load
+. [Skills] Removed unused variables in Magic, reduced variables sizes
+. [SCF_Item] Added SCFBlockFFFFFFFFSerialRepair,SCFIncreaseFFFFFFFFSerialDurDownBy, SCFDeleteFFFFFFFFSerialItemIfBroken
+. [SCFExDB] AutoRenew Vip Days
+. [SCFVM] New SCFVM
+. [GameServer] Reload All SCF options by Reload All Options from menu of GS
+. [Exp] Added Add Exp per Day of Week System
+. [Items] Mini Wings Full Working
+. [Items] Mini Wings Visual Bug (InGame) FIX
+. [Items] Mini Wings Visual Bug (Select Screen) FIX
+. [GensPvP] Quests (5 per family)
+. [GensPvP] Player Kill System
+. [GensPvP] Ranking
+. [GensPvP] Puntuation Show ("B" Button)
+. [GensPvP] Meet player (Icon)
+. [GensPvP] NPC Full Working
+. [GensPvP] Give Reward
+. [GensPvP] Leave family
+. [GensPvP] Join family
+. [Server] Fixed GS crash during Zen drop if monster kills monster
+. [PvP] Fixed bug abuse for fast leveling up during Dueling (implemented new exp formula)
+. [Server] Changed experience ratio function and optimised exp calculation
+. [BotPet] Commands: /botpet kill and /botpet close have been added
+. [BotPet] Fixed recalling of botpet on invoke & creation (it doesnt run nowhere anymore)
+. [BotPet] Fixed creatin of new botpet when old one dies (no need to relogin)
+. [BotPet] Fixed GS crash on BotPet use
+. [Quest] Fixed GS crash on Season 5 Quest Mob Count (If pet or another mob kills a mob)
+. [Item] Pet damage absorbtion is defined through ItemAddOption for certain pets
+. [Item] Fixed ExpInfo calculation with pets
+. [Item] Fixed Skeleton Effect Exp rase during Party & Devil Square
+. [Item] Added new Item Options from ItemAddOption.txt (implemented auto-inventory apply)
+. [Quest] You can configure all quest by txt as you wish (Can put until 5 rewards and 5 requeriments per quest)
+. [Quest] Elf Soldier Season 5 Episode 4 Quest FINISHED
+. [Quest] Elf Soldier Season 5 Episode 3 Quest FINISHED
+. [Quest] Elf Soldier Season 5 Episode 2 Quest FINISHED
+. [Quest] Elf Soldier Season 5 Episode 1 Quest FINISHED
+. [Server] Crash Fix
+. [Server] Bug Fixes
+. [Event] Swamp Event Added new ini options
+. [Event] Enabled Land Of Trials autoopen when server starts (Guild GM can close it any time they want)
+. [CastleSiege] Fixed CastleSiege potions use (can only use during siege)
+. [SocketSystem] Increased Socket items count in file to 512
+. [Event] Swamp Event entrance fixed if warping from another server
+. [Event] Summer Event Added
+. [Server] Crash Fixed
+. [ChaosBox] Chaos Box Cheat Fixed
+. [BotPet] Fixed issue with closing BotPet, reopening it and botpet loosing its items
+. [BotPet] Fixed wrong BotPet saving and SCF ExDB disconnection due to overflow in variables
+. [BotPet] Removed 'SaveBot' variable from source, doesnt save 'auto regeneration' other ways
+. [Server] Skill(Kor) Energy Req System changed!
+. [Server] Season 5 Episode 4 Julia NPC Works like Warp in Lorencia and LorenMarket in other Map works like a Shop
+. [Server] Season 5 Episode 4 Raul NPC works like Jewel Packer/Unpacket in other map works like a shop
+. [Server] Added Season 5 Episode 4 Boxes
+. [Invasion] Season 5 Episode 4 Golden Invasion ADDED
+. [Exp] Enabled/Dissabled Show Exp on Login
+. [Server] Season 5 EP 2,3,4 Random Crash Fixed
+. [Server] Season 5 EP 2,3,4 Skill Attack Visual Bug Fixed
+. [Server] Season 5 EP 2,3,4 Normal Attack Visual Bug Fixed
+. [Server] Season 5 EP 2,3,4 Multi Damage Skill Attack Fixed
+. [Server] Crash Fixed
+. [Source] Added more info in to error lines for better error trace
+. [Monsters] Fixed Monsters dissapear
+. [Items] Stinger Bow damage fixed
+. [Items] Harmony Items in +14 and +15 items support added
+. [Items] +15 Items in chaos machine fixed
+. [SCFExDB] Changed again Reset to Resets
+. [GMSystem] New SCF_GMSystem.txt FIXED
+. [Resets] Re-Added Free Resets in SCF_VipSystem.ini
+. [Options] Re-Added Options for wings lvl 3 in commonserver
+. [CustomJewels] Added protection from applying jewels to rings and wings (all jewels for now)
+. [BotPet] Added LevelUp animation for botpet
+. [Source] Added DSGN_ITEM_MONITOR to StdAfx.h (make sure its disabled for customers)
+. [BotPet] New Commands Added
+. [BotPet] Decrease Arrows and bolts Added
+. [BotPet] Can trade arrows and bolts
+. [BotPet] Trade FIX
+. [Commands] CastleSiege Commands added on SCF_Commands.ini & SCF_GMSystem.txt
+. [Monster] Medusa Can Drops 1 to 10 Items	(ONLY ON SWAMP OF PEACE EVENT)
+. [Monster] Medusa EventItemBag Added		(ONLY ON SWAMP OF PEACE EVENT)
+. [Events] Swamp of Peace Event Added
+. [SkillTree] Added Summoner SkillTree FULL WORKING 100%
+. [Shops] Added 3 New Shops (NPC 545,546,547)
+. [Ring] Added Skeleton Transformation Ring
+. [Server] Season 5 EP 2,3,4 Skill Buff Fixed
+. [Server] Season 5 EP 2,3,4 Skill Attack Fixed
+. [Server] Season 5 EP 2,3,4 Normal Attack Fixed
+. [Server] Season 5 EP 2,3,4 Support
+. [Pet] Skeleton Pet Effect Added: (20% More DMG / +10 Attack Speed / 30% More Exp)
+. [Pet] Skeleton Pet Visual Bug on Selection Screen Fixed
+. [Pet] Skeleton Pet Visual Bug ingame Fixed
+. [Source] Removed unused and debug functions for crywolf and kanturu
+. [Source] Removed unused strings and unused global variables in src
+. [DropSystem] Added MobId, NoTrade, ExcNum options to SCF_ItemDropRate.txt (see file for details)
+. [PKSystem] Changed PK/Hero level decrease count
+. [PKSystem] Fixed hero drop percentage increase for exc items
+. [Config] Removed PK settings from ServerInfo.dat
+. [Config] Removed PKMap settings from SCF_Common.ini
+. [Config] Removed PK settings from commonserver.cfg
+. [Config] Completely changed SCF_Vip.ini and system itself, added date subtraction to SCFEXDB
+. [Config] Added [PKServerSettings], [PKPlayerSettings], [PKMap] to SCF_PvPSystem.ini
+. [Config] Added [ResetsPenaltyExp] to SCF_ExtraExp.ini
+. [Config] Moved [PartyExp] from SCF_Common.ini to SCF_ExtraExp.ini
+. [Buffs] Summoner skills & lighting storm skill from MG attack in no PVP server FIX
+. [BotPet] Added BotPet 'potmana' and 'pothp' commands to use pots
+. [BotPet] Added BotPet trade capability (/botpet trade)
+. [BotPet] Fixed BotPets reappearance if calling it from Castle Server :D
+. [Castle Siege] Fixed Lifestone destruction/recreation engine (can create new stone when ol one is broken)
+. [Config] Added SCFBlockHarmonyItemsTrade to SCF_Items.ini [ItemMoveLimit] block JOH Item trade
+. [Config] Added SCFBlockFFFFFFFFSerialTrade to SCF_Items.ini [ItemMoveLimit] block special items trade
+. [Anti-Hack] Added new anti-hack strings related with trade and duped items to anti-hack logs
+. [BotPet] Added more dialogs when BotPet dies, added more info in stats bar, logs
+. [Map] Added support for the new Season 5 Map
+. [Shop] Cant sell items from slot of pets in shops
+. [AutoWarp] Fixed autowarp when events end
+. [BotPet] Added OnlyVip option to configuration, so users not VIP can use botpets too
+. [Crystal Edition][Custom Jewels] Added requirements like hasLuck, hasSkill to jewel application
+. [Crystal Edition][Custom Jewels] Added Socket options to success and failure (column before destroy)
+. [Crystal Edition][Custom Items] TEMP: added check for overflow in byte NewWings for character select
+. [Crystal Edition][Custom Items] Fixed wings range from 200-263/264 to 200-254
+. [Crystal Edition][Custom Jewels] Fixed Z28, Level, Exc options degradation on failure
+. [Crystal Edition][Custom Jewels] Added success/failure message for users
+. [Crystal Edition][Custom Jewels] Fixed success rate of the jewels (Was using targeted items success)
+. [Crystal Edition][VIP MUShop] Removed limit to open shop only with credits [Deposit button added to scf main]
+. [Crystal Edition][VIP MUShop] Fixed skill, luck options when buying items
+. [Crystal Edition][VIP MUShop] Fixed price calculation with Excellent options when buying items
+. [Anti-Flood] Added Anti-Flood System to Commands: /botpet /marry /post
+. [Anti-Hack] Try to trade with NPC couse crash (WITH WPE OR SIMILARS) FIX
+. [LordMix] Fixed issue when put items in ChaosBox
+. [Socket] Added config file for Socket Items
+. [Item] Albatros Bow does much dmg FIX
+. [Skills] New skills cant be learned by third evolution FIXED ON SCFMain
+. [Potions] SD Potion Bug (back to 0) FIX
+. [PvP System] Added other PvP Systems
+. [ChaosMachine] Added Mix for +14 and +15
+. [Protocol] Added Support protocol for 1.07 main versions
+. [Reset] Fixed SP Syste issue
+. [PvP System] Fixed PvP issue
+. [Options] Added Options for wings lvl 3 in commonserver
+. [Duel] Sometimes two different duel parties will end up in the same room
+. [Buffs] Summoner Buffs can attack in safe zone FIX
+. [PvP System] Added New INI
+. [Warehouse] Anti-Dupe Added for multivault
+. [Anti-Hack] Implemented Attack map and distance detection system on Normal Attacks (fixed false positives)
+. [CastleSiege] Improve Gates and Statues FIXED
+. [TradeMix] Multiple Fixes implemented
+. [BotPet] Cant Enter/Invoked into event or duel map (when you enter bot exit from game)
+. [Anti-Hack] Implemented Attack map and distance detection system on SKILLS
+. [Anti-Hack] Implemented Attack map and distance detection system on Normal Attacks
+. [Crystal Edition][SCFVipShop] Control of items added
+. [Crystal Edition][SCFVipShop] AntiHack Control Added
+. [Crystal Edition][SCFVipShop] Server Side Implemented
+. [Crystal Edition][SCFVipShop] Added new SCFVipShop with interface - Client Side Implemented
+. [BotPet] LevelUp Mana FIX
+. [Item] Added full support of all items to +15 (Implemented MAX_ITEM_LEVEL define)
+. [BotPet] /botpet stats command remaked
+. [BotPet] Max Level Fixed
+. [Warehouse] Anti-Flood (Must Wait 3 seconds before open it again with multivault)
+. [BotPet] Allow Change Skill System (More than one skill in each BotPet)
+. [BotPet] Calc Stats on LevelUp improved
+. [CastleSiege] Lag fixed when you enter in Crown Room
+. [CustomQuest] Doesnt come mail FIX (SQL FIX + GS FIX)
+. [BotPet] Inform life when life its < 40
+. [BotPet] New commands
+. [Server] Crash on /botpet Command FIX
+. [Crystal Pack] Addons and Fixes - Crystal Pack Ready
+. [BotPet] Cant Trade or Party With inform ADD
+. [ChaosCard] WPE Injection FIX
+. [Server] Option added for show/unshow when gages go to max
+. [TradeMix] Little bugs FIX
+. [Skill] Some Skills effects attack Cannon Tower by higher rates FIX
+. [BotPet] New feature BotPet only for VIPs
+. [Party] SCFMaxPartyLevelDiferense Option Added
+. [Server] T Bug Final Fix
+. [Character] Added options for MagicAttack
+. [TradeMix] Added Durability in items need and items reward
+. [Double Goer] Golden Treasure spawn when 3 boss is not killed FIX
+. [Duel] Firescream attack specator in duel arena FIX
+. [Item] Stinger & Air Lyn bow not consume Arrows FIX
+. [TradeMix] TradeMix System added
+. [Warehouse] Implement multi-warehouse system (anti-hack protection)
+. [Skill] Added Elf Aura Buffs Time Control
+. [Drop] SCF_ItemDropRate.txt System Fixed
+. [Exp] Added 1 more exp system
+. [Skill] UnSleep Monsters FIX
+. [Skill] Explotion Skill make more dmg
+. [CastleSiege] Dont apply Summoner Buffs to Tower, Doors, Statues 
+. [Exp] Added 2 Different System on SCF_ExtraExp.ini
+. [PK] Added PK Item Drop Options
+. [Jewels] Custom Jewels Added!
+. [CryWolf] When enter in the middle of the event, do not see proper interface
+. [CBMix] Fix chaos rate item for ancient items bug (depends on location of rate item)
+. [CastleSiege] Added accumulation Crown Time system (remembers time if user is not killed)
+. [CastleSiege] Updated Crown time from 30 seconds to 1 minute (CASTLESIEGE_CROWN_REGISTER_TIME)
+. [CastleSiege] Yellow bar is restarting every second when u get the crown (only visual bug)
+. [Marry] Trace Command: Cant trace character into imperial guardian or double goer event FIX
+. [Skill] DL Summon can recall party into imperial guardian or double goer event FIX
+. [Skill] Red Storm Buff in Blood Castle to other players FIXED
+. [Pet]  Dark Spirit cant hit Summoner FIXED
+. [Item] Fixed New Shields EXC options [mana,hp,reflect,deffence]
+. [Item] Fixed Wings Ignore Opponents Deffence 5% option
+. [Skill] DK Life goes to negative when use DK Add Life Skill with SG Fix dissabled
+. [Item] Added Socket Recovery option to the Warehouse read portion
+. [NPC] Fixed NPC talk events when talk to NPC (holidays congratulations) [NPC 239 to 255]
+. [Event] XMas event, added Santas congratulations (Merry Xmas, Happy New Year)
+. [Marry] Trace Command: Cant trace character into Sky Event
+. [Event] XMas event, added extra experience [SCFXMasExtraExperience]
+. [Event] XMas event, added extra drop percentage [SCFXMasExtraDropPercent]
+. [Event] XMas event, added invitations multi-use [SCFXMasMaxTripsPerTicket]
+. [Event] XMas event, added fireworks drop with rate [item 14,99][SCFXMasFireworksDropRate]
+. [Item] Fixed 3rd wings Successful Blocking 5% option
+. [Item] Drop item with socket fix (when kill monster or drop box)
+. [Item] Fixed excellent options counter (now returns proper value)
+. [Item] Max Excellent Option Drop in SCF_Items.ini
+. [Event] XMas event, drop rate of tikets fix (was backwards)
+. [Event] XMas event monster spawn config (removed NPC from it)
+. [Event] XMas event, Santa presents now operated through QUEST value 49 (1 per day)
+. [Event] XMas event, added limitation to use of Santas Vilage (Event off - cant move)
+. [Skill] Sleep: Player/Monster wake up when some one hit him (Like original)
+. [Server] Option added for fix or unfix the gages overflow
+. [Skill] Night Cant Summon Special Monsters FIX
+. [CastleSiege] Registred Guilds List does not show properly
+. [CastleSiege] Guild Marks Registred List does not show correctly
+. [CastleSiege] Participating Guild List does not show correctly
+. [CastleSiege] Registration of crown error fix (says you are in defending team)
+. [CastleSiege] Senior NPC: fix for Gate HP upgrade button
+. [CastleSiege] Senior NPC: fix for Gate HP bug during buy
+. [CastleSiege] Senior NPC: fix for Statue Regeneration upgrade button
+. [CastleSiege] Senior NPC: fix for Statue HP upgrade button
+. [CastleSiege] Senior NPC: fix for Statue HP bug during buy
+. [Server] Added Security Number Control for dissband Guild and Delete Characters (SCF_Common.ini)
+. [Logs] Enabled/Dissabled (options in SCF_Connect.ini)
+. [Item] Visual Bug on DK with 3rd wings + fenrir FIX
+. [Item] Chaos Rate item for machine Fix (keeps ancients and skills on items)
+. [Item] Fixed JOL success option on the SRC (reversed success VS failure)
+. [Character] Maximum SD,HP,BP,Mana INFO Message (so ppl stop complaining, ITS NOT A BUG)
+. [Item] 3rd Wings Success Blocking fix (block damage instead of increasing it)
+. [Skill] Grerat fortitude skill fixed (Broken HP calculation in solo and party)
+. [CastleDeep] After Castle Siege, Castle Deep Event no longer starts fix
+. [CastleSiege] Crown registration timer has been added
+. [CastleSiege] Crown registration timer paket structure fix (from size 9 to 12)
+. [CastleSiege] Crown dissapears after Sky Event, Raklion Event or Moss Event
+. [CastleSiege] Crown dissapears after Blue Event, XMas Event or Boss Attack
+. [CastleSiege] Fixed Crown Index error (SetCrownUserIndex function)
+. [CastleSiege] Alliance guilds can participate in the event now as well
+. [BOK] Sometimes you cant pickup the box when Golden Mob Die
+. [DropSystem] Adjusted the way system chooses items, added trace logs for tweaking
+. [EventItemBag] Need to add socket item drop option for socket items
+. [Character] Fixed SD, Mana, Life, BP overflow
+. [Character] SD recovery is too big especially for DL characters
+. [Skill] Summoner Berserker Skill Added
+. [Event] Sky Event no one cant enter FIX
+. [PCShop] Give much points when kill some mob FIX
+. [Item] Fixed Golden Fernir offence/deffence options
+. [Item] Fixed Summoner Wings Attack % calculation
+. [Item] Fixed Summoner Wings Deffence % calculation
+. [Item] Fixed 3rd Wings Deffence % calculation
+. [Item] Fixed 3rd Wings Attack % calculation
+. [Item] Fixed 3rd Wings Wizzardy Damage calculation
+. [Skill] SkillMagicCircle calculation fix on item on/off character
+. [Skill] SkillReflect calculation fix on item on/off character
+. [Imperial] Creating tiket from paper pieces, causes durability 0 bug on last piece
+. [DoubleGoer] Creating tiket from pieces, causes durability 0 bug on last piece
+. [Kanturu] Kalima Map creation, causes durability 0 bug on last piece
+. [CastleSiege] Mark of lord stacking, causes durability 0 bug on last piece
+. [LuckyPenny] Lucky Peny stacking, causes durability 0 bug on last piece
+. [CastleSiege] CastleSiege still randomly freezes before start of the EVENT
+. [CastleSiege] CastleSiege still randomly freezes during start of the EVENT or end
+. [Event] Fixed player 'clearance' at the event END
+. [CustomDrop] Adjusted custom drop initial list collector
+. [CBMix] Fixed % of the 3rd Wings combination
+. [Anti-Hack] Implemented anti-speed detection system
+. [Raklion] Can enter Event when the Room is already CLOSED
+. [Server] Login Bug FIX
+. [Server] T Bug Fix
+. [Imperial] Config Added
+. [Imperial] 100% Finished (Doors Positions FIXED)
+. [Imperial] Chaos Combination Added
+. [Event] Boss Event Boss Monster its Rabbit FIX
+. [Server] Drop Zen Control
+. [CastleSiege] After siege warfare the siege gameserver does not add 7 days to the time in MuCastle_Data table FIX
+. [Event] XMas Event Evil Santa, Snowman, Goblin Give Ticket FIX
+. [Event] XMas Event Santa Give Item
+. [Imperial] 99.9% Finished (Need to correct Door Positions)
+. [Blood Castle] Door Terminated Can Walk FIX
+. [Double Goer] Dies on Event warp to Elbland
+. [Imperial] Cant move over the gate if it isnt terminated (NEW BLOCK)
+. [Imperial] Dies on Event warp to Devias
+. [ChaosBox] Chaos Card Machine Added
+. [PCShop] Reload Shops Double Items FIX
+. [Server] Log Folder auto creation
+. [Duel] Clear Duel interface on Spectator SelectScreen
+. [Server] Golden Dragon Dialog FIX
+. [Server] Changes on GM Commands
+. [Server] SCF_SpawnMonsters FIXED
+. [Double Goer] Config Added
+. [Double Goer] Full Working
+. [Server] Guard Msg Changed
+. [Duel] if you change character as espectator character become invisible to play FIX
+. [Server] CheckSum Added
+. [Reset] Fixed some bugs
+. [Reset] Added some new options
+. [Items] Move item limit FIX
+. [Server] SCFExItemDropRate = 0 means no excellent item drop
+. [Double Goer] 99% FINISHED (Need to add bar and triangles)
+. [DoubleGoer] Fixed NPC Warp
+. [DoubleGoer] Added 10 seconds delay before event start
+. [Event] XMas Event Added
+. [Event] Mob Number 414 - Fortune Pouch does not have a eventitembag attached to it
+. [Imperial] Before Event starts, must wait 10 to 15 seconds
+. [Imperial] Had issue with not being able to find one mob
+. [Imperial] Traps show as bulls and stay all on the same spot
+. [Imperial] Traps do not attack
+. [Imperial] Should not be able to attack gates before all mobs are killed (same as BC)
+. [Imperial] Castle Doors should not be counted as mobs
+. [Imperial] When all monsters killed, timer writing should turn green
+. [SocketSystem] Fixed inventory sockets dissapearance
+. [Imperial] Fixed crash on winMsg (Array overflow)
+. [Server] Fixed double messages for Raklion Event
+. [DoubleGoer] Fixed NPC timer show if event is taken by someone
+. [DoubleGoer] NPC now takes tikets and lets players in (party or single)
+. [Imperial] NPC now takes tikets and lets players in (two tiket types, sunday on sunday + regular)
+. [SkillTree] Breaks skills on characters, leving them with no skills and empty icons
+. [SocketSystem] Socket Recovery option does not count EXC number of options on items
+. [Server] SkillList bad send FIX
+. [Server] Login issue FIX
+. [Double Goer] 98% FINISHED (Need to add bar and triangles)
+. [Imperial Guardian] 96% FINISHED
+. [Blood Castle] Door Terminated ATT FIX (NEED TO TEST)
+. [CBMix] Create Invisible Cloack + 8 FIX
+. [Server] Fix Auto Warp when you are in Elbeland when BC finish
+. [Items] Recovery Slot for Socket items added
+. [Server] Changed Kanturu, CryWolf and other logs for better system View
+. [Event] Added Christmas firecracker item (14,99) (This item is NOT a box)
+. [CastleSiege] REMOVE ALL 'CriticalSection' entries during READ [m_critCsBasicGuildInfo]
+. [CastleSiege] REMOVE ALL 'CriticalSection' entries during READ [m_critCsTotalGuildInfo]
+. [CastleSiege] Doesnt show fire Arrows and rocks interface, when player logon after siege start FIX
+. [CastleSiege] users do not see LOGO of SIEGE above their head, when logon after siege start! FIX
+. [CastleSiege] Cannon Tower - DOES NOT ATTACK FIX
+. [CastleSiege] Cannon Tower - DOES NOT ATTACK VISUAL BUG FIX
+. [CastleSiege] users do not see LOGO of SIEGE above their head! FIX
+. [CastleSiege] Guardian Statue - dropping low level items.... MUST BE NO DROP
+. [CastleSiege] Cannon Tower - when killed, droppping items.... MUST BE NO DROP
+. [CastleSiege] Castle Siege users do not see LOGO of SIEGE above their head!
+. [CastleSiege] Can not attack CS members unless using skill... (logo error)
+. [CastleSiege] Player becomes PK, after killin a user in CastleSiege
+. [CastleSiege] When attacking other player, getting deffence message
+. [CastleSiege] Get Crown Fixed
+. [CastleSiege] Registration like original
+. [CastleSiege] Character gets proper timer condition after warp or death
+. [CastleSiege] Character gets proper CS interface after CS starts
+. [Marry] Marry Command does not work (can't marry in that location error)
+. [Marry] 'you can not marry in that position' fixed (previous error with !=)
+. [Event] Summoner Summons can make buff dmg on Blood Castle FIX
+. [Duel] Spectators can trade with duelers and other spectators FIX
+. [PK] Hero System only for NO PK FIX
+. [GSCS] GS Freeze in Five stage!!! FIX
+. [Skill] DarkLord Summon Party FIX
+. [Item] Summoner first wings Option FIX
+. [Skill] Power Slash SkillTree damage is too low FIX
+. [Commands] Some GM Commands Authority code FIX
+. [GMSystem] Fix for /banaccount and /banchar commands
+. [Event] Happy Hour log message and announcement values fix
+. [GameServerCS] Doesnt drop items (only fenrir stuff) FIX
+. [CastleHuntZone] Fix Doesnt allow to pick up the ancient item FIX
+. [CastleSiege] PK When kill to the other guild FIX
+. [CastleSiege] Owners cant enter to castle room FIX
+. [Skills] New orbs cant consume
+. [Abuse] Alt-F4 rollback issue when Die
+. [Exp] Visual Bug on Login FIX
+. [Exp] Visual Bug on Die FIX
+. [Config] Add option for Announce GM when is connected
+. [Message] Added more Messages in message.txt
+. [Config] Added More Configs in SCF_Connect.ini
+. [VIP] Added ConnectMember.txt AutoReloader by Minutes
+. [Config] Added ConnectMember.txt into SCF_Connect.ini File
+. [Command] Post Command Color Change
+. [UserDie] Master Exp FIX (Visual Bug)
+. [UserDie] Non PK Drop Item FIX
+. [Skill] Ghost Phantom Buff with less range
+. [Skill] Critical Dmg Only buff one time per character FIX
+. [Item] Ring of Wizard +1 or higher can drop FIX
+. [Transformation Ring] Panda Ring Added
+. [Pets] Cant Drop - Trade Panda Pet
+. [Pets] New Panda Pet Effect +50 Life + 50% Exp
+. [Pets] New Panda Pet Visual Bug FIX
+. [CBMix] Fixed 3rd Wings Chaos Machine Mix (Allow Crystal and Feather of different levels)
+. [CBMix] Allow Chaos Rate savier for combination (+10 ~ +13) [Item: Chaos Machine Rate]
+. [CBMix] Allow Illusion Temple Items into CM
+. [Kalima] AutoWarp to devias when login (when you are inside the map)
+. [Marry] Trace Command: Fix for invisible for monsters
+. [Save] Doesnt Save Reset info FIX
+. [Item] Ring of Wizard cant drop FIX
+. [DuelSystem] Add Block duel requests on GSCS server
+. [Event] Illusion Temple opening message repeats itself with same minutes number
+. [Event] Sky Event opening message repeats minutes count twice or more
+. [Move] Fix weird bug with move icarus without wings (invisible for monsters)
+. [EventItemBag] EventItemBags random lvl fixed
+. [Skill] Allow use sleep inside Chaos Castle
+. [Skill] Summoner Skills new configs in INI
+. [Marry] Trace Command: Cant trace character to IcaruS if you dont have wings
+. [Transformation Ring] Snowman Ring FIX
+. [PShop] The ring of wizzard , can put in personal store
+. [Pets] Rudolf pet can trade with user and drop
+. [CBMix] Seed/Socket need to relog to add other seed FIX
+. [CBMix] Chaos Machine Block after some combinations FIX
+. [Wings] Summoner wings Eighther Level 1 and level 2 wings, it doesn't apply to the stats character the % of dmg and dmg absortion dmg that wings have, with wings or without them, the stats of the player remain intact.-
+. [Wings] Summoner wings Eighther level 1 and level 2 wings, doesn't allow to apply a Jewel Of Life to add any option.-
+. [Reset] When a character resets, the zen isn't discount
+. [Summons] Better Summon AI
+. [Skill] Summoner Night new Skill
+. [Skill] Reflect DMG Fix
+. [Event] BC: The players are unable to use buff in the safe zone, it shows "[Anti-Hack] Attach in Non-Attack area" msg, even for Inner and Mana Shield.
+. [Event] Devil Square 7 warps to a wron location Fix (BYTE to INT in DS function)
+. [DuelSystem] GetFreeRoomIndex() has time check for room request (limited to 10 seconds)
+. [HappyHour] Added duration of event message during event start
+. [MarrySystem] Redid SCF_Marry.ini config and its load in gs (no more position 1 and position 2)
+. [GMSystem] Added gold announcement of GM entering the game
+. [MarrySystem] Added marriage information during login (message on the screen)
+. [MarrySystem] Added info message to Fireworks girl (if married only = display info message)
+. [Skill] Gladiators Glory skill info message has been added for masters (cant use such buff)
+. [DuelSystem] Winning message announcement has been added
+. [Quest][CONFIG ERROR] Season 3 Quest part 1 does not work (Drop rate issue in Quest.txt)
+. [Wing] Cant Soul Summoner Wings FIX
+. [Damage Buffs] Summoner Buff With formula
+. [System] Eliminated some not important log lines for inventory commit, rollback and so on
+. [System] Log format time changed to __:__:__ for (anti-hack, gm log, trade log, post log)
+. [Feature] Separate Log file for all GM Commands
+. [Feature] Separate Log file for all Trades
+. [Feature] Separate Log file for all Hacks
+. [Feature] Separate Log file for all Posts
+. [CastleSiege] Marks of Lord Duration Decrease FIX
+. [CBMix] Lahap Hack FIX
+. [Command] /post command money req FIX
+. [CastleSiege] Crown Room entrance is open without Guardian Statue destruction
+. [Skill] DMG Effects decrease by Resistance
+. [CastleSiege] When buy statue or gate = shows wrong HP (hook repair paket info to it)
+. [CastleSiege] Crown room interface does not change (invisible switches)
+. [CastleSiege] If killed during CS, spawn on the same spot (stadium style)
+. [Event] White Wizzard change drop item FIX
+. [Summoner Books] Decrease a bit the DMG
+. [Damage Buffs] New Damage Buffs hit in DS to other players FIX
+. [CastleSiege] Senior NPC doesnt allow to upgrade Durability of the gates/statues
+. [CastleSiege] Senior NPC doesnt allow life regeneration upgrade of the statues
+. [CastleSiege] Castle Gates can not be attacked during event
+. [CastleSiege] Can not register Marks of Lord in the Siege
+. [CBMix] Allow Summoner (lvl 1) wings bellow +4
+. [Event] Moss Merchant Event AutoMonster Load FIX
+. [Command] /banaccount offline FIX
+. [Event] Happy Hour message fix for total drop and total experience
+. [Event] Fixed Chaos Castle monster drops (no more custom drop call before events)
+. [Quest] Fixed Season 3 Quest request for MG/DL, adjusted settings for ELF,DW,DK
+. [Event] Fixed caclulations of experience for VIP, Resets, Happy Hour and Sky Event
+. [Event] Added experience settings for VIP, Reset and Happy Hour to devil square
+. [GameServer] GS Map View FIX
+. [Item Repair] Can Repair new pets FIX
+. [Item Repair] Cant Repair Summoner wings and 3rd Class wings FIX
+. [Command] /add* commands to not operate properly (always shows can not add)
+. [CBMix] Extract Seed Chaos Box Mix does not combine items FIX
+. [Wing] Cant Bless Summoner Wings FIX
+. [SkillTree] Fix on two skills - SkillTree 100% FIXED and WORKING
+. [Event] Illusion Temple = ERROR with timing and SYNC
+. [Skill] NOVA Skill does not do any damage FIX
+. [Event] Illusion Temple = ERROR with log message FIX
+. [Quest] Dark Wizzard can not transform to Soul Master (missing line in quest.txt)
+. [Event] Dragon Invasion: dragons landing in safe zones/towns...
+. [CastleDeepEvent] Endless, mobs keep spawnning even after event finish
+. [SocketSystem] Seed Destruction Fixed
+. [Mastering] Dark Lord skill dmg is very low (FireScream skill)
+. [MossEvent] Crash FIX
+. [CastleSiege] Recv Reg Guild Fine - CRASH FIX
+. [DuelSytem] Duel is in Use error (not all rooms are cleaned properly)
+. [PK] Hero Stage 1 and Hero Stage 2 timing is too low
+. [CastleSiege] Fixed interface for Guild owner with Union, for Trials entry
+. [PK] /pkset command fix for GM
+. [PcPoints] Item buy visual socket bug fix
+. [PK] Redesigned PK/Hero System
+. [Skill] Reflect effect gone when player die
+. [BloodCastle] BC8 Item Quest FIX
+. [BloodCastle] BC Time Check in Commonserver
+. [Party] Like Old system
+. [PK] Added opt in serverinfo.dat PKCanBuy
+. [Summoner] First Quest Allow New Item FIX
+. [ChaosBox] Allow Summoner Wings
+. [DuelSystem] Remove Invisibility from spectators when duel finish
+. [Party] Zen Bug FIX
+. [CastleSiege] Guilds can not register for castle siege
+. [Party] Add Player FIX - Party 100% Works
+. [Party] Leader FIX
+. [Summoner] Skill str based on energy
+. [DuelSystem] Remove Invisibility from spectators when duel cancel
+. [DuelSystem] Gladiators Glory Apply only to non Masters
+. [Summoner] Skill str based on energy
+. [Summoner] Double Book Skill in Skill List FIX
+. [PK] Kill a PK become a hero FIX
+. [PK] User Die ViewPort to others FIX
+. [DuelSystem] Gladiators Glory Drop & Exp Config (SCF_Common.ini)
+. [DuelSystem] When duel finish coz inactivity Players Warp FIX
+. [Summoner] Cant recv dmg from other characters FIX
+. [Damage] Extra Damage caused by buff FIX (Die with buff dmg)
+. [SocketSystem] Fix item get (Non Socket item)
+. [Skill] Chain Lighting Visual ViewPort FIX
+. [Skill] Chain Lighting Hit 3 Mobs
+. [Skill] Chain Lighting Visual FIX
+. [Summoner] Buffs on Duel FIX
+. [SCFExDB] Get Account Extra Data Optimized
+. [Protocol] Season 5 M Window Move Support
+. [PCShop] Socket item number FIX
+. [Party] Party Members FIX
+. [System] SCF_Message to Message.txt
+. [System] SCF_Message Added
+. [System] SCF_ItemDropRate.txt
+. TRANSFORMATION RING BUG: try to wear one transformation ring and your char will go crazy^^
+. [Pakets] Split player view paket (1 player per paket) (BYTE Spliter = 5)
+. [Pakets] Split monster view paket (1-2 monster per paket) (BYTE Spliter = 5)
+. [Experience] Monsters on higher maps do not give any experience
+. [System] Message.WTF to TXT
+. [Character] Selling CHAOS (other jewels) to NPC owerflows character ZEN
+. [Quest] NPC warp doesnt work for Barraks and Refuge NPC Dialogs
+. [Quest] Reported issue with Marlon quest for BK/3rd Class for BK and DL
+. [SocketSystem] Implemented new config options in SCF_Item.ini configuration file
+. [SocketSystem] Implemented item with sockets drop when kill monster
+. [SocketSystem] Fixed item drop from box or with gm command (use of jewel visual bug)
+. [Halloween] Fixed boxes drop settings and changed the box load configuration
+. [Kanturu] Disabled Log to SQL through function KANTURU_UTIL.SendDataKanturuTimeAttackEvent
+. [Options] Absolete option in commonserver.cfg = XMasEvent_StarOfXMasDropRate
+. [Options] Absolete option in commonserver.cfg = XMasEvent_ItemDropRateForStarOfXMas
+. [Options] Removed irrelevant and doubled commonserver.cfg options (eventitembag settings)
+. [CBMix] Fixed items being stuck during refining and different combinations
+. [CastleDeep] Event start message added (5min before event, during event, at the end of event)
+. [CastleDeep] Other monsters event drop during event added (CastleDeepBox.txt)
+. [CastleDeep] Erohim Event drop added to the drop list (Erohim.txt)
+. [CastleDeep] Does not spawn monsters during event start
+. [CastleDeep] When event starts, timer runs continuously non-stop
+. [CastleSiege] NPC Upgrades do not get saved to the database
+. [CastleSiege] Senior NPC doesnt allow to upgrade gates/statues
+. [CastleSiege] Senior NPC doesnt allow to repair gates/statues
+. [CastleSiege] Senior NPC doesnt show statue/gate life
+. [CastleSiege] [MonsterAdd][ERROR][CCastleSiege::CreateDbNPC] Could not add: 394272961,0
+. [CastleSiege] Senior NPC doesnt show statue/gate life
+. [CastleSiege] NPC from MuCastle_NPC database are not loaded properly
+. [CastleSiege] Castle Gate Switches do not operate (Cant find proper related gate)
+. [CastleSiege] Castle Gate Interface doesnt show for the owner guild
+. [CastleSiege] Senior NPC can not buy statue or gate upgrades
+. [CastleSiege] CGReqMoneyDrawOut() WRONG money calculations (doesnt remove money or add, wrong ammount recv)
+. [CastleSiege] GS_DGAnsCastleMoneyChange() WRONG money calculations (adds money, not removes)
+. [CastleSiege] Land of Trials entrance Fee is not collected from the user
+. [CastleSiege] Limited Max Castle zen to 2000000000
+. Separated EventItemBag load from all other data strings load
+. Separated Shop load from all other data strings load
+. [CastleSiege] Senior NPC Mix does not operate properly ([CastleSpecialMix] Item Pick Failed - Data Error)
+. [CastleSiege] Senior NPC 3rd Tab crashes client Fix
+. Error Thread : GetQueueCompletionStatus( 121 )
+. [CastleSiege] Land of Trials realtime tax change interface fix
+. [CastleSiege] Land of Trials proper entrance interface for Owner, Union and regular users
+. [CastleSiege] Land of Trials NPC [220] does not operate
+. [Character] Changed definition of CLASS_MAGUMSA to CLASS_MAGICGLADIATOR
+. [Quest] Engine for transfering old Quest system to new (0xB0, 0xB3, etc...)
+. [Event] Removed IllusionTemple init from GSCS
+. [Quest] Added protection from class overflow after quest complition (2nd and 3rd Classes)
+. [Skills] TwistingSlashNoWeapon_CGDurationMagicRecv variable is not used anywhere
+. [Quest] "Infiltration of Refuge!" Monster count doesnt work [CQuestInfo::MonsterItemDrop]
+. [Quest] "Infiltration of Barracks of Ballgass!" Monster count doesnt work [CQuestInfo::MonsterItemDrop]
+. [Quest] "Certificate of Strength!" item drop is not proper [CQuestInfo::MonsterItemDrop]
+. [Quest] Season 3 quest values are hardcoded in to the code and are not taken from CFG
+. [Quest] Fixed quest item pickup (can pickup up to 3 quest items for season 3 quest)
+. [SkillTree] There is an issue with the experience on the higher levels (implement SCFExperience)
+. [BloodCastle] Mastering BloodCastle level did not count killed sourcerers
+. [Character] Character with level 400 has a 0 Zen drop
+. [Quest] Marloon Quest dissapears if character below level 220 (SCFResetComboBelow220Level new config in SCF_Skills.ini)
+. [Skill] Combo skill dissapears if character below level 220 (SCFResetComboBelow220Level new config in SCF_Skills.ini)
+. [Move] Fixed warp under index 23 (24 in movereq.txt) that prevents the warping
+. [Items] Changed drop of boxes to drop Z28 options from cfg, number of exc options and proper level for exc items
+. [Character] Mana Shield can conserver up to 100% damage FIX
+. High CPU Ussage (Log Related) Fixed
+. Mussenger Chat doesnt work (see like disconnected)
+. [Character] After Character die, inventory zen visual bug exists
+. [Anti-Hack] Speed Anti-Hack calculation moved to the end of character calculation
+. [Anti-Hack] Speed Anti-Hack needs to be adjusted [Simply adjust AttackSpeedTimeLimit and MinimumAttackSpeedTime]
+. [Kalima] DeleteKalimaGate() - out of Index message Fix
+. PvP System SD works bad (still use SD when u dont have it) VISUAL BUG ONLY
+. GameServer crashes when player buys an item from Cash Shop
+. GameServer crashes when player buys an item from Personal Shop
+. [Effect] Transformation ring packet missing Skill Effects
+. [Skill] DL can summon players in Illusion Temple, Raklion Boss, Castle Hunt Zone etc FIX
+. Fernir on login screen shows as golden fernir (need to check type of Fernir)
+. [CastleDeep] The event doesnt start, crashes GameServer
+. [Mastering] Can learn skills from the books that were updated by Mastering Skill Tree
+. Implemented multi-server global announcement for Sky Event, Raklion Event
+. bCheckSetParty crash relate issue has been resolved
+. [Character] Can not create Dark Lord (creation of Elf blocked sometimes too)
+. [SCF_EXDB] Resaves nonmodified info over and over again (Put modification flags)
+. [DuelSystem] If character appear in my range vision sometimes i dont see him (ONLY WHEN DIE in duel) (KillerType == 3) (void gObjSetState())
+. Fixed 'Death reduces Experience' function by writing more exp checks
+. Fixed looped exp re-addition for function gObjSetExpPetItem 
+. Changed HitAndUp.GetAddExtraPoint to return points by class
+. Implemented gObjExpCal(object, +/- level to calculate previous or next level)
+. Removed unnecessary text during level up (function: gObjItemTextSave)
+. Implemented Global gObjGetLevelUpPointsByEventID to get points by class and event
+. Fixed Refuge Quest, resetting Resets to '0' issue
+. Fixed Next Experience calculation for mastering and normal levels
+. Rebuilt LevelUP functions for Events, Party and Normal experience
+. gObjTelport optimised (reedited account saving time)
+. gObjMove gate completely rewritten (no more dissapearing items)
+. Fixed Serial0 item block bug for all items
+· [Quest] SCF Custom Quest System
+. SCF_Connect.ini re-edited
+. Added new configuration for ChaosCastle, Ring Event, Blood Castle to commonserver.cfg
+. Fixed DevilSquare Eye and Key drop rate
+. Removed GS china gPartition settings
+. Add to commonserver.cfg extern int  gPkItemDrop;
+. Add to commonserver.cfg extern int  gPkItemDropPercent;
+. Add to commonserver.cfg extern int  gHeroExtraDropPercent;
+. Fixed PK Hero system and implemented better drop increase for Heroes level
+. Modified user object m_PK_Count from CHAR to INT
+. Removed functions: gObjTaiwanJoominCheck, gObjJoominCheck
+. Removed functions: gJoomin15Check, gJoominCheck (age check)
+. Removed gObjMagicAddEnergyCheckOnOff function, seems not to make sence
+. Removed g_EnergyCheckOff variable, seems not to make sence
+. [Effects] Added GM logo above characters head, when promoted to GM
+. [CastleSiege] Added Guardian functions (Monster 285) Incomplete by WEBZEN!!!
+. [PK] Fixed settings for player drop item if PK when killed by mob or player
+. Removed USE_M_DRIVE settings and variables
+. Removed 'webzen' name trick from the gameserver
+. Removed original GS protection and its variables
+. Removed unused Shop function and commented authentication
+. Removed LANGUAGE settings from the gs and modofied according functions
+. [PCPoints Shop] Displaying points earned message after killing mobs
+. [Move Server] Added inventory save message and inventory save
+. [Skills] Twisting Slash attack distance is bigger than its supposed to be
+. [Items] Z28 option rolls back to +16 Fix
+. [Abuse] Alt-F4 rollback issue when use Chaos Machine
+. [CryWolf] After Failure NPC do not dissapear
+. [Mastering] Every time user warp between the servers, mastering skills multiplied in the list
+. [Effects] MasterPasiveSkill.IncExperience recode to add during exp % calculation
+. [Effects] m_SkillGladiatorsGlory_Exp add during exp % calculation
+. [Effects] m_SkillGladiatorsGlory_Drop add during drop % calculation
+. Wrong class shown during create character action on login
+. Monsters in Castle GameServer are not attacking properly
+. GameServer crashes with the error: "Stack around variable 'itembuf' was corrupted"
+. [SwampMap] On login will user will always go to safezone first
+. [RaklionBoss] Doesnt warp if u are in room at login FIX
+. [Summoner] If summoner below level 6, it will appear in the city at login
+. [IllusionTemple] Doesnt warp if u are in room at login FIX
+. [DuelSystem] Doesnt warp if u are in duel room at login FIX
+. [DuelSystem] Winner Get Gladiators Glory
+. [DuelSystem] Warp to vulcanus when Duel finish
+. [DuelSystem] Reset duel score when DUel finish
+. [DuelSystem] Gate keeper titus
+. [DuelSystem] Send Duel Score
+. [DuelSystem] Auto Cancel FIXED
+. [DuelSystem] Season4 complete duel system implemented
+. [Anti-Hack] Jewel Shadow Bug fix (Bless, Soul, Life)
+. [Anti-Hack] Move-NPC dupe protection implemented
+. [Anti-Hack] Move-Trade dupe protection implemented
+. [CastleSiege] MISSING: CreateMercenary function
+. [CastleSiege] MISSING: DeleteMercenary function
+. [CastleSiege] MISSING: SearchEnemy function
+. [CastleSiege] MISSING: MercenaryAct function
+. [CastleSiege] Spearman, Archer, Lifestone monster move function fix
+. [CastleSiege] Spearman, Archer, Lifestone die function fix
+. Raklion Boss, Duel Map, Refuge Maps proper respawn positions added
+. [CastleSiege] Land of Trils proper respawn position added
+. [CryWolf] Added proper die function when event in START state
+. [CastleSiege] MISSING: CreateLifeStone function
+. [CastleSiege] MISSING: DeleteLifeStone function
+. [CastleSiege] MISSING: SetReSpawnUserXY function
+. [CastleSiege] Canon Tower gObjSecondProc missing hook + function
+. [CastleSiege] Life Stone gObjSecondProc missing hook + function
+. [CastleSiege] Guardian Statue gObjSecondProc missing hook + function
+. [CastleSiege] Castle Gates dont change in real time
+. [CastleSiege] Castle Crown does not change in real time
+. [CastleSiege] Crown Switches gObjSecondProc missing hook
+. Implemented new DataSend Near All function for players
+. [CastleSiege] Castle Crown gObjSecondProc missing hook + function
+. [Skill State] Added new skillstates and fixed engine for skill effect view
+. [CastleSiege] Gates of the Castle on meet do not show proper state
+. [CastleSiege] Crown of the Castle on meet does not show proper state
+. [CryWolf] Altars do not change in real time
+. [CryWolf] Altars on meet do not show proper state
+. [Santa Map] Santa Buffs - Item Warper
+. [Event] Moss Merchant Event
+. [CryWolf] Altars do not cancell contracts when requested
+. [CryWolf] Cant start event, Altars do not accept contracts
+. [CryWolf] Event start message shows even when event is not starting
+. 
+/////////////////////////////////////////////////////////////////////////////////////////

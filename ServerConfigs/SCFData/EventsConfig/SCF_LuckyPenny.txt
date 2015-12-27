@@ -1,0 +1,14 @@
+10
+//ItemType	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc
+14		13		0	0	0	0	0	0	0
+end
+
+20
+//ItemType	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc
+14		14		0	0	0	0	0	0	0
+end
+
+30
+//ItemType	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc
+14		15		0	0	0	0	0	0	0
+end

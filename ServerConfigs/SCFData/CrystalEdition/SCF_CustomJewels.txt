@@ -1,0 +1,80 @@
+//======================================================================
+//Jewels
+//======================================================================
+//MinLvl	=	Minimal Level of item
+//MaxLvl	=	Maximum Level of item
+//IsLuck	=	Has to have luck on item (1 ON/0 OFF)
+//IsSkill	=	Has to have skill on item (1 ON/0 OFF)
+//MinZ28	=	Minimum JOL option (0 to 7)
+//IsAnc		=	Has to be ancient item (1 ON/0 OFF)
+//IsExe		=	Is excellent item
+//MaxExc	=	Max Excellent option count
+//IsSok		=	Is soket item
+//MinSok	=	Minimum Sokets count (0 to 5)
+//MaxSok	=	Max socket slot count (0 = off)
+//SuccessRate	=	% out of 100 for success
+//======================================================================
+//Type	Index	MinLvl	MaxLvl	IsLuck	IsSkill	MinZ28	IsAnc	IsExc	MaxExc	IsSok	MinSok	MaxSok	Success
+1
+14	200	0	15	0	0	1	0	0	0	0	0	0	40
+14	201	0	15	1	0	1	0	0	0	0	0	0	20
+14	202	0	15	1	0	1	0	0	0	0	0	0	10
+14	203	0	15	1	0	1	0	0	0	0	0	0	10
+14	204	0	15	1	0	1	0	0	0	0	0	0	15
+14	205	0	15	1	0	1	0	0	0	0	0	0	15
+14	206	0	15	1	0	1	0	0	0	0	0	0	10
+14	207	0	15	0	0	1	0	0	0	0	0	0	40
+14	208	0	15	1	0	1	0	0	0	0	0	0	10
+end
+
+//======================================================================
+//Success
+//======================================================================
+//Level		=	Increase item by level [1 = +1]
+//Option	=	Increase item by Z28 option [1 = +4]
+//Luck		=	1 add luck / 0 do not add luck
+//Skill		=	1 add skill / 0 do not add skill
+//Exc		=	Add Exc Option [1,2,4,8,16,32]
+//			1  = Zen/Mana Rate
+//			2  = Def/Life Rate
+//			4  = Reflect/Wizzardy Dmg
+//			8  = DMG Dec/DMG +2%
+//			16 = Max Mana/DMG +lvl/20
+//			32 = Max HP/DMG +10%
+//Ancient	=	1 add ancient options / 0 do not add ancient options
+//======================================================================
+//Type	Index	Level  Option  Luck   Skill   Exc 	Ancient	  Sokets
+2
+14	200	0	0	1	0	0	0	  0
+14	201	0	0	0	0	1	0	  0
+14	202	0	0	0	0	2	0	  0
+14	203	0	0	0	0	4	0	  0
+14	204	0	0	0	0	8	0	  0
+14	205	0	0	0	0	16	0	  0
+14	206	0	0	0	0	32	0	  0
+14	207	0	0	0	1	0	0	  0
+14	208	0	0	0	0	0	0	  1
+end
+
+//======================================================================
+//Fail
+//======================================================================
+//Level		=	Decrease item by level [-1 = -1]
+//Option	=	Decrease item by Z28 option [-1 = -4]
+//Luck		=	-1 remove luck / 0 do not remove luck
+//Skill		=	-1 remove skill / 0 do not remove skill
+//Exc		=	Add Exc Option [-1,-2,-4,-8,-16,-32][-63 = remove any]
+//Ancient	=	-1 remove ancient options / 0 do not remove ancient options
+//======================================================================
+//Type	Index	Level  Option  Luck   Skill   Exc 	Ancient	  Sokets	Destroy
+3
+14	200	0	-1	0	0	0	0	  0		0
+14	201	0	-1	-1	-1	0	0	  0		0
+14	202	0	-1	-1	-1	0	0	  0		0
+14	203	0	-1	-1	-1	0	0	  0		0
+14	204	0	-1	-1	-1	0	0	  0		0
+14	205	0	-1	-1	-1	0	0	  0		0
+14	206	0	-1	-1	-1	0	0	  0		0
+14	207	0	-1	0	0	0	0	  0		0
+14	208	0	-1	-1	-1	0	0	  -1		0
+end

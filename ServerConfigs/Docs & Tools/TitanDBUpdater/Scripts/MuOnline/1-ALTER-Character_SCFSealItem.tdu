@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.Character add SCFSealItem Int default(0) NOT NULL

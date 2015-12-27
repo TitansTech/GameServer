@@ -1,0 +1,30 @@
+CREATE PROCEDURE	[dbo].[TT_DGScore]
+	@ServerCode		INT,
+	@AccountID		VARCHAR(10),
+	@Name			VARCHAR(10),
+	@Result			INT,
+	@MobPassed		INT,
+	@MobToPass		INT
+As
+Begin
+	BEGIN TRANSACTION
+	SET NOCOUNT ON	
+
+	IF EXISTS (SELECT NULL FROM DOPPELGANGER_INFO WHERE Account = @AccountID AND Name = @Name AND ServerCode = @ServerCode) 
+		IF(@Result = 1)
+			UPDATE DOPPELGANGER_INFO SET Win = Win+1, MobPassed = MobPassed + @MobPassed, MobToPass = MobToPass + @MobToPass WHERE Account = @AccountID AND Name = @Name AND ServerCode = @ServerCode
+		ELSE
+			UPDATE DOPPELGANGER_INFO SET Lost = Lost+1, MobPassed = MobPassed + @MobPassed, MobToPass = MobToPass + @MobToPass WHERE Account = @AccountID AND Name = @Name AND ServerCode = @ServerCode
+	ELSE 
+		IF(@Result = 1)
+			INSERT INTO DOPPELGANGER_INFO (ServerCode, Account, Name, Win, Lost, MobPassed, MobToPass) VALUES (@ServerCode,@AccountID,@Name,1,0,@MobPassed,@MobToPass)
+		ELSE
+			INSERT INTO DOPPELGANGER_INFO (ServerCode, Account, Name, Win, Lost, MobPassed, MobToPass) VALUES (@ServerCode,@AccountID,@Name,0,1,@MobPassed,@MobToPass)
+
+	IF(@@Error <> 0 )
+		ROLLBACK TRANSACTION
+	ELSE	
+		COMMIT TRANSACTION
+
+	SET NOCOUNT OFF	
+End

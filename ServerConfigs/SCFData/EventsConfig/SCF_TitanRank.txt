@@ -1,0 +1,53 @@
+//	Enabled	SecsDelay	Anounce Text
+0
+	1	10		"Player Rank:"
+end
+
+// Index:
+//
+
+// Type:
+// 0	= Reset
+// 1	= Zen
+// 2	= VIPMoney
+// 3	= VIPDays
+// 4	= Attrib
+// 5	= PK
+
+// Attrib SubType:
+// 1	= Str
+// 2	= Agi
+// 3	= Vit
+// 4	= Ene
+// 5	= Cmd
+
+// PK SubType:
+// 1	= PK
+// 2	= Hero
+
+// Class:
+// Player Class (-1 All Classes)
+
+// TOP:
+// Example TOP 3 (Max 3)
+
+//Index	Type	SubType	Class	TOP	Msg
+1
+0	0	0	-1	3	"Best Players:"
+1	2	0	-1	3	"Have More VIPMoney:"
+end
+
+// Reward for TOP (In order):
+// If for example you select TOP 3 you can have 2 Rewars (TOP 1 and TOP 2) 
+// third one will not receive reward but will be displayed on screen
+//iDays = 0 Means forever
+//Index	Zen	VipMoney	ItemType	ItemIndex	iLevel	iOpt	iLuck	iSkill	iDur	iExc	iAnc	iSock1	iSock2	iSock3	iSock4	iSock5	iJOH	iDays	ForeverFFFESerial
+2
+0	300000	0		9		1		0	0	0	0	0	0	0	0	0	0	0	0	0	3	0
+0	200000	0		8		1		0	0	0	0	0	0	0	0	0	0	0	0	0	3	0
+0	100000	0		7		1		0	0	0	0	0	0	0	0	0	0	0	0	0	3	0
+
+1	600000	0		9		2		0	0	0	0	0	0	0	0	0	0	0	0	0	3	0
+1	500000	0		8		2		0	0	0	0	0	0	0	0	0	0	0	0	0	3	0
+1	400000	0		7		2		0	0	0	0	0	0	0	0	0	0	0	0	0	3	0
+end

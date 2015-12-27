@@ -1,0 +1,199 @@
+//============================================================================
+//Drop Settings: Box of KUNDUN + 3 Drops
+//www.titanstech.com
+//============================================================================
+//	type,	index,	level,	skill,	exc,	option	name
+//============================================================================
+
+//Dragon set
+	7	1	7	0	0	4	//Helm
+	8	1	7	0	0	4	//Armor
+	9	1	7	0	0	4	//Pants
+	10	1	7	0	0	4	//Gloves
+	11	1	7	0	0	4	//Boots
+
+//Legendary set
+	7	3	7	0	0	4	//Helm
+	8	3	7	0	0	4	//Armor
+	9	3	7	0	0	4	//Pants
+	10	3	7	0	0	4	//Gloves
+	11	3	7	0	0	4	//Boots
+
+//Brass set
+	7	8	7	0	0	4	//Helm
+	8	8	7	0	0	4	//Armor
+	9	8	7	0	0	4	//Pants
+	10	8	7	0	0	4	//Gloves
+	11	8	7	0	0	4	//Boots
+//Plate   Set
+	7	9	7	0	0	4	//Helm
+	8	9	7	0	0	4	//Armor
+	9	9	7	0	0	4	//Pants
+	10	9	7	0	0	4	//Gloves
+	11	9	7	0	0	4	//Boots
+
+//Wind set
+	7	12	7	0	0	4	//Helm
+	8	12	7	0	0	4	//Armor
+	9	12	7	0	0	4	//Pants
+	10	12	7	0	0	4	//Gloves
+	11	12	7	0	0	4	//Boots
+
+//Red Wing set
+	7	40	7	0	0	4	//Helm
+	8	40	7	0	0	4	//Armor
+	9	40	7	0	0	4	//Pants
+	10	40	7	0	0	4	//Gloves
+	11	40	7	0	0	4	//Boots
+
+//Storm Crow set
+	8	15	7	0	0	4	//Armor
+	9	15	7	0	0	4	//Pants
+	10	15	7	0	0	4	//Gloves
+	11	15	7	0	0	4	//Boots
+
+//Light set
+	7	25	7	0	0	4	//Helm
+	8	25	7	0	0	4	//Armor
+	9	25	7	0	0	4	//Pants
+	10	25	7	0	0	4	//Gloves
+	11	25	7	0	0	4	//Boots
+
+//Sword
+	0	9	7	1	0	4	//Sword of Salamander
+	0	10	7	1	0	4	//Light Saber
+	0	11	7	1	0	4	//Legendary Sword
+	0	12	7	1	0	4	//Heliacal Sword
+
+//Axes
+	1	5	7	1	0	4	//Battle Axe
+	1	6	7	1	0	4	//Nikea Axe
+	1	7	7	1	0	4	//Larkan Axe
+	1	8	7	1	0	4	//Crescent Axe
+
+//Blunt weapons
+	2	5	7	1	0	4	//Crystal Sword
+	2	6	7	1	0	4	//Chaos Dragon Axe
+	2	7	7	1	0	4	//Elemental Mace
+	2	8	7	1	0	4	//Battle Scepter
+
+//Spears
+	3	0	7	1	0	4	//Light Spear
+	3	1	7	1	0	4	//Spear
+	3	2	7	1	0	4	//Dragon Lance
+	3	3	7	1	0	4	//Great Trident
+
+//Bows & Crossbows
+	4	4	7	1	0	4	//Tiger Bow
+	4	13	7	1	0	4	//Bluewing Crossbow
+
+
+//Staffs
+	5	5	7	1	0	4	//Legendary Staff
+	5	6	7	1	0	4	//Staff of Resurrection
+	5	22	7	1	0	4	//Book of Neil
+
+
+//Shields
+	6	8	7	1	0	4	//Tower Shield
+	6	9	7	1	0	4	//Plate Shield
+	6	10	7	1	0	4	//Large Round Shield
+
+//=========================================================================================
+//Dragon set
+	7	1	7	0	1	4	//Helm
+	8	1	7	0	1	4	//Armor
+	9	1	7	0	1	4	//Pants
+	10	1	7	0	1	4	//Gloves
+	11	1	7	0	1	4	//Boots
+
+//Legendary set
+	7	3	7	0	1	4	//Helm
+	8	3	7	0	1	4	//Armor
+	9	3	7	0	1	4	//Pants
+	10	3	7	0	1	4	//Gloves
+	11	3	7	0	1	4	//Boots
+
+//Brass set
+	7	8	7	0	1	4	//Helm
+	8	8	7	0	1	4	//Armor
+	9	8	7	0	1	4	//Pants
+	10	8	7	0	1	4	//Gloves
+	11	8	7	0	1	4	//Boots
+//Plate   Set
+	7	9	7	0	1	4	//Helm
+	8	9	7	0	1	4	//Armor
+	9	9	7	0	1	4	//Pants
+	10	9	7	0	1	4	//Gloves
+	11	9	7	0	1	4	//Boots
+
+//Wind set
+	7	12	7	0	1	4	//Helm
+	8	12	7	0	1	4	//Armor
+	9	12	7	0	1	4	//Pants
+	10	12	7	0	1	4	//Gloves
+	11	12	7	0	1	4	//Boots
+
+//Red Wing set
+	7	40	7	0	1	4	//Helm
+	8	40	7	0	1	4	//Armor
+	9	40	7	0	1	4	//Pants
+	10	40	7	0	1	4	//Gloves
+	11	40	7	0	1	4	//Boots
+
+//Storm Crow set
+	8	15	7	0	1	4	//Armor
+	9	15	7	0	1	4	//Pants
+	10	15	7	0	1	4	//Gloves
+	11	15	7	0	1	4	//Boots
+
+//Light set
+	7	25	7	0	1	4	//Helm
+	8	25	7	0	1	4	//Armor
+	9	25	7	0	1	4	//Pants
+	10	25	7	0	1	4	//Gloves
+	11	25	7	0	1	4	//Boots
+
+//Sword
+	0	9	7	1	1	4	//Sword of Salamander
+	0	10	7	1	1	4	//Light Saber
+	0	11	7	1	1	4	//Legendary Sword
+	0	12	7	1	1	4	//Heliacal Sword
+
+//Axes
+	1	5	7	1	1	4	//Battle Axe
+	1	6	7	1	1	4	//Nikea Axe
+	1	7	7	1	1	4	//Larkan Axe
+	1	8	7	1	1	4	//Crescent Axe
+
+//Blunt weapons
+	2	5	7	1	1	4	//Crystal Sword
+	2	6	7	1	1	4	//Chaos Dragon Axe
+	2	7	7	1	1	4	//Elemental Mace
+	2	8	7	1	1	4	//Battle Scepter
+
+//Spears
+	3	0	7	1	1	4	//Light Spear
+	3	1	7	1	1	4	//Spear
+	3	2	7	1	1	4	//Dragon Lance
+	3	3	7	1	1	4	//Great Trident
+
+//Bows & Crossbows
+	4	4	7	1	1	4	//Tiger Bow
+	4	13	7	1	1	4	//Bluewing Crossbow
+
+//Staffs
+	5	5	7	1	1	4	//Legendary Staff
+	5	6	7	1	1	4	//Staff of Resurrection
+	5	22	7	1	1	4	//Book of Neil
+
+//Shields
+	6	8	7	1	1	4	//Tower Shield
+	6	9	7	1	1	4	//Plate Shield
+	6	10	7	1	1	4	//Large Round Shield
+
+//Rings+Pendant
+	13	26	3	0	1	4	//Pendant of Wind
+	13	27	3	0	1	4	//Pendant of Water
+	13	28	3	0	1	4	//Pendant of Ability
+

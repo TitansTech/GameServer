@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.Character add SCFGensRank int default(0) NOT NULL

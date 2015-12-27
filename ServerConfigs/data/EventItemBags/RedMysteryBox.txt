@@ -1,0 +1,89 @@
+//#############################################################################################################
+//Drop Settings: Red Mystery Box Drops
+//www.titanstech.com
+//#############################################################################################################
+
+//=============================================================================================================
+//	MapIndex	Drop Flag	Min Monster Level	Max MonsterLevel	
+//=============================================================================================================
+0	
+	0		0		0			1000
+end
+
+//=============================================================================================================
+//BoxDropRate		- Drop rate for box from mob [x/1000]
+//ItemDropRate	 	- Drop rate of item VS Zen [x/100]
+//ExRate		- Drop rate of excellent item [x/1000]
+//=============================================================================================================
+//[If item drop settings for the box/not monster]
+//=============================================================================================================
+//BoxType		- Item.TXT index (section) of the Box
+//BoxIndex 		- Item.TXT id of the Box
+//BoxLevel 		- Level of the Box (+1, +2 etc...)
+//BoxDropRate		- Rate at which the Box will drop
+//=============================================================================================================
+//	EventName		DropZen		BoxType	BoxIndex BoxLevel BoxDropRate 	ItemDropRate	ExRate
+//=============================================================================================================
+1	
+	"RedMysteryBox"		400000		14	56	 0	  0		65		650
+end
+
+//=============================================================================================================
+//Type			- Item.TXT index (section) of the Box
+//Index 		- Item.TXT id of the Item
+//minLvl		- Minimal Level of the Item (+1, +2 etc...)
+//maxLvl		- Maximum Level of the Item (+1, +2 etc...)
+//Skill			- Drop Item with Skill (0 - off,1 - on)
+//Luck			- Drop Item with Luck (0 - off,1 - on)
+//maxZ28		- Maximum Z28 option (1 = +4, 2 = +8, 3 = +12, etc...)
+//maxExOpt		- Maximum number of Exc option in item
+//=============================================================================================================
+//	Type	Index	minLvl	maxLvl	Skill	Luck	maxZ28	maxExOpt		
+//=============================================================================================================
+2
+	0	10	7	9	1	1	1	1		//Light Saber
+	0	12	7	9	1	1	1	1		//Helical Sword
+	0	13	7	9	1	1	1	1		//Double Blade
+	0	14	7	9	1	1	1	1		//Lightning Sword
+	0	15	7	9	1	1	1	1		//Giant Sword
+	2	4	7	9	1	1	1	1		//Crystal Morning Star
+	2	5	7	9	1	1	1	1		//Crystal Sword
+	2	9	7	9	1	1	1	1		//Master Scepter
+	3	0	7	9	1	1	1	1		//Light Spear
+	3	8	7	9	1	1	1	1		//Great Scythe
+	4	13	7	9	1	1	1	1		//Bluewing Crossbow
+	4	14	7	9	1	1	1	1		//Aquagold Crossbow
+	5	6	7	9	1	1	1	1		//Staff of Resurrection
+	5	8	7	9	1	1	1	1		//Staff of Destruction
+	5	14	7	9	1	1	1	1		//Mistery Staff
+	5	15	7	9	1	1	1	1		//Violent Wind Staff
+	7	16	7	9	1	1	1	1		//Black Dragon
+	8	16	7	9	1	1	1	1		//Black Dragon
+	9	16	7	9	1	1	1	1		//Black Dragon
+	10	16	7	9	1	1	1	1		//Black Dragon
+	11	16	7	9	1	1	1	1		//Black Dragon
+	7	3	7	9	1	1	1	1		//Legendary
+	8	3	7	9	1	1	1	1		//Legendary
+	9	3	7	9	1	1	1	1		//Legendary
+	10	3	7	9	1	1	1	1		//Legendary
+	11	3	7	9	1	1	1	1		//Legendary
+	7	14	7	9	1	1	1	1		//Guardian
+	8	14	7	9	1	1	1	1		//Guardian
+	9	14	7	9	1	1	1	1		//Guardian
+	10	14	7	9	1	1	1	1		//Guardian
+	11	14	7	9	1	1	1	1		//Guardian
+	7	26	7	9	1	1	1	1		//Adamantine
+	8	26	7	9	1	1	1	1		//Adamantine
+	9	26	7	9	1	1	1	1		//Adamantine
+	10	26	7	9	1	1	1	1		//Adamantine
+	11	26	7	9	1	1	1	1		//Adamantine
+	7	39	7	9	1	1	1	1		//Mistery
+	8	39	7	9	1	1	1	1		//Mistery
+	9	39	7	9	1	1	1	1		//Mistery
+	10	39	7	9	1	1	1	1		//Mistery
+	11	39	7	9	1	1	1	1		//Mistery
+	8	15	7	9	1	1	1	1		//Storm Crow
+	9	15	7	9	1	1	1	1		//Storm Crow
+	10	15	7	9	1	1	1	1		//Storm Crow
+	11	15	7	9	1	1	1	1		//Storm Crow
+end

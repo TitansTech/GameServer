@@ -1,0 +1,106 @@
+//iLevel	- Random level from 0 to set value
+//iOpt		- Random Z28 option from 0 to set value
+//iLick		- In percent, success of getting luck on item
+//iSkill	- In percent, success of getting skill on item
+//iDur		- Item durability (0 = default server value)
+//iExc		- Maximum number of excellent options on item
+//ipExc		- In percent, success of getting exc item 
+//iAnc		- In percent, success of getting ancient item 
+1
+//Type	Index	iLevel	iOpt	iLuck	iSkill	iDur	iExc	ipExc	iAnc
+0	2	7	4	50	30	0	3	45	30	//Rapier
+0	14	7	4	50	30	0	3	45	30	//Lighting Sword
+2	1	7	4	50	30	0	3	45	30	//Morning Star
+4	5	7	4	50	30	0	3	45	30	//Silver Bow
+4	9	7	4	50	30	0	3	45	30	//Golden Crossbow
+5	0	7	4	50	30	0	3	45	30	//Skull Staff
+6	5	7	4	50	30	0	3	45	30	//Dragon Slayer Shield
+6	6	7	4	50	30	0	3	45	30	//Skull Shield
+8	0	7	4	50	30	0	3	45	30	//Bronze Armor
+9	0	7	4	50	30	0	3	45	30	//Bronze Pants
+11	0	7	4	50	30	0	3	45	30	//Bronze Boots
+7	1	7	4	50	30	0	3	45	30	//Dragon Helm
+8	1	7	4	50	30	0	3	45	30	//Dragon Armor
+9	1	7	4	50	30	0	3	45	30	//Dragon Pants
+10	1	7	4	50	30	0	3	45	30	//Dragon Gloves
+11	1	7	4	50	30	0	3	45	30	//Dragon Boots
+7	2	7	4	50	30	0	3	45	30	//Pad Helm
+8	2	7	4	50	30	0	3	45	30	//Pad Armor
+9	2	7	4	50	30	0	3	45	30	//Pad Pants
+10	2	7	4	50	30	0	3	45	30	//Pad Gloves
+7	3	7	4	50	30	0	3	45	30	//Legendary Helm
+8	3	7	4	50	30	0	3	45	30	//Legendary Armor
+9	3	7	4	50	30	0	3	45	30	//Legendary Pants
+10	3	7	4	50	30	0	3	45	30	//Legendary Gloves
+11	3	7	4	50	30	0	3	45	30	//Legendary Boots
+8	4	7	4	50	30	0	3	45	30	//Bone Armor
+9	4	7	4	50	30	0	3	45	30	//Bone Pants
+11	4	7	4	50	30	0	3	45	30	//Bone Boots
+7	5	7	4	50	30	0	3	45	30	//Leather Helm
+8	5	7	4	50	30	0	3	45	30	//Leather Armor
+9	5	7	4	50	30	0	3	45	30	//Leather Pants
+10	5	7	4	50	30	0	3	45	30	//Leather Gloves
+11	5	7	4	50	30	0	3	45	30	//Leather Boots
+7	6	7	4	50	30	0	3	45	30	//Scale Helm
+8	6	7	4	50	30	0	3	45	30	//Scale Armor
+9	6	7	4	50	30	0	3	45	30	//Scale Pants
+7	7	7	4	50	30	0	3	45	30	//Sphinx Mask
+8	7	7	4	50	30	0	3	45	30	//Sphinx Armor
+9	7	7	4	50	30	0	3	45	30	//Sphinx Pants
+10	7	7	4	50	30	0	3	45	30	//Sphinx Gloves
+11	7	7	4	50	30	0	3	45	30	//Sphinx Boots
+8	8	7	4	50	30	0	3	45	30	//Brass Armor
+9	8	7	4	50	30	0	3	45	30	//Brass Pants
+10	8	7	4	50	30	0	3	45	30	//Brass Gloves
+11	8	7	4	50	30	0	3	45	30	//Brass Boots
+8	9	7	4	50	30	0	3	45	30	//Plate Armor
+10	9	7	4	50	30	0	3	45	30	//Plate Gloves
+11	9	7	4	50	30	0	3	45	30	//Plate Boots
+7	10	7	4	50	30	0	3	45	30	//Vine Helm
+9	10	7	4	50	30	0	3	45	30	//Vine Pants
+10	10	7	4	50	30	0	3	45	30	//Vine Gloves
+11	10	7	4	50	30	0	3	45	30	//Vine Boots
+7	11	7	4	50	30	0	3	45	30	//Silk Helm
+8	11	7	4	50	30	0	3	45	30	//Silk Armor
+9	11	7	4	50	30	0	3	45	30	//Silk Pants
+10	11	7	4	50	30	0	3	45	30	//Silk Gloves
+7	12	7	4	50	30	0	3	45	30	//Wind Helm
+8	12	7	4	50	30	0	3	45	30	//Wind Armor
+9	12	7	4	50	30	0	3	45	30	//Wind Pants
+10	12	7	4	50	30	0	3	45	30	//Wind Gloves
+11	12	7	4	50	30	0	3	45	30	//Wind Boots
+8	13	7	4	50	30	0	3	45	30	//Spirit Armor
+9	13	7	4	50	30	0	3	45	30	//Spirit Pants
+10	13	7	4	50	30	0	3	45	30	//Spirit Gloves
+7	14	7	4	50	30	0	3	45	30	//Guardian Helmet
+8	14	7	4	50	30	0	3	45	30	//Guardian Armor
+9	14	7	4	50	30	0	3	45	30	//Guardian Pants
+10	14	7	4	50	30	0	3	45	30	//Guardian Gloves
+11	14	7	4	50	30	0	3	45	30	//Guardian Boots
+8	15	7	4	50	30	0	3	45	30	//Storm Crow Armor
+9	15	7	4	50	30	0	3	45	30	//Storm Crow Pants
+10	15	7	4	50	30	0	3	45	30	//Storm Crow Gloves
+11	15	7	4	50	30	0	3	45	30	//Storm Crow Boots
+7	26	7	4	50	30	0	3	45	30	//Adamantine Mask
+8	26	7	4	50	30	0	3	45	30	//Adamantine Armor
+9	26	7	4	50	30	0	3	45	30	//Adamantine Pants
+10	26	7	4	50	30	0	3	45	30	//Adamantine Gloves
+11	26	7	4	50	30	0	3	45	30	//Adamantine Boots
+7	40	7	4	50	30	0	3	45	30	//Red Wing Helm
+8	40	7	4	50	30	0	3	45	30	//Red Wing Armor
+9	40	7	4	50	30	0	3	45	30	//Red Wing Pants
+10	40	7	4	50	30	0	3	45	30	//Red Wing Gloves
+11	40	7	4	50	30	0	3	45	30	//Red Wing Boots
+13	8	5	3	0	0	0	3	35	20	//Ring of Ice
+13	9	5	3	0	0	0	3	35	20	//Ring of Poison
+13	12	5	3	0	0	0	3	35	20	//Pendant of Lightning
+13	13	5	3	0	0	0	3	35	20	//Pendant of Fire
+13	21	5	3	0	0	0	3	35	20	//Ring of Fire
+13	22	5	3	0	0	0	3	35	20	//Ring of Earth
+13	23	5	3	0	0	0	3	35	20	//Ring of Wind
+13	24	5	3	0	0	0	3	35	20	//Ring of Magic
+13	25	5	3	0	0	0	3	35	20	//Pendant of Ice
+13	26	5	3	0	0	0	3	35	20	//Pendant of Wind
+13	27	5	3	0	0	0	3	35	20	//Pendant of Water
+13	28	5	3	0	0	0	3	35	20	//Pendant of Ability
+end

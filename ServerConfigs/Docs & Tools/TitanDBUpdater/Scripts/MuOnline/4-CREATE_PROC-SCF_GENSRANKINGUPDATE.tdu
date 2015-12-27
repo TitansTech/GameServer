@@ -1,0 +1,23 @@
+CREATE Procedure [dbo].[SCF_GENSRANKINGUPDATE] 
+	@GensFam int
+AS
+BEGIN
+	 SET NOCOUNT ON
+	 CREATE TABLE #RankTmp (
+		 RowNumber int IDENTITY (1, 1),
+		 Name nvarchar(10),
+		 SCFGensContribution int
+	 )
+	 INSERT #RankTmp (Name,SCFGensContribution)
+		 SELECT Name, SCFGensContribution
+			 FROM Character
+				 WHERE SCFGensFamily = @GensFam
+					 ORDER BY SCFGensContribution Desc;
+	 UPDATE Character
+	 SET Character.SCFGensRank = #RankTmp.RowNumber
+	 FROM Character
+	 INNER JOIN #RankTmp
+	 ON Character.Name collate Chinese_PRC_CI_AS = #RankTmp.Name collate Chinese_PRC_CI_AS
+	 DROP TABLE #RankTmp
+	 SET NOCOUNT OFF
+End

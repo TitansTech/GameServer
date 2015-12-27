@@ -1,0 +1,1 @@
+ALTER TABLE %s.dbo.Character add SCFPCPoints Int default(0) NOT NULL

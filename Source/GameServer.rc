@@ -1,0 +1,365 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+#include "Version.h"
+#include "DSGN.h"
+
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+#if(PROXY_SHOW == 1)
+IDD_PROXYBOX DIALOGEX 0, 0, 394, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send Packet Window"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Send",ID_PROXY_OK,271,49,50,14,WS_GROUP
+    EDITTEXT        IDC_PROXY_EDIT1,36,31,343,14,ES_AUTOHSCROLL
+    LTEXT           "Packet:",IDC_PROXY_STATIC,10,34,24,10
+END
+#endif
+
+IDD_ABOUT_BOX DIALOG DISCARDABLE  22, 17, 230, 60
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_NORMAL_V1,2,14,9,20,20
+    LTEXT           GSText,-1,49,10,111,8,
+                    SS_NOPREFIX
+					LTEXT           "Copyright (C) 2007~2012 TitansTech",-1,49,20,150,8
+					LTEXT           "Special thanks to:",-1,49,40,119,8
+					LTEXT           ". bbsleon, Cyberlove, Deathway, leo123, panoramix",-1,49,50,200,8
+    DEFPUSHBUTTON   "OK",1,195,6,30,11,WS_GROUP
+END
+
+IDD_GUILD_LIST_STATE DIALOG DISCARDABLE  0, 0, 195, 27
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Guild list state."
+FONT 8, "System"
+BEGIN
+    CONTROL         "Progress1",IDP_PROGRESS_BAR,"msctls_progress32",0x0,7,5,
+                    181,10
+    RTEXT           "",IDS_CURRENT_GUILD_NAME,7,16,181,11
+END
+
+IDD_CASTLE_SIEGE_LOG DIALOG DISCARDABLE  0, 0, 313, 228
+STYLE DS_MODALFRAME | DS_CENTER | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Castle Siege Log Dialog"
+FONT 10, "MS Serif"
+BEGIN
+    LISTBOX         1003,7,7,299,214,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+151 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,130,7,50,14
+    PUSHBUTTON      "Cancel",2,130,24,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "All User Close",              IDM_ALL_USER_CLOSE
+        MENUITEM "All User LogOut",             IDM_ALL_USER_LOGOUT
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Load"
+    BEGIN
+        MENUITEM "&Monster Position Reload",    IDM_MONSTER_POSITION_RELOAD
+        MENUITEM "&Shop Reload",                IDM_SHOP_RELOAD
+        MENUITEM "MapServer Info Reload",       IDM_MAP_SERVER_INFO_RELOAD
+        MENUITEM "CastleSiege Reload",          IDM_CASTLE_SIEGE_RELOAD
+        MENUITEM SEPARATOR
+        MENUITEM "CrystalWall Info Load",       IDM_GAMEGUARD_INFO_RELOAD
+        MENUITEM "CashShop Option Load",        IDM_CASHSHOP_OPTION_RELOAD
+        MENUITEM "IP Load",                     IDM_IP_LOAD, GRAYED
+        MENUITEM "&Option Reload",              IDM_OPTION_RELOAD
+    END
+    POPUP "&Event Load"
+    BEGIN
+        MENUITEM "Reload All Event",            IDM_RELOAD_ALL_EVENT
+        MENUITEM SEPARATOR
+        MENUITEM "Reload DevilSquare",          IDM_RELOAD_DEVILSQUARE
+        MENUITEM "Reload BloodCastle",          IDM_RELOAD_BLOODCASTLE
+        MENUITEM "Reload ChaosCastle",          IDM_RELOAD_CHAOSCASTLE
+        MENUITEM SEPARATOR
+        MENUITEM "Reload UnderWorld Attack",    IDM_RELOAD_UNDERWORLD_ATTACK
+        MENUITEM "Reload GoldenTroop Attack",   IDM_RELOAD_GOLDENTROOP_ATTACK
+
+        MENUITEM "Reload WhiteMage Attack",     IDM_RELOAD_WHITEMAGE_ATTACK
+        MENUITEM SEPARATOR
+        MENUITEM "Reload Love PangPang",        IDM_RELOAD_LOVE_PANGPANG
+        MENUITEM "Reload FireCracker",          IDM_RELOAD_FIRECRACKER
+        MENUITEM "Reload X-Mas Star",           IDM_RELOAD_XMAS_STAR
+        MENUITEM "Reload Heart of Love",        IDM_RELOAD_HEART_OF_LOVE
+        MENUITEM "Reload Christmas Event",		IDM_RELOAD_CHRISTMAS_RIBBONBOX
+
+        MENUITEM "Reload Valentine's Day Chocolate Box", 
+                                                IDM_RELOAD_VALENTINE_DAY_CHOCOLATE_BOX
+
+        MENUITEM "Reload White Day Candy Box",  IDM_RELOAD_WHITE_DAY_CANDY_BOX
+
+        MENUITEM SEPARATOR
+        MENUITEM "Reload NPC say HappyNewYear", IDM_RELOAD_NPC_SAY_HAPPY_NEW_YEAR
+
+        MENUITEM "Reload NPC say Merry X-Mas",  IDM_RELOAD_NPC_SAY_MERRY_XMAS
+
+    END
+    POPUP "Game ETC Load"
+    BEGIN
+        MENUITEM "Reload All ETC Option",       IDM_RELOAD_ALL_ETC_OPTION
+        MENUITEM SEPARATOR
+        MENUITEM "Reload Create Character",     IDM_RELOAD_CREATE_CHARACTER
+        MENUITEM "Reload Guild",                IDM_RELOAD_GUILD
+        MENUITEM "Reload Trade",                IDM_RELOAD_TRADE
+        MENUITEM "Reload Chaos Box",            IDM_RELOAD_CHAOSBOX
+        MENUITEM "Reload Personal Shop",        IDM_RELOAD_PERSONAL_SHOP
+        MENUITEM "Reload PK Item Drop",         IDM_RELOAD_PK_ITEM_DROP
+        MENUITEM "Reload Item Drop Rate",       IDM_RELOAD_ITEM_DROP_RATE
+        MENUITEM "Reload SpeedHack",            IDM_RELOAD_SPEEDHACK
+        MENUITEM "Reload GameGuard Checksum Check", 
+                                                IDM_RELOAD_GAMEGUARD_CHECKSUM_CHECK
+
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Log Window",                  IDM_LOG_WINDOW
+        MENUITEM "Links Window",                IDM_LINKS_WINDOW
+        MENUITEM "Event Window",                IDM_EVENT_WINDOW
+#if(PROXY_SHOW == 1)
+        MENUITEM "Proxy Window",                IDM_PROXY_WINDOW
+#endif
+        MENUITEM SEPARATOR
+        MENUITEM "Log Paint",                   IDM_LOG_PAINT
+        MENUITEM "Log CastleSiege",             IDM_LOG_CASTLESIEGE
+        MENUITEM SEPARATOR
+        MENUITEM "Lorencia",                    IDM_MAP1
+        MENUITEM "Davias",                      IDM_MAP2
+        MENUITEM "Noria",                       IDM_MAP3
+        MENUITEM "Losttower",                   IDM_MAP4
+        MENUITEM "Crywolf",                     IDM_CRYWOLF
+    END
+    POPUP "Etc"
+    BEGIN
+        MENUITEM "Dragon Event",                IDM_DRAGON_EVENT
+        MENUITEM "Gold Invasion",               IDM_ELDORADO_EVENT
+        MENUITEM "StartOfXMas Event",           IDM_STARTOFXMAS_EVENT
+        MENUITEM "FireCracker",                 IDM_FIRECRACKER
+    END
+    POPUP "Msg"
+    BEGIN
+        MENUITEM "5 Minute Close",              IDM_5_MINUTE_CLOSE
+        MENUITEM "3 Minute Close",              IDM_3_MINUTE_CLOSE
+        MENUITEM "1 Minute Close",              IDM_1_MINUTE_CLOSE
+    END
+    POPUP "Alert"
+    BEGIN
+        MENUITEM "All &Clear",                  IDM_ALL_CLEAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDA_GAMESERVER ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GUILD_LIST_STATE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 26
+        HORZGUIDE, 11
+        HORZGUIDE, 19
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+IDV_GAMESERVER VERSIONINFO
+ FILEVERSION FVersion
+ PRODUCTVERSION FVersion
+ FILEFLAGSMASK 0x0L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", " TitansTech\0"
+            VALUE "FileDescription", "GameServer\0"
+            VALUE "FileVersion", FVersionValue
+            VALUE "InternalName", "GameServer\0"
+            VALUE "LegalCopyright", "Copyright TitansTech 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GameServer.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "GameServer\0"
+            VALUE "ProductVersion", FVersionValue
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NORMAL_V1           ICON    DISCARDABLE     "TTGameServer.ico"
+IDI_ICON_MINIMIZED      ICON    DISCARDABLE     "TTGameServer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "GameServer"
+    IDS_HELLO               "Hello World!"
+    IDS_GAMESERVER          "GAMESERVER"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Castilian) (unknown sub-lang: 0xA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESR)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, 0xA
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP              BITMAP  DISCARDABLE     "bitmap.bmp"
+#endif    // Spanish (Castilian) (unknown sub-lang: 0xA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

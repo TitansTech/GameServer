@@ -1,0 +1,61 @@
+//============================================================================
+//Drop Settings: Red Dragon Drops
+//www.titanstech.com
+//============================================================================
+//	type,	index,	level,	skill,	exc,	option	name
+//============================================================================
+	0	10	8	1	0	2	//Light Saber
+	0	11	8	1	0	2	//Legendary Sword
+	0	13	8	1	0	2	//Double Blade
+	1	6	8	1	0	2	//Nikkea Axe
+	1	7	8	1	0	2	//Larkan Axe
+	2	3	8	1	0	2	//Great Hammer
+	3	7	8	1	0	2	//Berdysh
+	3	0	8	1	0	2	//Light Spear
+	3	4	8	1	0	2	//Serpent Spear
+	4	11	8	1	0	2	//Light Crossbow
+	4	4	8	1	0	2	//Tiger Bow
+	4	12	8	1	0	2	//Serpent Crossbow
+	5	3	8	1	0	2	//Thunder Staff
+	6	5	8	1	0	2	//Dragon Slayer Shield
+	6	8	8	1	0	2	//Tower Shield
+	6	11	8	1	0	2	//Serpent Shield
+	7	8	8	0	0	2	//Brass Helm
+	7	9	8	0	0	2	//Plate Helm
+	7	7	8	0	0	2	//Sphinx Helm
+	7	12	8	0	0	2	//Wind Helm
+	7	13	8	0	0	2	//Spirit Helm
+	8	8	8	0	0	2	//Brass Armor
+	8	9	8	0	0	2	//Plate Armor
+	8	7	8	0	0	2	//Sphinx Armor
+	8	12	8	0	0	2	//Wind Armor
+	8	13	8	0	0	2	//Spirit Armor
+	9	8	8	0	0	2	//Brass Pants
+	9	9	8	0	0	2	//Plate Pants
+	9	7	8	0	0	2	//Sphinx Pants
+	9	12	8	0	0	2	//Wind Pants
+	9	13	8	0	0	2	//Spirit Pants
+	10	8	8	0	0	2	//Brass Gloves
+	10	9	8	0	0	2	//Plate Gloves
+	10	7	8	0	0	2	//Sphinx Gloves
+	10	12	8	0	0	2	//Wind Gloves
+	10	13	8	0	0	2	//Spirit Gloves
+	11	8	8	0	0	2	//Brass Boots
+	11	9	8	0	0	2	//Plate Boots
+	11	7	8	0	0	2	//Sphinx Boots
+	11	12	8	0	0	2	//Wind Boots
+	11	13	8	0	0	2	//Spirit Boots
+
+//Misc
+	13	0	0	0	0	0	//Guardian Angel
+	13	1	0	0	0	0	//Satan
+	13	2	0	0	0	0	//Horn of Uniria
+	13	8	2	0	0	3	//Ring of Ice
+	13	9	2	0	0	3	//Ring of Poison
+	13	12	2	0	0	3	//Pendant of Lighting
+	13	13	2	0	0	3	//Pendant of Fire
+
+//Jewels
+	12	15	0	0	0	0	//Jewel of Chaos
+	14	13	0	0	0	0	//Jewel of Bless
+	14	14	0	0	0	0	//Jewel of Soul

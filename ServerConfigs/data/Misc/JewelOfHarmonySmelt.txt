@@ -1,0 +1,116 @@
+////////////////////////////////////////////////////////////////////////////////
+// Text GS 1.00.18
+// Version 1.04
+// Translated - by Endi
+// JewelOfHarmonySmell.txt
+////////////////////////////////////////////////////////////////////////////////
+//index	item_name	Req_Level
+0		
+1	"Short Sword"		4
+0	"Kris"			4
+2	"Rapier"		4
+4	"Sword of Assassin"	4
+end		
+1		
+0	"Small Axe"		4
+1	"Hand Axe"		4
+2	"Double Axe"		4
+end		
+2		
+0	"Mace"			4
+1	"Morning Star"		4
+2	"Flail"			4
+end		
+3		
+5	"Double Poleaxe"	4
+2	"Dragon Lance"		4
+6	"Halberd"		4
+1	"Spear"			4
+3	"Giant Trident"		4
+end		
+4		
+0	"Short Bow"		4
+8	"Crossbow"		4
+1	"Bow"			4
+9	"Golden Crossbow"	4
+2	"Elven Bow"		4
+10	"Arquebus"		4
+3	"Battle Bow"		4
+11	"Light Crossbow"	4
+end		
+5		
+0	"Skull Staff"		4
+1	"Angelic Staff"		4
+2	"Serpent Staff"		4
+end		
+6		
+0	"Round Shield"		4
+4	"Buckler"		4
+1	"Horn Shield"		4
+2	"Kite Shield"		4
+6	"Skull Shield"		4
+10	"Large Round Shiled"	4
+3	"Elven Shield"		4
+9	"Plate Shiled"		4
+7	"Spiked Shileld"	4
+end		
+7		
+5	"Leather Helm"		4
+0	"Bronze Helm"		4
+6	"Scale Helm"		4
+8	"Brass Helm"		4
+2	"Pad Helm"		4
+4	"Bone Helm"		4
+7	"Sphinx Helm"		4
+10	"Vine Helm"		4
+11	"Silk Helm"		4
+12	"Helm of Wind"		4
+end		
+8		
+5	"Leather Armor"		4
+0	"Bronze Armor"		4
+6	"Scale Armor"		4
+8	"Brass Armor"		4
+2	"Pad Armor"		4
+4	"Bone Armor"		4
+7	"Sphinx Armor"		4
+10	"Vine Armor"		4
+11	"Silk Armor"		4
+12	"Armor of Wind"		4
+end		
+9		
+5	"Leather Pants"		4
+0	"Bronze Pants"		4
+6	"Scale Pants"		4
+8	"Brass Pants"		4
+2	"Pad Pants"		4
+4	"Bone Pants"		4
+7	"Sphinx Pants"		4
+10	"Vine Pants"		4
+11	"Silk Pants"		4
+12	"Pants of Wind"		4
+end		
+10		
+5	"Leather Gloves"	4
+0	"Bronze Gauntlets"	4
+6	"Scale Gauntlets"	4
+8	"Brass Gauntlets"	4
+2	"Pad Gloves"		4
+4	"Bone Gloves"		4
+7	"Sphinx Gauntlets"	4
+10	"Vine Gloves"		4
+11	"Silk Gloves"		4
+12	"Gauntlets of Wind"	4
+end		
+11		
+5	"Leather Boots"		4
+0	"Bronze Boots"		4
+6	"Scale Boots"		4
+8	"Brass Boots"		4
+2	"Pad Boots"		4
+4	"Bone Boots"		4
+7	"Sphinx Boots"		4
+10	"Vine Boots"		4
+11	"Silk Boots"		4
+12	"Boots of Wind"		4
+end		

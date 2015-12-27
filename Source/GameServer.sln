@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameServer", "GameServer.vcxproj", "{AAFF9334-1126-4350-835C-44229201995D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		DebugRelease|Win32 = DebugRelease|Win32
+		DebugRelease|x64 = DebugRelease|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAFF9334-1126-4350-835C-44229201995D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AAFF9334-1126-4350-835C-44229201995D}.Debug|Win32.Build.0 = Debug|Win32
+		{AAFF9334-1126-4350-835C-44229201995D}.Debug|x64.ActiveCfg = Debug|x64
+		{AAFF9334-1126-4350-835C-44229201995D}.Debug|x64.Build.0 = Debug|x64
+		{AAFF9334-1126-4350-835C-44229201995D}.DebugRelease|Win32.ActiveCfg = DebugRelease|Win32
+		{AAFF9334-1126-4350-835C-44229201995D}.DebugRelease|Win32.Build.0 = DebugRelease|Win32
+		{AAFF9334-1126-4350-835C-44229201995D}.DebugRelease|x64.ActiveCfg = DebugRelease|x64
+		{AAFF9334-1126-4350-835C-44229201995D}.DebugRelease|x64.Build.0 = DebugRelease|x64
+		{AAFF9334-1126-4350-835C-44229201995D}.Release|Win32.ActiveCfg = Release|Win32
+		{AAFF9334-1126-4350-835C-44229201995D}.Release|Win32.Build.0 = Release|Win32
+		{AAFF9334-1126-4350-835C-44229201995D}.Release|x64.ActiveCfg = Release|x64
+		{AAFF9334-1126-4350-835C-44229201995D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
